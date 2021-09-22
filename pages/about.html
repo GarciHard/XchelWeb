@@ -5,37 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    
     <title>About</title>
+    <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
 </head>
 
 <body>
     <!-- We use the same header & footer to all the non index pages, im confused 'cause with Angular we can create modular components & avoid this -->
-    <header>
-        <div>
+    <header class="container">
+        <div class="headerDate">
             <ul>
-                <li>Espa&ntilde;ol</li>
+                <li><a href="#">Espa&ntilde;ol</a></li>
+                <li>|</li>
                 <li>Mon 13th Sep 2021 </li>
             </ul>
         </div>
-        <div>
-            <a href="../index.html"><img src="" alt="xchelsLogo"></a>
+        <div class="headerNav">
+            <a href="../index.html" class="headerLogo"><img src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo" width="100" height="100"></a>
             <nav>
                 <ul>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./reservations.html">Reservations</a></li>
-                    <li><a href="./menu.html">Menu</a></li>
-                    <li><a href="./locations.html">Locations</a></li>
-                    <li><a href="./chefs-bio.html">Chef's bio</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/reservations.html">Reservations</a></li>
+                    <li><a href="../pages/menu.html">Menu</a></li>
+                    <li><a href="../pages/locations.html">Locations</a></li>
+                    <li><a href="../pages/chefs-bio.html">Chef's bio</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="container">
         <h2>About</h2>
         <!-- Information about the Xchel's experience -->
     </main>
-    <section>
+    <section class="container">
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque culpa iure nulla et? Veritatis, harum. Quaerat quo omnis praesentium saepe, dolorum, voluptatem repellendus aliquam aperiam accusantium sunt reiciendis, recusandae corporis?
             Illum quibusdam inventore, ut quaerat recusandae nostrum iure quae deserunt dolorum ipsum accusamus? Facere odit cupiditate voluptate fuga et ex incidunt minima, alias libero! Minus obcaecati neque optio in repellat!
@@ -57,41 +62,37 @@
     <!-- Footer -->
     <footer>
         <!-- The main container -->
-        <div>
+        <div class="container">
             <!-- First section of the footer -->
-            <div>
+            <div class="footerMain">
                 <!-- Brand logo & short about -->
-                <div>
-                    <img src="" alt="xchelsLogo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis cum mollitia expedita
-                        asperiores atque perspiciatis illum necessitatibus numquam eveniet, esse aliquam eligendi
-                        deserunt assumenda enim, accusantium qui quas deleniti.</p>
+                <div class="brandLogoAbout">
+                    <img src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo">
+                    <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
+                        the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
+                        spirit of her beloved country.</p>
                 </div>
                 <!-- Social network section -->
-                <div>
-                    <span>Follow us</span><br>
-                    <img src="" alt="facebookLogo">
-                    <img src="" alt="tweeterLogo">
-                    <img src="" alt="instagramLogo">
+                <div class="socialNetworks">
+                    <div class="socialNetworkIcons">
+                        <a href="#"><img src="../img/logos/social-networks/facebook.svg" alt="facebookLogo"></a>
+                        <a href="#"><img src="../img/logos/social-networks/twitter.svg" alt="tweeterLogo"></a>
+                        <a href="#"><img src="../img/logos/social-networks/instagram.svg" alt="instagramLogo"></a>
+                    </div>
                     <span>@XchelMexicanCuisine</span>
                 </div>
                 <!-- Newsletter section -->
-                <div>
-                    <span>News</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto corrupti libero dignissimos
-                        quidem dolorem. Aut, eius nulla. Pariatur nobis dolorem, vitae laudantium ullam eligendi
-                        suscipit quae blanditiis minus asperiores perspiciatis.</p>
-                    <form action="submit" method="POST">
-                        <input type="email" name="usrNewsMail" id="txtNewsMail" placeholder="yourMail@domain.com" required>
-                        <input type="submit" value="Subscribe">
-                    </form>
+                <div class="newsletter">
+                    <p>Receive news about events in our different locations and unique recipes from our chef.</p>
+                    <input type="email" name="userEmail" id="userEmailId" placeholder="yourMail@domain.com">
+                    <input type="button" value="Subscribe">
                 </div>
             </div>
-            <!-- Second section of the footer which contains the copyright xD -->
-            <div>
-                <span>© Copyright 2021 Xchel | All rights reserved</span><br>
-                <span>Made with &#10084; by GarciHard & Freckles</span>
-            </div>
+        </div>
+        <!-- Second section of the footer which contains the copyright xD -->
+        <div class="footerCredits">
+            <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
+            <span>Made with &#10084; by GarciHard & Freckles</span>
         </div>
     </footer>
 </body>

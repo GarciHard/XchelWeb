@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
     <title>Xchel Mexican Cuisine</title>
+    <link rel="icon" href="./img/icon/blackUntitledLogoIcon.png" type="image/png">
 </head>
 
 <body>
     <!-- Redesign of the header, now we have the opposite language & the date -->
-    <header>
+    <header class="container">
         <!-- div container which be used for the language & date -->
-        <div>
+        <div class="headerDate">
             <ul>
-                <li>Espa&ntilde;ol</li>
+                <li><a href="#">Espa&ntilde;ol</a></li>
+                <li>|</li>
                 <li>Mon 13th Sep 2021 </li>
             </ul>
         </div>
         <!-- div container for the navigation bar which includes the brand logo -->
-        <div>
-            <a href="./index.html"><img src="" alt="xchelsLogo"></a>
+        <div class="headerNav">
+            <a href="./index.html" class="headerLogo"><img src="./img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo"
+                    width="100" height="100"></a>
             <nav>
                 <ul>
                     <li><a href="./pages/about.html">About</a></li>
@@ -34,7 +40,7 @@
         </div>
     </header>
     <!-- The main section changed, now we incorporate the reservation button -->
-    <main>
+    <main class="container">
         <!-- div container for the main section, contains the background image, brand logo & reservation button -->
         <div>
             <img src="" alt="xchelBackground">
@@ -48,7 +54,7 @@
         </div>
     </main>
     <!-- Previously the "Concept Section", we change it for the most selled food dishses -->
-    <section>
+    <section class="container">
         <div>
             <!-- I'll keep the section's titles as an h2 tag, 'cause they're part of the main content "Xchel" for SEO purposes -->
             <h2>Most popular food dishes</h2>
@@ -76,7 +82,7 @@
         </div>
     </section>
     <!-- Previously "Menu Section" updated to Last Recipes section -->
-    <section>
+    <section class="container">
         <!-- In this section we put a numeric carrousel to show content -->
         <div>
             <h2>Latest recipes</h2>
@@ -147,7 +153,7 @@
         </div>
     </section>
     <!-- previously "Gallery Section" renamed to Our Chef section and delete the reservation section -->
-    <section>
+    <section class="container">
         <div>
             <h2>Our Chef</h2>
             <hr>
@@ -167,39 +173,37 @@
     <!-- Footer -->
     <footer>
         <!-- The main container -->
-        <div>
+        <div class="container">
             <!-- First section of the footer -->
-            <div>
+            <div class="footerMain">
                 <!-- Brand logo & short about -->
-                <div>
-                    <img src="" alt="xchelsLogo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis cum mollitia expedita
-                        asperiores atque perspiciatis illum necessitatibus numquam eveniet, esse aliquam eligendi
-                        deserunt assumenda enim, accusantium qui quas deleniti.</p>
+                <div class="brandLogoAbout">
+                    <img src="./img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo">
+                    <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
+                        the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
+                        spirit of her beloved country.</p>
                 </div>
                 <!-- Social network section -->
-                <div>
-                    <span>Follow us</span><br>
-                    <img src="" alt="facebookLogo">
-                    <img src="" alt="tweeterLogo">
-                    <img src="" alt="instagramLogo">
+                <div class="socialNetworks">
+                    <div class="socialNetworkIcons">
+                        <a href="#"><img src="./img/logos/social-networks/facebook.svg" alt="facebookLogo"></a>
+                        <a href="#"><img src="./img/logos/social-networks/twitter.svg" alt="tweeterLogo"></a>
+                        <a href="#"><img src="./img/logos/social-networks/instagram.svg" alt="instagramLogo"></a>
+                    </div>
                     <span>@XchelMexicanCuisine</span>
                 </div>
                 <!-- Newsletter section -->
-                <div>
-                    <span>News</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto corrupti libero dignissimos
-                        quidem dolorem. Aut, eius nulla. Pariatur nobis dolorem, vitae laudantium ullam eligendi
-                        suscipit quae blanditiis minus asperiores perspiciatis.</p>
+                <div class="newsletter">
+                    <p>Receive news about events in our different locations and unique recipes from our chef.</p>
                     <input type="email" name="userEmail" id="userEmailId" placeholder="yourMail@domain.com">
                     <input type="button" value="Subscribe">
                 </div>
             </div>
-            <!-- Second section of the footer which contains the copyright xD -->
-            <div>
-                <span>© Copyright 2021 Xchel | All rights reserved</span><br>
-                <span>Made with &#10084; by GarciHard & Freckles</span>
-            </div>
+        </div>
+        <!-- Second section of the footer which contains the copyright xD -->
+        <div class="footerCredits">
+            <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
+            <span>Made with &#10084; by GarciHard & Freckles</span>
         </div>
     </footer>
 </body>

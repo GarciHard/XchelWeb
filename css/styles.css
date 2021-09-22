@@ -1,0 +1,219 @@
+/* In my research i learned how to add external fonts */
+@font-face {
+    font-family: Playfair;
+    font-style: normal;
+    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');    
+}
+@font-face {
+    font-family: Playfair;
+    font-style: italic;
+    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf');
+}
+@font-face {
+    font-family: Playfair;
+    font-weight: bold;
+    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf');
+}
+@font-face {
+    font-family: Lora;
+    font-style: normal;
+    src: url('../fonts/Lora/static/Lora-Regular.ttf');
+}
+@font-face {
+    font-family: Lora;
+    font-style: italic;
+    src: url('../fonts/Lora/static/Lora-Italic.ttf');
+}
+@font-face {
+    font-family: Lora;
+    font-weight: bold;
+    src: url('../fonts/Lora/static/Lora-SemiBold.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+ * Container to resize the block according the web browser size
+ * in the next MVPs this will be taking more sense 
+ */
+.container {
+    margin: 0 auto;
+    max-width: 2080px;
+    width: 85%;
+}
+
+/* Date & language section of the header */
+.headerDate {
+    color: #2D2D2D;
+    font-family: Playfair;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.headerDate ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headerDate ul li {
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.headerDate ul li a {
+    color: #2D2D2D;
+    display: block;
+    text-decoration: none;
+}
+
+/* Brand logo & navigation section of the header */
+.headerNav {
+    align-items: center;
+    display: flex;
+    font-family: Playfair;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.headerNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headerNav ul li {
+    display: inline-block;
+    padding: 8px 80px;
+}
+
+.headerNav ul li a {
+    color: #2D2D2D;
+    display: block;
+    text-decoration: none;
+}
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/* FRIENDLY REMINDER that i need to work more on the header and footer style sheet */
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+
+
+/************************************************************************************/
+/* For this challenge i'll set up some temp colors on the titles, paragraphs & list */
+/*             Using classes and tags, as they said in the instructions             */
+/************************************************************************************/
+h2 {
+    color: blue;
+}
+p {
+    color: orange;
+}
+/************************************************************************************/
+
+
+/* Footer main used to distribute 3 diferent sections described below */
+.footerMain {
+    color: #2D2D2D;
+    display: flex;
+    font-family: Lora;
+}
+
+.footerMain div{
+    height: 200px;
+    width: 85%;
+}
+
+/* Brand logo & short about section of the footer*/
+.brandLogoAbout {
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.brandLogoAbout img {
+    height: 100px;
+    width: 100px;
+}
+
+.brandLogoAbout p {
+    color: #2D2D2D;
+}
+/* Social networks section of the footer */
+.socialNetworks {
+    padding: 20px;
+}
+
+.socialNetworks span {
+    padding-left: 50px;
+}
+
+.socialNetworkIcons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.socialNetworkIcons img {
+    height: 36px;
+    width: 36px;
+}
+
+/* Newsletter section of the footer */
+.newsletter {
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.newsletter p {
+    color: #2D2D2D;
+}
+
+.newsletter input[type="email"] {
+    background-color: #DEDADA;
+    border-radius: 35px;
+    border-style: none;
+    height: 45px;
+    outline: none;
+    text-align: center;
+    width: 400px;
+}
+
+.newsletter input[type="button"] {
+    background-color: #AB1331;
+    border-radius: 35px;
+    border-style: none;
+    color: #FFFFFF;
+    height: 45px;
+    text-align: center;
+    margin-left: -50px;
+    width: 150px;
+}
+
+/* Credits section of the footer */
+.footerCredits {
+    align-items: center;
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    font-family: Lora;
+    font-size: 14px;
+    height: 110px;
+    justify-content: center;
+}
+
+.footerCredits span {
+    color: #FFFFFF;
+}
