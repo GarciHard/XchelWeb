@@ -25,8 +25,7 @@
         </div>
         <!-- div container for the navigation bar which includes the brand logo -->
         <div class="headerNav">
-            <a href="./index.html" class="headerLogo"><img src="./img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo"
-                    width="100" height="100"></a>
+            <a href="./index.html"><img class="headerLogo" src="./img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo"></a>
             <nav>
                 <ul>
                     <li><a href="./pages/about.html">About</a></li>
@@ -42,15 +41,19 @@
     <!-- The main section changed, now we incorporate the reservation button -->
     <main class="container">
         <!-- div container for the main section, contains the background image, brand logo & reservation button -->
-        <div>
-            <img src="" alt="xchelBackground">
-            <img src="" alt="xchelsLogo">
-            <h1>
-                <strong>X C H E L</strong>
-            </h1>
-            <!-- The h2 tags will be modified with css, doesnt matter his look & feel for now -->
-            <h2>Mexican Cuisine</h2>
-            <input type="button" value="Book now">
+        <div id="xchelMainBackground">
+
+            <div id="xchelLogoAndTitles">
+                <!-- <img src="" alt="xchelBackground"> -->
+                <img src="./img/logos/xchel/whiteUntitledLogo.svg" alt="xchelsLogo">
+                <h1 class="xchelBackgroundFonts">
+                    <strong>X C H E L</strong>
+                </h1>
+                <!-- The h2 tags will be modified with css, doesnt matter his look & feel for now -->
+                <h2 class="xchelBackgroundFonts">MEXICAN CUISINE</h2>
+                <input type="button" value="Book now" class="xchelLogoAndTitles">
+            </div>
+
         </div>
     </main>
     <!-- Previously the "Concept Section", we change it for the most selled food dishses -->
