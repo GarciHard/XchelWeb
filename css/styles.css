@@ -80,6 +80,11 @@
     justify-content: space-between;
 }
 
+.headerNav .headerLogo {
+    height: 100px;
+    width: 100px;
+}
+
 .headerNav ul {
     list-style: none;
     margin: 0;
@@ -88,7 +93,7 @@
 
 .headerNav ul li {
     display: inline-block;
-    padding: 8px 80px;
+    padding-right: 100px;
 }
 
 .headerNav ul li a {
@@ -119,6 +124,66 @@ p {
 }
 /************************************************************************************/
 
+.xchelBackgroundFonts {
+    color: white;
+    font-family: Playfair;
+    font-weight: normal;
+}
+
+#xchelMainBackground {
+    background-color: black;
+    background-image: url(../img/background/cevivhe.png);
+    width: 100%;
+    height: 600px;
+
+    background-size: 900px;
+
+    margin: 30px 0px 30px 0px;
+    
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+
+#xchelLogoAndTitles {
+    
+
+    width: 400px;
+    
+
+    margin-left: 850px;
+    padding-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#xchelLogoAndTitles img {
+    height: 200px;
+    width: 200px;
+}
+
+#xchelLogoAndTitles h1 {
+    font-size: 70px;
+}
+
+#xchelLogoAndTitles h2 {
+    font-size: 18px;
+}
+
+#xchelLogoAndTitles input {
+    color: white;
+    background-color: #AB1331;
+    width: 175px;
+    height: 40px;
+    border-style: none;
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
 
 /* Footer main used to distribute 3 diferent sections described below */
 .footerMain {
@@ -148,6 +213,7 @@ p {
 .brandLogoAbout p {
     color: #2D2D2D;
 }
+
 /* Social networks section of the footer */
 .socialNetworks {
     padding: 20px;
