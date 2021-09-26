@@ -10,37 +10,12 @@
     
     <title>Menu</title>
     <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
-
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-        th {
-            background-color: #04AA6D;
-            color: white;
-        }
-        td {
-            color: bisque;
-            background-color: teal;
-        }
-        ul {
-            list-style: square;
-            padding-left: 100px;
-        }
-        ol {
-            padding-left: 100px;
-        }
-        li {
-            color: white;
-            font-weight: bold;
-        }
-
-    </style>
 </head>
 
 <body>
     <!-- We use the same header & footer to all the non index pages, im confused 'cause with Angular we can create modular components & avoid this -->
     <header class="container">
+        <!-- div container which be used for the language & date -->
         <div class="headerDate">
             <ul>
                 <li><a href="#">Espa&ntilde;ol</a></li>
@@ -48,8 +23,9 @@
                 <li>Mon 13th Sep 2021 </li>
             </ul>
         </div>
+        <!-- div container for the navigation bar which includes the brand logo -->
         <div class="headerNav">
-            <a href="../index.html" class="headerLogo"><img src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo" width="100" height="100"></a>
+            <a href="../index.html"><img class="headerLogo" src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo"></a>
             <nav>
                 <ul>
                     <li><a href="../pages/about.html">About</a></li>

@@ -41,137 +41,137 @@
     <!-- The main section changed, now we incorporate the reservation button -->
     <main class="container">
         <!-- div container for the main section, contains the background image, brand logo & reservation button -->
-        <div id="xchelMainBackground">
+        <div class="xchel__main__background">
 
-            <div id="xchelLogoAndTitles">
-                <!-- <img src="" alt="xchelBackground"> -->
-                <img src="./img/logos/xchel/whiteUntitledLogo.svg" alt="xchelsLogo">
-                <h1 class="xchelBackgroundFonts">
+            <div class="xchel__logo__titles">
+                <img class="xchel__logo__titles--logo" src="./img/logos/xchel/whiteUntitledLogo.svg" alt="xchelsLogo">
+                <h1 class="xchel__main__background--fonts xchel__logo__titles--brand-name">
                     <strong>X C H E L</strong>
                 </h1>
                 <!-- The h2 tags will be modified with css, doesnt matter his look & feel for now -->
-                <h2 class="xchelBackgroundFonts">MEXICAN CUISINE</h2>
-                <input type="button" value="Book now" class="xchelLogoAndTitles">
+                <h2 class="xchel__main__background--fonts xchel__logo__titles--brand-slogan">
+                    MEXICAN CUISINE
+                </h2>
+                <input type="button" value="Book now" 
+                    class="xchel__main__background--fonts xchel__logo__titles--button">
             </div>
 
         </div>
     </main>
     <!-- Previously the "Concept Section", we change it for the most selled food dishses -->
     <section class="container">
-        <div>
+        <div class="sections">
             <!-- I'll keep the section's titles as an h2 tag, 'cause they're part of the main content "Xchel" for SEO purposes -->
-            <h2>Most popular food dishes</h2>
+            <h2 class="sections--title">Most popular food dishes</h2>
             <hr>
-            <div>
-                <img src="" alt="popularFoodDishImg1"><br>
-                <span>popularFoodDish1Text</span>
+            <div class="popular__dishes--image-container">
+                <img class="popular__dishes--image" src="./img/background/cevivhe.png" alt="popularFoodDishImg1">
+                <span class="popular__dishes--image-caption">popularFoodDish1Text</>
             </div>
-            <div>
-                <img src="" alt="popularFoodDishImg2"><br>
-                <span>popularFoodDish1Text</span>
+            <div class="popular__dishes--image-container">
+                <img class="popular__dishes--image" src="./img/background/cevivhe.png" alt="popularFoodDishImg1">
+                <span class="popular__dishes--image-caption">popularFoodDish2Text</>
             </div>
-            <div>
-                <img src="" alt="popularFoodDishImg3"><br>
-                <span>popularFoodDish1Text</span>
+            <div class="popular__dishes--image-container">
+                <img class="popular__dishes--image" src="./img/background/cevivhe.png" alt="popularFoodDishImg1">
+                <span class="popular__dishes--image-caption">popularFoodDish3Text</>
             </div>
         </div>
         <!-- This is just a quote -->
-        <div>
+        <div class="popular__dishes--quote">
             <span>
-                <strong>
-                    <q>Passion for the Mexican flavor</q>
-                </strong>
+                Passion for the Mexican Flavor
             </span>
         </div>
     </section>
-    <!-- Previously "Menu Section" updated to Last Recipes section -->
-    <section class="container">
-        <!-- In this section we put a numeric carrousel to show content -->
-        <div>
-            <h2>Latest recipes</h2>
-            <hr>
-            <!-- I think this works as an main container for my carrousel idea -->
-            <div>
-                <!-- container who have the first information slide -->
-                <div>
-                    <div>
-                        <img src="" alt="latestRecipeImg1">
+    <section class="container sections--inline">
+        
+        <!-- Previously "Menu Section" updated to Last Recipes section -->
+        <section class="latest_receipes--section">
+                    <!-- In this section we put a numeric carrousel to show content -->
+                    <div class="sections">
+                        <h2 class="sections--title">Latest recipes</h2>
+                        <hr>
+                        <!-- I think this works as an main container for my carrousel idea -->
+                        <div>
+                            <!-- container who have the first information slide -->
+                            <div>
+                                <div>
+                                    <img src="" alt="latestRecipeImg1">
+                                </div>
+                                <div>
+                                    <!-- This paragraph represent the entitlement of the food -->
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea autem vel, fuga optio
+                                        corporis provident, animi quod harum iusto repellat cumque voluptatibus, ad eum quas ipsa
+                                        ratione saepe voluptatem!</p>
+                                    <img id="knifeForkIcon" src="" alt="knifeForkIconImg">
+                                    <label for="knifeForkIcon">numberOfDiners</label>
+                                    <img id="clockIcon" src="" alt="clockImg">
+                                    <label for="clockIcon">preparationTime</label>
+                                    <img id="userIcon" src="" alt="userImg">
+                                    <label for="userIcon">author</label>
+                                </div>
+                            </div>
+                            <!-- container who have the second information slide -->
+                            <div>
+                                <div>
+                                    <img src="" alt="latestRecipeImg2">
+                                </div>
+                                <div>
+                                    <!-- This paragraph represent the entitlement of the food -->
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea autem vel, fuga optio
+                                        corporis provident, animi quod harum iusto repellat cumque voluptatibus, ad eum quas ipsa
+                                        ratione saepe voluptatem!</p>
+                                    <img id="knifeForkIcon" src="" alt="knifeForkIconImg">
+                                    <label for="knifeForkIcon">numberOfDiners</label>
+                                    <img id="clockIcon" src="" alt="clockImg">
+                                    <label for="clockIcon">preparationTime</label>
+                                    <img id="userIcon" src="" alt="userImg">
+                                    <label for="userIcon">author</label>
+                                </div>
+                            </div>
+                            <!-- container who have the third information slide -->
+                            <div>
+                                <div>
+                                    <img src="" alt="latestRecipeImg3">
+                                </div>
+                                <div>
+                                    <!-- This paragraph represent the entitlement of the food -->
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea autem vel, fuga optio
+                                        corporis provident, animi quod harum iusto repellat cumque voluptatibus, ad eum quas ipsa
+                                        ratione saepe voluptatem!</p>
+                                    <img id="knifeForkIcon" src="" alt="knifeForkIconImg">
+                                    <label for="knifeForkIcon">numberOfDiners</label>
+                                    <img id="clockIcon" src="" alt="clockImg">
+                                    <label for="clockIcon">preparationTime</label>
+                                    <img id="userIcon" src="" alt="userImg">
+                                    <label for="userIcon">author</label>
+                                </div>
+                            </div>
+                            <!-- An ordered list which be used as a control or paginator... i guess -->
+                            <ol>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
                     </div>
-                    <div>
-                        <!-- This paragraph represent the entitlement of the food -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea autem vel, fuga optio
-                            corporis provident, animi quod harum iusto repellat cumque voluptatibus, ad eum quas ipsa
-                            ratione saepe voluptatem!</p>
-                        <img id="knifeForkIcon" src="" alt="knifeForkIconImg">
-                        <label for="knifeForkIcon">numberOfDiners</label>
-                        <img id="clockIcon" src="" alt="clockImg">
-                        <label for="clockIcon">preparationTime</label>
-                        <img id="userIcon" src="" alt="userImg">
-                        <label for="userIcon">author</label>
-                    </div>
-                </div>
-                <!-- container who have the second information slide -->
-                <div>
-                    <div>
-                        <img src="" alt="latestRecipeImg2">
-                    </div>
-                    <div>
-                        <!-- This paragraph represent the entitlement of the food -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea autem vel, fuga optio
-                            corporis provident, animi quod harum iusto repellat cumque voluptatibus, ad eum quas ipsa
-                            ratione saepe voluptatem!</p>
-                        <img id="knifeForkIcon" src="" alt="knifeForkIconImg">
-                        <label for="knifeForkIcon">numberOfDiners</label>
-                        <img id="clockIcon" src="" alt="clockImg">
-                        <label for="clockIcon">preparationTime</label>
-                        <img id="userIcon" src="" alt="userImg">
-                        <label for="userIcon">author</label>
-                    </div>
-                </div>
-                <!-- container who have the third information slide -->
-                <div>
-                    <div>
-                        <img src="" alt="latestRecipeImg3">
-                    </div>
-                    <div>
-                        <!-- This paragraph represent the entitlement of the food -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea autem vel, fuga optio
-                            corporis provident, animi quod harum iusto repellat cumque voluptatibus, ad eum quas ipsa
-                            ratione saepe voluptatem!</p>
-                        <img id="knifeForkIcon" src="" alt="knifeForkIconImg">
-                        <label for="knifeForkIcon">numberOfDiners</label>
-                        <img id="clockIcon" src="" alt="clockImg">
-                        <label for="clockIcon">preparationTime</label>
-                        <img id="userIcon" src="" alt="userImg">
-                        <label for="userIcon">author</label>
-                    </div>
-                </div>
-                <!-- An ordered list which be used as a control or paginator... i guess -->
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
-            </div>
-        </div>
-    </section>
-    <!-- previously "Gallery Section" renamed to Our Chef section and delete the reservation section -->
-    <section class="container">
-        <div>
-            <h2>Our Chef</h2>
-            <hr>
-            <div>
-                <img src="" alt="chefsImage"><br>
-                <span>chefsName</span>
-            </div>
-            <div>
-                <!-- Short description of the chef followed by his/her personal website -->
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, cumque, omnis, nostrum animi molestias
-                    natus magni unde ut ullam et doloribus ducimus quos numquam fuga eos aspernatur eligendi accusantium
-                    quis.</p>
-                <a href="#">chefsWebsite</a>
-            </div>
-        </div>
+        </section>
+        <!-- previously "Gallery Section" renamed to Our Chef section and delete the reservation section -->
+        <section class="about__chef--section">
+                    <div class="sections">
+                        <h2 class="sections--title">Our Chef</h2>
+                        <hr>
+                        <div class="about__chef--container">
+                            <img class="about__chef--image" src="./img/chef/chef-martha.jpg" alt="chefsImage"><br>
+                            <h3 class="about__chef--name">Martha Ortiz</h3>
+                            <!-- Short description of the chef followed by his/her personal website -->
+                            <p class="about__chef--paragraph">Cook who likes to be Mexican</p>
+                            <a class="about__chef--url" href="www.marthaortiz.mx">www.marthaortiz.mx</a>
+                        </div>
+                    </aside>
+        </section>
+
     </section>
     <!-- Footer -->
     <footer>

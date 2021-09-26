@@ -1,38 +1,33 @@
-/* In my research i learned how to add external fonts */
-@font-face {
-    font-family: Playfair;
-    font-style: normal;
-    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');    
-}
-@font-face {
-    font-family: Playfair;
-    font-style: italic;
-    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf');
-}
-@font-face {
-    font-family: Playfair;
-    font-weight: bold;
-    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf');
-}
-@font-face {
-    font-family: Lora;
-    font-style: normal;
-    src: url('../fonts/Lora/static/Lora-Regular.ttf');
-}
-@font-face {
-    font-family: Lora;
-    font-style: italic;
-    src: url('../fonts/Lora/static/Lora-Italic.ttf');
-}
-@font-face {
-    font-family: Lora;
-    font-weight: bold;
-    src: url('../fonts/Lora/static/Lora-SemiBold.ttf');
-}
+/* Adding Google fonts using import */
+
+/* Cantata One */ 
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+
+/* Sorts Mill Goudy */
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+
+/* The above fonts are used specifically for the brand name and slogan. */
+
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* Playfair Display SC */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+/* Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 
 * {
     padding: 0;
     margin: 0;
+}
+
+/* Applying this style, we set the relative units to 10px 
+ * now we can take as a reference 1rem equals to 10px.
+ */
+html {
+    font-size: 62.5%;
 }
 
 /* 
@@ -41,15 +36,15 @@
  */
 .container {
     margin: 0 auto;
-    max-width: 2080px;
+    max-width: 208rem;
     width: 85%;
 }
 
 /* Date & language section of the header */
 .headerDate {
     color: #2D2D2D;
-    font-family: Playfair;
-    font-size: 14px;
+    font-family: Playfair Display, serif;
+    font-size: 1.4rem;
     font-weight: bold;
     text-align: right;
 }
@@ -62,7 +57,7 @@
 
 .headerDate ul li {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 0.8rem 1.6rem;
 }
 
 .headerDate ul li a {
@@ -75,14 +70,14 @@
 .headerNav {
     align-items: center;
     display: flex;
-    font-family: Playfair;
-    font-size: 16px;
+    font-family: Playfair Display, serif;
+    font-size: 1.6rem;
     justify-content: space-between;
 }
 
 .headerNav .headerLogo {
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
 }
 
 .headerNav ul {
@@ -93,7 +88,7 @@
 
 .headerNav ul li {
     display: inline-block;
-    padding-right: 100px;
+    padding-right: 10rem;
 }
 
 .headerNav ul li a {
@@ -116,74 +111,157 @@
 /* For this challenge i'll set up some temp colors on the titles, paragraphs & list */
 /*             Using classes and tags, as they said in the instructions             */
 /************************************************************************************/
-h2 {
+.h2 {
     color: blue;
 }
-p {
+.p {
     color: orange;
 }
 /************************************************************************************/
 
-.xchelBackgroundFonts {
-    color: white;
-    font-family: Playfair;
-    font-weight: normal;
-}
-
-#xchelMainBackground {
+.xchel__main__background {
     background-color: black;
     background-image: url(../img/background/cevivhe.png);
-    width: 100%;
-    height: 600px;
-
-    background-size: 900px;
-
-    margin: 30px 0px 30px 0px;
-    
     background-position: center left;
     background-repeat: no-repeat;
+    background-size: contain;
+    height: 60rem;
+    margin: 3rem 0 3rem 0;
+    padding-top: 0.1rem;
+    width: 100%;
 }
 
+.xchel__main__background--fonts {
+    color: white;
+}
 
-#xchelLogoAndTitles {
+.xchel__logo__titles {
+    align-items: center;
     
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 90rem;
+    padding: 2.5rem 2.5rem;
+    width: 40rem;
+}
 
-    width: 400px;
-    
+.xchel__logo__titles--logo {
+    height: 20rem;
+    width: 20rem;
+}
 
-    margin-left: 850px;
-    padding-top: 60px;
+.xchel__logo__titles--brand-name {
+    font-family: Cantata One, serif;
+    font-size: 7rem;
+    font-weight: lighter;
+}
 
+.xchel__logo__titles--brand-slogan {
+    font-family: Sorts Mill Goudy, serif;
+    font-size: 1.9rem;
+    font-weight: lighter;
+}
+
+.xchel__logo__titles--button {
+    background-color: #AB1331;
+    border-style: none;
+    height: 4rem;
+    margin: 7rem 0 0;
+    width: 17.5rem;
+}
+
+.xchel__logo__titles--button:active {
+    background-color: #e61740;
+}
+
+/* Style for the section's */
+.sections {
+    background-color: beige;
+    color: #2D2D2D;
+    font-family: Source Sans Pro, serif;    
+}
+
+.sections--title {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.sections--inline {
+    display: flex;
+}
+
+/* Most popular dishes section */
+.popular__dishes--image-container {
+    background-color: aqua;
+    display: inline-block;
+    margin: 5rem 2rem 5rem 2rem;
+}
+
+.popular__dishes--image {
+    border: 0.1rem solid #2D2D2D;
+    height: 30rem;
+    width: 50rem;
+}
+
+.popular__dishes--image-caption {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 2rem 0;
+    padding: 0 ;
+}
+
+.popular__dishes--quote {
+    background-color: bisque;
+    font-family: Playfair Display SC, serif;
+    font-size: 4rem;
+    margin: 10rem 0;
+    text-align: center;
+}
+
+/* Latest receipes section */
+.latest_receipes--section {
+    flex: 0 0 65%;
+}
+
+/* Chef's section */
+.about__chef--section {
+    flex: 1;
+    margin-left: 10rem;
+}
+
+.about__chef--container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#xchelLogoAndTitles img {
-    height: 200px;
-    width: 200px;
+.about__chef--image {
+    margin: 2.5rem 0;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 10rem;
 }
 
-#xchelLogoAndTitles h1 {
-    font-size: 70px;
+.about__chef--name {
+    margin: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2D2D2D;
 }
 
-#xchelLogoAndTitles h2 {
-    font-size: 18px;
+.about__chef--paragraph {
+    color: #2D2D2D;
+    font-size: 1.8rem;
+    font-weight: lighter;
 }
 
-#xchelLogoAndTitles input {
-    color: white;
-    background-color: #AB1331;
-    width: 175px;
-    height: 40px;
-    border-style: none;
-
-    margin-top: 100px;
-    margin-bottom: 20px;
+.about__chef--url {
+    color: #2D2D2D;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: lighter;
 }
-
-
 
 /* Footer main used to distribute 3 diferent sections described below */
 .footerMain {
