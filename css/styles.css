@@ -70,7 +70,7 @@ html {
 .headerNav {
     align-items: center;
     display: flex;
-    font-family: Playfair Display, serif;
+    font-family: Playfair Display SC, serif;
     font-size: 1.6rem;
     justify-content: space-between;
 }
@@ -91,11 +91,41 @@ html {
     padding-right: 10rem;
 }
 
+/* Hover used to display dropdown menu list */
+.headerNav ul li:hover ul{ 
+    display: flex; 
+}
+
 .headerNav ul li a {
     color: #2D2D2D;
     display: block;
     text-decoration: none;
 }
+
+/* Menu list */
+.headerNav--dropdown {
+    align-content: center;
+    border: 0.2rem solid #AB1331;
+    color: #2D2D2D;
+    display: none;
+    font-family: Playfair Display;
+    font-size: 1.4rem;
+    font-weight: bold;
+    flex-direction: column;
+    position: absolute;
+}
+
+.headerNav--dropdown li {
+    background-color: #FFFFFF;
+    width: 10rem;
+}
+
+.headerNav--dropdown li a {
+    padding: 1rem 1rem 1rem 2rem;
+    width: 15rem;
+}
+/* >>> Review why the list-style-image is not working <<< */
+
 /************************************************************************************/
 /************************************************************************************/
 /************************************************************************************/
@@ -104,19 +134,6 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 /************************************************************************************/
-/************************************************************************************/
-
-
-/************************************************************************************/
-/* For this challenge i'll set up some temp colors on the titles, paragraphs & list */
-/*             Using classes and tags, as they said in the instructions             */
-/************************************************************************************/
-.h2 {
-    color: blue;
-}
-.p {
-    color: orange;
-}
 /************************************************************************************/
 
 .xchel__main__background {
@@ -360,4 +377,80 @@ html {
 
 .footerCredits span {
     color: #FFFFFF;
+}
+
+/************************************************************************************/
+/************************************************************************************/
+/*                            ABOUT PAGE STYLE SECTION                             */
+/************************************************************************************/
+/************************************************************************************/
+.about__section {
+    background-image: url(../img/about-section/grecas.svg);
+    color: #2D2D2D;
+    font-family: Source Sans Pro;
+    margin-top: 3rem;
+    height: 170rem;    
+    padding-top: 0.1rem;
+}
+
+.about__section--text-container {
+    background-color: #FFFFFF;
+    height: 70rem;
+    margin: 10rem 0 0rem 21.4rem;
+    width: 100rem;
+}
+
+.about__section--logo {
+    height: 20rem;
+    margin: 10rem 40rem 5rem 40rem;
+    width: 20rem;
+}
+
+.about__section--title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about__section--text {
+    color: #2D2D2D;
+    font-size: 2rem;
+    height: 20rem;
+    margin: 0 5rem 0 5rem;
+    text-align: center;
+    width: 90rem;
+}
+
+.about__section--image {
+    border: 2rem solid #FFFFFF;
+    height: 50rem;
+    margin: 17rem 0 0 30rem;
+    width: 80rem;
+}
+
+/************************************************************************************/
+/************************************************************************************/
+/*                         RESERVATIONS PAGE STYLE SECTION                          */
+/************************************************************************************/
+/************************************************************************************/
+
+/************************************************************************************/
+/************************************************************************************/
+/*                          APPETIZERS PAGE STYLE SECTION                           */
+/************************************************************************************/
+/************************************************************************************/
+.appetizer {
+    /* background-image: url(../img/background/menus/appetizers-background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 300rem;
+    height: 100rem; */
+    background-image: url(../img/background/menus/appetizers-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    margin-top: 3rem;
+    height: 185rem;
+    width: auto;
 }
