@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Chef's bio</title>
     <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtyMwqeFPQIIA4oGyaTdV6MmBV4d9iM_c"
+        type="text/javascript"></script>
 </head>
 
 <body>
     <!-- We use the same header & footer to all the non index pages, im confused 'cause with Angular we can create modular components & avoid this -->
     <header class="container">
+        <!-- div container which be used for the language & date -->
         <div class="headerDate">
             <ul>
                 <li><a href="#">Espa&ntilde;ol</a></li>
@@ -22,13 +26,23 @@
                 <li>Mon 13th Sep 2021 </li>
             </ul>
         </div>
+        <!-- div container for the navigation bar which includes the brand logo -->
         <div class="headerNav">
-            <a href="../index.html" class="headerLogo"><img src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo" width="100" height="100"></a>
+            <a href="../index.html"><img class="headerLogo" src="../img/logos/xchel/blackTitledLogo.svg"
+                    alt="xchelsLogo"></a>
             <nav>
                 <ul>
                     <li><a href="../pages/about.html">About</a></li>
                     <li><a href="../pages/reservations.html">Reservations</a></li>
-                    <li><a href="../pages/menu.html">Menu</a></li>
+                    <li>
+                        <a href="#">Menu</a>
+                        <ul class="headerNav--dropdown">
+                            <li><a href="../pages/menus/appetizers.html">Starters & Appetizers</a></li>
+                            <li><a href="../pages/menus/main-course.html">Main Course</a></li>
+                            <li><a href="../pages/menus/desserts.html">Desserts</a></li>
+                            <li><a href="../pages/menus/beverages.html">Beverages</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../pages/locations.html">Locations</a></li>
                     <li><a href="../pages/chefs-bio.html">Chef's bio</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
@@ -37,28 +51,37 @@
         </div>
     </header>
     <main class="container">
-        <h2>Chef's bio</h2>
-        <!-- Information about the Chef of Xchel -->
+        <div class="chef-bio">
+            <div class="chef-bio--container">
+                <img class="chef-bio--container__chef-img" src="../img/chef/martha-ortiz.jpg" alt="">
+                <h2 class="chef-bio--container__title">About Martha Ortiz</h2>
+                <p class="chef-bio--container__text">
+                    Martha has a sensitive vision of life, from which she invents new universes. Researcher and
+                    connoisseur of social reality (a subject that she studied professionally), she has a deep love for
+                    our country and its culture. In her daily work, she has managed to combine both aspects, that of
+                    creation, imagination, the discovery of beautiful novelties, on the one hand, and that of flavors
+                    and customs inscribed in Mexican roots. Thus, she has to her credit several cookbooks, as well as an
+                    important participation in international festivals and congresses.<br><br>
+                    The trajectory of Martha Ortiz Chapa shines with its own light in an essential field of that past
+                    and always present history of the country, which is her gastronomy. But in her case it is not a
+                    conventional work or kitchen. She inhabits the world of Mexican cuisine to enjoy all the imaginable
+                    pleasures that it entails, and not only in the inexhaustible terrain of the senses but also in that
+                    of its development and its meaning.<br><br>
+                    The cook loves talking stories with her recipes and she loves visiting markets, as well as admiring
+                    the most important haute couture collections in the world. She walks through museums and enjoys
+                    reading, late at night, to keep in mind the pictorial in the kitchen and the flavors in the word,
+                    which is reflected in the titles of her dishes-stories, the great staging . In this way, she is both
+                    an expert in gastronomic art and an informed and imaginative interpreter of our flavors and
+                    traditions. Evidence of such richness is the premises of the Dulce Patria restaurant —lit with
+                    flavor, seasoning and aroma— that Martha Ortiz Chapa runs successfully in Mexico City and which was
+                    recently included in the list of Acqua Panna and St. Pellegrino “Latin America's 50 Best Restaurants
+                    2015 ″, as well as various awards and recognitions among which is the mention of Forbes Mexico, last
+                    February, as one of the 30 promises of businesses in our country.
+                </p>
+            </div>
+            <img class="chef-bio--container__logo" src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelLogo">
+        </div>
     </main>
-    <section class="container">
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque culpa iure nulla et? Veritatis, harum. Quaerat quo omnis praesentium saepe, dolorum, voluptatem repellendus aliquam aperiam accusantium sunt reiciendis, recusandae corporis?
-            Illum quibusdam inventore, ut quaerat recusandae nostrum iure quae deserunt dolorum ipsum accusamus? Facere odit cupiditate voluptate fuga et ex incidunt minima, alias libero! Minus obcaecati neque optio in repellat!
-            Debitis, quisquam! Ea nobis ratione totam quibusdam possimus sapiente ullam atque at pariatur modi dignissimos temporibus aspernatur impedit nihil voluptatem, nulla fugiat est quo fugit reprehenderit optio a qui unde.
-            Dolor eligendi doloremque quasi dolorem perferendis eaque, quia debitis dicta, placeat praesentium vel! Non nemo est odio quos labore voluptatibus corporis! Blanditiis cumque necessitatibus odit fugit dolore ab! Expedita, dolores.
-            Pariatur, nobis maxime. Ullam culpa sint reprehenderit repellendus at? Commodi quaerat eaque, atque pariatur, consectetur reiciendis excepturi, ad officiis labore temporibus ab. Cupiditate ad, non ab nisi accusamus sit. Quia.
-            Dolores officiis, adipisci nisi voluptas quas error culpa dolor natus. Deleniti, dolore amet nemo veniam quia eius atque excepturi dolor? Voluptates dignissimos enim ea adipisci, quae nisi corporis quasi natus!
-            Commodi quia deserunt in obcaecati, unde pariatur neque debitis, iste nesciunt saepe corporis laudantium eius. Id deleniti excepturi dicta. Nisi pariatur qui veritatis aliquam iure quisquam nulla quasi aperiam eligendi.
-            Placeat accusamus ducimus inventore deleniti aut rerum nam est cupiditate enim, ratione dolores tenetur cum modi voluptates recusandae harum amet neque optio architecto? Tenetur eveniet cum iusto eos nostrum itaque!
-            Ea facilis consequatur eos corrupti. Libero ducimus tempora inventore eos vero quaerat at sunt iste hic! Distinctio, in numquam! Illum quod architecto asperiores non dignissimos voluptas fuga quasi, corporis voluptatem.
-            Beatae neque molestiae aliquid enim, ad repellendus consequuntur eos nobis similique corrupti, minus laboriosam perferendis. Corrupti reprehenderit, harum quaerat, voluptatum perferendis impedit eligendi beatae ipsum explicabo error odio aperiam quibusdam!
-            Excepturi voluptate quia velit ab fuga praesentium, magnam, soluta aliquam dicta enim cum repudiandae quae veritatis dolores vel voluptatem molestiae iure? Dicta illum voluptates qui, eaque facere similique harum quia!
-            Sunt nostrum officiis vel unde libero debitis laborum quisquam a, iste iusto quis aspernatur necessitatibus similique perferendis provident dolorum quas reprehenderit eligendi, architecto, asperiores sapiente omnis? Cupiditate repellat fugit consequatur?
-            Consectetur magni repellendus ea ipsum placeat rerum animi error voluptatem? Nihil ipsam consequatur accusamus, asperiores laborum possimus facere, rem quo, quis illum cum vero distinctio! Molestiae voluptate dolore mollitia cupiditate?
-            Itaque dignissimos omnis esse possimus alias consequatur quae id, qui repellendus saepe repellat placeat vero unde expedita suscipit pariatur maxime iure excepturi voluptatem dolores? Sit ut id totam distinctio sapiente.
-            Enim dolores quisquam non qui recusandae corrupti consequatur est ducimus quo libero animi dolor quia deleniti mollitia, accusamus repellat? Excepturi et non, amet ipsam unde iste! Nulla culpa architecto eius!
-        </p>
-    </section>
     <!-- Footer -->
     <footer>
         <!-- The main container -->
@@ -83,7 +106,7 @@
                 </div>
                 <!-- Newsletter section -->
                 <div class="newsletter">
-                    <p>Receive news about events in our different locations and unique recipes from our chef.</p>
+                    <p>Receive news about events in our different chef-bio and unique recipes from our chef.</p>
                     <input type="email" name="userEmail" id="userEmailId" placeholder="yourMail@domain.com">
                     <input type="button" value="Subscribe">
                 </div>

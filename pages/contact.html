@@ -15,6 +15,7 @@
 <body>
     <!-- We use the same header & footer to all the non index pages, im confused 'cause with Angular we can create modular components & avoid this -->
     <header class="container">
+        <!-- div container which be used for the language & date -->
         <div class="headerDate">
             <ul>
                 <li><a href="#">Espa&ntilde;ol</a></li>
@@ -22,13 +23,23 @@
                 <li>Mon 13th Sep 2021 </li>
             </ul>
         </div>
+        <!-- div container for the navigation bar which includes the brand logo -->
         <div class="headerNav">
-            <a href="../index.html" class="headerLogo"><img src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo" width="100" height="100"></a>
+            <a href="../index.html"><img class="headerLogo" src="../img/logos/xchel/blackTitledLogo.svg"
+                    alt="xchelsLogo"></a>
             <nav>
                 <ul>
                     <li><a href="../pages/about.html">About</a></li>
                     <li><a href="../pages/reservations.html">Reservations</a></li>
-                    <li><a href="../pages/menu.html">Menu</a></li>
+                    <li>
+                        <a href="#">Menu</a>
+                        <ul class="headerNav--dropdown">
+                            <li><a href="../pages/menus/appetizers.html">Starters & Appetizers</a></li>
+                            <li><a href="../pages/menus/main-course.html">Main Course</a></li>
+                            <li><a href="../pages/menus/desserts.html">Desserts</a></li>
+                            <li><a href="../pages/menus/beverages.html">Beverages</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../pages/locations.html">Locations</a></li>
                     <li><a href="../pages/chefs-bio.html">Chef's bio</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
@@ -37,57 +48,38 @@
         </div>
     </header>
     <main class="container">
-        <div>
+        <div class="contact">
             <!-- This is just an example, isn't the final design -->
-            <h2>Contact</h2>
-            <p>If you have any comments or questions, write us</p>
-            <!-- I've put the POST method to trace the data through the network console -->
-            <form action="submit" method="POST">
+            <div class="contact--title">
+                <h2>Contact Us</h2>
+                <p>If you have any comments or questions</p>
+            </div>
+            <div class="contact--form">
+                <!-- I've put the POST method to trace the data through the network console -->
+                <form action="submit" method="POST">
                 <!-- Fieldset is a element group -->
                 <fieldset>
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="xchelLocation">Select a location:</label>
-                                <select name="xchelLocation" id="optXchelLocation">
-                                    <option value="">-</option>
-                                    <option value="xCoapa">Coapa</option>
-                                    <option value="xArenal">Arenal</option>
-                                    <option value="xPerisur">Per&iacute;sur</option>
-                                    <option value="xCoyoacan">Coyoac&aacute;n</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="text" name="usrName" id="txtUsrName" placeholder="Name" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="email" name="usrMail" id="txtUsrMail" placeholder="yourMail@domain.com" required>
-                                <input type="tel" name="usrPhone" id="txtUsrPhone" placeholder="+(52)722-136-4758" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <textarea name="usrMsg" id="txaUsrMsg" cols="50" rows="10" placeholder="Write your comments or cuestions" required></textarea><br>
-                                <input type="checkbox" name="usrCopy" id="cboxUsrCopy"> Receive an email copy
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="submit" value="Send">
-                                <input type="reset" value="Reset">
-                            </td>
-                        </tr>
-                    </table>
+                    <label class="contact--form__lbl-location" for="optXchelLocation">Select a location:</label>
+                    <select class="contact--form__select" name="xchelLocation" id="optXchelLocation">
+                        <option value="" disabled>-</option>
+                        <option value="xCoapa">Coapa</option>
+                        <option value="xArenal">Arenal</option>
+                        <option value="xPerisur">Per&iacute;sur</option>
+                        <option value="xCoyoacan">Coyoac&aacute;n</option>
+                    </select>                
+                    <input class="contact--form__name" type="text" name="usrName" id="txtUsrName" placeholder="Your Name" required>
+                    <input class="contact--form__mail" type="email" name="usrMail" id="txtUsrMail" placeholder="yourMail@domain.com" required>
+                    <input class="contact--form__phone" type="tel" name="usrPhone" id="txtUsrPhone" placeholder="+(52)722-136-4758" required>
+                    <textarea class="contact--form__txt-comment" name="usrMsg" id="txaUsrMsg" cols="50" rows="10" placeholder="Write your comments or cuestions"
+                        required></textarea><br>
+                    <input class="contact--form__check" type="checkbox" name="usrCopy" id="cboxUsrCopy"><span class="contact--form__check-label">Receive an email copy</span>
+                    <div>
+                        <input class="contact--form__send" type="submit" value="Send">
+                        <input class="contact--form__reset" type="reset" value="Reset">
+                    </div>
                 </fieldset>
-            </form>
+                </form>
+            </div>
         </div>
     </main>
     <!-- Footer -->

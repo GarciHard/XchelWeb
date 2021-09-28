@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+    <title>Main Course</title>
+    <link rel="icon" href="../../img/icon/blackUntitledLogoIcon.png" type="image/png">
+</head>
+
+<body>
+    <!-- We use the same header & footer to all the non index pages, im confused 'cause with Angular we can create modular components & avoid this -->
+    <header class="container">
+        <!-- div container which be used for the language & date -->
+        <div class="headerDate">
+            <ul>
+                <li><a href="#">Espa&ntilde;ol</a></li>
+                <li>|</li>
+                <li>Mon 13th Sep 2021 </li>
+            </ul>
+        </div>
+        <!-- div container for the navigation bar which includes the brand logo -->
+        <div class="headerNav">
+            <a href="../../index.html"><img class="headerLogo" src="../../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../../pages/about.html">About</a></li>
+                    <li><a href="../../pages/reservations.html">Reservations</a></li>
+                    <li>
+                        <a href="#">Menu</a>
+                        <ul class="headerNav--dropdown">
+                            <li><a href="../../pages/menus/appetizers.html">Starters & Appetizers</a></li>
+                            <li><a href="../../pages/menus/main-course.html">Main Course</a></li>
+                            <li><a href="../../pages/menus/desserts.html">Desserts</a></li>
+                            <li><a href="../../pages/menus/beverages.html">Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../pages/locations.html">Locations</a></li>
+                    <li><a href="../../pages/chefs-bio.html">Chef's bio</a></li>
+                    <li><a href="../../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="main-course">
+            <h2 class="main-course--title">Main Course</h2>
+            <img class="main-course--logo" src="../../img/logos/xchel/whiteTitledLogo.png" alt="xchelLogo">
+            <table class="main-course--table">
+                <tbody>
+                    <tr>
+                        <td class="main-course--table__dish">
+                            <dl>
+                                <dt>Grilled fajitas</dt>
+                                <dd>Grilled chicken breast with mesquite wood, marinated in citrus juice and chili
+                                    peppers.</dd>
+                            </dl>
+                        </td>
+                        <td class="main-course--table__price">$13.65 USD</td>
+                    </tr>
+                    <tr>
+                        <td class="main-course--table__dish">
+                            <dl>
+                                <dt>Grilled steak with mesquite</dt>
+                                <dd>Flour tortillas with golden steak with mesquite firewood and cheddar cheese melted.</dd>
+                            </dl>
+                        </td>
+                        <td class="main-course--table__price">$13.12 USD</td>
+                    </tr>
+                    <tr>
+                        <td class="main-course--table__dish">
+                            <dl>
+                                <dt>Shrimp enchiladas</dt>
+                                <dd>Shrimp and blue crab sautéed in white wine and garlic, in corn tortillas, with
+                                    vegetables, cheese and habanero pesto cream sauce.</dd>
+                            </dl>
+                        </td>
+                        <td class="main-course--table__price">$15.57 USD</td>
+                    </tr>
+                    <tr>
+                        <td class="main-course--table__dish">
+                            <dl>
+                                <dt>Fish tacos</dt>
+                                <dd>Soft handmade flour tortillas, with grilled fish, chipotle aioli, crispy lettuce.</dd>
+                            </dl>
+                        </td>
+                        <td class="main-course--table__price">$11.68 USD</td>
+                    </tr>
+                    <tr>
+                        <td class="main-course--table__dish">
+                            <dl>
+                                <dt>Fajitas burrito</dt>
+                                <dd>Freshly grilled chicken, rice, charro beans, cheese and salsa, in a hot flour
+                                    tortilla.</dd>
+                            </dl>
+                        </td>
+                        <td class="main-course--table__price">$11.18 USD</td>
+                    </tr>
+                    <tr>
+                        <td class="main-course--table__dish">
+                            <dl>
+                                <dt>Grilled tacos</dt>
+                                <dd>Soft flour tortillas, with grilled chicken, fresh lettuce, pico de gallo, chipotle
+                                    garlic.</dd>
+                            </dl>
+                        </td>
+                        <td class="main-course--table__price">$11.68 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- The main container -->
+        <div class="container">
+            <!-- First section of the footer -->
+            <div class="footerMain">
+                <!-- Brand logo & short about -->
+                <div class="brandLogoAbout">
+                    <img src="../../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo">
+                    <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
+                        the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
+                        spirit of her beloved country.</p>
+                </div>
+                <!-- Social network section -->
+                <div class="socialNetworks">
+                    <div class="socialNetworkIcons">
+                        <a href="#"><img src="../../img/logos/social-networks/facebook.svg" alt="facebookLogo"></a>
+                        <a href="#"><img src="../../img/logos/social-networks/twitter.svg" alt="tweeterLogo"></a>
+                        <a href="#"><img src="../../img/logos/social-networks/instagram.svg" alt="instagramLogo"></a>
+                    </div>
+                    <span>@XchelMexicanCuisine</span>
+                </div>
+                <!-- Newsletter section -->
+                <div class="newsletter">
+                    <p>Receive news about events in our different locations and unique recipes from our chef.</p>
+                    <input type="email" name="userEmail" id="userEmailId" placeholder="yourMail@domain.com">
+                    <input type="button" value="Subscribe">
+                </div>
+            </div>
+        </div>
+        <!-- Second section of the footer which contains the copyright xD -->
+        <div class="footerCredits">
+            <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
+            <span>Made with &#10084; by GarciHard & Freckles</span>
+        </div>
+    </footer>
+</body>
+</html>

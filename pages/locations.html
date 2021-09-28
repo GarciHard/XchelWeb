@@ -10,11 +10,14 @@
     
     <title>Locations</title>
     <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtyMwqeFPQIIA4oGyaTdV6MmBV4d9iM_c" type="text/javascript"></script>
 </head>
 
 <body>
     <!-- We use the same header & footer to all the non index pages, im confused 'cause with Angular we can create modular components & avoid this -->
     <header class="container">
+        <!-- div container which be used for the language & date -->
         <div class="headerDate">
             <ul>
                 <li><a href="#">Espa&ntilde;ol</a></li>
@@ -22,13 +25,23 @@
                 <li>Mon 13th Sep 2021 </li>
             </ul>
         </div>
+        <!-- div container for the navigation bar which includes the brand logo -->
         <div class="headerNav">
-            <a href="../index.html" class="headerLogo"><img src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo" width="100" height="100"></a>
+            <a href="../index.html"><img class="headerLogo" src="../img/logos/xchel/blackTitledLogo.svg"
+                    alt="xchelsLogo"></a>
             <nav>
                 <ul>
                     <li><a href="../pages/about.html">About</a></li>
                     <li><a href="../pages/reservations.html">Reservations</a></li>
-                    <li><a href="../pages/menu.html">Menu</a></li>
+                    <li>
+                        <a href="#">Menu</a>
+                        <ul class="headerNav--dropdown">
+                            <li><a href="../pages/menus/appetizers.html">Starters & Appetizers</a></li>
+                            <li><a href="../pages/menus/main-course.html">Main Course</a></li>
+                            <li><a href="../pages/menus/desserts.html">Desserts</a></li>
+                            <li><a href="../pages/menus/beverages.html">Beverages</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../pages/locations.html">Locations</a></li>
                     <li><a href="../pages/chefs-bio.html">Chef's bio</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
@@ -37,28 +50,58 @@
         </div>
     </header>
     <main class="container">
-        <h2>Locations</h2>
-        <!-- Information about the Xchel's locations -->
+        <div class="locations">
+            <div class="locations--title">
+                <h2>Locations</h2>
+            </div>
+            <div class="locations--stuff">
+                <img class="locations--stuff__xchel-restaurant-right" src="../img/locations-section/restaurant-three.png" alt="xchelRestaurantImg">
+                <table class="locations--stuff__table">
+                    <tbody>
+                        <tr>
+                            <td class="locations--stuff__table-name">
+                                <img class="locations--stuff__icon" src="../img/icon/blackUntitledLogoIcon.png" alt="xchelIcon">
+                                Coapa
+                            </td>
+                            <td class="locations--stuff__table-address">
+                                Calz. del Hueso 519, Coapa, Residencial Miramontes, Tlalpan, 14300 Ciudad de M&eacute;xico, CDMX.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="locations--stuff__table-name">
+                                <img class="locations--stuff__icon" src="../img/icon/blackUntitledLogoIcon.png" alt="xchelIcon">
+                                Arenal
+                            </td>
+                            <td class="locations--stuff__table-address">
+                                Arenal 651, Santa Mar&iacute;a Tepepan, Xochimilco, 16020 Ciudad de M&eacute;xico, CDMX.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="locations--stuff__table-name">
+                                <img class="locations--stuff__icon" src="../img/icon/blackUntitledLogoIcon.png" alt="xchelIcon">
+                                Perisur
+                            </td>
+                            <td class="locations--stuff__table-address">
+                                Anillo Perif. 4690, Insurgentes Cuicuilco, Coyoac&aacute;n, 04500 Ciudad de M&eacute;xico, CDMX.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="locations--stuff__table-name">
+                                <img class="locations--stuff__icon" src="../img/icon/blackUntitledLogoIcon.png" alt="xchelIcon">
+                                Coyoac&aacute;n
+                            </td>
+                            <td class="locations--stuff__table-address">
+                                Aguayo 12, Coyoac&aacute;n, 04000 Ciudad de M&eacute;xico, CDMX.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="locations--stuff__find-us-title">¡Find our locations closest to you!</h3>
+                <img class="locations--stuff__google-maps" src="../img/locations-section/tmp-map.png" alt="googleMaps">
+                <img class="locations--stuff__xchel-restaurant-left" src="../img/locations-section/restaurant-two.png" alt="xchelRestaurant">
+            </div>
+        </div>
     </main>
-    <section class="container">
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque culpa iure nulla et? Veritatis, harum. Quaerat quo omnis praesentium saepe, dolorum, voluptatem repellendus aliquam aperiam accusantium sunt reiciendis, recusandae corporis?
-            Illum quibusdam inventore, ut quaerat recusandae nostrum iure quae deserunt dolorum ipsum accusamus? Facere odit cupiditate voluptate fuga et ex incidunt minima, alias libero! Minus obcaecati neque optio in repellat!
-            Debitis, quisquam! Ea nobis ratione totam quibusdam possimus sapiente ullam atque at pariatur modi dignissimos temporibus aspernatur impedit nihil voluptatem, nulla fugiat est quo fugit reprehenderit optio a qui unde.
-            Dolor eligendi doloremque quasi dolorem perferendis eaque, quia debitis dicta, placeat praesentium vel! Non nemo est odio quos labore voluptatibus corporis! Blanditiis cumque necessitatibus odit fugit dolore ab! Expedita, dolores.
-            Pariatur, nobis maxime. Ullam culpa sint reprehenderit repellendus at? Commodi quaerat eaque, atque pariatur, consectetur reiciendis excepturi, ad officiis labore temporibus ab. Cupiditate ad, non ab nisi accusamus sit. Quia.
-            Dolores officiis, adipisci nisi voluptas quas error culpa dolor natus. Deleniti, dolore amet nemo veniam quia eius atque excepturi dolor? Voluptates dignissimos enim ea adipisci, quae nisi corporis quasi natus!
-            Commodi quia deserunt in obcaecati, unde pariatur neque debitis, iste nesciunt saepe corporis laudantium eius. Id deleniti excepturi dicta. Nisi pariatur qui veritatis aliquam iure quisquam nulla quasi aperiam eligendi.
-            Placeat accusamus ducimus inventore deleniti aut rerum nam est cupiditate enim, ratione dolores tenetur cum modi voluptates recusandae harum amet neque optio architecto? Tenetur eveniet cum iusto eos nostrum itaque!
-            Ea facilis consequatur eos corrupti. Libero ducimus tempora inventore eos vero quaerat at sunt iste hic! Distinctio, in numquam! Illum quod architecto asperiores non dignissimos voluptas fuga quasi, corporis voluptatem.
-            Beatae neque molestiae aliquid enim, ad repellendus consequuntur eos nobis similique corrupti, minus laboriosam perferendis. Corrupti reprehenderit, harum quaerat, voluptatum perferendis impedit eligendi beatae ipsum explicabo error odio aperiam quibusdam!
-            Excepturi voluptate quia velit ab fuga praesentium, magnam, soluta aliquam dicta enim cum repudiandae quae veritatis dolores vel voluptatem molestiae iure? Dicta illum voluptates qui, eaque facere similique harum quia!
-            Sunt nostrum officiis vel unde libero debitis laborum quisquam a, iste iusto quis aspernatur necessitatibus similique perferendis provident dolorum quas reprehenderit eligendi, architecto, asperiores sapiente omnis? Cupiditate repellat fugit consequatur?
-            Consectetur magni repellendus ea ipsum placeat rerum animi error voluptatem? Nihil ipsam consequatur accusamus, asperiores laborum possimus facere, rem quo, quis illum cum vero distinctio! Molestiae voluptate dolore mollitia cupiditate?
-            Itaque dignissimos omnis esse possimus alias consequatur quae id, qui repellendus saepe repellat placeat vero unde expedita suscipit pariatur maxime iure excepturi voluptatem dolores? Sit ut id totam distinctio sapiente.
-            Enim dolores quisquam non qui recusandae corrupti consequatur est ducimus quo libero animi dolor quia deleniti mollitia, accusamus repellat? Excepturi et non, amet ipsam unde iste! Nulla culpa architecto eius!
-        </p>
-    </section>
     <!-- Footer -->
     <footer>
         <!-- The main container -->
