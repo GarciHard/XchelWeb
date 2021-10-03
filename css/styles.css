@@ -1,33 +1,32 @@
 /* Adding Google fonts using import */
 
-/* Cantata One */ 
-@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+/* Cantata One */
+@import url("https://fonts.googleapis.com/css2?family=Cantata+One&display=swap");
 
 /* Sorts Mill Goudy */
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap");
 
 /* The above fonts are used specifically for the brand name and slogan. */
 
 /* Playfair Display */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap");
 
 /* Playfair Display SC */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap");
 
 /* Source Sans Pro */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* Applying this style, we set the relative units to 10px 
  * now we can take as a reference 1rem equals to 10px.
  */
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* 
@@ -35,94 +34,94 @@ html {
  * in the next MVPs this will be taking more sense 
  */
 .container {
-    margin: 0 auto;
-    max-width: 208rem;
-    width: 85%;
+  margin: 0 auto;
+  max-width: 208rem;
+  width: 85%;
 }
 
 /* Date & language section of the header */
 .headerDate {
-    color: #2D2D2D;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: right;
+  color: #2d2d2d;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: right;
 }
 
 .headerDate ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .headerDate ul li {
-    display: inline-block;
-    padding: 0.8rem 1.6rem;
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
 }
 
 .headerDate ul li a {
-    color: #2D2D2D;
-    display: block;
-    text-decoration: none;
+  color: #2d2d2d;
+  display: block;
+  text-decoration: none;
 }
 
 /* Brand logo & navigation section of the header */
 .headerNav {
-    align-items: center;
-    display: flex;
-    font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
-    justify-content: space-between;
+  align-items: center;
+  display: flex;
+  font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  justify-content: space-between;
 }
 
 .headerNav .headerLogo {
-    height: 10rem;
-    width: 10rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 .headerNav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .headerNav ul li {
-    display: inline-block;
-    padding-right: 10rem;
+  display: inline-block;
+  padding-right: 10rem;
 }
 
 /* Hover used to display dropdown menu list */
-.headerNav ul li:hover ul{ 
-    display: flex; 
+.headerNav ul li:hover ul {
+  display: flex;
 }
 
 .headerNav ul li a {
-    color: #2D2D2D;
-    display: block;
-    text-decoration: none;
+  color: #2d2d2d;
+  display: block;
+  text-decoration: none;
 }
 
 /* Menu list */
 .headerNav--dropdown {
-    align-content: center;
-    border: 0.2rem solid #AB1331;
-    color: #2D2D2D;
-    display: none;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    flex-direction: column;
-    position: absolute;
+  align-content: center;
+  border: 0.2rem solid #ab1331;
+  color: #2d2d2d;
+  display: none;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  flex-direction: column;
+  position: absolute;
 }
 
 .headerNav--dropdown li {
-    background-color: #FFFFFF;
-    width: 10rem;
+  background-color: #ffffff;
+  width: 10rem;
 }
 
 .headerNav--dropdown li a {
-    padding: 1rem 1rem 1rem 2rem;
-    width: 15rem;
+  padding: 1rem 1rem 1rem 2rem;
+  width: 15rem;
 }
 /* >>> Review why the list-style-image is not working <<< */
 
@@ -137,308 +136,325 @@ html {
 /************************************************************************************/
 
 .xchel__main__background {
-    background-color: black;
-    background-image: url(../img/background/cevivhe.png);
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 60rem;
-    margin: 3rem 0 3rem 0;
-    padding-top: 0.1rem;
-    width: 100%;
+  background-color: black;
+  background-image: url(../img/background/cevivhe.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60rem;
+  margin: 3rem 0 3rem 0;
+  padding-top: 0.1rem;
+  width: 100%;
 }
 
 .xchel__main__background--fonts {
-    color: white;
+  color: white;
 }
 
 .xchel__logo__titles {
-    align-items: center;
-    
-    display: flex;
-    flex-direction: column;
-    margin: 3rem 0 0 90rem;
-    padding: 2.5rem 2.5rem;
-    width: 40rem;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 90rem;
+  padding: 2.5rem 2.5rem;
+  width: 40rem;
 }
 
 .xchel__logo__titles--logo {
-    height: 20rem;
-    width: 20rem;
+  height: 20rem;
+  width: 20rem;
 }
 
 .xchel__logo__titles--brand-name {
-    font-family: Cantata One, Arial, Helvetica, sans-serif;
-    font-size: 7rem;
-    font-weight: lighter;
+  font-family: Cantata One, Arial, Helvetica, sans-serif;
+  font-size: 7rem;
+  font-weight: lighter;
 }
 
 .xchel__logo__titles--brand-slogan {
-    font-family: Sorts Mill Goudy, Arial, Helvetica, sans-serif;
-    font-size: 1.9rem;
-    font-weight: lighter;
+  font-family: Sorts Mill Goudy, Arial, Helvetica, sans-serif;
+  font-size: 1.9rem;
+  font-weight: lighter;
 }
 
 .xchel__logo__titles--button {
-    background-color: #AB1331;
-    border-style: none;
-    height: 4rem;
-    margin: 7rem 0 0;
-    width: 17.5rem;
+  background-color: #ab1331;
+  border-style: none;
+  height: 4rem;
+  margin: 7rem 0 0;
+  width: 17.5rem;
 }
 
 .xchel__logo__titles--button:active {
-    background-color: #e61740;
+  background-color: #e61740;
 }
 
 /* Style for the section's */
 .sections {
-    color: #2D2D2D;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  color: #2d2d2d;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
 .sections--title {
-    font-size: 3rem;
-    margin: 1rem 0;
+  font-size: 3rem;
+  margin: 1rem 0;
+  word-wrap: break-word;
 }
 
 .sections--inline {
-    display: flex;
+  display: flex;
 }
 
-/* Most popular dishes section */
-.popular__dishes--image-container {
-    display: inline-block;
-    padding: 5rem;
+/************************************************************************************/
+/************************************************************************************/
+/*                           POPULAR DISHES STYLE SECTION                           */
+/************************************************************************************/
+/************************************************************************************/
+.dishes--container {
+  padding: 2rem;
 }
 
-.popular__dishes--image {
-    border: 0.1rem solid #2D2D2D;
-    height: 30rem;
-    width: 37.2rem;
+.dishes--main-flex {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  padding: 0.1rem;
 }
 
-.popular__dishes--image-caption {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin: 2rem 0;
-    padding: 0 ;
+.dishes--flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-.popular__dishes--quote {
-    font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
-    font-size: 4rem;
-    margin: 10rem 0;
-    text-align: center;
+.dishes--flex-content {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.dishes--image {
+  border: 0.1rem solid #2d2d2d;
+  height: 30rem;
+  width: 37.2rem;
+}
+
+.dishes--image__caption {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 2rem 0;
+}
+
+.dishes--quote {
+  font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  margin: 10rem 0;
+  text-align: center;
 }
 
 /* Latest receipes section */
 .latest_receipes--section {
-    flex: 0 0 65%;
+  flex: 0 0 65%;
 }
 
 .latest-receipes__carrousel-container {
-    display: flex;
+  display: flex;
 }
 
 .latest-receipes__carrousel-container #imageContainer {
-    display: inline-block;
-    height: 50rem;
-    padding: 2rem 2rem;
-    width: 70rem;
+  display: inline-block;
+  height: 50rem;
+  padding: 2rem 2rem;
+  width: 70rem;
 }
 
 .latest-receipes__carrousel-container #imageContainer img {
-    height: 100%;
-    width: 100%;
-
+  height: 100%;
+  width: 100%;
 }
 
 .latest-receipes__carrousel-container #descriptionContainer {
-    background-color: #2d2d2d88;
-    color: #FFFFFF;
-    display: inline-block;
-    flex: 40rem;
-    font-weight: bold;
-    height: 50rem;
-    margin: 2rem 2rem;
+  background-color: #2d2d2d88;
+  color: #ffffff;
+  display: inline-block;
+  flex: 40rem;
+  font-weight: bold;
+  height: 50rem;
+  margin: 2rem 2rem;
 }
 
 .latest-receipes__carrousel-container #descriptionContainer p {
-    font-size: 2rem;
-    padding: 2rem 2rem;
+  font-size: 2rem;
+  padding: 2rem 2rem;
 }
 
 .latest-receipes__carrousel-container #descriptionContainer img {
-    height: 4rem;
-    padding: 2rem 2rem;
-    width: 4rem;
+  height: 4rem;
+  padding: 2rem 2rem;
+  width: 4rem;
 }
 
 .latest-receipes__carrousel-container #descriptionContainer {
-    font-size: 1rem;
-    
+  font-size: 1rem;
 }
 
 .paginator {
-    list-style: none;
+  list-style: none;
 }
 
 .paginator li {
-    display: inline-block;
-    font-size: 2rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .paginator li a {
-    color: #2D2D2D;
-    display: block;
-    text-decoration: none;
+  color: #2d2d2d;
+  display: block;
+  text-decoration: none;
 }
-
 
 /* Chef's section */
 .about__chef--section {
-    flex: 1;
-    margin-left: 10rem;
+  flex: 1;
+  margin-left: 10rem;
 }
 
 .about__chef--container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__chef--image {
-    margin: 2.5rem 0;
-    width: 35rem;
-    height: 20rem;
-    border-radius: 10rem;
+  margin: 2.5rem 0;
+  width: 35rem;
+  height: 20rem;
+  border-radius: 10rem;
 }
 
 .about__chef--name {
-    margin: 5rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2D2D2D;
+  margin: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d2d2d;
 }
 
 .about__chef--paragraph {
-    color: #2D2D2D;
-    font-size: 1.8rem;
-    font-weight: lighter;
+  color: #2d2d2d;
+  font-size: 1.8rem;
+  font-weight: lighter;
 }
 
 .about__chef--url {
-    color: #2D2D2D;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: lighter;
+  color: #2d2d2d;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: lighter;
 }
 
 /* Footer main used to distribute 3 diferent sections described below */
 .footerMain {
-    color: #2D2D2D;
-    display: flex;
-    font-family: Lora, Arial, Helvetica, sans-serif;
+  color: #2d2d2d;
+  display: flex;
+  font-family: Lora, Arial, Helvetica, sans-serif;
 }
 
-.footerMain div{
-    height: 20rem;
-    width: 85%;
+.footerMain div {
+  height: 20rem;
+  width: 85%;
 }
 
 /* Brand logo & short about section of the footer*/
 .brandLogoAbout {
-    align-items: center;
-    display: flex;
-    font-size: 1.5rem;
-    padding: 2rem;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 2rem;
 }
 
 .brandLogoAbout img {
-    height: 10rem;
-    width: 10rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 .brandLogoAbout p {
-    color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 /* Social networks section of the footer */
 .socialNetworks {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .socialNetworks span {
-    padding-left: 5rem;
+  padding-left: 5rem;
 }
 
 .socialNetworkIcons {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
 }
 
 .socialNetworkIcons img {
-    height: 3.6rem;
-    width: 3.6rem;
+  height: 3.6rem;
+  width: 3.6rem;
 }
 
 /* Newsletter section of the footer */
 .newsletter {
-    align-items: center;
-    font-size: 1.5rem;
-    justify-content: center;
-    padding-top: 7rem;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding-top: 7rem;
 }
 
 .newsletter p {
-    color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 .newsletter input[type="email"] {
-    background-color: #DEDADA;
-    border-radius: 3.5rem;
-    border-style: none;
-    height: 4.5rem;
-    outline: none;
-    text-align: center;
-    width: 30rem;
+  background-color: #dedada;
+  border-radius: 3.5rem;
+  border-style: none;
+  height: 4.5rem;
+  outline: none;
+  text-align: center;
+  width: 30rem;
 }
 
 .newsletter input[type="button"]:active {
-    background-color: #e61740;
+  background-color: #e61740;
 }
 
 .newsletter input[type="button"] {
-    background-color: #AB1331;
-    border-radius: 3.5rem;
-    border-style: none;
-    color: #FFFFFF;
-    height: 4.5rem;
-    text-align: center;
-    margin-left: -5rem;
-    width: 15rem;
+  background-color: #ab1331;
+  border-radius: 3.5rem;
+  border-style: none;
+  color: #ffffff;
+  height: 4.5rem;
+  text-align: center;
+  margin-left: -5rem;
+  width: 15rem;
 }
 
 /* Credits section of the footer */
 .footerCredits {
-    align-items: center;
-    background-color: #2D2D2D;
-    display: flex;
-    flex-direction: column;
-    font-family: Lora, Arial, Helvetica, sans-serif;;
-    font-size: 1.4rem;
-    height: 11rem;
-    justify-content: center;
+  align-items: center;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  font-family: Lora, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  height: 11rem;
+  justify-content: center;
 }
 
 .footerCredits span {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /************************************************************************************/
@@ -447,46 +463,46 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .about__section {
-    background-image: url(../img/about-section/grecas.svg);
-    color: #2D2D2D;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
-    margin-top: 3rem;
-    height: 170rem;    
-    padding-top: 0.1rem;
+  background-image: url(../img/about-section/grecas.svg);
+  color: #2d2d2d;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  margin-top: 3rem;
+  height: 170rem;
+  padding-top: 0.1rem;
 }
 
 .about__section--text-container {
-    background-color: #FFFFFF;
-    height: 70rem;
-    margin: 10rem 0 0rem 21.4rem;
-    width: 100rem;
+  background-color: #ffffff;
+  height: 70rem;
+  margin: 10rem 0 0rem 21.4rem;
+  width: 100rem;
 }
 
 .about__section--logo {
-    height: 20rem;
-    margin: 10rem 40rem 5rem 40rem;
-    width: 20rem;
+  height: 20rem;
+  margin: 10rem 40rem 5rem 40rem;
+  width: 20rem;
 }
 
 .about__section--title {
-    font-size: 3rem;
-    text-align: center;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .about__section--text {
-    color: #2D2D2D;
-    font-size: 2rem;
-    height: 20rem;
-    margin: 0 5rem 0 5rem;
-    text-align: center;
-    width: 90rem;
+  color: #2d2d2d;
+  font-size: 2rem;
+  height: 20rem;
+  margin: 0 5rem 0 5rem;
+  text-align: center;
+  width: 90rem;
 }
 
 .about__section--image {
-    border: 2rem solid #FFFFFF;
-    height: 50rem;
-    margin: 17rem 0 0 30rem;
-    width: 80rem;
+  border: 2rem solid #ffffff;
+  height: 50rem;
+  margin: 17rem 0 0 30rem;
+  width: 80rem;
 }
 
 /************************************************************************************/
@@ -497,27 +513,28 @@ html {
 
 /* IN PROGRESS */
 .reservations {
-    background-image: url(../img/chef/flowers.png);
-    font-family: Playfair Display SC, Arial, Helvetica, sans-serif;;
-    height: 50rem;
-    padding-top: 0.1rem;
+  background-image: url(../img/chef/flowers.png);
+  font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
+  height: 50rem;
+  padding-top: 0.1rem;
 }
 
 .reservations--container {
-    background-color: #ffffffde;
-    border-radius: 20rem;
-    margin: 5rem 7.15rem 5rem 7.15rem;
-    height:40rem;
-    padding-top: 0.1rem;
-    width: 90%;
+  background-color: #ffffffde;
+  border-radius: 20rem;
+  margin: 5rem 7.15rem 5rem 7.15rem;
+  height: 40rem;
+  padding-top: 0.1rem;
+  width: 90%;
 }
 
-.reservations--container h2, h3{
-    color: #2D2D2D;
-    font-size: 9rem;
-    font-weight: 900;
-    margin: 5rem 10rem;
-    text-align: center;
+.reservations--container h2,
+h3 {
+  color: #2d2d2d;
+  font-size: 9rem;
+  font-weight: 900;
+  margin: 5rem 10rem;
+  text-align: center;
 }
 
 /************************************************************************************/
@@ -526,77 +543,77 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .appetizer {
-    background-image: url(../img/background/menus/appetizers-background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    color: #0f5389;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;;
-    margin-top: 3rem;
-    height: 185rem;
-    padding-top: 0.1rem;
-    width: auto;
+  background-image: url(../img/background/menus/appetizers-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #0f5389;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  margin-top: 3rem;
+  height: 185rem;
+  padding-top: 0.1rem;
+  width: auto;
 }
 
 .appetizer--title {
-    font-size: 15rem;
-    font-weight: 900;
-    line-height: 15rem;
-    margin: 25rem 0 0 0;
-    text-align: center;
+  font-size: 15rem;
+  font-weight: 900;
+  line-height: 15rem;
+  margin: 25rem 0 0 0;
+  text-align: center;
 }
 
 .appetizer--subtitle {
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .appetizer--logo {
-    height: 20rem;
-    margin: 2.5rem 61.4rem 2.5rem 61.4rem;
-    width: 20rem;
+  height: 20rem;
+  margin: 2.5rem 61.4rem 2.5rem 61.4rem;
+  width: 20rem;
 }
 
 .appetizer--table {
-    margin: 0 23.3rem 3rem 23.3rem;
-    width: 99rem;
+  margin: 0 23.3rem 3rem 23.3rem;
+  width: 99rem;
 }
 
 .appetizer--table tbody {
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
 .appetizer--table__caption {
-    font-size: 3rem;
-    font-weight: 900;
-    margin: 0 0 0 5.3rem;
-    text-align: left;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 0 0 5.3rem;
+  text-align: left;
 }
 
 .appetizer--table td {
-    padding: 1rem 5rem 1rem 5rem;
+  padding: 1rem 5rem 1rem 5rem;
 }
 
 .appetizer--table__dish {
-    text-align: left;
-    width: 80%;
+  text-align: left;
+  width: 80%;
 }
 
 .appetizer--table__dish dt {
-    font-size: 2.5rem;
-    font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .appetizer--table__dish dd {
-    font-size: 2rem;
-    font-style: italic;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 .appetizer--table__price {
-    font-size: 2rem;
-    padding: 5rem 0;
-    text-align: left;
+  font-size: 2rem;
+  padding: 5rem 0;
+  text-align: left;
 }
 
 /************************************************************************************/
@@ -605,66 +622,66 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .main-course {
-    background-image: url(../img/background/menus/main-course-background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    color: #eccc6e;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;;
-    height: 185rem;
-    margin-top: 3rem;
-    padding-top: 0.1rem;
-    width: auto;
+  background-image: url(../img/background/menus/main-course-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #eccc6e;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  height: 185rem;
+  margin-top: 3rem;
+  padding-top: 0.1rem;
+  width: auto;
 }
 
 .main-course--title {
-    font-size: 15rem;
-    font-weight: 900;
-    line-height: 15rem;
-    margin: 15rem 0 0 30.5rem;
-    text-align: center;
-    width: 112.3rem;
+  font-size: 15rem;
+  font-weight: 900;
+  line-height: 15rem;
+  margin: 15rem 0 0 30.5rem;
+  text-align: center;
+  width: 112.3rem;
 }
 
 .main-course--logo {
-    height: 20rem;
-    margin: 2.5rem 46.1rem 2.5rem 76.6rem;
-    width: 20rem;
+  height: 20rem;
+  margin: 2.5rem 46.1rem 2.5rem 76.6rem;
+  width: 20rem;
 }
 
 .main-course--table {
-    margin: 0 0 3rem 30.5rem;
-    width: 112.3rem;
+  margin: 0 0 3rem 30.5rem;
+  width: 112.3rem;
 }
 
 .main-course--table tbody {
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
 .main-course--table td {
-    padding: 3rem 5rem 5rem 3rem;
+  padding: 3rem 5rem 5rem 3rem;
 }
 
 .main-course--table__dish {
-    text-align: left;
-    width: 80%;
+  text-align: left;
+  width: 80%;
 }
 
 .main-course--table__dish dt {
-    font-size: 3.5rem;
-    font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .main-course--table__dish dd {
-    color: #f2e9e1;
-    font-size: 3rem;
-    font-style: italic;
+  color: #f2e9e1;
+  font-size: 3rem;
+  font-style: italic;
 }
 
 .main-course--table__price {
-    font-size: 3rem;
-    text-align: center;
-    padding: 5rem 0;
+  font-size: 3rem;
+  text-align: center;
+  padding: 5rem 0;
 }
 
 /************************************************************************************/
@@ -673,61 +690,61 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .desserts {
-    background-image: url(../img/background/menus/desserts-background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    color: #7a7a7a;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;;
-    height: 185rem;
-    margin-top: 3rem;
-    padding-top: 0.1rem;
-    width: auto;
+  background-image: url(../img/background/menus/desserts-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #7a7a7a;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  height: 185rem;
+  margin-top: 3rem;
+  padding-top: 0.1rem;
+  width: auto;
 }
 
 .desserts--title {
-    color: #c9b066;
-    font-size: 15rem;
-    font-weight: 900;
-    line-height: 15rem;
-    margin: 30rem 17.5rem 0 17.5rem;
-    text-align: center;
-    width: 108rem;
+  color: #c9b066;
+  font-size: 15rem;
+  font-weight: 900;
+  line-height: 15rem;
+  margin: 30rem 17.5rem 0 17.5rem;
+  text-align: center;
+  width: 108rem;
 }
 
 .desserts--logo {
-    height: 20rem;
-    margin: 2.5rem 61.5rem 2.5rem 61.5rem;
-    width: 20rem;
+  height: 20rem;
+  margin: 2.5rem 61.5rem 2.5rem 61.5rem;
+  width: 20rem;
 }
 
 .desserts--table {
-    margin: 0 27.5rem 3rem 27.5rem;
-    padding: 0 10rem 0 10rem;
-    width: 88rem;
+  margin: 0 27.5rem 3rem 27.5rem;
+  padding: 0 10rem 0 10rem;
+  width: 88rem;
 }
 
 .desserts--table tbody {
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
 .desserts--table__caption {
-    font-size: 5rem;
-    font-weight: 900;
-    margin: 5rem 0 5rem 0;
-    text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 5rem 0 5rem 0;
+  text-align: center;
 }
 
 .desserts--table__dish {
-    font-size: 3.5rem;
-    padding: 1rem 1rem;
-    text-align: left;
+  font-size: 3.5rem;
+  padding: 1rem 1rem;
+  text-align: left;
 }
 
 .desserts--table__price {
-    font-size: 3rem;
-    padding: 01.rem;
-    text-align: left;
+  font-size: 3rem;
+  padding: 01rem;
+  text-align: left;
 }
 
 /************************************************************************************/
@@ -736,67 +753,67 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .beverages {
-    background-image: url(../img/background/menus/beverages-background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;    
-    color: #FFFFFF;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;;
-    height: 185rem;
-    margin-top: 3rem;
-    padding-top: 0.1rem;
-    width: auto;
+  background-image: url(../img/background/menus/beverages-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #ffffff;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  height: 185rem;
+  margin-top: 3rem;
+  padding-top: 0.1rem;
+  width: auto;
 }
 
 .beverages--title {
-    color: #eee9c3;
-    font-size: 15rem;
-    font-weight: 900;
-    line-height: 15rem;
-    margin: 30rem 12rem 0 12rem;
-    text-align: center;
-    width: 119rem;
+  color: #eee9c3;
+  font-size: 15rem;
+  font-weight: 900;
+  line-height: 15rem;
+  margin: 30rem 12rem 0 12rem;
+  text-align: center;
+  width: 119rem;
 }
 
 .beverages--logo {
-    height: 20rem;
-    margin: 2.5rem 61.5rem 2.5rem 61.5rem;
-    width: 20rem;
+  height: 20rem;
+  margin: 2.5rem 61.5rem 2.5rem 61.5rem;
+  width: 20rem;
 }
 
 .beverages--table {
-    margin: 0 12rem 0 12rem;
-    width: 119rem;
+  margin: 0 12rem 0 12rem;
+  width: 119rem;
 }
 
 .beverages--table tbody {
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
 .beverages--table td {
-    padding: 3rem 5rem 5rem 3rem;
+  padding: 3rem 5rem 5rem 3rem;
 }
 
 .beverages--table__dish {
-    text-align: left;
-    width: 80%;
+  text-align: left;
+  width: 80%;
 }
 
 .beverages--table__dish dt {
-    font-size: 3.5rem;
-    font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .beverages--table__dish dd {
-    color: #eee9c3;
-    font-size: 3rem;
-    font-style: italic;
+  color: #eee9c3;
+  font-size: 3rem;
+  font-style: italic;
 }
 
 .beverages--table__price {
-    font-size: 3rem;
-    text-align: left;
-    padding: 5rem 0;
+  font-size: 3rem;
+  text-align: left;
+  padding: 5rem 0;
 }
 
 /************************************************************************************/
@@ -805,89 +822,88 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .locations {
-    background-image: url(../img/locations-section/plants.png);
-    background-size: contain;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;;
-    height: 190rem;
-    margin-top: 3rem;
-    padding-top: 0.1rem;
+  background-image: url(../img/locations-section/plants.png);
+  background-size: contain;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  height: 190rem;
+  margin-top: 3rem;
+  padding-top: 0.1rem;
 }
 
 .locations--title {
-    background-color: #FFFFFF;
-    border: 1rel #000000 solid;
-    height: 12rem;
-    margin: 5rem 35.7rem 5rem 35.7rem;
-    width: 50%;
+  background-color: #ffffff;
+  border: 1rel #000000 solid;
+  height: 12rem;
+  margin: 5rem 35.7rem 5rem 35.7rem;
+  width: 50%;
 }
 
 .locations--title h2 {
-    font-size: 10rem;
-    font-weight: 900;
-    text-align: center;
+  font-size: 10rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 .locations--stuff {
-    background-color: #FFFFFF;
-    height: 160rem;
-    margin: 0 10rem 8rem 10rem;
+  background-color: #ffffff;
+  height: 160rem;
+  margin: 0 10rem 8rem 10rem;
 }
 
 .locations--stuff__xchel-restaurant-right {
-    height: 40rem;
-    margin: 5rem 24.6rem 5rem 24.6rem;
-    width: 60%;
+  height: 40rem;
+  margin: 5rem 24.6rem 5rem 24.6rem;
+  width: 60%;
 }
 
-
 .locations--stuff__icon {
-    height: 3rem;
-    width: 3rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .locations--stuff__table {
-    height: 50rem;
-    margin: 0 6.14rem 0 6.14rem;
-    width: 90%;
-} 
+  height: 50rem;
+  margin: 0 6.14rem 0 6.14rem;
+  width: 90%;
+}
 
 .locations--stuff__table-name {
-    font-size: 4rem;
-    font-weight: bold;
-    height: 3rem;
-    padding: 5rem 5rem;
-    text-align: left;
-    width: 30%;
+  font-size: 4rem;
+  font-weight: bold;
+  height: 3rem;
+  padding: 5rem 5rem;
+  text-align: left;
+  width: 30%;
 }
 
 .locations--stuff__table-address {
-    color: #2D2D2D;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
-    font-size: 2rem;
-    padding: 5rem 5rem;
-    text-align: justify;
-    width: 70%;
+  color: #2d2d2d;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding: 5rem 5rem;
+  text-align: justify;
+  width: 70%;
 }
 
 .locations--stuff__find-us-title {
-    color: #2D2D2D;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
-    font-size: 2rem;
-    margin: 5rem 0 0 0;
-    text-align: center;
-    width: 60rem;
+  color: #2d2d2d;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 5rem 0 0 0;
+  text-align: center;
+  width: 60rem;
 }
 
 .locations--stuff__google-maps {
-    height: 30rem;
-    margin: 5rem 5rem 0 9rem;
-    width: 40rem;
+  height: 30rem;
+  margin: 5rem 5rem 0 9rem;
+  width: 40rem;
 }
 
 .locations--stuff__xchel-restaurant-left {
-    height: 30rem;
-    margin: 5rem 5rem 0 3rem;
-    width: 60rem;
+  height: 30rem;
+  margin: 5rem 5rem 0 3rem;
+  width: 60rem;
 }
 
 /************************************************************************************/
@@ -896,49 +912,49 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .chef-bio {
-    background-image: url(../img/chef/flowers.png);
-    background-size: contain;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;;
-    height: 190rem;
-    margin-top: 3rem;
-    padding-top: 0.1rem;
+  background-image: url(../img/chef/flowers.png);
+  background-size: contain;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  height: 190rem;
+  margin-top: 3rem;
+  padding-top: 0.1rem;
 }
 
 .chef-bio--container {
-    background-color: #ffffffda;
-    height: 80%;
-    margin: 5rem 21.45rem 5rem 21.45rem;
-    /* padding: 5rem 5rem 5rem 5rem; */
-    /* ISSUE WITH PADDING... */
-    width: 70%;
+  background-color: #ffffffda;
+  height: 80%;
+  margin: 5rem 21.45rem 5rem 21.45rem;
+  /* padding: 5rem 5rem 5rem 5rem; */
+  /* ISSUE WITH PADDING... */
+  width: 70%;
 }
 
 .chef-bio--container__chef-img {
-    border-radius: 10rem;
-    height: auto;
-    margin: 5rem 25rem 10rem 25rem;
-    width: 50%;
+  border-radius: 10rem;
+  height: auto;
+  margin: 5rem 25rem 10rem 25rem;
+  width: 50%;
 }
 
 .chef-bio--container__title {
-    font-size: 5rem;
-    font-weight: 900;
-    text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 .chef-bio--container__text {
-    color: #2D2D2D;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
-    font-size: 2rem;
-    margin: 5rem 5rem;
-    text-align: justify;
+  color: #2d2d2d;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 5rem 5rem;
+  text-align: justify;
 }
 
 .chef-bio--container__logo {
-    background-color: #ffffffab;
-    height: 20rem;
-    margin: 0 61.4rem 0 61.4rem;
-    width: 20rem;
+  background-color: #ffffffab;
+  height: 20rem;
+  margin: 0 61.4rem 0 61.4rem;
+  width: 20rem;
 }
 
 /************************************************************************************/
@@ -947,128 +963,128 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .contact {
-    background-image: url(../img/contact-section/grecas-blue.png);
-    background-size: contain;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;;
-    height: 80rem;
-    margin-top: 3rem;
-    padding-top: 0.1rem;
+  background-image: url(../img/contact-section/grecas-blue.png);
+  background-size: contain;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  height: 80rem;
+  margin-top: 3rem;
+  padding-top: 0.1rem;
 }
 
 .contact--title {
-    background-color: #ffffffda;
-    margin: 5rem 35.7rem 5rem 35.7rem;
-    text-align: center;
-    width: 50%;
+  background-color: #ffffffda;
+  margin: 5rem 35.7rem 5rem 35.7rem;
+  text-align: center;
+  width: 50%;
 }
 
 .contact--title h2 {
-    font-size: 4rem;
-    font-weight: 900;
+  font-size: 4rem;
+  font-weight: 900;
 }
 
 .contact--title p {
-    font-size: 2rem;
-    font-weight: 900;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .contact--form {
-    background-color: #ffffffda;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
-    margin: 5rem 35.7rem 5rem 35.7rem;
-    width: 50%;
+  background-color: #ffffffda;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  margin: 5rem 35.7rem 5rem 35.7rem;
+  width: 50%;
 }
 
-.contact--form fieldset{
-    border: none;
+.contact--form fieldset {
+  border: none;
 }
 
 .contact--form input {
-    background-color: #DEDADA;
-    border: none;
-    border-radius: 10rem;
-    color: #AB1331;
-    font-size: 1.5rem;
-    font-weight: bold;
-    outline: none;
-    text-align: center;
+  background-color: #dedada;
+  border: none;
+  border-radius: 10rem;
+  color: #ab1331;
+  font-size: 1.5rem;
+  font-weight: bold;
+  outline: none;
+  text-align: center;
 }
 
 .contact--form__name {
-    height: 3rem;
-    margin: 2rem 0 2rem 1rem;
-    width: 70%;
+  height: 3rem;
+  margin: 2rem 0 2rem 1rem;
+  width: 70%;
 }
 
 .contact--form__mail {
-    height: 3rem;
-    margin: 2rem 1rem 2rem 1.8rem;
-    width: 45%;
+  height: 3rem;
+  margin: 2rem 1rem 2rem 1.8rem;
+  width: 45%;
 }
 
 .contact--form__phone {
-    height: 3rem;
-    margin: 2rem 1.8rem 2rem 1rem;
-    width: 45%;
+  height: 3rem;
+  margin: 2rem 1.8rem 2rem 1rem;
+  width: 45%;
 }
 
 .contact--form__txt-comment {
-    background-color: #DEDADA;
-    border: none;
-    border-radius: 2rem;
-    color: #AB1331;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 2rem 1.8rem 2rem 1.8rem;
-    text-align: center;
-    outline: none;
-    width: 95%;
+  background-color: #dedada;
+  border: none;
+  border-radius: 2rem;
+  color: #ab1331;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 1.8rem 2rem 1.8rem;
+  text-align: center;
+  outline: none;
+  width: 95%;
 }
 
 .contact--form__lbl-location {
-    display: inline-block;
-    font-size: 2rem;
-    margin: 2rem 0 2rem 0;
-    text-align: center;
-    width: 50%;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  width: 50%;
 }
 
 .contact--form__select {
-    display: inline-block;
-    font-size: 2rem;
-    width: 40%;
+  display: inline-block;
+  font-size: 2rem;
+  width: 40%;
 }
 
 .contact--form__check {
-    font-size: 5rem;
-    margin: 2rem 1.8rem 2rem 1.8rem;
+  font-size: 5rem;
+  margin: 2rem 1.8rem 2rem 1.8rem;
 }
 
 .contact--form__check-label {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .contact--form__send:active {
-    background-color: #db8181;
-    color: #ac6271;
+  background-color: #db8181;
+  color: #ac6271;
 }
 
 .contact--form__send {
-    font-size: 2rem;
-    height: 5rem;
-    margin: 2rem 5rem 2rem 10rem;
-    width: 30%;
+  font-size: 2rem;
+  height: 5rem;
+  margin: 2rem 5rem 2rem 10rem;
+  width: 30%;
 }
 
 .contact--form__reset:active {
-    background-color: #db8181;
-    color: #ac6271;
+  background-color: #db8181;
+  color: #ac6271;
 }
 
 .contact--form__reset {
-    font-size: 2rem;
-    height: 5rem;
-    margin: 2rem 5rem 2rem 5rem;
-    width: 30%;
+  font-size: 2rem;
+  height: 5rem;
+  margin: 2rem 5rem 2rem 5rem;
+  width: 30%;
 }
