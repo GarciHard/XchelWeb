@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="../css/styles.css">
-    
+
     <title>Reservations</title>
     <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
 </head>
@@ -49,14 +49,114 @@
     </header>
     <main class="container">
         <div class="reservations">
-            <div class="reservations--container">
-                <h2>Under construction</h2>
-                <h3>Coming soon . . .</h3>
+            <div class="reservations--title">
+                <h2>Reserve a table</h2>
             </div>
-            
+            <img src="../img/reservations/october-img.png" alt="october-calendar-image">
+            <div class="reservations--grid">
+                <div id="monthBar" class="reservations--month-bar">
+                    <h3>10</h3>
+                </div>
+                <p id="monthName">October 2021</p>
+                <div id="monthCalendar" class="reservations--calendar">
+                    <ol>
+                        <li class="reservations--calendar__day-name">S</li>
+                        <li class="reservations--calendar__day-name">M</li>
+                        <li class="reservations--calendar__day-name">T</li>
+                        <li class="reservations--calendar__day-name">W</li>
+                        <li class="reservations--calendar__day-name">T</li>
+                        <li class="reservations--calendar__day-name">F</li>
+                        <li class="reservations--calendar__day-name">S</li>
+
+                        <li id="firstDay" class="reservations--calendar__day"><a href="#">1</a></li>
+                        <li class="reservations--calendar__day"><a href="#">2</a></li>
+                        <li class="reservations--calendar__day"><a href="#">3</a></li>
+                        <li class="reservations--calendar__day"><a href="#">4</a></li>
+                        <li class="reservations--calendar__day"><a href="#">5</a></li>
+                        <li class="reservations--calendar__day"><a href="#">6</a></li>
+                        <li class="reservations--calendar__day"><a href="#">7</a></li>
+                        <li class="reservations--calendar__day"><a href="#">8</a></li>
+                        <li class="reservations--calendar__day"><a href="#">9</a></li>
+                        <li class="reservations--calendar__day"><a href="#">10</a></li>
+                        <li class="reservations--calendar__day"><a href="#">11</a></li>
+                        <li class="reservations--calendar__day"><a href="#">12</a></li>
+                        <li class="reservations--calendar__day"><a href="#">13</a></li>
+                        <li class="reservations--calendar__day"><a href="#">14</a></li>
+                        <li class="reservations--calendar__day"><a href="#">15</a></li>
+                        <li class="reservations--calendar__day"><a href="#">16</a></li>
+                        <li class="reservations--calendar__day"><a href="#">17</a></li>
+                        <li class="reservations--calendar__day"><a href="#">18</a></li>
+                        <li class="reservations--calendar__day"><a href="#">20</a></li>
+                        <li class="reservations--calendar__day"><a href="#">21</a></li>
+                        <li class="reservations--calendar__day"><a href="#">22</a></li>
+                        <li class="reservations--calendar__day"><a href="#">23</a></li>
+                        <li class="reservations--calendar__day"><a href="#">24</a></li>
+                        <li class="reservations--calendar__day"><a href="#">25</a></li>
+                        <li class="reservations--calendar__day"><a href="#">26</a></li>
+                        <li class="reservations--calendar__day"><a href="#">27</a></li>
+                        <li class="reservations--calendar__day"><a href="#">28</a></li>
+                        <li class="reservations--calendar__day"><a href="#">29</a></li>
+                        <li class="reservations--calendar__day"><a href="#">30</a></li>
+                        <li class="reservations--calendar__day"><a href="#">31</a></li>
+                    </ol>
+                
+            </div>
         </div>
-        
     </main>
+    <section class="container">
+        <div class="reservations--date-grid">
+            <div id="date">
+                <div class="reservations--date-container">
+                    <h4>Date:</h4>
+                    <p>Wednesday October 13th, 2021</p>
+                    <div>
+                        <ul>
+                            <li><a href="#">Thursday October 14th, 2021</a></li>
+                            <li><a href="#">Friday October 15th, 2021</a></li>
+                            <li><a href="#">Saturday October 16th, 2021</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="hour">
+                <div class="reservations--date-container">
+                    <h4>Hour:</h4>
+                    <p>18:00 hrs</p>
+                    <div>
+                        <ul>
+                            <li><a href="#">18:30 hrs</a></li>
+                            <li><a href="#">19:00 hrs</a></li>
+                            <li><a href="#">19:30 hrs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="location">
+                <div class="reservations--date-container">
+                    <h4>Location:</h4>
+                    <p>Coapa</p>
+                    <div>
+                        <ul>
+                            <li><a href="#">Arenal - Arenal 651, Santa María Tepepan, Xochimilco, 16020 Ciudad de México, CDMX.</a></li>
+                            <li><a href="#">Perisur - Anillo Perif. 4690, Insurgentes Cuicuilco, Coyoacán, 04500 Ciudad de México, CDMX.</a></li>
+                            <li><a href="#">Coyoac&aacute;n - Aguayo 12, Coyoacán, 04000 Ciudad de México, CDMX. </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reservations--user-info">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="yourMail@domain.com">
+        </div>
+        <div class="reservations--user-confirm">
+            <span id="light">Your reservation will be scheduled for:</span>
+            <span id="bold">10 / 13 / 2021</span>
+            <span id="light">Location:</span>
+            <span id="bold">Coapa</span>
+            <button>Book</button>
+        </div>
+    </section>
     <!-- Footer -->
     <footer>
         <!-- The main container -->

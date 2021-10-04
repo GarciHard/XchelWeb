@@ -523,33 +523,237 @@ html {
 /*                         RESERVATIONS PAGE STYLE SECTION                          */
 /************************************************************************************/
 /************************************************************************************/
-
 /* IN PROGRESS */
 .reservations {
-  background-image: url(../img/chef/flowers.png);
+  /* background-image: url(../img/chef/flowers.png); */
   font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
   height: 50rem;
+  margin-top: 3rem;
   padding-top: 0.1rem;
 }
 
-.reservations--container {
-  background-color: #ffffffde;
-  border-radius: 20rem;
-  margin: 5rem 7.15rem 5rem 7.15rem;
-  height: 40rem;
-  padding-top: 0.1rem;
-  width: 90%;
-}
-
-.reservations--container h2,
-h3 {
+.reservations--title {
   color: #2d2d2d;
-  font-size: 9rem;
-  font-weight: 900;
-  margin: 5rem 10rem;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  padding: 1rem;
   text-align: center;
 }
 
+.reservations--month-bar {
+  background-color: #DEDADA;
+  height: 20rem;
+  padding: 0 5rem;
+  text-align: end;
+}
+
+.reservations--month-bar h3{
+  color: #2d2d2d;
+  font-size: 15rem;
+}
+
+.reservations--grid {
+  align-items: center;
+  display: grid;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+  grid-template: 
+    "monthBar monthBar monthBar"
+    "monthName monthCalendar monthCalendar";
+}
+
+#monthBar {
+  grid-area: monthBar;
+}
+
+#monthName {
+  grid-area: monthName;
+  justify-self: left;
+}
+
+#monthCalendar {
+  grid-area: monthCalendar;
+  justify-self: right;
+}
+
+.reservations--grid p {
+  color: #2d2d2d;
+  font-size: 4rem;
+  padding: 2rem;
+  writing-mode: sideways-lr;
+  text-align: left;
+}
+
+.reservations img {
+  min-height: 50%;
+  margin-left: 10%;
+  padding: 2rem;
+  position: absolute;
+  width: 30%;
+  z-index: 1;
+}
+
+.reservations--calendar {
+  font-size: 1.5rem;
+  padding: 5rem;
+  text-align: center;
+  width: 50%;
+}
+
+.reservations--calendar ol {
+  display: grid;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+}
+
+.reservations--calendar__day a{
+  color: #2d2d2d80;
+  text-decoration: none;
+}
+
+.reservations--calendar__day-name {
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+#firstDay {
+  grid-column-start: 6;
+}
+
+.reservations--date-grid {
+  align-items: center;
+  color: #2d2d2d;
+  display: grid;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  
+  grid-template: 
+    "date hour location";
+
+  margin-top: 40rem;
+}
+
+#date {
+  grid-area: date;
+  justify-self: center;
+}
+
+.reservations--date-container {
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+}
+
+.reservations--date-container h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.reservations--date-container p {
+  background-color: #2d2d2d27;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.reservations--date-container div {
+  border: 0.1rem solid #2d2d2d;
+}
+
+.reservations--date-container ul {
+  list-style: none;
+}
+
+.reservations--date-container li {
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+}
+
+.reservations--date-container a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+#hour {
+  grid-area: hour;
+  justify-self: center;
+}
+
+#location {
+  grid-area: location;
+  justify-self: center;
+}
+
+.reservations--user-info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.reservations--user-info input[type="text"] {
+  background-color: #2d2d2d27;
+  border: none;
+  border-radius: 1rem;
+  color:#2d2d2d;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  height: 3rem;
+  text-align: center;
+  width: 20%;
+}
+
+.reservations--user-info input[type="email"] {
+  background-color: #2d2d2d27;
+  border: none;
+  border-radius: 1rem;
+  color:#2d2d2d;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  height: 3rem;
+  text-align: center;
+  width: 20%;
+}
+
+.reservations--user-confirm {
+  align-items: center;
+  display: flex;
+  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.reservations--user-confirm span {
+  text-align: center;
+  margin: 1rem;
+}
+
+.reservations--user-confirm button {
+  color: #ffffff;
+  background-color: #ab1331;
+  border-radius: 2rem;
+  border-style: none;
+  height: 4rem;
+  width: 10%;
+}
+
+.reservations--user-confirm button:active {
+  background-color: #e61740;
+}
+
+#light {
+  font-size: 1.5rem;
+}
+
+#bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 /************************************************************************************/
 /************************************************************************************/
 /*                          APPETIZERS PAGE STYLE SECTION                           */
