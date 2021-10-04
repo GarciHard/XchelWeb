@@ -151,7 +151,6 @@ html {
 
 .xchel__logo__titles {
   align-items: center;
-
   display: flex;
   flex-direction: column;
   margin: 3rem 0 0 90rem;
@@ -178,6 +177,7 @@ html {
 
 .xchel__logo__titles--button {
   background-color: #ab1331;
+  border-radius: 2rem;
   border-style: none;
   height: 4rem;
   margin: 7rem 0 0;
@@ -202,6 +202,8 @@ html {
 
 .sections--inline {
   display: flex;
+  flex-flow: row wrap;
+  gap: 10rem;
 }
 
 /************************************************************************************/
@@ -250,20 +252,25 @@ html {
   text-align: center;
 }
 
-/* Latest receipes section */
+/************************************************************************************/
+/************************************************************************************/
+/*                          LATEST RECEIPES STYLE SECTION                           */
+/************************************************************************************/
+/************************************************************************************/
 .latest_receipes--section {
   flex: 0 0 65%;
 }
 
 .latest-receipes__carrousel-container {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .latest-receipes__carrousel-container #imageContainer {
   display: inline-block;
   height: 50rem;
   padding: 2rem 2rem;
-  width: 70rem;
+  width: 55%;
 }
 
 .latest-receipes__carrousel-container #imageContainer img {
@@ -272,13 +279,16 @@ html {
 }
 
 .latest-receipes__carrousel-container #descriptionContainer {
+  align-items: center;
   background-color: #2d2d2d88;
   color: #ffffff;
-  display: inline-block;
-  flex: 40rem;
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
+  gap: 1rem;
   height: 50rem;
-  margin: 2rem 2rem;
+  margin: 2rem;
+  width: 35%;
 }
 
 .latest-receipes__carrousel-container #descriptionContainer p {
@@ -297,14 +307,14 @@ html {
 }
 
 .paginator {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   list-style: none;
 }
 
 .paginator li {
-  display: inline-block;
   font-size: 2rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
 }
 
 .paginator li a {
@@ -313,30 +323,33 @@ html {
   text-decoration: none;
 }
 
-/* Chef's section */
+/************************************************************************************/
+/************************************************************************************/
+/*                             CHEFS ABOUT STYLE SECTION                            */
+/************************************************************************************/
+/************************************************************************************/
 .about__chef--section {
   flex: 1;
-  margin-left: 10rem;
 }
 
 .about__chef--container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .about__chef--image {
+  border-radius: 10rem;
+  height: 20rem;
   margin: 2.5rem 0;
   width: 35rem;
-  height: 20rem;
-  border-radius: 10rem;
 }
 
 .about__chef--name {
-  margin: 5rem;
+  color: #2d2d2d;
   font-size: 2rem;
   font-weight: bold;
-  color: #2d2d2d;
+  margin: 5rem;
 }
 
 .about__chef--paragraph {
@@ -347,20 +360,26 @@ html {
 
 .about__chef--url {
   color: #2d2d2d;
-  text-decoration: none;
   font-size: 1.8rem;
   font-weight: lighter;
+  text-decoration: none;
 }
 
+/************************************************************************************/
+/************************************************************************************/
+/*                                FOOTER STYLE SECTION                              */
+/************************************************************************************/
+/************************************************************************************/
 /* Footer main used to distribute 3 diferent sections described below */
 .footerMain {
   color: #2d2d2d;
   display: flex;
-  font-family: Lora, Arial, Helvetica, sans-serif;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  margin-top: 10rem;
 }
 
 .footerMain div {
-  height: 20rem;
+  height: 10rem;
   width: 85%;
 }
 
@@ -370,6 +389,7 @@ html {
   display: flex;
   font-size: 1.5rem;
   padding: 2rem;
+  text-align: justify;
 }
 
 .brandLogoAbout img {
@@ -377,23 +397,17 @@ html {
   width: 10rem;
 }
 
-.brandLogoAbout p {
-  color: #2d2d2d;
-}
-
 /* Social networks section of the footer */
 .socialNetworks {
-  padding: 2rem;
-}
-
-.socialNetworks span {
-  padding-left: 5rem;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
 }
 
 .socialNetworkIcons {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 5rem;
 }
 
@@ -402,16 +416,17 @@ html {
   width: 3.6rem;
 }
 
+.socialNetworks span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* Newsletter section of the footer */
 .newsletter {
   align-items: center;
-  font-size: 1.5rem;
-  justify-content: center;
-  padding-top: 7rem;
-}
-
-.newsletter p {
-  color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;  
 }
 
 .newsletter input[type="email"] {
@@ -421,7 +436,7 @@ html {
   height: 4.5rem;
   outline: none;
   text-align: center;
-  width: 30rem;
+  width: 60%;
 }
 
 .newsletter input[type="button"]:active {
@@ -434,9 +449,9 @@ html {
   border-style: none;
   color: #ffffff;
   height: 4.5rem;
-  text-align: center;
   margin-left: -5rem;
-  width: 15rem;
+  text-align: center;
+  width: 35%;
 }
 
 /* Credits section of the footer */
@@ -445,10 +460,10 @@ html {
   background-color: #2d2d2d;
   display: flex;
   flex-direction: column;
-  font-family: Lora, Arial, Helvetica, sans-serif;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   height: 11rem;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .footerCredits span {
