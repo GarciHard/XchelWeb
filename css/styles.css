@@ -476,24 +476,30 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .about__section {
+  align-items: center;
   background-image: url(../img/about-section/grecas.svg);
   color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
   margin-top: 3rem;
   height: 170rem;
   padding-top: 0.1rem;
 }
 
 .about__section--text-container {
+  align-items: center;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
   height: 70rem;
-  margin: 10rem 0 0rem 21.4rem;
+  justify-content: space-evenly;
   width: 100rem;
 }
 
 .about__section--logo {
   height: 20rem;
-  margin: 10rem 40rem 5rem 40rem;
   width: 20rem;
 }
 
@@ -505,8 +511,7 @@ html {
 .about__section--text {
   color: #2d2d2d;
   font-size: 2rem;
-  height: 20rem;
-  margin: 0 5rem 0 5rem;
+  height: auto;
   text-align: center;
   width: 90rem;
 }
@@ -514,7 +519,6 @@ html {
 .about__section--image {
   border: 2rem solid #ffffff;
   height: 50rem;
-  margin: 17rem 0 0 30rem;
   width: 80rem;
 }
 
