@@ -1131,27 +1131,32 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .chef-bio {
+  align-items: center;
   background-image: url(../img/chef/flowers.png);
   background-size: contain;
+  display: flex;
+  flex-direction: column;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
   height: 190rem;
+  justify-content: space-evenly;
   margin-top: 3rem;
   padding-top: 0.1rem;
 }
 
 .chef-bio--container {
+  align-items: center;
   background-color: #ffffffda;
+  display: flex;
+  flex-direction: column;
   height: 80%;
-  margin: 5rem 21.45rem 5rem 21.45rem;
-  /* padding: 5rem 5rem 5rem 5rem; */
-  /* ISSUE WITH PADDING... */
+  justify-content: space-evenly;
+  padding: 5rem;
   width: 70%;
 }
 
 .chef-bio--container__chef-img {
   border-radius: 10rem;
   height: auto;
-  margin: 5rem 25rem 10rem 25rem;
   width: 50%;
 }
 
@@ -1165,14 +1170,12 @@ html {
   color: #2d2d2d;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  margin: 5rem 5rem;
   text-align: justify;
 }
 
 .chef-bio--container__logo {
   background-color: #ffffffab;
   height: 20rem;
-  margin: 0 61.4rem 0 61.4rem;
   width: 20rem;
 }
 
