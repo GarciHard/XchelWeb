@@ -59,7 +59,7 @@
                 <form action="submit" method="POST">
                 <!-- Fieldset is a element group -->
                 <fieldset>
-                    <label class="contact--form__lbl-location" for="optXchelLocation">Select a location:</label>
+                    <label id="lblLocation" class="contact--form__lbl-location" for="optXchelLocation">Select a location:</label>
                     <select class="contact--form__select" name="xchelLocation" id="optXchelLocation">
                         <option value="" disabled>-</option>
                         <option value="xCoapa">Coapa</option>
@@ -67,15 +67,15 @@
                         <option value="xPerisur">Per&iacute;sur</option>
                         <option value="xCoyoacan">Coyoac&aacute;n</option>
                     </select>                
-                    <input class="contact--form__name" type="text" name="usrName" id="txtUsrName" placeholder="Your Name" required>
-                    <input class="contact--form__mail" type="email" name="usrMail" id="txtUsrMail" placeholder="yourMail@domain.com" required>
-                    <input class="contact--form__phone" type="tel" name="usrPhone" id="txtUsrPhone" placeholder="+(52)722-136-4758" required>
+                    <input type="text" name="usrName" id="txtUsrName" placeholder="Your Name" required>
+                    <input type="email" name="usrMail" id="txtUsrMail" placeholder="yourMail@domain.com" required>
+                    <input type="tel" name="usrPhone" id="txtUsrPhone" placeholder="+(52)722-136-4758" required>
                     <textarea class="contact--form__txt-comment" name="usrMsg" id="txaUsrMsg" cols="50" rows="10" placeholder="Write your comments or cuestions"
                         required></textarea><br>
-                    <input class="contact--form__check" type="checkbox" name="usrCopy" id="cboxUsrCopy"><span class="contact--form__check-label">Receive an email copy</span>
-                    <div>
-                        <input class="contact--form__send" type="submit" value="Send">
-                        <input class="contact--form__reset" type="reset" value="Reset">
+                    <input class="contact--form__check" type="checkbox" name="usrCopy" id="cboxUsrCopy"><span id="lblUsrCopy" class="contact--form__check-label">Receive an email copy</span>
+                    <div id="btnCont" class="actionButtonContainer">
+                        <input id="btnSend" type="submit" value="Send">
+                        <input id="btnReset" type="reset" value="Reset">
                     </div>
                 </fieldset>
                 </form>

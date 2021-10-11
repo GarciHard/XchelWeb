@@ -426,7 +426,7 @@ html {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .newsletter input[type="email"] {
@@ -545,13 +545,13 @@ html {
 }
 
 .reservations--month-bar {
-  background-color: #DEDADA;
+  background-color: #dedada;
   height: 20rem;
   padding: 0 5rem;
   text-align: end;
 }
 
-.reservations--month-bar h3{
+.reservations--month-bar h3 {
   color: #2d2d2d;
   font-size: 15rem;
 }
@@ -562,8 +562,8 @@ html {
   gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  
-  grid-template: 
+
+  grid-template:
     "monthBar monthBar monthBar"
     "monthName monthCalendar monthCalendar";
 }
@@ -613,7 +613,7 @@ html {
   list-style: none;
 }
 
-.reservations--calendar__day a{
+.reservations--calendar__day a {
   color: #2d2d2d80;
   text-decoration: none;
 }
@@ -634,9 +634,8 @@ html {
   gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  
-  grid-template: 
-    "date hour location";
+
+  grid-template: "date hour location";
 
   margin-top: 40rem;
 }
@@ -687,7 +686,7 @@ html {
   justify-self: center;
 }
 
-#location {
+#location  {
   grid-area: location;
   justify-self: center;
 }
@@ -702,7 +701,7 @@ html {
   background-color: #2d2d2d27;
   border: none;
   border-radius: 1rem;
-  color:#2d2d2d;
+  color: #2d2d2d;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   height: 3rem;
@@ -714,7 +713,7 @@ html {
   background-color: #2d2d2d27;
   border: none;
   border-radius: 1rem;
-  color:#2d2d2d;
+  color: #2d2d2d;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   height: 3rem;
@@ -1185,17 +1184,21 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .contact {
+  align-items: center;
   background-image: url(../img/contact-section/grecas-blue.png);
   background-size: contain;
+  display: flex;
+  flex-direction: column;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
   height: 80rem;
   margin-top: 3rem;
   padding-top: 0.1rem;
+  justify-content: space-evenly;
 }
 
 .contact--title {
   background-color: #ffffffda;
-  margin: 5rem 35.7rem 5rem 35.7rem;
+  /* margin: 5rem 35.7rem 5rem 35.7rem; */
   text-align: center;
   width: 50%;
 }
@@ -1213,41 +1216,75 @@ html {
 .contact--form {
   background-color: #ffffffda;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
-  margin: 5rem 35.7rem 5rem 35.7rem;
+  /* margin: 5rem 35.7rem 5rem 35.7rem; */
+  padding: 5rem;
   width: 50%;
 }
 
 .contact--form fieldset {
+  align-items: center;
   border: none;
+  display: grid;
+  gap: 3rem;
+  grid-template:
+    "lblLocation lblLocation optXchelLocation optXchelLocation"
+    "txtUsrName txtUsrName . ."
+    "txtUsrMail txtUsrMail txtUsrPhone txtUsrPhone"
+    "txaUsrMsg txaUsrMsg txaUsrMsg txaUsrMsg"
+    "cboxUsrCopy lblUsrCopy . ."
+    "btnCont btnCont btnCont btnCont";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr), 3fr, repeat(2, 1fr);
 }
 
-.contact--form input {
+#lblLocation {
+  grid-area: lblLocation;
+}
+
+#optXchelLocation {
+  grid-area: optXchelLocation;
+}
+
+#txtUsrName {
+  grid-area: txtUsrName;
+}
+
+#txtUsrMail {
+  grid-area: txtUsrMail;
+}
+
+#txtUsrPhone {
+  grid-area: txtUsrPhone;
+}
+
+#txaUsrMsg {
+  grid-area: txaUsrMsg;
+}
+
+#cboxUsrCopy {
+  grid-area: cboxUsrCopy;
+}
+
+#lblUsrCopy {
+  grid-area: lblUsrCopy;
+}
+
+#btnCont {
+  grid-area: btnCont;
+}
+
+.contact--form fieldset input {
   background-color: #dedada;
   border: none;
   border-radius: 10rem;
   color: #ab1331;
   font-size: 1.5rem;
   font-weight: bold;
+  height: 4rem;
+  justify-self: stretch;
   outline: none;
+  overflow: auto;
   text-align: center;
-}
-
-.contact--form__name {
-  height: 3rem;
-  margin: 2rem 0 2rem 1rem;
-  width: 70%;
-}
-
-.contact--form__mail {
-  height: 3rem;
-  margin: 2rem 1rem 2rem 1.8rem;
-  width: 45%;
-}
-
-.contact--form__phone {
-  height: 3rem;
-  margin: 2rem 1.8rem 2rem 1rem;
-  width: 45%;
 }
 
 .contact--form__txt-comment {
@@ -1258,55 +1295,45 @@ html {
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 2rem 1.8rem 2rem 1.8rem;
   text-align: center;
   outline: none;
-  width: 95%;
+  overflow: auto;
 }
 
 .contact--form__lbl-location {
   display: inline-block;
   font-size: 2rem;
-  margin: 2rem 0 2rem 0;
   text-align: center;
-  width: 50%;
 }
 
 .contact--form__select {
   display: inline-block;
   font-size: 2rem;
-  width: 40%;
 }
 
 .contact--form__check {
   font-size: 5rem;
-  margin: 2rem 1.8rem 2rem 1.8rem;
 }
 
 .contact--form__check-label {
   font-size: 1.5rem;
 }
 
-.contact--form__send:active {
-  background-color: #db8181;
-  color: #ac6271;
+.actionButtonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.contact--form__send {
-  font-size: 2rem;
-  height: 5rem;
-  margin: 2rem 5rem 2rem 10rem;
+.actionButtonContainer input[type="submit"] {
   width: 30%;
 }
 
-.contact--form__reset:active {
-  background-color: #db8181;
-  color: #ac6271;
+.actionButtonContainer input[type="reset"] {
+  width: 30%;
 }
 
-.contact--form__reset {
-  font-size: 2rem;
-  height: 5rem;
-  margin: 2rem 5rem 2rem 5rem;
-  width: 30%;
+.actionButtonContainer input:active {
+  background-color: #db8181;
+  color: #ac6271;
 }
