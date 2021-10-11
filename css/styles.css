@@ -1040,19 +1040,21 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .locations {
+  align-items: center;
   background-image: url(../img/locations-section/plants.png);
   background-size: contain;
+  display: flex;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  flex-direction: column;
   height: 190rem;
+  justify-content: space-evenly;
   margin-top: 3rem;
   padding-top: 0.1rem;
 }
 
 .locations--title {
   background-color: #ffffff;
-  border: 1rel #000000 solid;
-  height: 12rem;
-  margin: 5rem 35.7rem 5rem 35.7rem;
+  height: auto;
   width: 50%;
 }
 
@@ -1060,67 +1062,96 @@ html {
   font-size: 10rem;
   font-weight: 900;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .locations--stuff {
+  align-items: center;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
   height: 160rem;
-  margin: 0 10rem 8rem 10rem;
+  justify-content: space-evenly;
+  padding: 2rem 0;
 }
 
 .locations--stuff__xchel-restaurant-right {
   height: 40rem;
-  margin: 5rem 24.6rem 5rem 24.6rem;
   width: 60%;
 }
 
 .locations--stuff__icon {
   height: 3rem;
+  margin-right: 2rem;
   width: 3rem;
 }
 
-.locations--stuff__table {
-  height: 50rem;
-  margin: 0 6.14rem 0 6.14rem;
-  width: 90%;
+.locations--stuff__table-grid {
+  width: 80%;
+  overflow: auto;
 }
 
-.locations--stuff__table-name {
+.locations--stuff__table-grid ol {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 0.5fr 1fr;
+  list-style: none;
+}
+
+.locations--stuff__table-grid ol li {
+  align-self: center;
+  justify-self: center;
+}
+
+.locations--stuff__table_title {
   font-size: 4rem;
   font-weight: bold;
-  height: 3rem;
-  padding: 5rem 5rem;
-  text-align: left;
-  width: 30%;
 }
 
-.locations--stuff__table-address {
+.locations--stuff__table_address {
   color: #2d2d2d;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  padding: 5rem 5rem;
-  text-align: justify;
-  width: 70%;
+  padding: 1rem;
+  text-align: left;
+}
+
+.locations--stuff__grid {
+  display: grid;
+  gap: 5rem;
+  grid-template: 
+    "findUsTitle findUsTitle"
+    "mapLocator xchelImgLeft";
+  padding: 5rem;
+}
+
+#findUsTitle {
+  grid-area: findUsTitle;
+}
+
+#mapLocator {
+  grid-area: mapLocator;
+}
+
+#xchelImgLef {
+  grid-area: xchelImgLeft;
 }
 
 .locations--stuff__find-us-title {
   color: #2d2d2d;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  margin: 5rem 0 0 0;
   text-align: center;
-  width: 60rem;
+  width: 100%;
 }
 
 .locations--stuff__google-maps {
   height: 30rem;
-  margin: 5rem 5rem 0 9rem;
   width: 40rem;
 }
 
 .locations--stuff__xchel-restaurant-left {
   height: 30rem;
-  margin: 5rem 5rem 0 3rem;
   width: 60rem;
 }
 
