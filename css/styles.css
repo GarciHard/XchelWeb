@@ -555,8 +555,7 @@ html {
 .reservations--grid {
   align-items: center;
   display: grid;
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
+  gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   
@@ -628,8 +627,7 @@ html {
   align-items: center;
   color: #2d2d2d;
   display: grid;
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
+  gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   
