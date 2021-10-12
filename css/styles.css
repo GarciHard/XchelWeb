@@ -761,23 +761,57 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .appetizer {
-  background-image: url(../img/background/menus/appetizers-background.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  align-items: center;
+  align-content: center;
+  background-image: url(../img/about-section/grecas.svg);
+  background-repeat: repeat;
   color: #0f5389;
+  display: flex;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  flex-direction: column;
   margin-top: 3rem;
   height: 185rem;
+  justify-content: space-evenly;
+  overflow: auto;
   padding-top: 0.1rem;
   width: auto;
+}
+
+.appetizer--outside-container {
+  align-items: center;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-evenly;
+  overflow: auto;
+  padding: 5rem;
+  width: 80%;
+} 
+
+.appetizer--container {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 0.5rem solid orange;
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: auto;
+  padding: 5rem;
+  width: 90%;
+}
+
+.appetizer--main-titles {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .appetizer--title {
   font-size: 15rem;
   font-weight: 900;
   line-height: 15rem;
-  margin: 25rem 0 0 0;
   text-align: center;
 }
 
@@ -789,51 +823,182 @@ html {
 
 .appetizer--logo {
   height: 20rem;
-  margin: 2.5rem 61.4rem 2.5rem 61.4rem;
   width: 20rem;
 }
 
-.appetizer--table {
-  margin: 0 23.3rem 3rem 23.3rem;
-  width: 99rem;
-}
-
-.appetizer--table tbody {
+.appetizer--grid-table {
+  display: flex;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
 }
 
-.appetizer--table__caption {
-  font-size: 3rem;
-  font-weight: 900;
-  margin: 0 0 0 5.3rem;
-  text-align: left;
+.appetizer--grid-table ol {
+  display: grid;
+  list-style: none;
+  grid-template: 
+  "starter1 price1"
+  "desc1    price1"
+  "starter2 price2"
+  "desc2    price2"
+  "starter3 price3"
+  "desc3    price3"
+  "starter4 price4"
+  "desc4    price4"
+  "starter5 price5"
+  "desc5    price5";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 
-.appetizer--table td {
-  padding: 1rem 5rem 1rem 5rem;
+#starter1 {
+  grid-area: starter1;
 }
 
-.appetizer--table__dish {
-  text-align: left;
-  width: 80%;
+#desc1 {
+  grid-area: desc1;
 }
 
-.appetizer--table__dish dt {
+#price1 {
+  grid-area: price1;
+}
+
+#starter2 {
+  grid-area: starter2;
+}
+
+#desc2 {
+  grid-area: desc2;
+}
+
+#price2 {
+  grid-area: price2;
+}
+
+#starter3 {
+  grid-area: starter3;
+}
+
+#desc3 {
+  grid-area: desc3;
+}
+
+#price3 {
+  grid-area: price3;
+}
+
+#starter4 {
+  grid-area: starter4;
+}
+
+#desc4 {
+  grid-area: desc4;
+}
+
+#price4 {
+  grid-area: price4;
+}
+
+#starter5 {
+  grid-area: starter5;
+}
+
+#desc5 {
+  grid-area: desc5;
+}
+
+#price5 {
+  grid-area: price5;
+}
+
+.appetizer--grid-table ol li { 
+  align-self: center;
+}
+
+.appetizer--grid-table_name {
   font-size: 2.5rem;
   font-weight: bold;
+  margin-top: 2rem;
 }
 
-.appetizer--table__dish dd {
+.appetizer--grid-table_desc {
   font-size: 2rem;
   font-style: italic;
+  margin-bottom: 2rem;
 }
 
-.appetizer--table__price {
+.appetizer--grid-table_price {
   font-size: 2rem;
-  padding: 5rem 0;
+}
+
+.appetizer--grid-table_two {
+  display: flex;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.appetizer--grid-table_two ol {
+  display: grid;
+  list-style: none;
+  grid-template: 
+  "appetizer1 aPrice1"
+  "aDesc1    aPrice1"
+  "appetizer2 aPrice2"
+  "aDesc2    aPrice2"
+  "appetizer3 aPrice3"
+  "aDesc3    aPrice3";
+  grid-template-columns: 5fr 0.5fr;
+  grid-template-rows: 1fr;
+}
+
+#appetizer1 {
+  grid-area: appetizer1;
+}
+
+#aDesc1 {
+  grid-area: aDesc1;
+}
+
+#aPrice1 {
+  grid-area: aPrice1;
+}
+
+#appetizer2 {
+  grid-area: appetizer2;
+}
+
+#aDesc2 {
+  grid-area: aDesc2;
+}
+
+#aPrice2 {
+  grid-area: aPrice2;
+}
+
+#appetizer3 {
+  grid-area: appetizer3;
+}
+
+#aDesc3 {
+  grid-area: aDesc3;
+}
+
+#aPrice3 {
+  grid-area: aPrice3;
+}
+
+.appetizer--grid-table_two ol li { 
+  align-self: center;
+}
+
+.appetizer--grid-table_title {
+  font-size: 3rem;
+  font-weight: 900;
   text-align: left;
 }
-
 /************************************************************************************/
 /************************************************************************************/
 /*                          MAINCOURSE PAGE STYLE SECTION                           */
