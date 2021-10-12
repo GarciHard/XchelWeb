@@ -1174,16 +1174,141 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .desserts {
+  align-items: center;
   background-image: url(../img/background/menus/desserts-background.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   color: #7a7a7a;
+  display: flex;
+  flex-direction: column;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
   height: 185rem;
+  justify-content: space-evenly;
   margin-top: 3rem;
   padding-top: 0.1rem;
   width: auto;
+}
+
+.desserts--main-titles {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-evenly;
+}
+
+.desserts--menu {
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  width: 50%;
+}
+
+.desserts--menu ol {
+  display: grid;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  list-style: none;
+  grid-template: 
+  "desserts1   dPrice1"
+  "desserts2   dPrice2"
+  "desserts3   dPrice3"
+  "desserts4   dPrice4"
+  "desserts5   dPrice5"
+  "desserts6   dPrice6"
+  "desserts7   dPrice7"
+  "desserts8   dPrice8"
+  "desserts9   dPrice9"
+  "desserts10  dPrice10"
+  "desserts11  dPrice11";
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr;
+}
+
+#desserts1 {
+  grid-area: desserts1;
+}
+
+#dPrice1 {
+  grid-area: dPrice1;
+}
+
+#desserts2 {
+  grid-area: desserts2;
+}
+
+#dPrice2 {
+  grid-area: dPrice2;
+}
+
+#desserts3 {
+  grid-area: desserts3;
+}
+
+#dPrice3 {
+  grid-area: dPrice3;
+}
+
+#desserts4 {
+  grid-area: desserts4;
+}
+
+#dPrice4 {
+  grid-area: dPrice4;
+}
+
+#desserts5 {
+  grid-area: desserts5;
+}
+
+#dPrice5 {
+  grid-area: dPrice5;
+}
+
+#desserts6 {
+  grid-area: desserts6;
+}
+
+#dPrice6 {
+  grid-area: dPrice6;
+}
+
+#desserts7 {
+  grid-area: desserts7;
+}
+
+#dPrice7 {
+  grid-area: dPrice7;
+}
+
+#desserts8 {
+  grid-area: desserts8;
+}
+
+#dPrice8 {
+  grid-area: dPrice8;
+}
+
+#desserts9 {
+  grid-area: desserts9;
+}
+
+#dPrice9 {
+  grid-area: dPrice9;
+}
+
+#desserts10 {
+  grid-area: desserts10;
+}
+
+#dPrice10 {
+  grid-area: dPrice10;
+}
+
+#desserts11 {
+  grid-area: desserts11;
+}
+
+#dPrice11 {
+  grid-area: dPrice11;
 }
 
 .desserts--title {
@@ -1191,31 +1316,18 @@ html {
   font-size: 15rem;
   font-weight: 900;
   line-height: 15rem;
-  margin: 30rem 17.5rem 0 17.5rem;
   text-align: center;
   width: 108rem;
 }
 
 .desserts--logo {
   height: 20rem;
-  margin: 2.5rem 61.5rem 2.5rem 61.5rem;
   width: 20rem;
-}
-
-.desserts--table {
-  margin: 0 27.5rem 3rem 27.5rem;
-  padding: 0 10rem 0 10rem;
-  width: 88rem;
-}
-
-.desserts--table tbody {
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
 .desserts--table__caption {
   font-size: 5rem;
   font-weight: 900;
-  margin: 5rem 0 5rem 0;
   text-align: center;
 }
 
@@ -1228,9 +1340,8 @@ html {
 .desserts--table__price {
   font-size: 3rem;
   padding: 01rem;
-  text-align: left;
+  text-align: right;
 }
-
 /************************************************************************************/
 /************************************************************************************/
 /*                          BEVERAGES PAGE STYLE SECTION                           */
