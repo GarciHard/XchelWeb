@@ -39,6 +39,31 @@ html {
   width: 85%;
 }
 
+@keyframes show-in {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-bounce {
+  0% {
+    background-image: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    transform: translateY(0);
+  }
+  50% {
+    background-image: linear-gradient(to left, #008000, #ffffff, #ff0000);
+    transform: translateY(-10rem);
+  }
+  100% {
+    background-image: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    transform: translateY(0);
+  }
+}
+
 /* Date & language section of the header */
 .headerDate {
   color: #2d2d2d;
@@ -78,6 +103,10 @@ html {
   width: 10rem;
 }
 
+.header-nav__logo:hover {
+  transform: scale(0.90, 0.90);
+}
+
 .header-nav ul {
   list-style: none;
 }
@@ -92,11 +121,19 @@ html {
   color: #2d2d2d;
   display: block;
   text-decoration: none;
+  
+}
+
+.header-nav ul li a:hover {
+  transform: scale(1.2, 1.2);
 }
 
 /* Hover used to display dropdown menu list */
 .header-nav ul li:hover ul {
   display: block;
+  animation-duration: 1s;
+  animation-name: show-in;
+  animation-iteration-count: calc(3s);
 }
 
 /* Menu list */
@@ -110,6 +147,7 @@ html {
   font-weight: bold;
   flex-direction: column;
   position: absolute;
+  transition: all 2s;
 }
 
 .header-nav__dropdown li {
@@ -161,18 +199,27 @@ html {
 .xchel__logo__titles--logo {
   height: 20rem;
   width: 20rem;
+  animation-duration: 4s;
+  animation-name: show-in;
+  animation-iteration-count: calc(5s);
 }
 
 .xchel__logo__titles--brand-name {
   font-family: Cantata One, Arial, Helvetica, sans-serif;
   font-size: 7rem;
   font-weight: lighter;
+  animation-duration: 4s;
+  animation-name: show-in;
+  animation-iteration-count: calc(5s);
 }
 
 .xchel__logo__titles--brand-slogan {
   font-family: Sorts Mill Goudy, Arial, Helvetica, sans-serif;
   font-size: 1.9rem;
   font-weight: lighter;
+  animation-duration: 4s;
+  animation-name: show-in;
+  animation-iteration-count: calc(5s);
 }
 
 .xchel__logo__titles--button {
@@ -182,6 +229,9 @@ html {
   height: 4rem;
   margin: 7rem 0 0;
   width: 17.5rem;
+  animation-duration: 4s;
+  animation-name: show-in;
+  animation-iteration-count: calc(5s);
 }
 
 .xchel__logo__titles--button:active {
@@ -205,7 +255,6 @@ html {
   flex-flow: row wrap;
   gap: 10rem;
 }
-
 /************************************************************************************/
 /************************************************************************************/
 /*                           POPULAR DISHES STYLE SECTION                           */
@@ -239,6 +288,10 @@ html {
   width: 37.2rem;
 }
 
+.dishes--flex-content:hover {
+  transform: scale(1.2, 1.2);
+}
+
 .dishes--image__caption {
   font-size: 1.5rem;
   font-weight: lighter;
@@ -250,8 +303,13 @@ html {
   font-size: 4rem;
   margin: 10rem 0;
   text-align: center;
-}
 
+  animation-duration: 1.5s;
+  animation-name: gradient-bounce;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 15rem 0.25rem;
+}
 /************************************************************************************/
 /************************************************************************************/
 /*                          LATEST RECEIPES STYLE SECTION                           */
