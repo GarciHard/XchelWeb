@@ -779,7 +779,7 @@ html {
 
 .appetizer--outside-container {
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   height: 90%;
@@ -787,11 +787,11 @@ html {
   overflow: auto;
   padding: 5rem;
   width: 80%;
-} 
+}
 
 .appetizer--container {
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 0.5rem solid orange;
   display: flex;
   height: 90%;
@@ -837,17 +837,17 @@ html {
 .appetizer--grid-table ol {
   display: grid;
   list-style: none;
-  grid-template: 
-  "starter1 price1"
-  "desc1    price1"
-  "starter2 price2"
-  "desc2    price2"
-  "starter3 price3"
-  "desc3    price3"
-  "starter4 price4"
-  "desc4    price4"
-  "starter5 price5"
-  "desc5    price5";
+  grid-template:
+    "starter1 price1"
+    "desc1    price1"
+    "starter2 price2"
+    "desc2    price2"
+    "starter3 price3"
+    "desc3    price3"
+    "starter4 price4"
+    "desc4    price4"
+    "starter5 price5"
+    "desc5    price5";
   grid-template-columns: auto;
   grid-template-rows: auto;
 }
@@ -912,7 +912,7 @@ html {
   grid-area: price5;
 }
 
-.appetizer--grid-table ol li { 
+.appetizer--grid-table ol li {
   align-self: center;
 }
 
@@ -943,13 +943,13 @@ html {
 .appetizer--grid-table_two ol {
   display: grid;
   list-style: none;
-  grid-template: 
-  "appetizer1 aPrice1"
-  "aDesc1    aPrice1"
-  "appetizer2 aPrice2"
-  "aDesc2    aPrice2"
-  "appetizer3 aPrice3"
-  "aDesc3    aPrice3";
+  grid-template:
+    "appetizer1 aPrice1"
+    "aDesc1    aPrice1"
+    "appetizer2 aPrice2"
+    "aDesc2    aPrice2"
+    "appetizer3 aPrice3"
+    "aDesc3    aPrice3";
   grid-template-columns: 5fr 0.5fr;
   grid-template-rows: 1fr;
 }
@@ -990,7 +990,7 @@ html {
   grid-area: aPrice3;
 }
 
-.appetizer--grid-table_two ol li { 
+.appetizer--grid-table_two ol li {
   align-self: center;
 }
 
@@ -1057,19 +1057,19 @@ html {
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   list-style: none;
   grid-row-gap: 2rem;
-  grid-template: 
-  "main1  mPrice1"
-  "mDesc1 mPrice1"
-  "main2  mPrice2"
-  "mDesc2 mPrice2"
-  "main3  mPrice3"
-  "mDesc3 mPrice3"
-  "main4  mPrice4"
-  "mDesc4 mPrice4"
-  "main5  mPrice5"
-  "mDesc5 mPrice5"
-  "main6  mPrice6"
-  "mDesc6 mPrice6";
+  grid-template:
+    "main1  mPrice1"
+    "mDesc1 mPrice1"
+    "main2  mPrice2"
+    "mDesc2 mPrice2"
+    "main3  mPrice3"
+    "mDesc3 mPrice3"
+    "main4  mPrice4"
+    "mDesc4 mPrice4"
+    "main5  mPrice5"
+    "mDesc5 mPrice5"
+    "main6  mPrice6"
+    "mDesc6 mPrice6";
   grid-template-columns: 3fr 0.5fr;
   grid-template-rows: 1fr;
 }
@@ -1207,18 +1207,18 @@ html {
   display: grid;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   list-style: none;
-  grid-template: 
-  "desserts1   dPrice1"
-  "desserts2   dPrice2"
-  "desserts3   dPrice3"
-  "desserts4   dPrice4"
-  "desserts5   dPrice5"
-  "desserts6   dPrice6"
-  "desserts7   dPrice7"
-  "desserts8   dPrice8"
-  "desserts9   dPrice9"
-  "desserts10  dPrice10"
-  "desserts11  dPrice11";
+  grid-template:
+    "desserts1   dPrice1"
+    "desserts2   dPrice2"
+    "desserts3   dPrice3"
+    "desserts4   dPrice4"
+    "desserts5   dPrice5"
+    "desserts6   dPrice6"
+    "desserts7   dPrice7"
+    "desserts8   dPrice8"
+    "desserts9   dPrice9"
+    "desserts10  dPrice10"
+    "desserts11  dPrice11";
   grid-template-columns: 1fr 0.5fr;
   grid-template-rows: 1fr;
 }
@@ -1348,16 +1348,28 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .beverages {
+  align-items: center;
   background-image: url(../img/background/menus/beverages-background.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   color: #ffffff;
+  display: flex;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  flex-direction: column;
   height: 185rem;
+  justify-content: space-evenly;
   margin-top: 3rem;
   padding-top: 0.1rem;
   width: auto;
+}
+
+.beverages--main-titles {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: space-evenly;
 }
 
 .beverages--title {
@@ -1365,52 +1377,122 @@ html {
   font-size: 15rem;
   font-weight: 900;
   line-height: 15rem;
-  margin: 30rem 12rem 0 12rem;
   text-align: center;
   width: 119rem;
 }
 
 .beverages--logo {
   height: 20rem;
-  margin: 2.5rem 61.5rem 2.5rem 61.5rem;
   width: 20rem;
 }
 
-.beverages--table {
-  margin: 0 12rem 0 12rem;
-  width: 119rem;
-}
-
-.beverages--table tbody {
+.beverages--menu {
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  height: 50%;
+  width: 60%;
 }
 
-.beverages--table td {
-  padding: 3rem 5rem 5rem 3rem;
+.beverages--menu ol {
+  display: grid;
+  list-style: none;
+  grid-row-gap: 2rem;
+  grid-template:
+    "beverages1  bPrice1"
+    "bDesc1 bPrice1"
+    "beverages2  bPrice2"
+    "bDesc2 bPrice2"
+    "beverages3  bPrice3"
+    "bDesc3 bPrice3"
+    "beverages4  bPrice4"
+    "bDesc4 bPrice4"
+    "beverages5  bPrice5"
+    "bDesc5 bPrice5";
+  grid-template-columns: 3fr 0.5fr;
+  grid-template-rows: 1fr;
 }
 
-.beverages--table__dish {
-  text-align: left;
-  width: 80%;
+#beverages1 {
+  grid-area: beverages1;
 }
 
-.beverages--table__dish dt {
-  font-size: 3.5rem;
+#bDesc1 {
+  grid-area: bDesc1;
+}
+
+#bPrice1 {
+  grid-area: bPrice1;
+}
+
+#beverages2 {
+  grid-area: beverages2;
+}
+
+#bDesc2 {
+  grid-area: bDesc2;
+}
+
+#bPrice2 {
+  grid-area: bPrice2;
+}
+
+#beverages3 {
+  grid-area: beverages3;
+}
+
+#bDesc3 {
+  grid-area: bDesc3;
+}
+
+#bPrice3 {
+  grid-area: bPrice3;
+}
+
+#beverages4 {
+  grid-area: beverages4;
+}
+
+#bDesc4 {
+  grid-area: bDesc4;
+}
+
+#bPrice4 {
+  grid-area: bPrice4;
+}
+
+#beverages5 {
+  grid-area: beverages5;
+}
+
+#bDesc5 {
+  grid-area: bDesc5;
+}
+
+#bPrice5 {
+  grid-area: bPrice5;
+}
+
+.beverages--menu ol li {
+  align-self: center;
+}
+
+.beverages--grid-table_name {
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-top: 2rem;
 }
 
-.beverages--table__dish dd {
-  color: #eee9c3;
-  font-size: 3rem;
+.beverages--grid-table_desc {
+  color: #f2e9e1;
+  font-size: 2rem;
   font-style: italic;
+  margin-bottom: 2rem;
 }
 
-.beverages--table__price {
-  font-size: 3rem;
-  text-align: left;
-  padding: 5rem 0;
+.beverages--grid-table_price {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: right;
 }
-
 /************************************************************************************/
 /************************************************************************************/
 /*                          LOCATIONS PAGE STYLE SECTION                           */
@@ -1496,7 +1578,7 @@ html {
 .locations--stuff__grid {
   display: grid;
   gap: 5rem;
-  grid-template: 
+  grid-template:
     "findUsTitle findUsTitle"
     "mapLocator xchelImgLeft";
   padding: 5rem;
