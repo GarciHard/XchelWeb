@@ -1005,68 +1005,169 @@ html {
 /************************************************************************************/
 /************************************************************************************/
 .main-course {
+  align-items: flex-end;
   background-image: url(../img/background/menus/main-course-background.png);
-  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   color: #eccc6e;
+  display: flex;
   font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  flex-direction: column;
   height: 185rem;
   margin-top: 3rem;
   padding-top: 0.1rem;
   width: auto;
 }
 
+.main-course--container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  width: 78%;
+}
+
+.main-course--main-titles {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .main-course--title {
   font-size: 15rem;
   font-weight: 900;
   line-height: 15rem;
-  margin: 15rem 0 0 30.5rem;
   text-align: center;
   width: 112.3rem;
 }
 
 .main-course--logo {
   height: 20rem;
-  margin: 2.5rem 46.1rem 2.5rem 76.6rem;
+  margin: 5rem 0;
   width: 20rem;
 }
 
-.main-course--table {
-  margin: 0 0 3rem 30.5rem;
-  width: 112.3rem;
+.main-course--menu {
+  width: 70%;
 }
 
-.main-course--table tbody {
+.main-course--menu ol {
+  display: grid;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  list-style: none;
+  grid-row-gap: 2rem;
+  grid-template: 
+  "main1  mPrice1"
+  "mDesc1 mPrice1"
+  "main2  mPrice2"
+  "mDesc2 mPrice2"
+  "main3  mPrice3"
+  "mDesc3 mPrice3"
+  "main4  mPrice4"
+  "mDesc4 mPrice4"
+  "main5  mPrice5"
+  "mDesc5 mPrice5"
+  "main6  mPrice6"
+  "mDesc6 mPrice6";
+  grid-template-columns: 3fr 0.5fr;
+  grid-template-rows: 1fr;
 }
 
-.main-course--table td {
-  padding: 3rem 5rem 5rem 3rem;
+#main1 {
+  grid-area: main1;
 }
 
-.main-course--table__dish {
-  text-align: left;
-  width: 80%;
+#mDesc1 {
+  grid-area: mDesc1;
 }
 
-.main-course--table__dish dt {
-  font-size: 3.5rem;
+#mPrice1 {
+  grid-area: mPrice1;
+}
+
+#main2 {
+  grid-area: main2;
+}
+
+#mDesc2 {
+  grid-area: mDesc2;
+}
+
+#mPrice2 {
+  grid-area: mPrice2;
+}
+
+#main3 {
+  grid-area: main3;
+}
+
+#mDesc3 {
+  grid-area: mDesc3;
+}
+
+#mPrice3 {
+  grid-area: mPrice3;
+}
+
+#main4 {
+  grid-area: main4;
+}
+
+#mDesc4 {
+  grid-area: mDesc4;
+}
+
+#mPrice4 {
+  grid-area: mPrice4;
+}
+
+#main5 {
+  grid-area: main5;
+}
+
+#mDesc5 {
+  grid-area: mDesc5;
+}
+
+#mPrice5 {
+  grid-area: mPrice5;
+}
+
+#main6 {
+  grid-area: main6;
+}
+
+#mDesc6 {
+  grid-area: mDesc6;
+}
+
+#mPrice6 {
+  grid-area: mPrice6;
+}
+
+.main-course--menu ol li {
+  align-self: center;
+}
+
+.main-course--grid-table_name {
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-top: 2rem;
 }
 
-.main-course--table__dish dd {
+.main-course--grid-table_desc {
   color: #f2e9e1;
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: italic;
+  margin-bottom: 2rem;
 }
 
-.main-course--table__price {
-  font-size: 3rem;
-  text-align: center;
-  padding: 5rem 0;
+.main-course--grid-table_price {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: right;
 }
-
 /************************************************************************************/
 /************************************************************************************/
 /*                           DESSERTS PAGE STYLE SECTION                            */
