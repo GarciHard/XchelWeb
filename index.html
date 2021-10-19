@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <!-- Redesign of the header, now we have the opposite language & the date -->
-    <header class="container">
-        <!-- div container which be used for the language & date -->
-        <div class="headerDate">
-            <ul>
-                <li><a href="#">Espa&ntilde;ol</a></li>
-                <li>|</li>
-                <li>Mon 13th Sep 2021 </li>
-            </ul>
+    <!-- Adding parallax section -->
+    <main class="main-parallax-container">
+        <div class="parallax-container__opacity"></div>
+        <div class="parallax-container__titles">
+            <h1>xchel</h1>
+            <h2>Mexican <span>Cuisine</span></h2>
         </div>
+    </main>
+    <!-- Redesign of the header, now we have the opposite language & the date -->
+    <header class="main-header-nav">
         <!-- div container for the navigation bar which includes the brand logo -->
         <div class="header-nav">
             <a href="./index.html"><img class="header-nav__logo" src="./img/logos/xchel/blackTitledLogo.svg"
@@ -48,23 +48,23 @@
         </div>
     </header>
     <!-- The main section changed, now we incorporate the reservation button -->
-    <main class="container">
+    <section class="container">
         <!-- div container for the main section, contains the background image, brand logo & reservation button -->
         <div class="xchel__main__background">
             <div class="xchel__logo__titles">
                 <img class="xchel__logo__titles--logo" src="./img/logos/xchel/whiteUntitledLogo.svg" alt="xchelsLogo">
-                <h1 class="xchel__main__background--fonts xchel__logo__titles--brand-name">
+                <h3 class="xchel__main__background--fonts xchel__logo__titles--brand-name">
                     <strong>X C H E L</strong>
-                </h1>
+                </h3>
                 <!-- The h2 tags will be modified with css, doesnt matter his look & feel for now -->
-                <h2 class="xchel__main__background--fonts xchel__logo__titles--brand-slogan">
+                <h3 class="xchel__main__background--fonts xchel__logo__titles--brand-slogan">
                     MEXICAN CUISINE
-                </h2>
+                </h3>
                 <input type="button" value="Book now"
                     class="xchel__main__background--fonts xchel__logo__titles--button">
             </div>
         </div>
-    </main>
+    </section>
     <!-- Previously the "Concept Section", we change it for the most selled food dishses -->
     <section class="container sections dishes--main-flex">
         <div>
