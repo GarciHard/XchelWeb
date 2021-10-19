@@ -89,7 +89,7 @@ html {
 
 .parallax-container__titles > h1 {
   color: #fff;
-  font-family: Playfair Display;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;;
   font-size: 30rem;
   font-style: italic;
   font-weight: 700;
@@ -97,7 +97,7 @@ html {
 
 .parallax-container__titles > h2 {
   color: #fff;
-  font-family: Merriweather;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;;
   font-size: 4rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
@@ -122,7 +122,7 @@ html {
 /* Date & language section of the header */
 .headerDate {
   color: #2d2d2d;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   text-align: right;
@@ -147,7 +147,7 @@ html {
 .header-nav {
   align-items: center;
   display: flex;
-  font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   height: 10rem;
   justify-content: space-between;
@@ -185,7 +185,7 @@ html {
   border: 0.2rem solid #ab1331;
   color: #2d2d2d;
   display: none;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   flex-direction: column;
@@ -244,13 +244,13 @@ html {
 }
 
 .xchel__logo__titles--brand-name {
-  font-family: Cantata One, Arial, Helvetica, sans-serif;
+  font-family: "Cantata One", Arial, Helvetica, sans-serif;
   font-size: 7rem;
   font-weight: lighter;
 }
 
 .xchel__logo__titles--brand-slogan {
-  font-family: Sorts Mill Goudy, Arial, Helvetica, sans-serif;
+  font-family: "Sorts Mill Goudy", Arial, Helvetica, sans-serif;
   font-size: 1.9rem;
   font-weight: lighter;
 }
@@ -271,7 +271,7 @@ html {
 /* Style for the section's */
 .sections {
   color: #2d2d2d;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
 .sections--title {
@@ -326,7 +326,7 @@ html {
 }
 
 .dishes--quote {
-  font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
   font-size: 4rem;
   margin: 10rem 0;
   text-align: center;
@@ -454,7 +454,7 @@ html {
 .footerMain {
   color: #2d2d2d;
   display: flex;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   margin-top: 10rem;
 }
 
@@ -540,7 +540,7 @@ html {
   background-color: #2d2d2d;
   display: flex;
   flex-direction: column;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   height: 11rem;
   justify-content: space-evenly;
@@ -561,7 +561,7 @@ html {
   color: #2d2d2d;
   display: flex;
   flex-direction: column;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   justify-content: space-evenly;
   margin-top: 3rem;
   height: 170rem;
@@ -610,7 +610,7 @@ html {
 /* IN PROGRESS */
 .reservations {
   /* background-image: url(../img/chef/flowers.png); */
-  font-family: Playfair Display SC, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
   height: 50rem;
   margin-top: 3rem;
   padding-top: 0.1rem;
@@ -618,7 +618,7 @@ html {
 
 .reservations--title {
   color: #2d2d2d;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 5rem;
   padding: 1rem;
   text-align: center;
@@ -688,7 +688,7 @@ html {
 
 .reservations--calendar ol {
   display: grid;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   grid-template-columns: repeat(7, 1fr);
   list-style: none;
 }
@@ -726,7 +726,7 @@ html {
 }
 
 .reservations--date-container {
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
 
 .reservations--date-container h4 {
@@ -782,7 +782,7 @@ html {
   border: none;
   border-radius: 1rem;
   color: #2d2d2d;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   height: 3rem;
   text-align: center;
@@ -794,7 +794,7 @@ html {
   border: none;
   border-radius: 1rem;
   color: #2d2d2d;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   height: 3rem;
   text-align: center;
@@ -804,7 +804,7 @@ html {
 .reservations--user-confirm {
   align-items: center;
   display: flex;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   flex-direction: column;
   margin-top: 10rem;
 }
@@ -847,7 +847,7 @@ html {
   background-repeat: repeat;
   color: #0f5389;
   display: flex;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   flex-direction: column;
   margin-top: 3rem;
   height: 185rem;
@@ -908,7 +908,7 @@ html {
 
 .appetizer--grid-table {
   display: flex;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   flex-direction: column;
   justify-content: space-evenly;
   width: 90%;
@@ -1014,7 +1014,7 @@ html {
 
 .appetizer--grid-table_two {
   display: flex;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   flex-direction: column;
   justify-content: space-evenly;
   width: 90%;
@@ -1091,7 +1091,7 @@ html {
   background-position: center;
   color: #eccc6e;
   display: flex;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   flex-direction: column;
   height: 185rem;
   margin-top: 3rem;
@@ -1134,7 +1134,7 @@ html {
 
 .main-course--menu ol {
   display: grid;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   list-style: none;
   grid-row-gap: 2rem;
   grid-template:
@@ -1262,7 +1262,7 @@ html {
   color: #7a7a7a;
   display: flex;
   flex-direction: column;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   height: 185rem;
   justify-content: space-evenly;
   margin-top: 3rem;
@@ -1279,13 +1279,13 @@ html {
 }
 
 .desserts--menu {
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   width: 50%;
 }
 
 .desserts--menu ol {
   display: grid;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   list-style: none;
   grid-template:
     "desserts1   dPrice1"
@@ -1419,7 +1419,7 @@ html {
 
 .desserts--table__price {
   font-size: 3rem;
-  padding: 01rem;
+  padding: 0.1rem;
   text-align: right;
 }
 /************************************************************************************/
@@ -1435,7 +1435,7 @@ html {
   background-position: center;
   color: #ffffff;
   display: flex;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   flex-direction: column;
   height: 185rem;
   justify-content: space-evenly;
@@ -1467,7 +1467,7 @@ html {
 }
 
 .beverages--menu {
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   height: 50%;
   width: 60%;
 }
@@ -1583,7 +1583,7 @@ html {
   background-image: url(../img/locations-section/plants.png);
   background-size: contain;
   display: flex;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   flex-direction: column;
   height: 190rem;
   justify-content: space-evenly;
@@ -1649,7 +1649,7 @@ html {
 
 .locations--stuff__table_address {
   color: #2d2d2d;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   padding: 1rem;
   text-align: left;
@@ -1678,7 +1678,7 @@ html {
 
 .locations--stuff__find-us-title {
   color: #2d2d2d;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   text-align: center;
   width: 100%;
@@ -1705,7 +1705,7 @@ html {
   background-size: contain;
   display: flex;
   flex-direction: column;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   height: 190rem;
   justify-content: space-evenly;
   margin-top: 3rem;
@@ -1737,7 +1737,7 @@ html {
 
 .chef-bio--container__text {
   color: #2d2d2d;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   text-align: justify;
 }
@@ -1759,7 +1759,7 @@ html {
   background-size: contain;
   display: flex;
   flex-direction: column;
-  font-family: Playfair Display, Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   height: 80rem;
   margin-top: 3rem;
   padding-top: 0.1rem;
@@ -1785,7 +1785,7 @@ html {
 
 .contact--form {
   background-color: #ffffffda;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   /* margin: 5rem 35.7rem 5rem 35.7rem; */
   padding: 5rem;
   width: 50%;
@@ -1862,7 +1862,7 @@ html {
   border: none;
   border-radius: 2rem;
   color: #ab1331;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
