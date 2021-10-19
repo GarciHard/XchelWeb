@@ -14,38 +14,39 @@
 
 <body>
     <!-- Adding parallax section -->
-    <main class="main-parallax-container">
+    <main id="main" class="main-parallax-container">
         <div class="parallax-container__opacity"></div>
         <div class="parallax-container__titles">
             <h1>xchel</h1>
             <h2>Mexican <span>Cuisine</span></h2>
         </div>
     </main>
-    <!-- Redesign of the header, now we have the opposite language & the date -->
+    <!-- Redesign of the header, i remove the language & date -->
     <header class="main-header-nav">
-        <!-- div container for the navigation bar which includes the brand logo -->
-        <div class="header-nav">
-            <a href="./index.html"><img class="header-nav__logo" src="./img/logos/xchel/blackTitledLogo.svg"
-                    alt="xchelsLogo"></a>
-            <nav>
-                <ul>
-                    <li><a href="./pages/about.html">About</a></li>
-                    <li><a href="./pages/reservations.html">Reservations</a></li>
-                    <li>
-                        <a href="#">Menu</a>
-                        <ul class="header-nav__dropdown">
-                            <li><a href="./pages/menus/appetizers.html">Starters & Appetizers</a></li>
-                            <li><a href="./pages/menus/main-course.html">Main Course</a></li>
-                            <li><a href="./pages/menus/desserts.html">Desserts</a></li>
-                            <li><a href="./pages/menus/beverages.html">Beverages</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./pages/locations.html">Locations</a></li>
-                    <li><a href="./pages/chefs-bio.html">Chef's bio</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
+        <nav class="header-nav-container">
+            <ul class="header-nav__left">
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/reservations.html">Reservations</a></li>
+                <li>
+                    <a href="#">Menu</a>
+                    <ul class="header-nav__dropdown">
+                        <li><a href="./pages/menus/appetizers.html">Starters & Appetizers</a></li>
+                        <li><a href="./pages/menus/main-course.html">Main Course</a></li>
+                        <li><a href="./pages/menus/desserts.html">Desserts</a></li>
+                        <li><a href="./pages/menus/beverages.html">Beverages</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header-nav__center">
+                <a href="#main">xchel</a>
+            </div>
+            <ul class="header-nav__right">
+                <li><a href="./pages/locations.html">Locations</a></li>
+                <li><a href="./pages/chefs-bio.html">Chef's bio</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- The main section changed, now we incorporate the reservation button -->
     <section class="container">

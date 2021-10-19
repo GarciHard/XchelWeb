@@ -30,6 +30,18 @@
   }
 }
 
+@keyframes changeParallax {
+  0% {
+    background-image: url(../img/parallax/parallax_1.jpg);
+  }
+  50% {
+    background-image: url(../img/parallax/parallax_2.jpg);
+  }
+  100% {
+    background-image: url(../img/parallax/parallax_3.jpg);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -56,18 +68,18 @@ html {
 /* TESTING STYLES */
 .main-parallax-container {
   background-attachment: fixed;
-  background-image: url(../img/parallax_1.jpg);
+  animation: changeParallax calc(10s) infinite;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100rem;
+  height: 100vh;
   width: auto;
   z-index: 1;
 }
 
 .parallax-container__opacity {
   background-color: #000;
-  height: 100rem;
+  height: 100%;
   opacity: 0.5;
   position: absolute;
   width: 100%;
@@ -89,7 +101,7 @@ html {
 
 .parallax-container__titles > h1 {
   color: #fff;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 30rem;
   font-style: italic;
   font-weight: 700;
@@ -115,6 +127,108 @@ html {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.header-nav-container {
+  color: #2d2d2d;
+  display: flex;
+  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-nav__left {
+  align-items: center;
+  display: flex;
+  width: 30%;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.header-nav__left > li {
+  align-items: center;
+  display: flex;
+  padding: 0 2rem;
+  height: 95%;
+}
+
+.header-nav__left > li > a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+/* Hover used to display dropdown menu list */
+.header-nav__left > li:hover ul {
+  display: block;
+  width: 20rem;
+}
+
+/* Menu list */
+.header-nav__dropdown {
+  align-content: center;
+  border: 0.2rem solid #ab1331;
+  color: #2d2d2d;
+  display: none;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.header-nav__dropdown li {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.header-nav__dropdown li a {
+  padding: 1rem 1rem 1rem 2rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.header-nav__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+
+.header-nav__center > a {
+  color: #130d08;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-nav__right {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  width: 30%;
+}
+
+.header-nav__right > li {
+  align-items: center;
+  display: flex;
+  padding: 0 2rem;
+  height: 95%;
+}
+
+.header-nav__right > li > a {
+  color: #2d2d2d;
+  text-decoration: none;
 }
 
 /* End of testing styles */
@@ -175,12 +289,12 @@ html {
 }
 
 /* Hover used to display dropdown menu list */
-.header-nav ul li:hover ul {
+/* .header-nav__left li:hover ul {
   display: block;
-}
+} */
 
 /* Menu list */
-.header-nav__dropdown {
+/* .header-nav__dropdown {
   align-content: center;
   border: 0.2rem solid #ab1331;
   color: #2d2d2d;
@@ -200,7 +314,7 @@ html {
 .header-nav__dropdown li a {
   padding: 1rem 1rem 1rem 2rem;
   width: 15rem;
-}
+} */
 /* >>> Review why the list-style-image is not working <<< */
 
 /************************************************************************************/
