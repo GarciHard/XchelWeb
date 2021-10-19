@@ -9,7 +9,7 @@
 /* The above fonts are used specifically for the brand name and slogan. */
 
 /* Playfair Display */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,700;1,900&display=swap");
 
 /* Playfair Display SC */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap");
@@ -17,9 +17,23 @@
 /* Source Sans Pro */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 
+/* Merriweather */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* Adding keyframe */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* Applying this style, we set the relative units to 10px 
@@ -38,6 +52,72 @@ html {
   max-width: 208rem;
   width: 85%;
 }
+
+/* TESTING STYLES */
+.main-parallax-container {
+  background-attachment: fixed;
+  background-image: url(../img/parallax_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem;
+  width: auto;
+  z-index: 1;
+}
+
+.parallax-container__opacity {
+  background-color: #000;
+  height: 100rem;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.parallax-container__titles {
+  align-items: center;
+  animation: fadeIn 4s;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  width: 100%;
+}
+
+.parallax-container__titles > h1 {
+  color: #fff;
+  font-family: Playfair Display;
+  font-size: 30rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.parallax-container__titles > h2 {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+.parallax-container__titles > h2 > span {
+  color: #fb6e14;
+  font-size: 4rem;
+}
+
+.main-header-nav {
+  background-color: #fff;
+  border: 0.1rem solid #e6e6e6;
+  box-shadow: 0 1.4rem 1.4rem -1.4rem rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* End of testing styles */
 
 /* Date & language section of the header */
 .headerDate {
