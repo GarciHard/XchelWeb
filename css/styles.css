@@ -42,9 +42,25 @@
   }
 }
 
+@keyframes changeQuotes {
+  0% {
+    content: "\"Passion for the Mexican Flavor\"";
+  }
+  50% {
+    content: "\"Love beign mexican\"";
+  }
+  75% {
+    content: "\"The most important ingredient is passion\"";
+  }
+  100% {
+    content: "\"Life serves to give beauty\"";
+  }
+}
+
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -126,7 +142,7 @@ html {
   box-shadow: 0 1.4rem 1.4rem -1.4rem rgba(0, 0, 0, 0.75);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .header-nav-container {
@@ -160,7 +176,7 @@ html {
 
 /* Hover used to display dropdown menu list */
 .header-nav__left > li:hover ul {
-  display: block;
+  /* display: block; */
   width: 20rem;
 }
 
@@ -188,13 +204,6 @@ html {
   text-decoration: none;
   width: 100%;
 }
-
-
-
-
-
-
-
 
 .header-nav__center {
   display: flex;
@@ -229,6 +238,141 @@ html {
 .header-nav__right > li > a {
   color: #2d2d2d;
   text-decoration: none;
+}
+
+.about-section-container {
+  height: 90vh;
+  width: 100%;
+  /* padding: 5rem; */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section-container_image {
+  background-image: url(../img/about-section/restaurant_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+}
+
+.about-section-container_info {
+  align-items: center;
+  background-image: url(../img/about-section/about_section_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10rem 5rem;
+  width: 50%;
+}
+
+.about-section-container_info > h2{
+  color: #fff;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.about-section-container_info > img {
+  width: 40%;
+}
+
+.about-section-container_info > p {
+  color: #fff;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: lighter;
+  height: 100%;
+  margin: 5rem 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.specials-section-container {
+  background-color: cornflowerblue;  
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-section-container {
+  background-color: tomato;  
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-quote-container {
+  background-attachment: fixed;
+  background-image: url(../img/quote_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  z-index: 1;
+}
+
+.parallax-quote-container_opacity {
+  background-color: #000;
+  height: inherit;
+  width: inherit;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 3;
+}
+
+.parallax-quote-container_text {
+  align-items: center;
+  animation: fadeIn 4s;
+  display: flex;
+  flex-flow: column wrap;
+  height: inherit;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  width: inherit;
+}
+
+.parallax-quote-container_text > h3 {
+  color: #fff;
+  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+.parallax-quote-container_text > h3::before {
+  content: "";
+  animation: changeQuotes calc(10s) infinite;
+}
+
+.parallax-quote-container_text > img {
+  width: 20%;
+}
+
+.reservations-section-container {
+  background-color: sandybrown;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* End of testing styles */
