@@ -174,6 +174,10 @@ html {
   text-decoration: none;
 }
 
+.header-nav__left > li > a:hover {
+  color: #fb6e14;
+}
+
 /* Hover used to display dropdown menu list */
 .header-nav__left > li:hover ul {
   /* display: block; */
@@ -221,6 +225,11 @@ html {
   text-decoration: none;
 }
 
+.header-nav__center > a:hover {
+  color: #fb6e14;
+  transform: scale(1.2);
+}
+
 .header-nav__right {
   align-items: center;
   display: flex;
@@ -240,8 +249,12 @@ html {
   text-decoration: none;
 }
 
+.header-nav__right > li > a:hover {
+  color: #fb6e14;
+}
+
 .about-section-container {
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   /* padding: 5rem; */
   display: flex;
