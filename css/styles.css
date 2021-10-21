@@ -24,9 +24,11 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translate(0, 100px);
   }
   100% {
     opacity: 1;
+    transform: translate(0, 0);
   }
 }
 
@@ -44,15 +46,35 @@
 
 @keyframes changeQuotes {
   0% {
+    opacity: 0;
     content: "\"Passion for the Mexican Flavor\"";
   }
-  50% {
+  24% {
+    opacity: 1;
+    content: "\"Passion for the Mexican Flavor\"";
+  }
+  25% {
+    opacity: 0;
     content: "\"Love beign mexican\"";
   }
-  75% {
+  49% {
+    opacity: 1;
+    content: "\"Love beign mexican\"";
+  }
+  50% {
+    opacity: 0;
     content: "\"The most important ingredient is passion\"";
   }
+  74% {
+    opacity: 1;
+    content: "\"The most important ingredient is passion\"";
+  }
+  75% {
+    opacity: 0;
+    content: "\"Life serves to give beauty\"";
+  }  
   100% {
+    opacity: 1;
     content: "\"Life serves to give beauty\"";
   }
 }
@@ -61,7 +83,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 /* Applying this style, we set the relative units to 10px 
@@ -69,6 +90,7 @@
  */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* 
@@ -82,6 +104,13 @@ html {
 }
 
 /* TESTING STYLES */
+
+body {
+  background-repeat: repeat;
+  background-image: url(../img/chef/flowers.png);
+  background-size: cover;
+}
+
 .main-parallax-container {
   background-attachment: fixed;
   animation: changeParallax calc(10s) infinite;
@@ -310,13 +339,174 @@ html {
 }
 
 .specials-section-container {
-  background-color: cornflowerblue;  
+  background-color: #fff;
   height: 100vh;
   width: 100%;
-  padding: 5rem;
+  padding: 10rem 10rem 5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.specials-section-container > h2 {
+  color: #2d2d2d;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.specials-section-container > img {
+  width: 20%;
+}
+
+.specials-section_grid-container {
+
+  box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template: 
+    "dish_1 dish_2" 1fr
+    "dish_1 dish_3" 1fr
+    "dish_4 dish_6" 1fr
+    "dish_5 dish_6" 1fr / 1fr 1fr;
+  margin-top: 2rem;
+  height: 100%;
+  width: 90%;
+}
+
+#dish_1 {
+  background-color: red;
+  grid-area: dish_1;
+}
+#dish_2 {
+  background-color: orange;
+  grid-area: dish_2;
+}
+#dish_3 {
+  background-color: blue;
+  grid-area: dish_3;
+}
+#dish_4 {
+  background-color: pink;
+  grid-area: dish_4;
+}
+#dish_5 {
+  background-color: yellow;
+  grid-area: dish_5;
+}
+#dish_6 {
+  background-color: green;
+  grid-area: dish_6;
+}
+
+.specials-section_dish-container {
+  display: flex;
+  
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.specials-section_dish-container:hover {
+  animation: fade 1s normal;
+  box-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
+  transform: scale(1.1);
+}
+
+.specials-section_dish-container_lg-image {
+  background-image: url(../img/about-section/restaurant_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+}
+
+.specials-section_dish-container_lg-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #faebcd;
+  width: 50%;
+  height: 100%;
+  padding: 5rem;
+}
+
+.specials-section_dish-container_lg-info > h3{
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: #2d2d2d;
+}
+
+.specials-section_dish-container_lg-info > img {
+  width: 60%;
+}
+
+.specials-section_dish-container_lg-info > span {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #5e493a;
+  font-weight: 300;
+}
+
+.specials-section_dish-container_lg-info > p {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #222;
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.specials-section_dish-container_sm-image {
+  background-image: url(../img/about-section/restaurant_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+}
+.specials-section_dish-container_sm-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.specials-section_dish-container_sm-info > h3{
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: #2d2d2d;
+}
+
+.specials-section_dish-container_sm-info > img {
+  width: 60%;
+}
+
+.specials-section_dish-container_sm-info > span {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #5e493a;
+  font-weight: 300;
+}
+
+.specials-section_dish-container_sm-info > p {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #222;
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .menu-section-container {
@@ -350,7 +540,7 @@ html {
 
 .parallax-quote-container_text {
   align-items: center;
-  animation: fadeIn 4s;
+  /* animation: fadeIn 4s infinite; */
   display: flex;
   flex-flow: column wrap;
   height: inherit;
@@ -371,7 +561,9 @@ html {
 
 .parallax-quote-container_text > h3::before {
   content: "";
-  animation: changeQuotes calc(10s) infinite;
+  animation-name: changeQuotes;
+  animation-duration: 20000ms;
+  animation-iteration-count: infinite;
 }
 
 .parallax-quote-container_text > img {
