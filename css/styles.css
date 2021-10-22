@@ -21,6 +21,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 /* Adding keyframe */
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -33,15 +38,9 @@
 }
 
 @keyframes changeParallax {
-  0% {
-    background-image: url(../img/parallax/parallax_1.jpg);
-  }
-  50% {
-    background-image: url(../img/parallax/parallax_2.jpg);
-  }
-  100% {
-    background-image: url(../img/parallax/parallax_3.jpg);
-  }
+  0% { background-image: url(../img/parallax/parallax_1.jpg); }
+  50% { background-image: url(../img/parallax/parallax_2.jpg); }
+  100% { background-image: url(../img/parallax/parallax_3.jpg); }
 }
 
 @keyframes changeQuotes {
@@ -99,21 +98,20 @@ html {
  */
 .container {
   margin: 0 auto;
-  max-width: 208rem;
   width: 85%;
 }
 
 /* TESTING STYLES */
 
 body {
-  background-repeat: repeat;
   background-image: url(../img/chef/flowers.png);
+  background-repeat: repeat;
   background-size: cover;
 }
 
 .main-parallax-container {
-  background-attachment: fixed;
   animation: changeParallax calc(10s) infinite;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,7 +145,7 @@ body {
 .parallax-container__titles > h1 {
   color: #fff;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 30rem;
+  font-size: 10rem;
   font-style: italic;
   font-weight: 700;
 }
@@ -155,14 +153,42 @@ body {
 .parallax-container__titles > h2 {
   color: #fff;
   font-family: Merriweather, Arial, Helvetica, sans-serif;;
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
 }
 
 .parallax-container__titles > h2 > span {
   color: #fb6e14;
-  font-size: 4rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .parallax-container__titles > h1 {
+    font-size: 20rem;
+  }
+  
+  .parallax-container__titles > h2 {
+    font-size: 2.5rem;
+  }
+  
+  .parallax-container__titles > h2 > span {
+    font-size: 2.5rem;
+  } 
+}
+
+@media (min-width: 900px) {
+  .parallax-container__titles > h1 {
+    font-size: 30rem;
+  }
+  
+  .parallax-container__titles > h2 {
+    font-size: 4rem;
+  }
+  
+  .parallax-container__titles > h2 > span {
+    font-size: 4rem;
+  } 
 }
 
 .main-header-nav {
@@ -186,16 +212,16 @@ body {
 .header-nav__left {
   align-items: center;
   display: flex;
-  width: 30%;
-  list-style-type: none;
   justify-content: flex-end;
+  list-style-type: none;
+  width: 30%;
 }
 
 .header-nav__left > li {
   align-items: center;
   display: flex;
-  padding: 0 2rem;
   height: 95%;
+  padding: 0 2rem;
 }
 
 .header-nav__left > li > a {
@@ -219,10 +245,10 @@ body {
   border: 0.2rem solid #ab1331;
   color: #2d2d2d;
   display: none;
+  flex-direction: column;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
-  flex-direction: column;
   position: absolute;
   width: 100%;
 }
@@ -239,8 +265,8 @@ body {
 }
 
 .header-nav__center {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   width: 15%;
 }
@@ -282,14 +308,41 @@ body {
   color: #fb6e14;
 }
 
+@media (min-width: 200px) {
+  .header-nav__left {
+    display: none;
+  }
+  .header-nav__right {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-nav__left {
+    animation: fadeIn 2s normal;
+    display: flex;
+  }
+  .header-nav__right {
+    animation: fadeIn 2s normal;
+    display: flex;
+  }
+}
+
 .about-section-container {
-  height: 80vh;
+  display: grid;
+  grid-template: 
+    "about-img" 0.6fr
+    "about-info" 1.6fr / 1fr;
+  height: auto;
   width: 100%;
-  /* padding: 5rem; */
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+}
+
+#about-img {
+  grid-area: about-img;
+}
+
+#about-info {
+  grid-area: about-info;
 }
 
 .about-section-container_image {
@@ -298,7 +351,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 
 .about-section-container_info {
@@ -309,215 +362,312 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 10rem 5rem;
-  width: 50%;
+  height: auto;
+  padding: 2rem 0;
+  width: 100%;
 }
 
 .about-section-container_info > h2{
   color: #fff;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
   font-style: italic;
   font-weight: lighter;
-  font-size: 3rem;
 }
 
 .about-section-container_info > img {
-  width: 40%;
+  width: 25rem;
 }
 
 .about-section-container_info > p {
-  color: #fff;
+  color: #a99c92;
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-  font-style: italic;
-  font-weight: lighter;
-  height: 100%;
-  margin: 5rem 0;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 300;
+  height: auto;
+  margin: 2rem 0;
   text-align: justify;
+  width: 90%;
+}
+
+@media (min-width: 600px) {
+  .about-section-container {    
+    grid-template: 
+      "about-img" 0.6fr
+      "about-info" 1fr / 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-section-container {
+    grid-template: 
+      "about-img about-info" 2fr
+      / 1fr 1fr;
+  }
+  .about-section-container_info {
+    padding-top: 10rem;
+  }
+  .about-section-container_info > p {
+    padding-top: 5rem;
+  }
 }
 
 .specials-section-container {
+  align-items: center;
   background-color: #fff;
-  height: 100vh;
-  width: 100%;
-  padding: 10rem 10rem 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: auto;
   justify-content: center;
+  width: 85vw;
 }
 
 .specials-section-container > h2 {
   color: #2d2d2d;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
   font-style: italic;
   font-weight: lighter;
-  font-size: 3rem;
+  margin-top: 10rem;
+  text-align: center;
+  width: 100%;
 }
 
 .specials-section-container > img {
-  width: 20%;
+  margin-bottom: 4rem;
+  width: 25rem;
 }
 
 .specials-section_grid-container {
-
   box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
   display: grid;
   grid-template: 
-    "dish_1 dish_2" 1fr
-    "dish_1 dish_3" 1fr
-    "dish_4 dish_6" 1fr
-    "dish_5 dish_6" 1fr / 1fr 1fr;
-  margin-top: 2rem;
-  height: 100%;
-  width: 90%;
+    "dish_1" 1fr
+    "dish_2" 1fr
+    "dish_3" 1fr
+    "dish_4" 1fr
+    "dish_5" 1fr
+    "dish_6" 1fr / 1fr;
+  height: auto;
+  width: 100%;
 }
 
 #dish_1 {
-  background-color: red;
+  background-color: #faebcd;
   grid-area: dish_1;
 }
 #dish_2 {
-  background-color: orange;
+  background-color: #f5f5f5;
   grid-area: dish_2;
 }
 #dish_3 {
-  background-color: blue;
+  background-color: #f5f5f5;
   grid-area: dish_3;
 }
 #dish_4 {
-  background-color: pink;
+  background-color: #f5f5f5;
   grid-area: dish_4;
 }
 #dish_5 {
-  background-color: yellow;
+  background-color: #f5f5f5;
   grid-area: dish_5;
 }
 #dish_6 {
-  background-color: green;
+  background-color: #faebcd;
   grid-area: dish_6;
 }
 
 .specials-section_dish-container {
   display: flex;
-  
-}
-
-@keyframes fade {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  flex-direction: column;
 }
 
 .specials-section_dish-container:hover {
   animation: fade 1s normal;
   box-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .specials-section_dish-container_lg-image {
   background-image: url(../img/about-section/restaurant_2.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  width: 50%;
-  height: 100%;
+  background-size: cover;
+  height: 40vw;
+  width: 100%;
 }
 
 .specials-section_dish-container_lg-info {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #faebcd;
-  width: 50%;
-  height: 100%;
-  padding: 5rem;
+  height: 60vw;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 100%;
 }
 
-.specials-section_dish-container_lg-info > h3{
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 1.8rem;
+.specials-section_dish-container_lg-info > h3 {
   color: #2d2d2d;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-top: 2rem;
 }
 
 .specials-section_dish-container_lg-info > img {
-  width: 60%;
+  width: 25rem;
 }
 
 .specials-section_dish-container_lg-info > span {
+  color: #5e493a;
   font-family: Merriweather, Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  color: #5e493a;
   font-weight: 300;
 }
 
 .specials-section_dish-container_lg-info > p {
+  color: #222;
   font-family: Merriweather, Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
+  font-weight: 300;
   line-height: 1.6;
-  color: #222;
-  font-weight: 300;
-  text-align: center;
   margin: 2rem 0;
-}
-
-.specials-section_dish-container_sm-image {
-  background-image: url(../img/about-section/restaurant_2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 100%;
-}
-.specials-section_dish-container_sm-info {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  background-color: #f5f5f5;
-  width: 50%;
-  height: 100%;
-  padding: 2rem;
-}
-
-.specials-section_dish-container_sm-info > h3{
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 1.8rem;
-  color: #2d2d2d;
-}
-
-.specials-section_dish-container_sm-info > img {
-  width: 60%;
-}
-
-.specials-section_dish-container_sm-info > span {
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  color: #5e493a;
-  font-weight: 300;
-}
-
-.specials-section_dish-container_sm-info > p {
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: #222;
-  font-weight: 300;
   text-align: center;
-  margin: 2rem 0;
+}
+
+@media (min-width: 600px) {
+  .specials-section_grid-container {
+    grid-template: 
+      "dish_1" 1fr
+      "dish_2" 1fr
+      "dish_3" 1fr
+      "dish_4" 1fr
+      "dish_5" 1fr
+      "dish_6" 1fr / 1fr;
+    width: 85%;
+    margin-bottom: 5rem;
+  }
+  .specials-section_dish-container {
+    flex-direction: row;
+  }
+  .specials-section_dish-container_lg-image {
+    height: 100%;
+    width: 50%;
+  }
+  .specials-section_dish-container_lg-info {
+    height: 100%;
+    width: 50%;
+  }
+  .specials-section_dish-container_lg-info > img {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .specials-section_grid-container {
+    grid-template: 
+      "dish_1 dish_2" 1fr
+      "dish_1 dish_3" 1fr
+      "dish_4 dish_6" 1fr
+      "dish_5 dish_6" 1fr / 1fr 1fr;
+    width: 90%;
+  }
+
+  .specials-section_dish-container_lg-info > img {
+    width: 18rem;
+  }
 }
 
 .menu-section-container {
-  background-color: tomato;  
-  height: 100vh;
-  width: 100%;
-  padding: 5rem;
-  display: flex;
   align-items: center;
+  background-image: url(../img/about-section/about_section_bg.png);
+  display: flex;
+  flex-direction: column;
+  height: auto;
   justify-content: center;
+  width: 85vw;
 }
+
+.menu-section-container > h2 {
+  color: #fff;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 10rem;
+}
+
+.menu-section-container > img {
+  width: 25rem;
+}
+
+.menu-section-container > ul {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  list-style: none;
+  margin: 2rem 0;
+  width: inherit;
+}
+
+.menu-section-container > ul > li {
+  align-items: center;
+  border-radius: 1rem;
+  display: flex;
+  height: inherit;
+  margin: 0 0.2rem;
+  padding: 1rem;
+}
+
+.menu-section-container > ul > li > a {
+  color: #fff;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  /* text-align: center; */
+  /* position: relative; */
+  text-decoration: none;
+}
+
+.menu-section-container > ul > li:hover {
+  border: 0.2rem solid #fb6e14;
+  color: #fb6e14;
+}
+
+.menu-section-container_content {
+  background-color: white;
+  height: auto;
+  margin-bottom: 2.5rem;
+  width: 90%;
+}
+
+.menu-section-container_content-panel {
+  background-color: orange;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-content {
+  background-color: green;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.menu-section {
+  background-color: cornflowerblue;
+  display: flex;
+  flex-flow: column wrap;
+  /* display: flex;
+  flex-flow: column wrap;
+  background-color: gray;
+  height: 100%;
+  width: 50%; */
+}   
 
 .parallax-quote-container {
   background-attachment: fixed;
