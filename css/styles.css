@@ -22,8 +22,12 @@
 
 /* Adding keyframe */
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
@@ -38,43 +42,49 @@
 }
 
 @keyframes changeParallax {
-  0% { background-image: url(../img/parallax/parallax_1.jpg); }
-  50% { background-image: url(../img/parallax/parallax_2.jpg); }
-  100% { background-image: url(../img/parallax/parallax_3.jpg); }
+  0% {
+    background-image: url(../img/parallax/parallax_1.jpg);
+  }
+  50% {
+    background-image: url(../img/parallax/parallax_2.jpg);
+  }
+  100% {
+    background-image: url(../img/parallax/parallax_3.jpg);
+  }
 }
 
 @keyframes changeQuotes {
   0% {
     opacity: 0;
-    content: "\"Passion for the Mexican Flavor\"";
+    content: '"Passion for the Mexican Flavor"';
   }
   24% {
     opacity: 1;
-    content: "\"Passion for the Mexican Flavor\"";
+    content: '"Passion for the Mexican Flavor"';
   }
   25% {
     opacity: 0;
-    content: "\"Love beign mexican\"";
+    content: '"Love beign mexican"';
   }
   49% {
     opacity: 1;
-    content: "\"Love beign mexican\"";
+    content: '"Love beign mexican"';
   }
   50% {
     opacity: 0;
-    content: "\"The most important ingredient is passion\"";
+    content: '"The most important ingredient is passion"';
   }
   74% {
     opacity: 1;
-    content: "\"The most important ingredient is passion\"";
+    content: '"The most important ingredient is passion"';
   }
   75% {
     opacity: 0;
-    content: "\"Life serves to give beauty\"";
-  }  
+    content: '"Life serves to give beauty"';
+  }
   100% {
     opacity: 1;
-    content: "\"Life serves to give beauty\"";
+    content: '"Life serves to give beauty"';
   }
 }
 
@@ -97,6 +107,7 @@ html {
  * in the next MVPs this will be taking more sense 
  */
 .container {
+  box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   width: 85%;
 }
@@ -107,6 +118,9 @@ body {
   background-image: url(../img/chef/flowers.png);
   background-repeat: repeat;
   background-size: cover;
+
+  background-attachment: fixed;
+  z-index: 1;
 }
 
 .main-parallax-container {
@@ -152,7 +166,7 @@ body {
 
 .parallax-container__titles > h2 {
   color: #fff;
-  font-family: Merriweather, Arial, Helvetica, sans-serif;;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
@@ -167,28 +181,28 @@ body {
   .parallax-container__titles > h1 {
     font-size: 20rem;
   }
-  
+
   .parallax-container__titles > h2 {
     font-size: 2.5rem;
   }
-  
+
   .parallax-container__titles > h2 > span {
     font-size: 2.5rem;
-  } 
+  }
 }
 
 @media (min-width: 900px) {
   .parallax-container__titles > h1 {
     font-size: 30rem;
   }
-  
+
   .parallax-container__titles > h2 {
     font-size: 4rem;
   }
-  
+
   .parallax-container__titles > h2 > span {
     font-size: 4rem;
-  } 
+  }
 }
 
 .main-header-nav {
@@ -330,14 +344,14 @@ body {
 
 .about-section-container {
   display: grid;
-  grid-template: 
+  grid-template:
     "about-img" 0.6fr
     "about-info" 1.6fr / 1fr;
   height: auto;
   width: 100%;
 }
 
-#about-img {
+#about-img  {
   grid-area: about-img;
 }
 
@@ -367,7 +381,7 @@ body {
   width: 100%;
 }
 
-.about-section-container_info > h2{
+.about-section-container_info > h2 {
   color: #fff;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 3rem;
@@ -391,8 +405,8 @@ body {
 }
 
 @media (min-width: 600px) {
-  .about-section-container {    
-    grid-template: 
+  .about-section-container {
+    grid-template:
       "about-img" 0.6fr
       "about-info" 1fr / 1fr;
   }
@@ -400,7 +414,7 @@ body {
 
 @media (min-width: 900px) {
   .about-section-container {
-    grid-template: 
+    grid-template:
       "about-img about-info" 2fr
       / 1fr 1fr;
   }
@@ -441,7 +455,7 @@ body {
 .specials-section_grid-container {
   box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
   display: grid;
-  grid-template: 
+  grid-template:
     "dish_1" 1fr
     "dish_2" 1fr
     "dish_3" 1fr
@@ -538,7 +552,7 @@ body {
 
 @media (min-width: 600px) {
   .specials-section_grid-container {
-    grid-template: 
+    grid-template:
       "dish_1" 1fr
       "dish_2" 1fr
       "dish_3" 1fr
@@ -548,17 +562,27 @@ body {
     width: 85%;
     margin-bottom: 5rem;
   }
+
   .specials-section_dish-container {
     flex-direction: row;
   }
+
+  #dish_2,
+  #dish_4,
+  #dish_6 {
+    flex-direction: row-reverse;
+  }
+  
   .specials-section_dish-container_lg-image {
     height: 100%;
     width: 50%;
   }
+
   .specials-section_dish-container_lg-info {
     height: 100%;
     width: 50%;
   }
+
   .specials-section_dish-container_lg-info > img {
     width: 20rem;
   }
@@ -566,12 +590,21 @@ body {
 
 @media (min-width: 1000px) {
   .specials-section_grid-container {
-    grid-template: 
+    grid-template:
       "dish_1 dish_2" 1fr
       "dish_1 dish_3" 1fr
       "dish_4 dish_6" 1fr
       "dish_5 dish_6" 1fr / 1fr 1fr;
     width: 90%;
+  }
+
+  #dish_2,
+  #dish_6 {
+    flex-direction: row;
+  }
+
+  #dish_3 {
+    flex-direction: row-reverse;
   }
 
   .specials-section_dish-container_lg-info > img {
@@ -627,8 +660,6 @@ body {
   font-family: Merriweather, Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  /* text-align: center; */
-  /* position: relative; */
   text-decoration: none;
 }
 
@@ -638,36 +669,53 @@ body {
 }
 
 .menu-section-container_content {
-  background-color: white;
+  /* background-color: white; */
   height: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 10rem;
   width: 90%;
 }
 
 .menu-section-container_content-panel {
-  background-color: orange;
+  /* background-color: orange; */
   height: 100%;
   width: 100%;
 }
 
 .menu-content {
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
   height: 100%;
+  justify-content: space-evenly;
 }
 
 .menu-section {
-  background-color: cornflowerblue;
+  color: #fff;
   display: flex;
   flex-flow: column wrap;
-  /* display: flex;
-  flex-flow: column wrap;
-  background-color: gray;
-  height: 100%;
-  width: 50%; */
-}   
+}
+
+.menu-section {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.menu-section > table tbody tr > td:first-child {
+  line-height: 1.5;
+  padding: 2rem 0 0;
+  text-transform: uppercase;
+}
+
+.menu-section > table tbody tr:nth-child(even) > td{
+  font-style: italic;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+.menu-section > table tbody tr > td:nth-child(even) {
+  padding: 2rem 0 0;
+}
 
 .parallax-quote-container {
   background-attachment: fixed;
@@ -717,7 +765,17 @@ body {
 }
 
 .parallax-quote-container_text > img {
-  width: 20%;
+  width: 25rem;
+}
+
+.chef-section-container {
+  background-color: deeppink;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reservations-section-container {
