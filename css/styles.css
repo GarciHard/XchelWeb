@@ -41,6 +41,17 @@
   }
 }
 
+@keyframes fadeInIngredients {
+  0% {
+    opacity: 0;
+    transform: translate(0, 500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
 @keyframes changeParallax {
   0% {
     background-image: url(../img/parallax/parallax_1.jpg);
@@ -399,9 +410,26 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   height: auto;
+  line-height: 2.5rem;
   margin: 2rem 0;
-  text-align: justify;
+  padding: 0 2rem;
+  text-align: center;
   width: 90%;
+}
+
+.about-section-container_info > input[type=button] {
+  background-color: transparent;
+  border-color: #fb6e14;
+  border-radius: 1rem;
+  color: white;
+  font-family: "Playfair Display";
+  height: 4rem;
+  margin: 2rem 0;
+  width: 15rem;
+}
+
+.about-section-container_info > input[type=button]:hover {
+  background-color: #fb6e14;
 }
 
 @media (min-width: 600px) {
@@ -420,9 +448,6 @@ body {
   }
   .about-section-container_info {
     padding-top: 10rem;
-  }
-  .about-section-container_info > p {
-    padding-top: 5rem;
   }
 }
 
@@ -609,6 +634,80 @@ body {
 
   .specials-section_dish-container_lg-info > img {
     width: 18rem;
+  }
+}
+
+.intro-menu-section-container {
+  align-items: center;
+  background-image: url(../img/about-section/about_section_bg.png);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  width: 85vw;
+}
+
+.ingredients-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 15rem 5rem;
+  width: 90%
+}
+
+.ingredients-container_generic {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Circle div*/
+.ingredients-container_generic > div {
+  border: 0.3rem solid white;
+  border-radius: 8rem;
+  margin: 0 3rem 1rem;
+  padding: 2rem;
+}
+
+.ingredients-container_generic > p {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  height: auto;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  width: 85%;
+  word-wrap: break-word;
+}
+
+#fruit-container {
+  animation: fadeInIngredients 2s normal;
+  animation-delay: 1000ms;
+}
+
+#seafood-container {
+  animation: fadeInIngredients 2s normal;
+  animation-delay: 1200ms;
+}
+
+#vegetables-container {
+  animation: fadeInIngredients 2s normal;
+  animation-delay: 1400ms;
+}
+
+#meat-container {
+  animation: fadeInIngredients 2s normal;
+  animation-delay: 1600ms;
+}
+
+@media (min-width: 1000px) {
+  .ingredients-container{
+    flex-direction: row;
+  } 
+  .ingredients-container_generic{
+    width: 80%;
   }
 }
 
