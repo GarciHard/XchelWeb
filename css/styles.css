@@ -417,18 +417,23 @@ body {
   width: 90%;
 }
 
-.about-section-container_info > input[type=button] {
+.about-section-container_info > a {
+  align-items: center;
   background-color: transparent;
-  border-color: #fb6e14;
+  border: 0.2rem solid #fb6e14;
   border-radius: 1rem;
   color: white;
+  display: flex;
   font-family: "Playfair Display";
+  font-size: 1.2rem;
   height: 4rem;
+  justify-content: center;
   margin: 2rem 0;
+  text-decoration: none;
   width: 15rem;
 }
 
-.about-section-container_info > input[type=button]:hover {
+.about-section-container_info > a:hover {
   background-color: #fb6e14;
 }
 
