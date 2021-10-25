@@ -20,16 +20,15 @@
 /* Merriweather */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-/* Adding keyframe */
+
+/*------------------------------------------------ KEYFRAMES */
+/* Simple fade animation */
 @keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
+/* Fade used in the navbar growth from bottom to top. */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -41,6 +40,7 @@
   }
 }
 
+/* Fade used in the ingredientes section, from bottom to top. */
 @keyframes fadeInIngredients {
   0% {
     opacity: 0;
@@ -52,16 +52,13 @@
   }
 }
 
+/* Before implementing bootstrap i made those carrousel be like 
+ * to change images and quotes on my parallax.
+*/
 @keyframes changeParallax {
-  0% {
-    background-image: url(../img/parallax/parallax_1.jpg);
-  }
-  50% {
-    background-image: url(../img/parallax/parallax_2.jpg);
-  }
-  100% {
-    background-image: url(../img/parallax/parallax_3.jpg);
-  }
+  0% { background-image: url(../img/parallax/parallax_1.jpg); }
+  50% { background-image: url(../img/parallax/parallax_2.jpg); }
+  100% { background-image: url(../img/parallax/parallax_3.jpg); }
 }
 
 @keyframes changeQuotes {
@@ -99,6 +96,7 @@
   }
 }
 
+/* Universal selector used to reset browser's styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -113,27 +111,23 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 
- * Container to resize the block according the web browser size
- * in the next MVPs this will be taking more sense 
- */
-.container {
+/* Used to set an 85 percent width to my sections */
+.container_85 {
   box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   width: 85%;
 }
 
-/* TESTING STYLES */
-
+/* Setting a flowery body backgrund */
 body {
+  background-attachment: fixed;
   background-image: url(../img/chef/flowers.png);
   background-repeat: repeat;
-  background-size: cover;
-
-  background-attachment: fixed;
+  background-size: cover;  
   z-index: 1;
 }
 
+/*------------------------------------------------ MAIN PARALLAX */
 .main-parallax-container {
   animation: changeParallax calc(10s) infinite;
   background-attachment: fixed;
@@ -202,6 +196,7 @@ body {
   }
 }
 
+/*------------------------------------------------ PARALLAX RESPONSIVE */
 @media (min-width: 900px) {
   .parallax-container__titles > h1 {
     font-size: 30rem;
@@ -216,6 +211,7 @@ body {
   }
 }
 
+/*------------------------------------------------ NAVBAR */
 .main-header-nav {
   background-color: #fff;
   border: 0.1rem solid #e6e6e6;
@@ -234,6 +230,7 @@ body {
   width: 100%;
 }
 
+/* Navbar left section */
 .header-nav__left {
   align-items: center;
   display: flex;
@@ -258,37 +255,7 @@ body {
   color: #fb6e14;
 }
 
-/* Hover used to display dropdown menu list */
-.header-nav__left > li:hover ul {
-  /* display: block; */
-  width: 20rem;
-}
-
-/* Menu list */
-.header-nav__dropdown {
-  align-content: center;
-  border: 0.2rem solid #ab1331;
-  color: #2d2d2d;
-  display: none;
-  flex-direction: column;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold;
-  position: absolute;
-  width: 100%;
-}
-
-.header-nav__dropdown li {
-  background-color: #ffffff;
-  width: 100%;
-}
-
-.header-nav__dropdown li a {
-  padding: 1rem 1rem 1rem 2rem;
-  text-decoration: none;
-  width: 100%;
-}
-
+/* Navbar logo section */
 .header-nav__center {
   align-items: center;
   display: flex;
@@ -310,6 +277,7 @@ body {
   transform: scale(1.2);
 }
 
+/* Navbar right section */
 .header-nav__right {
   align-items: center;
   display: flex;
@@ -333,6 +301,7 @@ body {
   color: #fb6e14;
 }
 
+/*------------------------------------------------ NAVBAR RESPONSIVE */
 @media (min-width: 200px) {
   .header-nav__left {
     display: none;
@@ -353,12 +322,21 @@ body {
   }
 }
 
+/*------------------------------------------------ ABOUT SECTION */
+.about-section-main {
+  background-color: #fff;
+  padding: 5rem 1rem;
+}
+
 .about-section-container {
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
   display: grid;
   grid-template:
     "about-img" 0.6fr
     "about-info" 1.6fr / 1fr;
   height: auto;
+  margin-top: 5rem;
   width: 100%;
 }
 
@@ -371,10 +349,11 @@ body {
 }
 
 .about-section-container_image {
-  background-image: url(../img/about-section/restaurant_1.jpg);
+  background-image: url(../img/about-section/about-section2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 2rem 2rem 0 0;
   height: 100%;
   width: 100%;
 }
@@ -385,6 +364,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0 0 2rem 2rem;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -437,6 +417,7 @@ body {
   background-color: #fb6e14;
 }
 
+/*------------------------------------------------ ABOUT SECTION RESPONSIVE */
 @media (min-width: 600px) {
   .about-section-container {
     grid-template:
@@ -451,11 +432,18 @@ body {
       "about-img about-info" 2fr
       / 1fr 1fr;
   }
+  .about-section-container_image {
+    border-radius: 2rem 0 0 2rem;
+  }
   .about-section-container_info {
-    padding-top: 10rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  .about-section-main {
+    padding: 5rem;
   }
 }
 
+/*------------------------------------------------ SPECIALS SECTION */
 .specials-section-container {
   align-items: center;
   background-color: #fff;
@@ -500,25 +488,43 @@ body {
   background-color: #faebcd;
   grid-area: dish_1;
 }
+#dish_img1 {
+  background-image: url(../img/popular-dishes/pupular_dish1.jpeg);
+}
 #dish_2 {
   background-color: #f5f5f5;
   grid-area: dish_2;
+}
+#dish_img2 {
+  background-image: url(../img/popular-dishes/popular_dish2.jpg);
 }
 #dish_3 {
   background-color: #f5f5f5;
   grid-area: dish_3;
 }
+#dish_img3 {
+  background-image: url(../img/popular-dishes/popular_dish3.jpeg);
+}
 #dish_4 {
   background-color: #f5f5f5;
   grid-area: dish_4;
+}
+#dish_img4 {
+  background-image: url(../img/popular-dishes/popular_dish4.jpeg);
 }
 #dish_5 {
   background-color: #f5f5f5;
   grid-area: dish_5;
 }
+#dish_img5 {
+  background-image: url(../img/popular-dishes/popular_dish5.jpg);
+}
 #dish_6 {
   background-color: #faebcd;
   grid-area: dish_6;
+}
+#dish_img6 {
+  background-image: url(../img/popular-dishes/popular_dish6.jpg);
 }
 
 .specials-section_dish-container {
@@ -533,7 +539,6 @@ body {
 }
 
 .specials-section_dish-container_lg-image {
-  background-image: url(../img/about-section/restaurant_2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -556,6 +561,7 @@ body {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: lighter;
+  text-align: center;
   margin-top: 2rem;
 }
 
@@ -580,8 +586,10 @@ body {
   text-align: center;
 }
 
+/*------------------------------------------------ SPECIAL SECTION RESPONSIVE */
 @media (min-width: 600px) {
   .specials-section_grid-container {
+    border-radius: 2rem;
     grid-template:
       "dish_1" 1fr
       "dish_2" 1fr
@@ -596,13 +604,26 @@ body {
   .specials-section_dish-container {
     flex-direction: row;
   }
-
+  
   #dish_2,
   #dish_4,
   #dish_6 {
     flex-direction: row-reverse;
   }
   
+  #dish_1{
+    border-radius: 2rem 2rem 0;
+  }
+  #dish_img1{
+    border-radius: 2rem 0 0;
+  }
+  #dish_6{
+    border-radius: 0 0 2rem 2rem;
+  }
+  #dish_img6{
+    border-radius: 0 0 2rem;
+  }
+
   .specials-section_dish-container_lg-image {
     height: 100%;
     width: 50%;
@@ -615,6 +636,39 @@ body {
 
   .specials-section_dish-container_lg-info > img {
     width: 20rem;
+  }
+
+  .specials-section_dish-container:hover {
+    animation: fade 1s normal;
+    border-radius: 2rem;
+    box-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
+    transform: scale(1.05);
+  }
+
+  #dish_1:hover {
+    border-radius: 2rem;
+  }
+  #dish_1:hover .specials-section_dish-container_lg-image {
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  /* Used for dish 2 & 4 */
+  .specials-section_dish-container:hover .specials-section_dish-container_lg-image {
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  #dish_3:hover .specials-section_dish-container_lg-image {
+    border-radius: 2rem 0 0 2rem;
+  }
+  #dish_5:hover .specials-section_dish-container_lg-image {
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  #dish_6:hover {
+    border-radius: 2rem;
+  }
+  #dish_6:hover .specials-section_dish-container_lg-image {
+    border-radius: 0 2rem 2rem 0;
   }
 }
 
@@ -637,11 +691,57 @@ body {
     flex-direction: row-reverse;
   }
 
+  #dish_1{
+    border-radius: 2rem 0 0;
+  }
+
+  #dish_2{
+    border-radius: 0 2rem 0;
+  }
+
+  #dish_5{
+    border-radius: 0 0 0 2rem;
+  }
+  #dish_img5{
+    border-radius: 0 0 0 2rem;
+  }
+
   .specials-section_dish-container_lg-info > img {
     width: 18rem;
   }
+
+  #dish_2:hover {
+    border-radius: 2rem;
+  }
+  #dish_2:hover .specials-section_dish-container_lg-image {
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  /* Used for dish 2 & 4 */
+  .specials-section_dish-container:hover .specials-section_dish-container_lg-image {
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  #dish_3:hover .specials-section_dish-container_lg-image {
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  #dish_5:hover {
+    border-radius: 2rem;
+  }
+  #dish_5:hover .specials-section_dish-container_lg-image {
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  #dish_6:hover {
+    border-radius: 2rem;
+  }
+  #dish_6:hover .specials-section_dish-container_lg-image {
+    border-radius: 2rem 0 0 2rem;
+  }
 }
 
+/*------------------------------------------------ INGREDIENTS SECTION */
 .intro-menu-section-container {
   align-items: center;
   background-image: url(../img/about-section/about_section_bg.png);
@@ -707,6 +807,7 @@ body {
   animation-delay: 1600ms;
 }
 
+/*------------------------------------------------ INGREDIENTS RESPONSIVE */
 @media (min-width: 1000px) {
   .ingredients-container{
     flex-direction: row;
@@ -716,6 +817,7 @@ body {
   }
 }
 
+/*------------------------------------------------ MENU SECTION PAGE */
 .menu-section-container {
   align-items: center;
   background-image: url(../img/about-section/about_section_bg.png);
@@ -773,20 +875,17 @@ body {
 }
 
 .menu-section-container_content {
-  /* background-color: white; */
   height: auto;
   margin-bottom: 10rem;
   width: 90%;
 }
 
 .menu-section-container_content-panel {
-  /* background-color: orange; */
   height: 100%;
   width: 100%;
 }
 
 .menu-content {
-  /* background-color: green; */
   display: flex;
   flex-flow: row wrap;
   height: 100%;
@@ -821,9 +920,10 @@ body {
   padding: 2rem 0 0;
 }
 
+/*------------------------------------------------ PARALLAX QUOTES */
 .parallax-quote-container {
   background-attachment: fixed;
-  background-image: url(../img/quote_1.jpg);
+  background-image: url(../img/quote_3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -872,24 +972,292 @@ body {
   width: 25rem;
 }
 
+/*------------------------------------------------ CHEF SECTION */
 .chef-section-container {
-  background-color: deeppink;
-  height: 100vh;
-  width: 100%;
+  background-color: #fff;
+  height: auto;
+  width: 85vw;
   padding: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.reservations-section-container {
-  background-color: sandybrown;
-  height: 100vh;
+.chef-section {
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
+  margin: 5rem 0 0;
+  height: auto;
   width: 100%;
-  padding: 5rem;
+
   display: flex;
+  flex-direction: column;
+}  
+
+.chef-section_image {
+  background-image: url(../img/chef/our-chef1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 2rem 2rem 0;
+  height: auto;
+  width: 100%;
+}
+
+.chef-section_info {
   align-items: center;
+  background-image: url(../img/about-section/about_section_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.chef-section_info > h2 {
+  color: #fff;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.chef-section_info > img {
+  width: 25rem;
+}
+
+.chef-section_info > p {
+  color: #a99c92;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  height: auto;
+  line-height: 2.5rem;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  text-align: center;
+  width: 90%;
+}
+
+.chef-section_info > a {
+  align-items: center;
+  background-color: transparent;
+  border: 0.2rem solid #fb6e14;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  font-family: "Playfair Display";
+  font-size: 1.2rem;
+  height: 4rem;
   justify-content: center;
+  margin: 2rem 0;
+  text-decoration: none;
+  width: 15rem;
+}
+
+.chef-section_info > a:hover {
+  background-color: #fb6e14;
+}
+
+/*------------------------------------------------ CHEF SECTION RESPONSIVE */
+@media (min-width: 900px) {
+  .chef-section {
+    flex-direction: row-reverse;
+  }
+  .chef-section_info {
+    border-radius: 2rem 0 0 2rem;
+  }
+}
+
+/*------------------------------------------------ PARALLAX BOOK TABLE */
+.parallax-book-table-container {
+  background-attachment: fixed;
+  background-image: url(../img/reservations/parallax-reservations4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  z-index: 1;
+}
+
+.parallax-book-table-container_opacity {
+  background-color: #000;
+  height: inherit;
+  width: 85vw;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+}
+
+.parallax-book-table-container_text {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: inherit;
+  justify-content: center;
+  padding: 5rem 0;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  width: inherit;
+}
+
+.parallax-book-table-container_text > h2 {
+  color: #fff;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+.parallax-book-table-container_text > img {
+  width: 25rem;
+  margin-bottom: 2rem;
+}
+
+.parallax-book-table-container_text > p {
+  color: #fff;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin-bottom: 6rem;
+  width: 90%;
+}
+
+.parallax-book-table-container_text > a {
+  align-items: center;
+  background-color: transparent;
+  border: 0.2rem solid #fb6e14;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  font-family: "Playfair Display";
+  font-size: 1.2rem;
+  height: 4rem;
+  justify-content: center;
+  text-decoration: none;
+  width: 15rem;
+}
+
+.parallax-book-table-container_text > a:hover {
+  background-color: #fb6e14;
+}
+
+/*------------------------------------------------ PARALLAX BOOK TABLE RESPONSIVE */
+@media (min-width: 600px) {
+  .parallax-book-table-container_text > p {
+    width: 65%;
+  }
+}
+
+@media (min-width: 900px) {
+  .parallax-book-table-container_text > p {
+    width: 45%;
+  }
+}
+
+/*------------------------------------------------ FOOTER SECTION */
+/* Credits section of the footer */
+.footer-section {
+  align-items: center;
+  background-image: url(../img/about-section/about_section_bg.png);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  height: auto;
+  padding: 5rem 0;
+}
+
+#heart-icon {
+  font-size: 1.5rem;
+} 
+
+.footer-section-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-section_brand-logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section_brand-logo > div > img{
+  height: 15rem;
+  width: 15rem;
+}
+
+.footer-section_brand-logo_text {
+  display: none;
+}
+
+.footer-section_social-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.footer-section_social-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3rem 0;
+  width: 80%;
+}
+
+.footer-section_social-title > span {
+  font-weight: bold;
+}
+
+.footer-section_social-images > img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.footer-section_social-direction > span {
+  color: #fb6e14;
+}
+
+.footer-section_credits {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+/*------------------------------------------------ FOOTER SECTION RESPONSIVE */
+@media (min-width: 800px) {
+  .footer-section-flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  .footer-section_brand-logo_text {
+    display: block;
+  }
+  .footer-section_brand-logo {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  .footer-section-flex {
+    width: 60%;
+  }
 }
 
 /* End of testing styles */
