@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Xchel's Menu</title>
@@ -34,141 +35,598 @@
     </header>
 
     <!-- Menu section -->
-    <section class="container">
+    <section class="container_85">
         <div id="menu-section" class="menu-section-container">
             <h2>Menu</h2>
             <img src="../img/divider_tomato.svg" alt="divider for section titles">
-            <ul>
-                <li><a href="#">Starters</a></li>
-                <li><a href="#">Main Dishes</a></li>
-                <li><a href="#">Desserts</a></li>
-                <li><a href="#">Drinks</a></li>
+            
+            <ul class="nav nav-pills" id="menu-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="starters" data-bs-toggle="pill" data-bs-target="#menu-starters" type="button" role="tab" aria-controls="menu-starters" aria-selected="true">Starters</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="dishes" data-bs-toggle="pill" data-bs-target="#menu-dishes" type="button" role="tab" aria-controls="menu-dishes" aria-selected="true">Main Dishes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts" data-bs-toggle="pill" data-bs-target="#menu-desserts" type="button" role="tab" aria-controls="menu-desserts" aria-selected="true">Desserts</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="drinks" data-bs-toggle="pill" data-bs-target="#menu-drinks" type="button" role="tab" aria-controls="menu-drinks" aria-selected="true">Drinks</button>
+                </li>
             </ul>
-            <div class="menu-section-container_content">
-                <div class="menu-section-container_content-panel">
-                    <div class="menu-content">
-                        <div class="menu-section">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Starters dishes tab -->
+                <div class="tab-pane fade show active" id="menu-starters" role="tabpanel" aria-labelledby="starters">
+                    <div class="menu-section-container_content">
+                        <div class="menu-section-container_content-panel">
+                            <div class="menu-content">
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    COHO SALMON
+                                                </td>
+                                                <td>
+                                                    $25
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Baked wild salmon accompanied by pesto with chevril and kumquat.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    DUCK
+                                                </td>
+                                                <td>
+                                                    $26
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Organic boneless, baked duck breast with champagne vinaigrette, belly bread and sour red onion.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    TROUT
+                                                </td>
+                                                <td>
+                                                    $20
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Fresh boneless trout sautéed with a tarragon butter sauce, parsley and caramelized shallots.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    VEAL SCALOPPINE
+                                                </td>
+                                                <td>
+                                                    $28.50
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Thin, roasted veal chops stuffed with yellow peppers, San Marzano tomatoes and cottage cheese.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    LOBSTER MAC & CHEESE
+                                                </td>
+                                                <td>
+                                                    $26
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Gruyere cheese, Irish cheddar and cotija cheese, shrimp and lobster chunks baked with heavy cream and penne pasta.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    GOAT CHEESE WONTON
+                                                </td>
+                                                <td>
+                                                    $15
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Fresh apples, mushrooms, ginger and lemon served with sour coleslaw.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    POTATO SKIN
+                                                </td>
+                                                <td>
+                                                    $22.50
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Stuffed with avocado, bacon, sour cream and scallops.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    COMBO TRAY
+                                                </td>
+                                                <td>
+                                                    $15.75
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    French sausage balls with a pinch of Roquefort cheese.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                        <div class="menu-section">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled fajitas
-                                        </td>
-                                        <td>
-                                            $13.62 
-                                        </td>                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    </div>                    
+                </div>
+                <!-- Main dishes tab -->
+                <div class="tab-pane fade show " id="menu-dishes" role="tabpanel" aria-labelledby="dishes">
+                    <div class="menu-section-container_content">
+                        <div class="menu-section-container_content-panel">
+                            <div class="menu-content">
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Grilled fajitas
+                                                </td>
+                                                <td>
+                                                    $13.65
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled steak with mesquite
+                                                </td>
+                                                <td>
+                                                    $13.12
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Flour tortillas with golden steak with mesquite firewood and cheddar cheese melted.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Shrimp enchiladas
+                                                </td>
+                                                <td>
+                                                    $15.57
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Shrimp and blue crab sautéed in white wine and garlic, in corn tortillas, with vegetables, cheese and habanero cream sauce.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Fish tacos
+                                                </td>
+                                                <td>
+                                                    $11.68
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Soft handmade flour tortillas, with grilled fish, chipotle aioli, crispy lettuce.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Fajitas burrito
+                                                </td>
+                                                <td>
+                                                    $11.18
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Freshly grilled chicken, rice, charro beans, cheese and salsa, in a hot flour tortilla.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled tacos
+                                                </td>
+                                                <td>
+                                                    $11.68
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Soft flour tortillas, with grilled chicken, fresh lettuce, pico de gallo, chipotle garlic.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled fajitas
+                                                </td>
+                                                <td>
+                                                    $13.62 
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled fajitas
+                                                </td>
+                                                <td>
+                                                    $13.62 
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desserts dishes tab -->
+                <div class="tab-pane fade show " id="menu-desserts" role="tabpanel" aria-labelledby="desserts">
+                    
+                    <div class="menu-section-container_content">
+                        <div class="menu-section-container_content-panel">
+                            <div class="menu-content">
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Caramel tiramisu
+                                                </td>
+                                                <td>
+                                                    $3
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Chocolate fudge
+                                                </td>
+                                                <td>
+                                                    $3.50
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Carrot cheesecake
+                                                </td>
+                                                <td>
+                                                    $3
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Cranberry pudding
+                                                </td>
+                                                <td>
+                                                    $4.75
+                                                </td>                        
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Strawberry and applesauce
+                                                </td>
+                                                <td>
+                                                    $4.45
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Cashew cheese pie
+                                                </td>
+                                                <td>
+                                                    $3
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Red velvet
+                                                </td>
+                                                <td>
+                                                    $3
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Coco
+                                                </td>
+                                                <td>
+                                                    $3
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Nut butter
+                                                </td>
+                                                <td>
+                                                    $4
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Lemon with chocolate
+                                                </td>
+                                                <td>
+                                                    $3.75
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                 </div>
+                <div class="tab-pane fade show " id="menu-drinks" role="tabpanel" aria-labelledby="drinks">
+                    
+                    <div class="menu-section-container_content">
+                        <div class="menu-section-container_content-panel">
+                            <div class="menu-content">
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Kiwi Mary
+                                                </td>
+                                                <td>
+                                                    $4.50
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Fresh orange and kiwi juice, absolut vodka shot and orange garnish.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Apple Pay
+                                                </td>
+                                                <td>
+                                                    $4.50
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Granny smith apple and pear juice, simple cinnamon syrup and a shot of whiskey.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Electric Pear
+                                                </td>
+                                                <td>
+                                                    $5
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    A shot of absolut citron with a mixture of pear and lemon juice, served with sugar.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    The special
+                                                </td>
+                                                <td>
+                                                    $12.50
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Includes a carafe of freshly squeezed orange juice and a bottle of J. Rogét Champagne.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="menu-section">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Pear and lemonade glitter
+                                                </td>
+                                                <td>
+                                                    $3.50
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Fresh pear juice and fresh lemonade with a dash of J. Rogét Champagne.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled fajitas
+                                                </td>
+                                                <td>
+                                                    $13.62 
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled fajitas
+                                                </td>
+                                                <td>
+                                                    $13.62 
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled fajitas
+                                                </td>
+                                                <td>
+                                                    $13.62 
+                                                </td>                            
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Grilled chicken breast with mesquite wood, marinated in citrus juice and chili peppers.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
             </div>
+
         </div>
     </section>
-</body>
 
+        <!-- Footer -->
+        <footer>
+        
+            <!-- Second section of the footer which contains the copyright xD -->
+            <div class="footer-section">
+                <div class="footer-section-flex">
+                    <div class="footer-section_brand-logo">
+                        <div>
+                            <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
+                        </div>
+                        <div class="footer-section_brand-logo_text">
+                            <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
+                                the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
+                                spirit of her beloved country.</p>
+                        </div>
+                    </div>
+                    <div class="footer-section_social-container">
+                        <div class="footer-section_social-title">
+                            <span>¡Follow us!</span>
+                        </div>
+                        <div class="footer-section_social-images">
+                            <img src="../img/footer/facebook.png" alt="Facebook logo image">
+                            <img src="../img/footer/instagram.png" alt="Instagrame logo image">
+                            <img src="../img/footer/twitter.png" alt="Twitter logo image">
+                        </div>
+                        <div class="footer-section_social-direction">
+                            <span>@XchelMexicanCuisine</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section_credits">
+                    <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
+                    <span>Made with <span id="heart-icon">&#10084;&#65039;</span> by GarciHard & Freckles</span>
+                </div>
+            </div>
+        </footer>
+</body>
+<script src="../js/bootstrap.min.js"></script>
 </html>
