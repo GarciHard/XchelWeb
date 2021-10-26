@@ -20,12 +20,15 @@
 /* Merriweather */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-
 /*------------------------------------------------ KEYFRAMES */
 /* Simple fade animation */
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Fade used in the navbar growth from bottom to top. */
@@ -56,9 +59,15 @@
  * to change images and quotes on my parallax.
 */
 @keyframes changeParallax {
-  0% { background-image: url(../img/parallax/parallax_1.jpg); }
-  50% { background-image: url(../img/parallax/parallax_2.jpg); }
-  100% { background-image: url(../img/parallax/parallax_3.jpg); }
+  0% {
+    background-image: url(../img/parallax/parallax_1.jpg);
+  }
+  50% {
+    background-image: url(../img/parallax/parallax_2.jpg);
+  }
+  100% {
+    background-image: url(../img/parallax/parallax_3.jpg);
+  }
 }
 
 @keyframes changeQuotes {
@@ -123,7 +132,7 @@ body {
   background-attachment: fixed;
   background-image: url(../img/chef/flowers.png);
   background-repeat: repeat;
-  background-size: cover;  
+  background-size: cover;
   z-index: 1;
 }
 
@@ -152,7 +161,7 @@ body {
   align-items: center;
   animation: fadeIn 4s;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   height: 100%;
   justify-content: center;
   position: absolute;
@@ -604,23 +613,23 @@ body {
   .specials-section_dish-container {
     flex-direction: row;
   }
-  
+
   #dish_2,
   #dish_4,
   #dish_6 {
     flex-direction: row-reverse;
   }
-  
-  #dish_1{
+
+  #dish_1 {
     border-radius: 2rem 2rem 0;
   }
-  #dish_img1{
+  #dish_img1 {
     border-radius: 2rem 0 0;
   }
-  #dish_6{
+  #dish_6 {
     border-radius: 0 0 2rem 2rem;
   }
-  #dish_img6{
+  #dish_img6 {
     border-radius: 0 0 2rem;
   }
 
@@ -653,7 +662,8 @@ body {
   }
 
   /* Used for dish 2 & 4 */
-  .specials-section_dish-container:hover .specials-section_dish-container_lg-image {
+  .specials-section_dish-container:hover
+    .specials-section_dish-container_lg-image {
     border-radius: 0 2rem 2rem 0;
   }
 
@@ -691,18 +701,18 @@ body {
     flex-direction: row-reverse;
   }
 
-  #dish_1{
+  #dish_1 {
     border-radius: 2rem 0 0;
   }
 
-  #dish_2{
+  #dish_2 {
     border-radius: 0 2rem 0;
   }
 
-  #dish_5{
+  #dish_5 {
     border-radius: 0 0 0 2rem;
   }
-  #dish_img5{
+  #dish_img5 {
     border-radius: 0 0 0 2rem;
   }
 
@@ -718,7 +728,8 @@ body {
   }
 
   /* Used for dish 2 & 4 */
-  .specials-section_dish-container:hover .specials-section_dish-container_lg-image {
+  .specials-section_dish-container:hover
+    .specials-section_dish-container_lg-image {
     border-radius: 0 2rem 2rem 0;
   }
 
@@ -759,7 +770,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   margin: 15rem 5rem;
-  width: 90%
+  width: 90%;
 }
 
 .ingredients-container_generic {
@@ -809,10 +820,10 @@ body {
 
 /*------------------------------------------------ INGREDIENTS RESPONSIVE */
 @media (min-width: 1000px) {
-  .ingredients-container{
+  .ingredients-container {
     flex-direction: row;
-  } 
-  .ingredients-container_generic{
+  }
+  .ingredients-container_generic {
     width: 80%;
   }
 }
@@ -820,8 +831,7 @@ body {
 /*------------------------------------------------ MENU SECTION PAGE */
 .menu-section-container {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.90);
-  /* background-image: url(../img/about-section/about_section_bg.png); */
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   height: auto;
@@ -869,12 +879,8 @@ body {
   text-decoration: none;
 }
 
-/* .menu-section-container > ul > li > button:hover {
-  border: 0.2rem solid #fb6e14;
-  
-} */
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   background-color: #fb6e14;
   color: #fff;
 }
@@ -884,17 +890,6 @@ body {
   color: #fff;
 }
 
-
-/* .menu-section-container_content {
-  height: auto;
-  margin-bottom: 10rem;
-  width: 90%;
-}
-
-.menu-section-container_content-panel {
-  height: 100%;
-  width: 100%;
-} */
 #pills-tabContent {
   display: flex;
   flex-direction: column;
@@ -903,8 +898,6 @@ body {
 }
 
 .menu-content {
-  
-
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
@@ -913,7 +906,6 @@ body {
 }
 
 .menu-section {
-  
   color: #fff;
   display: flex;
   flex-flow: column wrap;
@@ -931,7 +923,7 @@ body {
   text-transform: uppercase;
 }
 
-.menu-section > table tbody tr:nth-child(even) > td{
+.menu-section > table tbody tr:nth-child(even) > td {
   font-style: italic;
   padding: 0;
   text-transform: lowercase;
@@ -940,21 +932,6 @@ body {
 .menu-section > table tbody tr > td:nth-child(even) {
   padding: 2rem 0 0;
 }
-
-/* @media (min-width: 800px) {
-  .menu-content {
-    display: flex;
-  }
-  .menu-section {
-    width: 80%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .menu-content {
-    padding: 10rem;
-  }
-} */
 
 /*------------------------------------------------ PARALLAX QUOTES */
 .parallax-quote-container {
@@ -1028,7 +1005,7 @@ body {
 
   display: flex;
   flex-direction: column;
-}  
+}
 
 .chef-section_image {
   background-image: url(../img/chef/our-chef1.jpeg);
@@ -1214,7 +1191,7 @@ body {
 
 #heart-icon {
   font-size: 1.5rem;
-} 
+}
 
 .footer-section-flex {
   display: flex;
@@ -1228,7 +1205,7 @@ body {
   flex-direction: column;
 }
 
-.footer-section_brand-logo > div > img{
+.footer-section_brand-logo > div > img {
   height: 15rem;
   width: 15rem;
 }
@@ -1345,25 +1322,102 @@ body {
   margin-top: 5rem;
 }
 
-.anti-carousel img{
+.anti-carousel img {
   border-radius: 2rem;
 }
 
- @media (min-width:600px) {
+/*------------------------------------------------ ABOUT PAGE RESPONSIVE */
+@media (min-width: 600px) {
   .about-paragraph {
     width: 80%;
   }
   .anti-carousel {
     width: 45rem;
-    
   }
 }
-@media (min-width:900px) {
-   .about-paragraph {
+@media (min-width: 900px) {
+  .about-paragraph {
     width: 60%;
   }
-} 
+}
 
+/*------------------------------------------------ CHEF PAGE */
+.chef-main-container {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
+.chef-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.chef-header > h2 {
+  color: #fff;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.chef-header > img {
+  width: 25rem;
+}
+
+.chef-paragraph > p {
+  color: #fff;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  height: auto;
+  line-height: 2.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.anti-chef-carousel {
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(255, 255, 255, 0.75);
+  margin-top: 2rem;
+}
+
+.anti-chef-carousel img {
+  border-radius: 2rem;
+}
+
+.anti-chef-carousel .carousel-caption {
+  left: 0;
+}
+
+.anti-chef-carousel p {
+  background-color: rgba(0, 0, 0, 0.55);
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+/*------------------------------------------------ CHEF PAGE RESPONSIVE */
+@media (min-width: 600px) {
+  .chef-paragraph {
+    width: 80%;
+  }
+  .anti-chef-carousel {
+    width: 45rem;
+  }
+}
+@media (min-width: 900px) {
+  .chef-paragraph {
+    width: 60%;
+  }
+}
 /* End of testing styles */
 
 /* Date & language section of the header */
