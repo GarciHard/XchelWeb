@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Xchel's Menu</title>
+    <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Redesign of the header, i remove the language & date -->
+    <header class="main-header-nav">
+        <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
+        <nav class="header-nav-container">
+            <ul class="header-nav__left">
+                <li><a href="../pages/about-us.html">About</a></li>
+                <li><a href="../index.html#specials-section">Specials</a></li>
+                <li><a href="../pages/menus.html">Menu</a></li>
+            </ul>
+            <div class="header-nav__center">
+                <a href="../index.html">xchel</a>
+            </div>
+            <ul class="header-nav__right">
+                <li><a href="../pages/chef.html">Chef</a></li>
+                <li><a href="../pages/reservations.html">Reservation</a></li>
+                <li><a href="../pages/contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contact section -->
+    <section>
+        <div class="contact-title-banner">
+            <h2>Write Us</h2>
+            <img src="../img/divider_tomato.svg" alt="divider for section titles">
+        </div>
+        <div id="contact-form" class="container_85 contact-form-container-85">
+            <div class="container contact-form-main">
+                <form class="row g-3 d-block">
+                    <div class="col-12">
+                        <label for="inputState" class="form-label">Select a location:</label>
+                        <select id="inputState" class="form-select">
+                            <option disabled>-</option>
+                            <option>Coapa</option>
+                            <option>Arenal</option>
+                            <option>Per&iacute;sur</option>
+                            <option>Coyoac&aacute;n</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputName" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="John Doe" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputPhone" class="form-label">Phone Number:</label>
+                        <input type="tel" class="form-control" id="inputPhone" pattern="+[0-9]{2}[0-9]{10}"
+                            placeholder="+52 7226566609">
+                    </div>
+                    <div class="col-12">
+                        <label for="textComment" class="form-label">Comments:</label>
+                        <textarea class="form-control" id="textComment" rows="3"
+                            placeholder="Write us your comments, opinions, congratulations or something you want to share with us!"
+                            required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="buttonCheck">
+                            <label class="form-check-label" for="buttonCheck">
+                                Receive an email copy</label>
+                        </div>
+                    </div>
+                    <div class="col-12 contact-form-buttons">
+                        <button type="submit" class="btn btn-danger">Send</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <!--Section of the footer which contains the copyright xD -->
+        <div class="footer-section">
+            <div class="footer-section-flex">
+                <div class="footer-section_brand-logo">
+                    <div>
+                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
+                    </div>
+                    <div class="footer-section_brand-logo_text">
+                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
+                            the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
+                            spirit of her beloved country.</p>
+                    </div>
+                </div>
+                <div class="footer-section_social-container">
+                    <div class="footer-section_social-title">
+                        <span>¡Follow us!</span>
+                    </div>
+                    <div class="footer-section_social-images">
+                        <img src="../img/footer/facebook.png" alt="Facebook logo image">
+                        <img src="../img/footer/instagram.png" alt="Instagrame logo image">
+                        <img src="../img/footer/twitter.png" alt="Twitter logo image">
+                    </div>
+                    <div class="footer-section_social-direction">
+                        <span>@XchelMexicanCuisine</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section_credits">
+                <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
+                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
+                <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/bootstrap.min.js"></script>
+</html>
