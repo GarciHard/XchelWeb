@@ -460,7 +460,7 @@ body {
   flex-direction: column;
   height: auto;
   justify-content: center;
-  width: 85vw;
+  width: 100%;
 }
 
 .specials-section-container > h2 {
@@ -715,6 +715,9 @@ body {
   #dish_img5 {
     border-radius: 0 0 0 2rem;
   }
+  #dish_img6 {
+    border-radius: 0;
+  }
 
   .specials-section_dish-container_lg-info > img {
     width: 18rem;
@@ -761,7 +764,7 @@ body {
   flex-direction: column;
   height: auto;
   justify-content: center;
-  width: 85vw;
+  width: 100%;
 }
 
 .ingredients-container {
@@ -989,7 +992,7 @@ body {
 .chef-section-container {
   background-color: #fff;
   height: auto;
-  width: 85vw;
+  width: 100%;
   padding: 5rem;
   display: flex;
   align-items: center;
@@ -1100,7 +1103,7 @@ body {
 .parallax-book-table-container_opacity {
   background-color: #000;
   height: inherit;
-  width: 85vw;
+  width: 85%;
   opacity: 0.5;
   position: absolute;
   z-index: 2;
