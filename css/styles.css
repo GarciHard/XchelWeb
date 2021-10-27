@@ -230,6 +230,19 @@ body {
   z-index: 9999;
 }
 
+.responsive-menu {
+  display: none;
+  height: 5rem;
+  margin: 0.5rem 1rem;
+  position: absolute;
+  width: 5rem;
+}
+
+#burger-btn {
+  height: inherit;
+  width: inherit;
+}
+
 .header-nav-container {
   color: #2d2d2d;
   display: flex;
@@ -1196,6 +1209,14 @@ body {
   font-size: 1.5rem;
 }
 
+#hot-bevereage {
+  font-size: 2rem;
+}
+
+#mexican-flag {
+  font-size: 2rem;
+}
+
 .footer-section-flex {
   display: flex;
   flex-direction: column;
@@ -1258,6 +1279,11 @@ body {
   line-height: 2;
   margin-top: 5rem;
   width: 100%;
+}
+
+.footer-section_credits span {
+  height: 4rem;
+  line-height: 4rem;
 }
 
 /*------------------------------------------------ FOOTER SECTION RESPONSIVE */
@@ -1421,1793 +1447,148 @@ body {
     width: 60%;
   }
 }
-/* End of testing styles */
 
-/* Date & language section of the header */
-.headerDate {
-  color: #2d2d2d;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: right;
-}
-
-.headerDate ul {
-  list-style: none;
-}
-
-.headerDate ul li {
-  display: inline-block;
-  padding: 0.8rem 1.6rem;
-}
-
-.headerDate ul li a {
-  color: #2d2d2d;
-  display: block;
-  text-decoration: none;
-}
-
-/* Brand logo & navigation section of the header */
-.header-nav {
+/*------------------------------------------------ CONTACT US PAGE */
+.contact-title-banner {
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
-  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
+  flex-direction: column;
   height: 10rem;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 3.5rem 0;
 }
 
-.header-nav__logo {
-  height: 10rem;
+.contact-title-banner > h2 {
+  color: #fff;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.contact-title-banner > img {
+  width: 25rem;
+}
+
+.contact-form-main {
+  box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 1);
+}
+
+.contact-form-container-85 {
+  border-radius: 2rem;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.contact-form-main {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 2rem;
+  color: #fff;
+  margin: 0 0 3.5rem;
+  max-width: 100%;
+  padding: 5rem;
+}
+
+.contact-form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-form-buttons > button{
+  height: 3rem;
+  margin: 1rem 0 0;
   width: 10rem;
 }
 
-.header-nav ul {
-  list-style: none;
+/*------------------------------------------------ CONTACT US PAGE RESPONSIVE */
+
+@media (min-width: 576px) { 
+  #contact-form {
+    width: 65%;
+  }
 }
 
-.header-nav ul li {
-  display: inline-block;
-  padding-right: 10rem;
+@media (min-width: 768px) { 
+  #contact-form {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) { 
+  #contact-form {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact-form {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #contact-form {
+    width: 25%;
+  }
+}
+
+/*------------------------------------------------ RESERVATIONS PAGE */
+.reservations-main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-construction {
   position: relative;
 }
 
-.header-nav ul li a {
-  color: #2d2d2d;
-  display: block;
-  text-decoration: none;
-}
-
-/* Hover used to display dropdown menu list */
-/* .header-nav__left li:hover ul {
-  display: block;
-} */
-
-/* Menu list */
-/* .header-nav__dropdown {
-  align-content: center;
-  border: 0.2rem solid #ab1331;
-  color: #2d2d2d;
-  display: none;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold;
-  flex-direction: column;
-  position: absolute;
-}
-
-.header-nav__dropdown li {
-  background-color: #ffffff;
-  width: 10rem;
-}
-
-.header-nav__dropdown li a {
-  padding: 1rem 1rem 1rem 2rem;
-  width: 15rem;
-} */
-/* >>> Review why the list-style-image is not working <<< */
-
-/************************************************************************************/
-/************************************************************************************/
-/************************************************************************************/
-/************************************************************************************/
-/* FRIENDLY REMINDER that i need to work more on the header and footer style sheet */
-/************************************************************************************/
-/************************************************************************************/
-/************************************************************************************/
-/************************************************************************************/
-
-.xchel__main__background {
-  background-color: black;
-  background-image: url(../img/background/cevivhe.png);
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 60rem;
-  margin: 3rem 0 3rem 0;
-  padding-top: 0.1rem;
+#main-construction > img {
   width: 100%;
-}
-
-.xchel__main__background--fonts {
-  color: white;
-}
-
-.xchel__logo__titles {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 0 0 90rem;
-  padding: 2.5rem 2.5rem;
-  width: 40rem;
-}
-
-.xchel__logo__titles--logo {
-  height: 20rem;
-  width: 20rem;
-}
-
-.xchel__logo__titles--brand-name {
-  font-family: "Cantata One", Arial, Helvetica, sans-serif;
-  font-size: 7rem;
-  font-weight: lighter;
-}
-
-.xchel__logo__titles--brand-slogan {
-  font-family: "Sorts Mill Goudy", Arial, Helvetica, sans-serif;
-  font-size: 1.9rem;
-  font-weight: lighter;
-}
-
-.xchel__logo__titles--button {
-  background-color: #ab1331;
-  border-radius: 2rem;
-  border-style: none;
-  height: 4rem;
-  margin: 7rem 0 0;
-  width: 17.5rem;
-}
-
-.xchel__logo__titles--button:active {
-  background-color: #e61740;
-}
-
-/* Style for the section's */
-.sections {
-  color: #2d2d2d;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-}
-
-.sections--title {
-  font-size: 3rem;
-  margin: 1rem 0;
-  word-wrap: break-word;
-}
-
-.sections--inline {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 10rem;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                           POPULAR DISHES STYLE SECTION                           */
-/************************************************************************************/
-/************************************************************************************/
-.dishes--container {
-  padding: 2rem;
-}
-
-.dishes--main-flex {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
-  padding: 0.1rem;
-}
-
-.dishes--flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.dishes--flex-content {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.dishes--image {
-  border: 0.1rem solid #2d2d2d;
-  height: 30rem;
-  width: 37.2rem;
-}
-
-.dishes--image__caption {
-  font-size: 1.5rem;
-  font-weight: lighter;
-  margin: 2rem 0;
-}
-
-.dishes--quote {
-  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
-  font-size: 4rem;
-  margin: 10rem 0;
-  text-align: center;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                          LATEST RECEIPES STYLE SECTION                           */
-/************************************************************************************/
-/************************************************************************************/
-.latest_receipes--section {
-  flex: 0 0 65%;
-}
-
-.latest-receipes__carrousel-container {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.latest-receipes__carrousel-container #imageContainer {
-  display: inline-block;
-  height: 50rem;
-  padding: 2rem 2rem;
-  width: 55%;
-}
-
-.latest-receipes__carrousel-container #imageContainer img {
   height: 100%;
-  width: 100%;
 }
 
-.latest-receipes__carrousel-container #descriptionContainer {
+.reservations-opacity {
   align-items: center;
-  background-color: #2d2d2d88;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.55);
   display: flex;
   flex-direction: column;
-  font-weight: bold;
-  gap: 1rem;
-  height: 50rem;
-  margin: 2rem;
-  width: 35%;
-}
-
-.latest-receipes__carrousel-container #descriptionContainer p {
-  font-size: 2rem;
-  padding: 2rem 2rem;
-}
-
-.latest-receipes__carrousel-container #descriptionContainer img {
-  height: 4rem;
-  padding: 2rem 2rem;
-  width: 4rem;
-}
-
-.latest-receipes__carrousel-container #descriptionContainer {
-  font-size: 1rem;
-}
-
-.paginator {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  list-style: none;
-}
-
-.paginator li {
-  font-size: 2rem;
-}
-
-.paginator li a {
-  color: #2d2d2d;
-  display: block;
-  text-decoration: none;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                             CHEFS ABOUT STYLE SECTION                            */
-/************************************************************************************/
-/************************************************************************************/
-.about__chef--section {
-  flex: 1;
-}
-
-.about__chef--container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.about__chef--image {
-  border-radius: 10rem;
-  height: 20rem;
-  margin: 2.5rem 0;
-  width: 35rem;
-}
-
-.about__chef--name {
-  color: #2d2d2d;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 5rem;
-}
-
-.about__chef--paragraph {
-  color: #2d2d2d;
-  font-size: 1.8rem;
-  font-weight: lighter;
-}
-
-.about__chef--url {
-  color: #2d2d2d;
-  font-size: 1.8rem;
-  font-weight: lighter;
-  text-decoration: none;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                                FOOTER STYLE SECTION                              */
-/************************************************************************************/
-/************************************************************************************/
-/* Footer main used to distribute 3 diferent sections described below */
-.footerMain {
-  color: #2d2d2d;
-  display: flex;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  margin-top: 10rem;
-}
-
-.footerMain div {
-  height: 10rem;
-  width: 85%;
-}
-
-/* Brand logo & short about section of the footer*/
-.brandLogoAbout {
-  align-items: center;
-  display: flex;
-  font-size: 1.5rem;
-  padding: 2rem;
-  text-align: justify;
-}
-
-.brandLogoAbout img {
-  height: 10rem;
-  width: 10rem;
-}
-
-/* Social networks section of the footer */
-.socialNetworks {
-  align-items: center;
-  display: flex;
-  flex-flow: column;
-}
-
-.socialNetworkIcons {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 5rem;
-}
-
-.socialNetworkIcons img {
-  height: 3.6rem;
-  width: 3.6rem;
-}
-
-.socialNetworks span {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Newsletter section of the footer */
-.newsletter {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-}
-
-.newsletter input[type="email"] {
-  background-color: #dedada;
-  border-radius: 3.5rem;
-  border-style: none;
-  height: 4.5rem;
-  outline: none;
-  text-align: center;
-  width: 60%;
-}
-
-.newsletter input[type="button"]:active {
-  background-color: #e61740;
-}
-
-.newsletter input[type="button"] {
-  background-color: #ab1331;
-  border-radius: 3.5rem;
-  border-style: none;
-  color: #ffffff;
-  height: 4.5rem;
-  margin-left: -5rem;
-  text-align: center;
-  width: 35%;
-}
-
-/* Credits section of the footer */
-.footerCredits {
-  align-items: center;
-  background-color: #2d2d2d;
-  display: flex;
-  flex-direction: column;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  height: 11rem;
-  justify-content: space-evenly;
-}
-
-.footerCredits span {
-  color: #ffffff;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                            ABOUT PAGE STYLE SECTION                             */
-/************************************************************************************/
-/************************************************************************************/
-.about__section {
-  align-items: center;
-  background-image: url(../img/about-section/grecas.svg);
-  color: #2d2d2d;
-  display: flex;
-  flex-direction: column;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  height: 170rem;
-  padding-top: 0.1rem;
-}
-
-.about__section--text-container {
-  align-items: center;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  height: 70rem;
-  justify-content: space-evenly;
-  width: 100rem;
-}
-
-.about__section--logo {
-  height: 20rem;
-  width: 20rem;
-}
-
-.about__section--title {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.about__section--text {
-  color: #2d2d2d;
-  font-size: 2rem;
-  height: auto;
-  text-align: center;
-  width: 90rem;
-}
-
-.about__section--image {
-  border: 2rem solid #ffffff;
-  height: 50rem;
-  width: 80rem;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                         RESERVATIONS PAGE STYLE SECTION                          */
-/************************************************************************************/
-/************************************************************************************/
-/* IN PROGRESS */
-.reservations {
-  /* background-image: url(../img/chef/flowers.png); */
-  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
-  height: 50rem;
-  margin-top: 3rem;
-  padding-top: 0.1rem;
-}
-
-.reservations--title {
-  color: #2d2d2d;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 5rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-.reservations--month-bar {
-  background-color: #dedada;
-  height: 20rem;
-  padding: 0 5rem;
-  text-align: end;
-}
-
-.reservations--month-bar h3 {
-  color: #2d2d2d;
-  font-size: 15rem;
-}
-
-.reservations--grid {
-  align-items: center;
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-
-  grid-template:
-    "monthBar monthBar monthBar"
-    "monthName monthCalendar monthCalendar";
-}
-
-#monthBar {
-  grid-area: monthBar;
-}
-
-#monthName {
-  grid-area: monthName;
-  justify-self: left;
-}
-
-#monthCalendar {
-  grid-area: monthCalendar;
-  justify-self: right;
-}
-
-.reservations--grid p {
-  color: #2d2d2d;
-  font-size: 4rem;
-  padding: 2rem;
-  writing-mode: sideways-lr;
-  text-align: left;
-}
-
-.reservations img {
-  min-height: 50%;
-  margin-left: 10%;
-  padding: 2rem;
-  position: absolute;
-  width: 30%;
-  z-index: 1;
-}
-
-.reservations--calendar {
-  font-size: 1.5rem;
-  padding: 5rem;
-  text-align: center;
-  width: 50%;
-}
-
-.reservations--calendar ol {
-  display: grid;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  grid-template-columns: repeat(7, 1fr);
-  list-style: none;
-}
-
-.reservations--calendar__day a {
-  color: #2d2d2d80;
-  text-decoration: none;
-}
-
-.reservations--calendar__day-name {
-  color: #2d2d2d;
-  font-weight: bold;
-}
-
-#firstDay {
-  grid-column-start: 6;
-}
-
-.reservations--date-grid {
-  align-items: center;
-  color: #2d2d2d;
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-
-  grid-template: "date hour location";
-
-  margin-top: 40rem;
-}
-
-#date {
-  grid-area: date;
-  justify-self: center;
-}
-
-.reservations--date-container {
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-}
-
-.reservations--date-container h4 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.reservations--date-container p {
-  background-color: #2d2d2d27;
-  border-radius: 0.5rem;
-  font-size: 2rem;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.reservations--date-container div {
-  border: 0.1rem solid #2d2d2d;
-}
-
-.reservations--date-container ul {
-  list-style: none;
-}
-
-.reservations--date-container li {
-  font-size: 1.5rem;
-  padding: 1rem 4rem;
-}
-
-.reservations--date-container a {
-  color: #2d2d2d;
-  text-decoration: none;
-}
-
-#hour {
-  grid-area: hour;
-  justify-self: center;
-}
-
-#location  {
-  grid-area: location;
-  justify-self: center;
-}
-
-.reservations--user-info {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-}
-
-.reservations--user-info input[type="text"] {
-  background-color: #2d2d2d27;
-  border: none;
-  border-radius: 1rem;
-  color: #2d2d2d;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  height: 3rem;
-  text-align: center;
-  width: 20%;
-}
-
-.reservations--user-info input[type="email"] {
-  background-color: #2d2d2d27;
-  border: none;
-  border-radius: 1rem;
-  color: #2d2d2d;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  height: 3rem;
-  text-align: center;
-  width: 20%;
-}
-
-.reservations--user-confirm {
-  align-items: center;
-  display: flex;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  flex-direction: column;
-  margin-top: 10rem;
-}
-
-.reservations--user-confirm span {
-  text-align: center;
-  margin: 1rem;
-}
-
-.reservations--user-confirm button {
-  color: #ffffff;
-  background-color: #ab1331;
-  border-radius: 2rem;
-  border-style: none;
-  height: 4rem;
-  width: 10%;
-}
-
-.reservations--user-confirm button:active {
-  background-color: #e61740;
-}
-
-#light {
-  font-size: 1.5rem;
-}
-
-#bold {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-/************************************************************************************/
-/************************************************************************************/
-/*                          APPETIZERS PAGE STYLE SECTION                           */
-/************************************************************************************/
-/************************************************************************************/
-.appetizer {
-  align-items: center;
-  align-content: center;
-  background-image: url(../img/about-section/grecas.svg);
-  background-repeat: repeat;
-  color: #0f5389;
-  display: flex;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  flex-direction: column;
-  margin-top: 3rem;
-  height: 185rem;
-  justify-content: space-evenly;
-  overflow: auto;
-  padding-top: 0.1rem;
-  width: auto;
-}
-
-.appetizer--outside-container {
-  align-items: center;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  height: 90%;
-  justify-content: space-evenly;
-  overflow: auto;
-  padding: 5rem;
-  width: 80%;
-}
-
-.appetizer--container {
-  align-items: center;
-  background-color: #ffffff;
-  border: 0.5rem solid orange;
-  display: flex;
-  height: 90%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  overflow: auto;
-  padding: 5rem;
-  width: 90%;
-}
-
-.appetizer--main-titles {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.appetizer--title {
-  font-size: 15rem;
-  font-weight: 900;
-  line-height: 15rem;
-  text-align: center;
-}
-
-.appetizer--subtitle {
-  font-size: 5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.appetizer--logo {
-  height: 20rem;
-  width: 20rem;
-}
-
-.appetizer--grid-table {
-  display: flex;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 90%;
-}
-
-.appetizer--grid-table ol {
-  display: grid;
-  list-style: none;
-  grid-template:
-    "starter1 price1"
-    "desc1    price1"
-    "starter2 price2"
-    "desc2    price2"
-    "starter3 price3"
-    "desc3    price3"
-    "starter4 price4"
-    "desc4    price4"
-    "starter5 price5"
-    "desc5    price5";
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-
-#starter1 {
-  grid-area: starter1;
-}
-
-#desc1 {
-  grid-area: desc1;
-}
-
-#price1 {
-  grid-area: price1;
-}
-
-#starter2 {
-  grid-area: starter2;
-}
-
-#desc2 {
-  grid-area: desc2;
-}
-
-#price2 {
-  grid-area: price2;
-}
-
-#starter3 {
-  grid-area: starter3;
-}
-
-#desc3 {
-  grid-area: desc3;
-}
-
-#price3 {
-  grid-area: price3;
-}
-
-#starter4 {
-  grid-area: starter4;
-}
-
-#desc4 {
-  grid-area: desc4;
-}
-
-#price4 {
-  grid-area: price4;
-}
-
-#starter5 {
-  grid-area: starter5;
-}
-
-#desc5 {
-  grid-area: desc5;
-}
-
-#price5 {
-  grid-area: price5;
-}
-
-.appetizer--grid-table ol li {
-  align-self: center;
-}
-
-.appetizer--grid-table_name {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 2rem;
-}
-
-.appetizer--grid-table_desc {
-  font-size: 2rem;
-  font-style: italic;
-  margin-bottom: 2rem;
-}
-
-.appetizer--grid-table_price {
-  font-size: 2rem;
-}
-
-.appetizer--grid-table_two {
-  display: flex;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 90%;
-}
-
-.appetizer--grid-table_two ol {
-  display: grid;
-  list-style: none;
-  grid-template:
-    "appetizer1 aPrice1"
-    "aDesc1    aPrice1"
-    "appetizer2 aPrice2"
-    "aDesc2    aPrice2"
-    "appetizer3 aPrice3"
-    "aDesc3    aPrice3";
-  grid-template-columns: 5fr 0.5fr;
-  grid-template-rows: 1fr;
-}
-
-#appetizer1 {
-  grid-area: appetizer1;
-}
-
-#aDesc1 {
-  grid-area: aDesc1;
-}
-
-#aPrice1 {
-  grid-area: aPrice1;
-}
-
-#appetizer2 {
-  grid-area: appetizer2;
-}
-
-#aDesc2 {
-  grid-area: aDesc2;
-}
-
-#aPrice2 {
-  grid-area: aPrice2;
-}
-
-#appetizer3 {
-  grid-area: appetizer3;
-}
-
-#aDesc3 {
-  grid-area: aDesc3;
-}
-
-#aPrice3 {
-  grid-area: aPrice3;
-}
-
-.appetizer--grid-table_two ol li {
-  align-self: center;
-}
-
-.appetizer--grid-table_title {
-  font-size: 3rem;
-  font-weight: 900;
-  text-align: left;
-}
-/************************************************************************************/
-/************************************************************************************/
-/*                          MAINCOURSE PAGE STYLE SECTION                           */
-/************************************************************************************/
-/************************************************************************************/
-.main-course {
-  align-items: flex-end;
-  background-image: url(../img/background/menus/main-course-background.png);
-  background-size: contain;
-  background-position: center;
-  color: #eccc6e;
-  display: flex;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  flex-direction: column;
-  height: 185rem;
-  margin-top: 3rem;
-  padding-top: 0.1rem;
-  width: auto;
-}
-
-.main-course--container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   height: 100%;
-  justify-content: space-evenly;
-  width: 78%;
+  position: absolute;  
+  width: 100%;
 }
 
-.main-course--main-titles {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-course--title {
-  font-size: 15rem;
-  font-weight: 900;
-  line-height: 15rem;
-  text-align: center;
-  width: 112.3rem;
-}
-
-.main-course--logo {
-  height: 20rem;
-  margin: 5rem 0;
-  width: 20rem;
-}
-
-.main-course--menu {
-  width: 70%;
-}
-
-.main-course--menu ol {
-  display: grid;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  list-style: none;
-  grid-row-gap: 2rem;
-  grid-template:
-    "main1  mPrice1"
-    "mDesc1 mPrice1"
-    "main2  mPrice2"
-    "mDesc2 mPrice2"
-    "main3  mPrice3"
-    "mDesc3 mPrice3"
-    "main4  mPrice4"
-    "mDesc4 mPrice4"
-    "main5  mPrice5"
-    "mDesc5 mPrice5"
-    "main6  mPrice6"
-    "mDesc6 mPrice6";
-  grid-template-columns: 3fr 0.5fr;
-  grid-template-rows: 1fr;
-}
-
-#main1 {
-  grid-area: main1;
-}
-
-#mDesc1 {
-  grid-area: mDesc1;
-}
-
-#mPrice1 {
-  grid-area: mPrice1;
-}
-
-#main2 {
-  grid-area: main2;
-}
-
-#mDesc2 {
-  grid-area: mDesc2;
-}
-
-#mPrice2 {
-  grid-area: mPrice2;
-}
-
-#main3 {
-  grid-area: main3;
-}
-
-#mDesc3 {
-  grid-area: mDesc3;
-}
-
-#mPrice3 {
-  grid-area: mPrice3;
-}
-
-#main4 {
-  grid-area: main4;
-}
-
-#mDesc4 {
-  grid-area: mDesc4;
-}
-
-#mPrice4 {
-  grid-area: mPrice4;
-}
-
-#main5 {
-  grid-area: main5;
-}
-
-#mDesc5 {
-  grid-area: mDesc5;
-}
-
-#mPrice5 {
-  grid-area: mPrice5;
-}
-
-#main6 {
-  grid-area: main6;
-}
-
-#mDesc6 {
-  grid-area: mDesc6;
-}
-
-#mPrice6 {
-  grid-area: mPrice6;
-}
-
-.main-course--menu ol li {
-  align-self: center;
-}
-
-.main-course--grid-table_name {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 2rem;
-}
-
-.main-course--grid-table_desc {
-  color: #f2e9e1;
-  font-size: 2rem;
-  font-style: italic;
-  margin-bottom: 2rem;
-}
-
-.main-course--grid-table_price {
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: right;
-}
-/************************************************************************************/
-/************************************************************************************/
-/*                           DESSERTS PAGE STYLE SECTION                            */
-/************************************************************************************/
-/************************************************************************************/
-.desserts {
-  align-items: center;
-  background-image: url(../img/background/menus/desserts-background.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  color: #7a7a7a;
-  display: flex;
-  flex-direction: column;
+.reservations-opacity > h2 {
+  color: #fff;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  height: 185rem;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  padding-top: 0.1rem;
-  width: auto;
-}
-
-.desserts--main-titles {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 30%;
-  justify-content: space-evenly;
-}
-
-.desserts--menu {
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  width: 50%;
-}
-
-.desserts--menu ol {
-  display: grid;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  list-style: none;
-  grid-template:
-    "desserts1   dPrice1"
-    "desserts2   dPrice2"
-    "desserts3   dPrice3"
-    "desserts4   dPrice4"
-    "desserts5   dPrice5"
-    "desserts6   dPrice6"
-    "desserts7   dPrice7"
-    "desserts8   dPrice8"
-    "desserts9   dPrice9"
-    "desserts10  dPrice10"
-    "desserts11  dPrice11";
-  grid-template-columns: 1fr 0.5fr;
-  grid-template-rows: 1fr;
-}
-
-#desserts1 {
-  grid-area: desserts1;
-}
-
-#dPrice1 {
-  grid-area: dPrice1;
-}
-
-#desserts2 {
-  grid-area: desserts2;
-}
-
-#dPrice2 {
-  grid-area: dPrice2;
-}
-
-#desserts3 {
-  grid-area: desserts3;
-}
-
-#dPrice3 {
-  grid-area: dPrice3;
-}
-
-#desserts4 {
-  grid-area: desserts4;
-}
-
-#dPrice4 {
-  grid-area: dPrice4;
-}
-
-#desserts5 {
-  grid-area: desserts5;
-}
-
-#dPrice5 {
-  grid-area: dPrice5;
-}
-
-#desserts6 {
-  grid-area: desserts6;
-}
-
-#dPrice6 {
-  grid-area: dPrice6;
-}
-
-#desserts7 {
-  grid-area: desserts7;
-}
-
-#dPrice7 {
-  grid-area: dPrice7;
-}
-
-#desserts8 {
-  grid-area: desserts8;
-}
-
-#dPrice8 {
-  grid-area: dPrice8;
-}
-
-#desserts9 {
-  grid-area: desserts9;
-}
-
-#dPrice9 {
-  grid-area: dPrice9;
-}
-
-#desserts10 {
-  grid-area: desserts10;
-}
-
-#dPrice10 {
-  grid-area: dPrice10;
-}
-
-#desserts11 {
-  grid-area: desserts11;
-}
-
-#dPrice11 {
-  grid-area: dPrice11;
-}
-
-.desserts--title {
-  color: #c9b066;
-  font-size: 15rem;
-  font-weight: 900;
-  line-height: 15rem;
-  text-align: center;
-  width: 108rem;
-}
-
-.desserts--logo {
-  height: 20rem;
-  width: 20rem;
-}
-
-.desserts--table__caption {
-  font-size: 5rem;
-  font-weight: 900;
-  text-align: center;
-}
-
-.desserts--table__dish {
-  font-size: 3.5rem;
-  padding: 1rem 1rem;
-  text-align: left;
-}
-
-.desserts--table__price {
+  font-style: italic;
   font-size: 3rem;
-  padding: 0.1rem;
-  text-align: right;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
 }
-/************************************************************************************/
-/************************************************************************************/
-/*                          BEVERAGES PAGE STYLE SECTION                           */
-/************************************************************************************/
-/************************************************************************************/
-.beverages {
-  align-items: center;
-  background-image: url(../img/background/menus/beverages-background.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  color: #ffffff;
-  display: flex;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  flex-direction: column;
-  height: 185rem;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  padding-top: 0.1rem;
-  width: auto;
-}
-
-.beverages--main-titles {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 40%;
-  justify-content: space-evenly;
-}
-
-.beverages--title {
-  color: #eee9c3;
-  font-size: 15rem;
-  font-weight: 900;
-  line-height: 15rem;
-  text-align: center;
-  width: 119rem;
-}
-
-.beverages--logo {
-  height: 20rem;
-  width: 20rem;
-}
-
-.beverages--menu {
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  height: 50%;
-  width: 60%;
-}
-
-.beverages--menu ol {
-  display: grid;
-  list-style: none;
-  grid-row-gap: 2rem;
-  grid-template:
-    "beverages1  bPrice1"
-    "bDesc1 bPrice1"
-    "beverages2  bPrice2"
-    "bDesc2 bPrice2"
-    "beverages3  bPrice3"
-    "bDesc3 bPrice3"
-    "beverages4  bPrice4"
-    "bDesc4 bPrice4"
-    "beverages5  bPrice5"
-    "bDesc5 bPrice5";
-  grid-template-columns: 3fr 0.5fr;
-  grid-template-rows: 1fr;
-}
-
-#beverages1 {
-  grid-area: beverages1;
-}
-
-#bDesc1 {
-  grid-area: bDesc1;
-}
-
-#bPrice1 {
-  grid-area: bPrice1;
-}
-
-#beverages2 {
-  grid-area: beverages2;
-}
-
-#bDesc2 {
-  grid-area: bDesc2;
-}
-
-#bPrice2 {
-  grid-area: bPrice2;
-}
-
-#beverages3 {
-  grid-area: beverages3;
-}
-
-#bDesc3 {
-  grid-area: bDesc3;
-}
-
-#bPrice3 {
-  grid-area: bPrice3;
-}
-
-#beverages4 {
-  grid-area: beverages4;
-}
-
-#bDesc4 {
-  grid-area: bDesc4;
-}
-
-#bPrice4 {
-  grid-area: bPrice4;
-}
-
-#beverages5 {
-  grid-area: beverages5;
-}
-
-#bDesc5 {
-  grid-area: bDesc5;
-}
-
-#bPrice5 {
-  grid-area: bPrice5;
-}
-
-.beverages--menu ol li {
-  align-self: center;
-}
-
-.beverages--grid-table_name {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 2rem;
-}
-
-.beverages--grid-table_desc {
-  color: #f2e9e1;
-  font-size: 2rem;
-  font-style: italic;
-  margin-bottom: 2rem;
-}
-
-.beverages--grid-table_price {
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: right;
-}
-/************************************************************************************/
-/************************************************************************************/
-/*                          LOCATIONS PAGE STYLE SECTION                           */
-/************************************************************************************/
-/************************************************************************************/
-.locations {
-  align-items: center;
-  background-image: url(../img/locations-section/plants.png);
-  background-size: contain;
-  display: flex;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  flex-direction: column;
-  height: 190rem;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  padding-top: 0.1rem;
-}
-
-.locations--title {
-  background-color: #ffffff;
-  height: auto;
-  width: 50%;
-}
-
-.locations--title h2 {
-  font-size: 10rem;
-  font-weight: 900;
-  text-align: center;
-  word-wrap: break-word;
-}
-
-.locations--stuff {
-  align-items: center;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  height: 160rem;
-  justify-content: space-evenly;
-  padding: 2rem 0;
-}
-
-.locations--stuff__xchel-restaurant-right {
-  height: 40rem;
-  width: 60%;
-}
-
-.locations--stuff__icon {
-  height: 3rem;
-  margin-right: 2rem;
-  width: 3rem;
-}
-
-.locations--stuff__table-grid {
-  width: 80%;
-  overflow: auto;
-}
-
-.locations--stuff__table-grid ol {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 0.5fr 1fr;
-  list-style: none;
-}
-
-.locations--stuff__table-grid ol li {
-  align-self: center;
-  justify-self: center;
-}
-
-.locations--stuff__table_title {
-  font-size: 4rem;
-  font-weight: bold;
-}
 
-.locations--stuff__table_address {
-  color: #2d2d2d;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  padding: 1rem;
-  text-align: left;
+.reservations-opacity > img {
+  width: 25rem;
 }
 
-.locations--stuff__grid {
-  display: grid;
-  gap: 5rem;
-  grid-template:
-    "findUsTitle findUsTitle"
-    "mapLocator xchelImgLeft";
-  padding: 5rem;
-}
-
-#findUsTitle {
-  grid-area: findUsTitle;
-}
-
-#mapLocator {
-  grid-area: mapLocator;
-}
-
-#xchelImgLef {
-  grid-area: xchelImgLeft;
-}
-
-.locations--stuff__find-us-title {
-  color: #2d2d2d;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  width: 100%;
-}
-
-.locations--stuff__google-maps {
-  height: 30rem;
-  width: 40rem;
-}
-
-.locations--stuff__xchel-restaurant-left {
-  height: 30rem;
-  width: 60rem;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                          CHEF'S BIO PAGE STYLE SECTION                           */
-/************************************************************************************/
-/************************************************************************************/
-.chef-bio {
-  align-items: center;
-  background-image: url(../img/chef/flowers.png);
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  height: 190rem;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  padding-top: 0.1rem;
-}
-
-.chef-bio--container {
-  align-items: center;
-  background-color: #ffffffda;
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  justify-content: space-evenly;
-  padding: 5rem;
-  width: 70%;
-}
-
-.chef-bio--container__chef-img {
-  border-radius: 10rem;
-  height: auto;
-  width: 50%;
-}
-
-.chef-bio--container__title {
-  font-size: 5rem;
-  font-weight: 900;
-  text-align: center;
-}
-
-.chef-bio--container__text {
-  color: #2d2d2d;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  text-align: justify;
-}
-
-.chef-bio--container__logo {
-  background-color: #ffffffab;
-  height: 20rem;
-  width: 20rem;
-}
-
-/************************************************************************************/
-/************************************************************************************/
-/*                           CONTACT PAGE STYLE SECTION                            */
-/************************************************************************************/
-/************************************************************************************/
-.contact {
-  align-items: center;
-  background-image: url(../img/contact-section/grecas-blue.png);
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  height: 80rem;
-  margin-top: 3rem;
-  padding-top: 0.1rem;
-  justify-content: space-evenly;
-}
-
-.contact--title {
-  background-color: #ffffffda;
-  /* margin: 5rem 35.7rem 5rem 35.7rem; */
-  text-align: center;
-  width: 50%;
-}
-
-.contact--title h2 {
-  font-size: 4rem;
-  font-weight: 900;
-}
-
-.contact--title p {
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.contact--form {
-  background-color: #ffffffda;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  /* margin: 5rem 35.7rem 5rem 35.7rem; */
-  padding: 5rem;
-  width: 50%;
-}
-
-.contact--form fieldset {
-  align-items: center;
-  border: none;
-  display: grid;
-  gap: 3rem;
-  grid-template:
-    "lblLocation lblLocation optXchelLocation optXchelLocation"
-    "txtUsrName txtUsrName . ."
-    "txtUsrMail txtUsrMail txtUsrPhone txtUsrPhone"
-    "txaUsrMsg txaUsrMsg txaUsrMsg txaUsrMsg"
-    "cboxUsrCopy lblUsrCopy . ."
-    "btnCont btnCont btnCont btnCont";
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr), 3fr, repeat(2, 1fr);
-}
-
-#lblLocation {
-  grid-area: lblLocation;
-}
-
-#optXchelLocation {
-  grid-area: optXchelLocation;
-}
-
-#txtUsrName {
-  grid-area: txtUsrName;
-}
-
-#txtUsrMail {
-  grid-area: txtUsrMail;
-}
-
-#txtUsrPhone {
-  grid-area: txtUsrPhone;
-}
-
-#txaUsrMsg {
-  grid-area: txaUsrMsg;
-}
-
-#cboxUsrCopy {
-  grid-area: cboxUsrCopy;
-}
-
-#lblUsrCopy {
-  grid-area: lblUsrCopy;
-}
-
-#btnCont {
-  grid-area: btnCont;
-}
-
-.contact--form fieldset input {
-  background-color: #dedada;
-  border: none;
-  border-radius: 10rem;
-  color: #ab1331;
-  font-size: 1.5rem;
-  font-weight: bold;
-  height: 4rem;
-  justify-self: stretch;
-  outline: none;
-  overflow: auto;
-  text-align: center;
-}
-
-.contact--form__txt-comment {
-  background-color: #dedada;
-  border: none;
-  border-radius: 2rem;
-  color: #ab1331;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  outline: none;
-  overflow: auto;
-}
-
-.contact--form__lbl-location {
-  display: inline-block;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.contact--form__select {
-  display: inline-block;
-  font-size: 2rem;
-}
-
-.contact--form__check {
-  font-size: 5rem;
-}
-
-.contact--form__check-label {
-  font-size: 1.5rem;
-}
-
-.actionButtonContainer {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
 
-.actionButtonContainer input[type="submit"] {
-  width: 30%;
+@media (min-width: 576px) { 
+  #main-construction {
+    width: 65%;
+  }
 }
 
-.actionButtonContainer input[type="reset"] {
-  width: 30%;
+@media (min-width: 768px) { 
+  #main-construction {
+    width: 55%;
+  }
 }
 
-.actionButtonContainer input:active {
-  background-color: #db8181;
-  color: #ac6271;
+@media (min-width: 992px) { 
+  #main-construction {
+    width: 45%;
+  }
 }
