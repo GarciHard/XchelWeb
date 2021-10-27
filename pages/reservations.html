@@ -6,197 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Reservations</title>
+    <title>Book a table @ Xchel's</title>
     <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
 </head>
 
 <body>
-    <!-- We use the same header & footer to all the non index pages, im confused 'cause with Angular we can create modular components & avoid this -->
-    <header class="container">
-        <!-- div container which be used for the language & date -->
-        <div class="headerDate">
-            <ul>
-                <li><a href="#">Espa&ntilde;ol</a></li>
-                <li>|</li>
-                <li>Mon 13th Sep 2021 </li>
+    <!-- Redesign of the header, i remove the language & date -->
+    <header class="main-header-nav">
+        <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
+        <nav class="header-nav-container">
+            <ul class="header-nav__left">
+                <li><a href="../pages/about-us.html">About</a></li>
+                <li><a href="../index.html#specials-section">Specials</a></li>
+                <li><a href="../pages/menus.html">Menu</a></li>
             </ul>
-        </div>
-        <!-- div container for the navigation bar which includes the brand logo -->
-        <div class="header-nav">
-            <a href="../index.html"><img class="header-nav__logo" src="../img/logos/xchel/blackTitledLogo.svg"
-                    alt="xchelsLogo"></a>
-            <nav>
-                <ul>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/reservations.html">Reservations</a></li>
-                    <li>
-                        <a href="#">Menu</a>
-                        <ul class="header-nav__dropdown">
-                            <li><a href="../pages/menus/appetizers.html">Starters & Appetizers</a></li>
-                            <li><a href="../pages/menus/main-course.html">Main Course</a></li>
-                            <li><a href="../pages/menus/desserts.html">Desserts</a></li>
-                            <li><a href="../pages/menus/beverages.html">Beverages</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../pages/locations.html">Locations</a></li>
-                    <li><a href="../pages/chefs-bio.html">Chef's bio</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="header-nav__center">
+                <a href="../index.html">xchel</a>
+            </div>
+            <ul class="header-nav__right">
+                <li><a href="../pages/chef.html">Chef</a></li>
+                <li><a href="../pages/reservations.html">Reservation</a></li>
+                <li><a href="../pages/contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="container">
-        <div class="reservations">
-            <div class="reservations--title">
-                <h2>Reserve a table</h2>
-            </div>
-            <img src="../img/reservations/october-img.png" alt="october-calendar-image">
-            <div class="reservations--grid">
-                <div id="monthBar" class="reservations--month-bar">
-                    <h3>10</h3>
-                </div>
-                <p id="monthName">October 2021</p>
-                <div id="monthCalendar" class="reservations--calendar">
-                    <ol>
-                        <li class="reservations--calendar__day-name">S</li>
-                        <li class="reservations--calendar__day-name">M</li>
-                        <li class="reservations--calendar__day-name">T</li>
-                        <li class="reservations--calendar__day-name">W</li>
-                        <li class="reservations--calendar__day-name">T</li>
-                        <li class="reservations--calendar__day-name">F</li>
-                        <li class="reservations--calendar__day-name">S</li>
-
-                        <li id="firstDay" class="reservations--calendar__day"><a href="#">1</a></li>
-                        <li class="reservations--calendar__day"><a href="#">2</a></li>
-                        <li class="reservations--calendar__day"><a href="#">3</a></li>
-                        <li class="reservations--calendar__day"><a href="#">4</a></li>
-                        <li class="reservations--calendar__day"><a href="#">5</a></li>
-                        <li class="reservations--calendar__day"><a href="#">6</a></li>
-                        <li class="reservations--calendar__day"><a href="#">7</a></li>
-                        <li class="reservations--calendar__day"><a href="#">8</a></li>
-                        <li class="reservations--calendar__day"><a href="#">9</a></li>
-                        <li class="reservations--calendar__day"><a href="#">10</a></li>
-                        <li class="reservations--calendar__day"><a href="#">11</a></li>
-                        <li class="reservations--calendar__day"><a href="#">12</a></li>
-                        <li class="reservations--calendar__day"><a href="#">13</a></li>
-                        <li class="reservations--calendar__day"><a href="#">14</a></li>
-                        <li class="reservations--calendar__day"><a href="#">15</a></li>
-                        <li class="reservations--calendar__day"><a href="#">16</a></li>
-                        <li class="reservations--calendar__day"><a href="#">17</a></li>
-                        <li class="reservations--calendar__day"><a href="#">18</a></li>
-                        <li class="reservations--calendar__day"><a href="#">20</a></li>
-                        <li class="reservations--calendar__day"><a href="#">21</a></li>
-                        <li class="reservations--calendar__day"><a href="#">22</a></li>
-                        <li class="reservations--calendar__day"><a href="#">23</a></li>
-                        <li class="reservations--calendar__day"><a href="#">24</a></li>
-                        <li class="reservations--calendar__day"><a href="#">25</a></li>
-                        <li class="reservations--calendar__day"><a href="#">26</a></li>
-                        <li class="reservations--calendar__day"><a href="#">27</a></li>
-                        <li class="reservations--calendar__day"><a href="#">28</a></li>
-                        <li class="reservations--calendar__day"><a href="#">29</a></li>
-                        <li class="reservations--calendar__day"><a href="#">30</a></li>
-                        <li class="reservations--calendar__day"><a href="#">31</a></li>
-                    </ol>
-                
-            </div>
+    <!-- Reservations section -->
+    <section id="main-construction" class="container_85">
+        <div class="reservations-opacity">
+            <h2>Under construction...</h2>
+            <img src="../img/divider_tomato.svg" alt="divider for section titles">
         </div>
-    </main>
-    <section class="container">
-        <div class="reservations--date-grid">
-            <div id="date">
-                <div class="reservations--date-container">
-                    <h4>Date:</h4>
-                    <p>Wednesday October 13th, 2021</p>
-                    <div>
-                        <ul>
-                            <li><a href="#">Thursday October 14th, 2021</a></li>
-                            <li><a href="#">Friday October 15th, 2021</a></li>
-                            <li><a href="#">Saturday October 16th, 2021</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="hour">
-                <div class="reservations--date-container">
-                    <h4>Hour:</h4>
-                    <p>18:00 hrs</p>
-                    <div>
-                        <ul>
-                            <li><a href="#">18:30 hrs</a></li>
-                            <li><a href="#">19:00 hrs</a></li>
-                            <li><a href="#">19:30 hrs</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="location">
-                <div class="reservations--date-container">
-                    <h4>Location:</h4>
-                    <p>Coapa</p>
-                    <div>
-                        <ul>
-                            <li><a href="#">Arenal - Arenal 651, Santa María Tepepan, Xochimilco, 16020 Ciudad de México, CDMX.</a></li>
-                            <li><a href="#">Perisur - Anillo Perif. 4690, Insurgentes Cuicuilco, Coyoacán, 04500 Ciudad de México, CDMX.</a></li>
-                            <li><a href="#">Coyoac&aacute;n - Aguayo 12, Coyoacán, 04000 Ciudad de México, CDMX. </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="reservations--user-info">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="yourMail@domain.com">
-        </div>
-        <div class="reservations--user-confirm">
-            <span id="light">Your reservation will be scheduled for:</span>
-            <span id="bold">10 / 13 / 2021</span>
-            <span id="light">Location:</span>
-            <span id="bold">Coapa</span>
-            <button>Book</button>
-        </div>
+        <img src="../img/chef/carousel/chef-carousel6.gif" alt="gourmet dish preparation gif">
     </section>
     <!-- Footer -->
     <footer>
-        <!-- The main container -->
-        <div class="container">
-            <!-- First section of the footer -->
-            <div class="footerMain">
-                <!-- Brand logo & short about -->
-                <div class="brandLogoAbout">
-                    <img src="../img/logos/xchel/blackTitledLogo.svg" alt="xchelsLogo">
-                    <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
-                        the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
-                        spirit of her beloved country.</p>
-                </div>
-                <!-- Social network section -->
-                <div class="socialNetworks">
-                    <div class="socialNetworkIcons">
-                        <a href="#"><img src="../img/logos/social-networks/facebook.svg" alt="facebookLogo"></a>
-                        <a href="#"><img src="../img/logos/social-networks/twitter.svg" alt="tweeterLogo"></a>
-                        <a href="#"><img src="../img/logos/social-networks/instagram.svg" alt="instagramLogo"></a>
-                    </div>
-                    <span>@XchelMexicanCuisine</span>
-                </div>
-                <!-- Newsletter section -->
-                <div class="newsletter">
+        <!--Section of the footer which contains the copyright xD -->
+        <div class="footer-section">
+            <div class="footer-section-flex">
+                <div class="footer-section_brand-logo">
                     <div>
-                        <p>Receive news about events in our different locations and unique recipes from our chef.</p>
+                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
                     </div>
-                    <div>
-                        <input type="email" name="userEmail" id="userEmailId" placeholder="yourMail@domain.com">
-                        <input type="button" value="Subscribe">
+                    <div class="footer-section_brand-logo_text">
+                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
+                            the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
+                            spirit of her beloved country.</p>
+                    </div>
+                </div>
+                <div class="footer-section_social-container">
+                    <div class="footer-section_social-title">
+                        <span>¡Follow us!</span>
+                    </div>
+                    <div class="footer-section_social-images">
+                        <img src="../img/footer/facebook.png" alt="Facebook logo image">
+                        <img src="../img/footer/instagram.png" alt="Instagrame logo image">
+                        <img src="../img/footer/twitter.png" alt="Twitter logo image">
+                    </div>
+                    <div class="footer-section_social-direction">
+                        <span>@XchelMexicanCuisine</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Second section of the footer which contains the copyright xD -->
-        <div class="footerCredits">
-            <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
-            <span>Made with &#10084; by GarciHard & Freckles</span>
+            <div class="footer-section_credits">
+                <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
+                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
+                <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
+            </div>
         </div>
     </footer>
 </body>
-
+<script src="../js/bootstrap.min.js"></script>
 </html>
