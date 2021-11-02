@@ -15,6 +15,35 @@
 
 <body>
     <header class="main-header-nav">
+
+        <!-- Collapsable menu under construction, testing... -->
+        <div class="responsive-menu">
+            <!-- Button to change image -->
+            <button id="burger-btn" class="btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></button>
+            <!-- Flowered menu container -->
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasWithBackdrop"
+                aria-labelledby="offcanvasWithBackdropLabel">
+                <!-- We probably remove this header -->
+                <div class="offcanvas-header">
+                    <button id="close-menu" type="button" class="btn" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <!-- Body of the menu -->
+                <div id="burger-menu-container" class="offcanvas-body">
+                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/about-us.html">About</a></li>
+                        <li><a href="../index.html#specials-section">Specials</a></li>
+                        <li><a href="../pages/menus.html">Menu</a></li>
+                        <li><a href="../pages/chef.html">Chef</a></li>
+                        <li><a href="../pages/reservations.html">Reservation</a></li>
+                        <li><a href="../pages/contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
         <nav class="header-nav-container">
             <ul class="header-nav__left">

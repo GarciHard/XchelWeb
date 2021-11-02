@@ -28,21 +28,26 @@
         
         <!-- Collapsable menu under construction, testing... -->
         <div class="responsive-menu">
-            <button id="burger-btn" class="btn btn-outline-danger" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">M</button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+            <!-- Button to change image -->
+            <button id="burger-btn" class="btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></button>
+            <!-- Flowered menu container -->
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasWithBackdrop"
                 aria-labelledby="offcanvasWithBackdropLabel">
+                <!-- We probably remove this header -->
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with piripipipi</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button id="close-menu" type="button" class="btn" data-bs-dismiss="offcanvas"></button>
                 </div>
-                <div class="offcanvas-body">
+                <!-- Body of the menu -->
+                <div id="burger-menu-container" class="offcanvas-body">
+                    <img src="./img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
                     <ul>
-                        <li><a href="#about-section">About</a></li>
-                        <li><a href="#specials-section">Specials</a></li>
-                        <li><a href="../XchelWeb/pages/menus.html">Menu</a></li>
-                        <li><a href="#chef-section">Chef</a></li>
-                        <li><a href="#reservations-section">Reservation</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/about-us.html">About</a></li>
+                        <li><a href="./index.html#specials-section">Specials</a></li>
+                        <li><a href="./pages/menus.html">Menu</a></li>
+                        <li><a href="./pages/chef.html">Chef</a></li>
+                        <li><a href="./pages/reservations.html">Reservation</a></li>
                         <li><a href="./pages/contact-us.html">Contact</a></li>
                     </ul>
                 </div>

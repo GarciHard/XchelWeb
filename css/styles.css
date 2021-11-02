@@ -221,6 +221,96 @@ body {
 }
 
 /*------------------------------------------------ NAVBAR */
+
+/* BOOTSTRAP RESPONSIVE MENU */
+.responsive-menu {
+  display: none;
+  height: 2.5rem;
+  margin: 2rem 0 0 2rem;
+  position: absolute;
+  width: 2.5rem;
+}
+
+#burger-btn {
+  background-image: url(../img/burger-menu/burger-menu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: inherit;
+  width: inherit;
+}
+
+#burger-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#offcanvasWithBackdrop {
+  background-image: url(../img/chef/flowers.png);
+  background-repeat: none;
+  background-size: contain;
+  height: 100%;
+}
+
+.offcanvas-header {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#close-menu {
+  background-image: url(../img/burger-menu/close-menu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto 1rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+#close-menu:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#burger-menu-container {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 5rem;
+}
+
+#burger-menu-container > img {
+  height: 15rem;
+  width: 15rem;
+}
+
+#burger-menu-container > ul {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
+  font-size:2rem;
+  height: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+}
+
+#burger-menu-container > ul > li {
+  text-align: center;
+}
+
+#burger-menu-container > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#burger-menu-container > ul > li > a:hover {
+  color: #fb6e14;
+}
+/* BOOTSTRAP RESPONSIVE MENU END */
+
 .main-header-nav {
   background-color: #fff;
   border: 0.1rem solid #e6e6e6;
@@ -228,19 +318,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 9999;
-}
-
-.responsive-menu {
-  display: none;
-  height: 5rem;
-  margin: 0.5rem 1rem;
-  position: absolute;
-  width: 5rem;
-}
-
-#burger-btn {
-  height: inherit;
-  width: inherit;
 }
 
 .header-nav-container {
@@ -331,6 +408,10 @@ body {
   .header-nav__right {
     display: none;
   }
+  .responsive-menu {
+    display: block;
+    animation: fade 2s ease;
+  }
 }
 
 @media (min-width: 900px) {
@@ -341,6 +422,9 @@ body {
   .header-nav__right {
     animation: fadeIn 2s normal;
     display: flex;
+  }
+  .responsive-menu {
+    display: none;
   }
 }
 
