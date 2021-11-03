@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
 
     <title>Book a table @ Xchel's</title>
     <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
@@ -19,18 +19,17 @@
 
         <!-- Collapsable menu under construction, testing... -->
         <div class="responsive-menu">
-            <!-- Button to change image -->
-            <button id="burger-btn" class="btn" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></button>
+            <button class="btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#responsive-menu__container" aria-controls="responsive-menu__container"></button>
+            
             <!-- Flowered menu container -->
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasWithBackdrop"
-                aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="responsive-menu__container">
                 <!-- We probably remove this header -->
-                <div class="offcanvas-header">
-                    <button id="close-menu" type="button" class="btn" data-bs-dismiss="offcanvas"></button>
+                <div class="menu-header">
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <!-- Body of the menu -->
-                <div id="burger-menu-container" class="offcanvas-body">
+                <div id="menu-burger__container" class="offcanvas-body">
                     <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
@@ -46,7 +45,7 @@
         </div>
 
         <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
-        <nav class="header-nav-container">
+        <nav class="header-nav__container">
             <ul class="header-nav__left">
                 <li><a href="../pages/about-us.html">About</a></li>
                 <li><a href="../index.html#specials-section">Specials</a></li>
@@ -63,43 +62,112 @@
         </nav>
     </header>
     <!-- Reservations section -->
-    <section id="main-construction" class="container_85">
-        <div class="reservations-opacity">
-            <h2>Under construction...</h2>
+    <section>
+        <div class="reservation-title">
+            <h2>Book a table</h2>
             <img src="../img/divider_tomato.svg" alt="divider for section titles">
         </div>
-        <img src="../img/chef/carousel/chef-carousel6.gif" alt="gourmet dish preparation gif">
+        <div id="reservation-form" class="container_85 reservation-form__container-85">
+            <div class="container reservation-form__main">
+                <form class="row g-3 d-block">
+                    <div class="col-12">
+                        <label for="inputName" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="John Doe" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputPhone" class="form-label">Phone Number:</label>
+                        <input type="tel" class="form-control" id="inputPhone" pattern="+[0-9]{2}[0-9]{10}"
+                            placeholder="+52 7226566609">
+                    </div>
+                    <hr>
+                    <div class="col-6">
+                        <label for="inputAdults" class="form-label">Adults:</label>
+                        <input type="number" class="form-control" id="inputAdults" 
+                        min="1" placeholder="2" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputChildren" class="form-label">Children:</label>
+                        <input type="number" class="form-control" id="inputChildren" 
+                        min="0" placeholder="2" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputDate" class="form-label">Date:</label>
+                        <input type="date" class="form-control" id="inputDate" 
+                        value="2021-10-13" required>
+                        <small>Tuesday to Sunday</small>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputHour" class="form-label">Hour:</label>
+                        <input type="time" class="form-control" id="inputHour" 
+                        min="09:00" max="22:00" value="18:30" required>
+                        <small>Service from 9am to 10pm</small>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                        <label for="inputState" class="form-label">Select a location:</label>
+                        <select id="inputState" class="form-select">
+                            <option disabled>-</option>
+                            <option>Coapa</option>
+                            <option>Arenal</option>
+                            <option>Per&iacute;sur</option>
+                            <option>Coyoac&aacute;n</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="textComment" class="form-label">Comments:</label>
+                        <textarea class="form-control" id="textComment" rows="3"
+                            placeholder="Tell us anything else that might be important."
+                            required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="buttonCheck">
+                            <label class="form-check-label" for="buttonCheck">
+                                Receive an email confirmation</label>
+                        </div>
+                    </div>
+                    <div class="col-12 reservation-form__buttons">
+                        <button type="submit" class="btn btn-danger">Book</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
     <!-- Footer -->
     <footer>
         <!--Section of the footer which contains the copyright xD -->
         <div class="footer-section">
-            <div class="footer-section-flex">
-                <div class="footer-section_brand-logo">
+            <div class="footer-section__flex">
+                <div class="brand-logo">
                     <div>
                         <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
                     </div>
-                    <div class="footer-section_brand-logo_text">
+                    <div class="brand-logo__text">
                         <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
                             the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
                             spirit of her beloved country.</p>
                     </div>
                 </div>
-                <div class="footer-section_social-container">
-                    <div class="footer-section_social-title">
+                <div class="footer-section__social">
+                    <div class="footer-section__social--title">
                         <span>¡Follow us!</span>
                     </div>
-                    <div class="footer-section_social-images">
+                    <div class="footer-section__social--images">
                         <img src="../img/footer/facebook.png" alt="Facebook logo image">
                         <img src="../img/footer/instagram.png" alt="Instagrame logo image">
                         <img src="../img/footer/twitter.png" alt="Twitter logo image">
                     </div>
-                    <div class="footer-section_social-direction">
+                    <div class="footer-section__social--direction">
                         <span>@XchelMexicanCuisine</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-section_credits">
+            <div class="footer-section__credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
                 <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
                 <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
