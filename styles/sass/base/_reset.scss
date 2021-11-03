@@ -1,0 +1,33 @@
+/* Universal selector used to reset browser's styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Applying this style, we set the relative units to 10px 
+ * now we can take as a reference 1rem equals to 10px.
+ */
+html {
+    font: {
+        size: 62.5%;
+    }
+}
+
+/* Container used along the project */
+.container_85 {
+    box-shadow: $default-container-85-shadow;
+    margin: 0 auto;
+    width: 85%;
+}
+
+/* Setting a flowery body backgrund */
+body {
+    background: {
+        attachment: fixed;
+        image: $default-body-background;
+        repeat: repeat;
+        size: cover;
+    }
+    z-index: 1;
+  }
