@@ -273,7 +273,7 @@ body {
   text-decoration: none;
 }
 
-.header-nav__center:hover {
+.header-nav__center a:hover {
   color: #fb6e14;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
