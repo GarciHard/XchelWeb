@@ -43,18 +43,6 @@
   }
 }
 
-/* Fade used in the ingredientes section, from bottom to top. */
-@keyframes fadeInIngredients {
-  0% {
-    opacity: 0;
-    transform: translate(0, 500px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
 /* Before implementing bootstrap i made those carrousel be like 
  * to change images and quotes on my parallax.
 */
@@ -349,6 +337,7 @@ body {
 .header-nav__left > li > a {
   color: #2d2d2d;
   text-decoration: none;
+  position: relative;
 }
 
 .header-nav__left > li > a:hover {
@@ -441,10 +430,8 @@ body {
   box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
   display: grid;
   grid-template:
-    "about-img" 0.6fr
-    "about-info" 1.6fr / 1fr;
+    "about-info" 1 / 1fr;
   height: auto;
-  margin-top: 5rem;
   width: 100%;
 }
 
@@ -472,7 +459,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -531,6 +518,9 @@ body {
     grid-template:
       "about-img" 0.6fr
       "about-info" 1fr / 1fr;
+  }
+  .about-section-container_info {
+    border-radius: 0 0 2rem 2rem;
   }
 }
 
@@ -900,26 +890,6 @@ body {
   word-wrap: break-word;
 }
 
-#fruit-container {
-  animation: fadeInIngredients 2s normal;
-  animation-delay: 1000ms;
-}
-
-#seafood-container {
-  animation: fadeInIngredients 2s normal;
-  animation-delay: 1200ms;
-}
-
-#vegetables-container {
-  animation: fadeInIngredients 2s normal;
-  animation-delay: 1400ms;
-}
-
-#meat-container {
-  animation: fadeInIngredients 2s normal;
-  animation-delay: 1600ms;
-}
-
 /*------------------------------------------------ INGREDIENTS RESPONSIVE */
 @media (min-width: 1000px) {
   .ingredients-container {
@@ -1076,11 +1046,9 @@ body {
   letter-spacing: 0.2rem;
 }
 
-.parallax-quote-container_text > h3::before {
-  content: "";
-  animation-name: changeQuotes;
-  animation-duration: 20000ms;
-  animation-iteration-count: infinite;
+.parallax-quote-container_text > h3::after {
+  content: "\"Passion for the mexican flavor\"";
+  animation: changeQuotes calc(20000ms) linear infinite;
 }
 
 .parallax-quote-container_text > img {
@@ -1092,7 +1060,7 @@ body {
   background-color: #fff;
   height: auto;
   width: 100%;
-  padding: 5rem;
+  padding: 5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1101,10 +1069,8 @@ body {
 .chef-section {
   border-radius: 2rem;
   box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
-  margin: 5rem 0 0;
   height: auto;
   width: 100%;
-
   display: flex;
   flex-direction: column;
 }
@@ -1179,6 +1145,12 @@ body {
 }
 
 /*------------------------------------------------ CHEF SECTION RESPONSIVE */
+@media (min-width: 600px) {
+  .chef-section-container {
+    padding: 5rem;
+  }
+}
+
 @media (min-width: 900px) {
   .chef-section {
     flex-direction: row-reverse;
