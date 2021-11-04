@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/css/aos.css">
     <link rel="stylesheet" href="./styles/css/styles.css">
 
     <title>Xchel Mexican Cuisine</title>
@@ -57,7 +58,7 @@
         <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
         <nav class="header-nav-container">
             <ul class="header-nav__left">
-                <li><a href="#about-section">About</a></li>
+                <li><a href="./pages/about-us.html">About</a></li>
                 <li><a href="#specials-section">Specials</a></li>
                 <li><a href="./pages/menus.html">Menu</a></li>
             </ul>
@@ -65,8 +66,8 @@
                 <a href="#main">xchel</a>
             </div>
             <ul class="header-nav__right">
-                <li><a href="#chef-section">Chef</a></li>
-                <li><a href="#reservations-section">Reservation</a></li>
+                <li><a href="./pages/chef.html">Chef</a></li>
+                <li><a href="./pages/reservations.html">Reservation</a></li>
                 <li><a href="./pages/contact-us.html">Contact</a></li>
             </ul>
         </nav>
@@ -165,7 +166,11 @@
     <section class="container_85">
         <div class="intro-menu-section-container">
             <div class="ingredients-container">
-                <div id="fruit-container" class="ingredients-container_generic">
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-mirror="true"
+                id="fruit-container" class="ingredients-container_generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-1.png" alt="fruit ingrediente icon"></img>
                     </div>
@@ -174,21 +179,36 @@
                         to theseason. In case of having that ingredient, it will be substituted.
                     </p>
                 </div>
-                <div id="seafood-container" class="ingredients-container_generic">
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-mirror="true"
+                id="seafood-container" class="ingredients-container_generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-2.png" alt="seafood ingredient icon"></img>
                     </div>
                     <p>The preparation of our food is based on the use of products of the highest quality, of natural
                         origin, free of chemicals, hormones and pesticides, contributing to a relationship in balance with nature.</p>
                 </div>
-                <div id="vegetables-container" class="ingredients-container_generic">
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="1000"
+                data-aos-mirror="true"
+                id="vegetables-container" class="ingredients-container_generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-3.png" alt="vegetables ingredient icon"></img>
                     </div>
                     <p>In our restaurant, we have responsible consumption, which is based on consuming less and that what we
                         consume is as sustainable and supportive as possible.</p>
                 </div>
-                <div id="meat-container" class="ingredients-container_generic">
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="1500"
+                data-aos-mirror="true"
+                id="meat-container" class="ingredients-container_generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-4.png" alt="Meat ingredient icon"></img>
                     </div>
@@ -265,4 +285,6 @@
 
 </body>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/aos.js"></script>
+<script>AOS.init();</script>
 </html>
