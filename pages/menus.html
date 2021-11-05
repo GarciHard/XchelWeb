@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/aos.css">
     <link rel="stylesheet" href="../styles/css/styles.css">
 
     <title>Xchel's Menu</title>
@@ -31,7 +32,7 @@
                 </div>
                 <!-- Body of the menu -->
                 <div id="burger-menu-container" class="offcanvas-body">
-                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
+                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../pages/about-us.html">About</a></li>
@@ -63,10 +64,10 @@
         </nav>
     </header>
     <!-- Menu section -->
-    <section class="container_85">
+    <section data-aos="fade" data-aos-duration="1500" class="container_85">
         <div class="menu-section-container">
             <h2>Menu</h2>
-            <img src="../img/divider_tomato.svg" alt="divider for section titles">
+            <img src="../img/divider_tomato.svg" alt="Red divider for section title">
             <!-- Menu options -->
             <ul class="nav nav-pills" id="menu-tab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -622,7 +623,7 @@
             <div class="footer-section-flex">
                 <div class="footer-section_brand-logo">
                     <div>
-                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
+                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     </div>
                     <div class="footer-section_brand-logo_text">
                         <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
@@ -646,11 +647,16 @@
             </div>
             <div class="footer-section_credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
-                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
+                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + 
+                <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
                 <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
             </div>
         </div>
     </footer>
 </body>
+
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>AOS.init();</script>
+
 </html>

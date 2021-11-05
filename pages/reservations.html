@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/aos.css">
     <link rel="stylesheet" href="../styles/css/main.css">
 
     <title>Book a table @ Xchel's</title>
@@ -19,9 +20,9 @@
 
         <!-- Collapsable menu under construction, testing... -->
         <div class="responsive-menu">
-            <button class="btn" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#responsive-menu__container" aria-controls="responsive-menu__container"></button>
-            
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#responsive-menu__container"
+                aria-controls="responsive-menu__container"></button>
+
             <!-- Flowered menu container -->
             <div class="offcanvas offcanvas-top" tabindex="-1" id="responsive-menu__container">
                 <!-- We probably remove this header -->
@@ -30,7 +31,7 @@
                 </div>
                 <!-- Body of the menu -->
                 <div id="menu-burger__container" class="offcanvas-body">
-                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
+                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../pages/about-us.html">About</a></li>
@@ -63,11 +64,12 @@
     </header>
     <!-- Reservations section -->
     <section>
-        <div class="reservation-title">
+        <div data-aos="fade-down" data-aos-duration="2000" class="reservation-title">
             <h2>Book a table</h2>
-            <img src="../img/divider_tomato.svg" alt="divider for section titles">
+            <img src="../img/divider_tomato.svg" alt="Red divider for section title">
         </div>
-        <div id="reservation-form" class="container_85 reservation-form__container-85">
+        <div data-aos="flip-left" data-aos-duration="2000" data-aos-delay="750" id="reservation-form"
+            class="container_85 reservation-form__container-85">
             <div class="container reservation-form__main">
                 <form class="row g-3 d-block">
                     <div class="col-12">
@@ -76,7 +78,8 @@
                     </div>
                     <div class="col-12">
                         <label for="inputEmail" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com" required>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com"
+                            required>
                     </div>
                     <div class="col-12">
                         <label for="inputPhone" class="form-label">Phone Number:</label>
@@ -86,24 +89,21 @@
                     <hr>
                     <div class="col-6">
                         <label for="inputAdults" class="form-label">Adults:</label>
-                        <input type="number" class="form-control" id="inputAdults" 
-                        min="1" placeholder="2" required>
+                        <input type="number" class="form-control" id="inputAdults" min="1" placeholder="2" required>
                     </div>
                     <div class="col-6">
                         <label for="inputChildren" class="form-label">Children:</label>
-                        <input type="number" class="form-control" id="inputChildren" 
-                        min="0" placeholder="2" required>
+                        <input type="number" class="form-control" id="inputChildren" min="0" placeholder="2" required>
                     </div>
                     <div class="col-6">
                         <label for="inputDate" class="form-label">Date:</label>
-                        <input type="date" class="form-control" id="inputDate" 
-                        value="2021-10-13" required>
+                        <input type="date" class="form-control" id="inputDate" value="2021-10-13" required>
                         <small>Tuesday to Sunday</small>
                     </div>
                     <div class="col-6">
                         <label for="inputHour" class="form-label">Hour:</label>
-                        <input type="time" class="form-control" id="inputHour" 
-                        min="09:00" max="22:00" value="18:30" required>
+                        <input type="time" class="form-control" id="inputHour" min="09:00" max="22:00" value="18:30"
+                            required>
                         <small>Service from 9am to 10pm</small>
                     </div>
                     <hr>
@@ -120,8 +120,7 @@
                     <div class="col-12">
                         <label for="textComment" class="form-label">Comments:</label>
                         <textarea class="form-control" id="textComment" rows="3"
-                            placeholder="Tell us anything else that might be important."
-                            required></textarea>
+                            placeholder="Tell us anything else that might be important." required></textarea>
                     </div>
                     <div class="col-12">
                         <div class="form-check">
@@ -145,12 +144,12 @@
             <div class="footer-section__flex">
                 <div class="brand-logo">
                     <div>
-                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
+                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     </div>
                     <div class="brand-logo__text">
-                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
-                            the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
-                            spirit of her beloved country.</p>
+                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico
+                            is the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories
+                            and spirit of her beloved country.</p>
                     </div>
                 </div>
                 <div class="footer-section__social">
@@ -169,11 +168,16 @@
             </div>
             <div class="footer-section__credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
-                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
+                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + 
+                <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
                 <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
             </div>
         </div>
     </footer>
 </body>
+
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>AOS.init();</script>
+
 </html>

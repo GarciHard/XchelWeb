@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/aos.css">
     <link rel="stylesheet" href="../styles/css/styles.css">
 
     <title>Xchel's Menu</title>
@@ -31,7 +32,7 @@
                 </div>
                 <!-- Body of the menu -->
                 <div id="burger-menu-container" class="offcanvas-body">
-                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
+                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../pages/about-us.html">About</a></li>
@@ -64,11 +65,12 @@
     </header>
     <!-- Contact section -->
     <section>
-        <div class="contact-title-banner">
+        <div data-aos="fade-down" data-aos-duration="2000" class="contact-title-banner">
             <h2>Write Us</h2>
-            <img src="../img/divider_tomato.svg" alt="divider for section titles">
+            <img src="../img/divider_tomato.svg" alt="Red divider for section title">
         </div>
-        <div id="contact-form" class="container_85 contact-form-container-85">
+        <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="750" id="contact-form"
+            class="container_85 contact-form-container-85">
             <div class="container contact-form-main">
                 <form class="row g-3 d-block">
                     <div class="col-12">
@@ -87,7 +89,8 @@
                     </div>
                     <div class="col-12">
                         <label for="inputEmail" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com" required>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com"
+                            required>
                     </div>
                     <div class="col-12">
                         <label for="inputPhone" class="form-label">Phone Number:</label>
@@ -122,12 +125,12 @@
             <div class="footer-section-flex">
                 <div class="footer-section_brand-logo">
                     <div>
-                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
+                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     </div>
                     <div class="footer-section_brand-logo_text">
-                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
-                            the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
-                            spirit of her beloved country.</p>
+                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico
+                            is the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories
+                            and spirit of her beloved country.</p>
                     </div>
                 </div>
                 <div class="footer-section_social-container">
@@ -146,11 +149,16 @@
             </div>
             <div class="footer-section_credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
-                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
+                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + 
+                <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
                 <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
             </div>
         </div>
     </footer>
 </body>
+
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>AOS.init();</script>
+
 </html>

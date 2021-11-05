@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/aos.css">
     <link rel="stylesheet" href="../styles/css/styles.css">
 
     <title>About Xchel's</title>
@@ -30,7 +31,7 @@
                 </div>
                 <!-- Body of the menu -->
                 <div id="burger-menu-container" class="offcanvas-body">
-                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
+                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../pages/about-us.html">About</a></li>
@@ -65,11 +66,11 @@
     <!-- About us section -->
     <section class="container_85">
         <div class="about-main-container">
-            <div class="about-header">
+            <div data-aos="fade-up" data-aos-duration="2000" class="about-header">
                 <h2>About Xchel's</h2>
-                <img src="../img/divider_tomato.svg" alt="divider for section titles">
+                <img src="../img/divider_tomato.svg" alt="Red divider for section title">
             </div>
-            <div class="about-paragraph">
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" class="about-paragraph">
                 <p>The restaurant Xchel design was based on a global concept
                     of contemporary Mexican cuisine.
                     From the beginning each stage of its creation was carefully projected, in order to build a great stage for the
@@ -78,32 +79,31 @@
                     The mission was to show the greatness of Mexico through its flavors, colors and textures. The restaurant's operation
                     was impeccable and a rigorous service ethic was observed, with the total satisfaction of its distinguished
                     customers. A classic concept was developed with an openness to modernity. The gastronomic intelligence in the menu
-                    of dishes and special drinks included a gastronomic language and a look at aesthetics.
-                </p>
+                    of dishes and special drinks included a gastronomic language and a look at aesthetics.</p>
             </div>
-            <div class="anti-carousel">
+            <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000" class="anti-carousel">
                 <div id="restaurantCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../img/about-page/Restaurante1.png" class="d-block w-100" alt="restaurant brighter">
+                            <img src="../img/about-page/Restaurante1.png" class="d-block w-100" alt="Restaurant brighter">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/about-page/Restaurante2.png" class="d-block w-100" alt="restaurant with garden">
+                            <img src="../img/about-page/Restaurante2.png" class="d-block w-100" alt="Restaurant with garden">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/about-page/Restaurante3.png" class="d-block w-100" alt="restaurant width view">
+                            <img src="../img/about-page/Restaurante3.png" class="d-block w-100" alt="Restaurant width view">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/about-page/Restaurante5.png" class="d-block w-100" alt="restaurant with candle light">
+                            <img src="../img/about-page/Restaurante5.png" class="d-block w-100" alt="Restaurant with candle light">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/about-page/Restaurante6.png" class="d-block w-100" alt="restaurant bar with candle light">
+                            <img src="../img/about-page/Restaurante6.png" class="d-block w-100" alt="Restaurant bar with candle light">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/about-page/Restaurante7.png" class="d-block w-100" alt="restaurant with long bar">
+                            <img src="../img/about-page/Restaurante7.png" class="d-block w-100" alt="Restaurant with long bar">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/about-page/Restaurante8.png" class="d-block w-100" alt="restaurant with circular dinning bar">
+                            <img src="../img/about-page/Restaurante8.png" class="d-block w-100" alt="Restaurant with circular dinning bar">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
@@ -125,7 +125,7 @@
             <div class="footer-section-flex">
                 <div class="footer-section_brand-logo">
                     <div>
-                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
+                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     </div>
                     <div class="footer-section_brand-logo_text">
                         <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
@@ -149,12 +149,17 @@
             </div>
             <div class="footer-section_credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
-                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
+                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + 
+                <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
                 <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
             </div>
         </div>
     </footer>
 
 </body>
+
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>AOS.init();</script>
+
 </html>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/aos.css">
     <link rel="stylesheet" href="../styles/css/styles.css">
 
     <title>Martha Ort&iacute;z &#64; Xchel's</title>
@@ -31,7 +32,7 @@
                 </div>
                 <!-- Body of the menu -->
                 <div id="burger-menu-container" class="offcanvas-body">
-                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel titled logo">
+                    <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../pages/about-us.html">About</a></li>
@@ -65,7 +66,7 @@
     <!-- Chef section -->
     <section class="container_85">
         <div class="chef-main-container">
-            <div class="anti-chef-carousel">
+            <div data-aos="fade-up" data-aos-duration="2000" class="anti-chef-carousel">
                 <div id="chefCarouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#chefCarouselFade" data-bs-slide-to="0" class="active"
@@ -79,7 +80,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../img/chef/carousel/Martha1.png" class="d-block w-100" alt="...">
+                            <img src="../img/chef/carousel/Martha1.png" class="d-block w-100" alt="Chef cooking">
                             <div class="carousel-caption  d-md-block w-100">
                                 <p>"The eagle eating a snake perched on a prickly pear and cactus garland. Sophisticated
                                     delicacies that traced a favorable destiny for the magnanimous Mexican cuisine and
@@ -87,7 +88,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/chef/carousel/Martha2.png" class="d-block w-100" alt="...">
+                            <img src="../img/chef/carousel/Martha2.png" class="d-block w-100" alt="Chef in kitchen">
                             <div class="carousel-caption  d-md-block w-100">
                                 <p>“I am sort of an artful crafter that likes to embroider flavors with emotions in the
                                     canvas of dishes and plates. It is like gastronomic expressionism, combined with the
@@ -95,7 +96,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/chef/carousel/Martha3.png" class="d-block w-100" alt="...">
+                            <img src="../img/chef/carousel/Martha3.png" class="d-block w-100" alt="Chef in white clothes">
                             <div class="carousel-caption  d-md-block w-100">
                                 <p>"Kitchens should be like orchestras where each instrument has its own time and
                                     rhythm. Their melodies are like the dance of preparations and both should be guided
@@ -103,7 +104,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/chef/carousel/Martha4.png" class="d-block w-100" alt="...">
+                            <img src="../img/chef/carousel/Martha4.png" class="d-block w-100" alt="Chef posing">
                             <div class="carousel-caption  d-md-block w-100">
                                 <p>"Plating is fundamental in my narratives and I must humbly state that my
                                     presentations can be classified as art. I am sort of an artful crafter that likes to
@@ -125,11 +126,11 @@
                     </button>
                 </div>
             </div>
-            <div class="chef-header">
+            <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500" class="chef-header">
                 <h2>Martha Ortiz</h2>
-                <img src="../img/divider_tomato.svg" alt="divider for section titles">
+                <img src="../img/divider_tomato.svg" alt="Red divider for section title">
             </div>
-            <div class="chef-paragraph">
+            <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000" class="chef-paragraph">
                 <p>
                     Martha has a sensitive vision of life, from which she invents new universes. Researcher and
                     connoisseur of social reality (a subject that she studied professionally), she has a deep love for our country and its
@@ -160,7 +161,7 @@
             <div class="footer-section-flex">
                 <div class="footer-section_brand-logo">
                     <div>
-                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="xchelsLogo">
+                        <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     </div>
                     <div class="footer-section_brand-logo_text">
                         <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
@@ -184,12 +185,16 @@
             </div>
             <div class="footer-section_credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
-                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
+                <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + 
+                <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
                 <span>Proudly made in <span id="mexican-flag">&#127474;&#127485;</span></span>
             </div>
         </div>
     </footer>
 </body>
+
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>AOS.init();</script>
 
 </html>
