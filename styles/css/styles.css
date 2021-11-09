@@ -126,7 +126,7 @@ body {
 
 /*------------------------------------------------ MAIN PARALLAX */
 .main-parallax-container {
-  animation: changeParallax calc(10s) infinite;
+  animation: changeParallax 15s ease-in-out infinite both;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
