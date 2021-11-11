@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass ./styles/sass/main.scss ./styles/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "build-bootstrap": "node-sass ./node_modules/bootstrap/scss/bootstrap.scss ./styles/css/bootstrap.css",
-    "watch-bootstrap": "nodemon -e scss -x \"npm run build-bootstrap\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +23,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.1.3"
   }
 }
