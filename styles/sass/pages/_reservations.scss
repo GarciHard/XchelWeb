@@ -1,0 +1,90 @@
+/*------------------------------------------------ RESERVATIONS PAGE */
+.reservation-title {
+  @include flexDirection($global-flex-colum);
+  align-items: center;
+  background-color: $bgc-container-black-90;
+  height: 10rem;
+  justify-content: center;
+  margin: 3.5rem 0;
+
+  h2 {
+    @include colorFontStyle($global-secondary-color, $default-title-page-style);
+  }
+
+  img {
+    @include separatorImg;
+  }
+}
+
+.reservation-form__container-85 {
+  border-radius: 2rem;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.reservation-form__main {
+  background-color: $bgc-container-black-90;
+  box-shadow: $default-form-contact-reservation-shadow;
+  border-radius: 2rem;
+  color: $global-secondary-color;
+  margin: 0 0 3.5rem;
+  max-width: 100%;
+  padding: 5rem;
+
+  hr {
+    margin: 2rem 0;
+  }
+
+  div {
+    &:nth-child(8), &:nth-child(7), &:nth-child(6), &:nth-child(5) {
+      display: inline-block;
+      width: 49%;
+      small {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.reservation-form__buttons {
+  display: flex;
+  justify-content: space-evenly;
+
+  button {
+    height: 3rem;
+    margin: 1rem 0 0;
+    width: 10rem;
+  }
+}
+
+/*------------------------------------------------ RESERVATIONS PAGE RESPONSIVE */
+@media (min-width: 576px) { 
+  #reservation-form {
+    width: 65%;
+  }
+}
+
+@media (min-width: 768px) { 
+  #reservation-form {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) { 
+  #reservation-form {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #reservation-form {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #reservation-form {
+    width: 25%;
+  }
+}

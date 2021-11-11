@@ -1,0 +1,106 @@
+/*------------------------------------------------ MENU PAGE */
+.menu-section-container {
+  @include flexDirection($global-flex-colum);
+  @include sizes(auto, 85vw);
+  align-items: center;
+  background-color: $bgc-container-black-90;
+  justify-content: center;
+
+  h2 {  
+    @include colorFontStyle($global-secondary-color, $default-title-page-style);
+    margin-top: 10rem;
+  }
+
+  img {
+    @include separatorImg;
+  }
+
+  ul {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    list-style: none;
+    margin: 2rem 0;
+    width: inherit;
+
+    li {
+      align-items: center;
+      border-radius: 1rem;
+      display: flex;
+      height: inherit;
+      margin: 0 0.2rem;
+
+      button {
+        color: #fff;
+        font-family: Merriweather, Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $global-accent-color;
+  color: $global-secondary-color;
+}
+
+.nav-pills .nav-link:hover {
+  border: 0.2rem solid $global-accent-color;
+  color: $global-secondary-color;
+}
+
+#pills-tabContent {
+  @include flexDirection($global-flex-colum);
+  align-items: center;
+  justify-items: center;
+}
+
+.menu-content {
+  @include sizes(100%, 100%);
+  justify-content: space-evenly;
+  margin-bottom: 15rem;
+  padding: 2rem;
+}
+
+.menu-section {
+  @include colorFontStyle($global-accent-secondary-color, $menu-section-style);
+  @include flexDirection($global-flex-colum);
+  flex-wrap: wrap;
+  width: 35rem;
+
+  & table tbody tr > td:first-child {
+    line-height: 1.5;
+    padding: 2rem 0 0;
+    text-transform: uppercase;
+  }
+
+  & table tbody tr:nth-child(even) > td {
+    color: $global-secondary-color;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 0;
+    text-transform: lowercase;
+    width: 100%;
+  }
+
+  & table tbody tr > td:nth-child(even) {
+    padding: 2rem 0 0;
+  }
+}
+
+/*------------------------------------------------ MENU PAGE RESPONSIVE */
+@media (min-width: 600px) {
+  .menu-section {
+    width: 45rem;
+  }
+}
+@media (min-width: 900px) {
+  .menu-section {
+    width: 65rem;
+  }
+}

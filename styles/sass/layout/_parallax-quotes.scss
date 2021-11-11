@@ -1,0 +1,49 @@
+/*------------------------------------------------ PARALLAX QUOTES */
+.parallax-quote-container {
+    background-attachment: fixed;
+    background-image: url(../../img/quote_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    z-index: 1;
+  }
+  
+  .parallax-quote-container_opacity {
+    background-color: #000;
+    height: inherit;
+    width: inherit;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .parallax-quote-container_text {
+    align-items: center;
+    /* animation: fadeIn 4s infinite; */
+    display: flex;
+    flex-flow: column wrap;
+    height: inherit;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    width: inherit;
+  }
+  
+  .parallax-quote-container_text > h3 {
+    color: #fff;
+    font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+  }
+  
+  .parallax-quote-container_text > h3::after {
+    content: "\"Passion for the mexican flavor\"";
+    animation: changeQuotes calc(20000ms) linear infinite;
+  }
+  
+  .parallax-quote-container_text > img {
+    width: 25rem;
+  }

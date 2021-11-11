@@ -6,6 +6,59 @@
   background-image: url(../../img/about-section/about_section_bg.png);
   height: auto;
   padding: 5rem 0;
+
+  &__flex {
+    @include flexDirection($global-flex-colum);
+    width: 100%;
+  }
+
+  &__social {
+    @include flexDirection($global-flex-colum);
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+
+    &--images {
+      @include flexDirection($global-flex-row);
+      justify-content: space-evenly;
+      margin: 3rem 0;
+      width: 80%;
+
+      img {
+        @include sizes(4rem, 4rem);
+    
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+    &--title {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &--direction { 
+      span {
+        color: $global-accent-color;
+      }
+    }
+  }
+
+  &__credits {
+    @include flexDirection($global-flex-colum);
+    align-items: center;
+    background-color: $bgc-container-black-50;
+    line-height: 2rem;
+    margin-top: 5rem;
+    width: 100%;
+  
+    span {
+      height: 4rem;
+      line-height: 4rem;
+    }
+  }
 }
 
 #heart-icon {
@@ -20,75 +73,21 @@
   @extend #hot-bevereage;
 }
 
-.footer-section__flex {
-  @include flexDirection($global-flex-colum);
-  width: 100%;
-}
-
 .brand-logo {
   @include flexDirection($global-flex-colum);
   align-items: center;
 
   div {
     img {
+      @include sizes(15rem, 15rem);
       height: 15rem;
       width: 15rem;
     }
   }
-}
 
-.brand-logo__text {
-  display: none;
-  line-height: 1.5;
-}
-
-.footer-section__social {
-  @include flexDirection($global-flex-colum);
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.footer-section__social--images {
-  @include flexDirection($global-flex-row);
-  justify-content: space-evenly;
-  margin: 3rem 0;
-  width: 80%;
-}
-
-.footer-section__social--title {
-  span {
-    font-weight: bold;
-  }
-}
-
-.footer-section__social--images {
-  img {
-    @include sizes(4rem, 4rem);
-
-    &:hover {
-      transform: scale(1.5);
-    }
-  }
-}
-
-.footer-section__social--direction { 
-  span {
-    color: $global-accent-color;
-  }
-}
-
-.footer-section__credits {
-  @include flexDirection($global-flex-colum);
-  align-items: center;
-  background-color: $bgc-container-black-50;
-  line-height: 2rem;
-  margin-top: 5rem;
-  width: 100%;
-
-  span {
-    height: 4rem;
-    line-height: 4rem;
+  &__text {
+    display: none;
+    line-height: 1.5;
   }
 }
 
@@ -99,11 +98,12 @@
     justify-content: space-evenly;
     width: 80%;
   }
-  .brand-logo__text {
-    display: block;
-  }
   .brand-logo {
     flex-direction: row;
+
+    &__text {
+      display: block;
+    }
   }
 }
 @media (min-width: 1000px) {

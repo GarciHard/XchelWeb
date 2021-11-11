@@ -1,0 +1,85 @@
+/*------------------------------------------------ CONTACT US PAGE */
+.contact-title-banner {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    justify-content: center;
+    margin: 3.5rem 0;
+  }
+  
+  .contact-title-banner > h2 {
+    color: #fff;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: lighter;
+  }
+  
+  .contact-title-banner > img {
+    width: 25rem;
+  }
+  
+  .contact-form-main {
+    box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 1);
+  }
+  
+  .contact-form-container-85 {
+    border-radius: 2rem;
+    font-family: Merriweather, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  
+  .contact-form-main {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 2rem;
+    color: #fff;
+    margin: 0 0 3.5rem;
+    max-width: 100%;
+    padding: 5rem;
+  }
+  
+  .contact-form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .contact-form-buttons > button{
+    height: 3rem;
+    margin: 1rem 0 0;
+    width: 10rem;
+  }
+  
+  /*------------------------------------------------ CONTACT US PAGE RESPONSIVE */
+  
+  @media (min-width: 576px) { 
+    #contact-form {
+      width: 65%;
+    }
+  }
+  
+  @media (min-width: 768px) { 
+    #contact-form {
+      width: 55%;
+    }
+  }
+  
+  @media (min-width: 992px) { 
+    #contact-form {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #contact-form {
+      width: 35%;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    #contact-form {
+      width: 25%;
+    }
+  }

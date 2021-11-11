@@ -1,11 +1,24 @@
-@import "../sass/utilities/_animations";
-@import "../sass/utilities/_mixins";
-@import "../sass/utilities/_variables";
+@import "../sass/abstracts/_mixins";
+@import "../sass/abstracts/_variables";
 
 @import "../sass/base/_reset";
-@import "../sass/base/typo";
+@import "../sass/base/_typo";
 
-@import "../sass/layout/_header";
+@import "../sass/components/_keyframes";
+
+@import "../sass/layout/_about-us-section";
+@import "../sass/layout/_chef-section";
 @import "../sass/layout/_footer";
+@import "../sass/layout/_header";
+@import "../sass/layout/_ingredients-section";
+@import "../sass/layout/_navigation-burger";
+@import "../sass/layout/_parallax-book-table";
+@import "../sass/layout/_parallax-main";
+@import "../sass/layout/_parallax-quotes";
+@import "../sass/layout/_special-dishes-section";
 
-@import "../sass/views/_reservations";
+@import "../sass/pages/_about-us";
+@import "../sass/pages/_chef";
+@import "../sass/pages/_contact-us";
+@import "../sass/pages/_menu";
+@import "../sass/pages/_reservations";

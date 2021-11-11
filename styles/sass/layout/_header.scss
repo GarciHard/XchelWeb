@@ -1,163 +1,69 @@
 /*------------------------------------------------ NAVBAR */
-/* BOOTSTRAP RESPONSIVE MENU */
-.responsive-menu {
-  display: none;
-  margin: 2rem 0 0 2rem;
-  @include sizes(2.5rem, 2.5rem);
-  position: absolute;
+.header-nav {
+  background-color: $global-secondary-color;
+  border: $nav-border-style;
+  box-shadow: $default-header-nav-shadow;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   
-  button {
-    @include sizes(inherit, inherit);
-
-    background: {
-      image: url(../../img/burger-menu/burger-menu.svg);
-      repeat: no-repeat;
-      size: contain;
-    }
-
-    &:focus {
-      @include removeFocus;
-    }
-  }
-}
-
-#responsive-menu__container {
-  background: {
-    image: url(../../img/chef/flowers.png);
-    repeat: none;
-    size: contain;
-  }
-
-  height: 100%;
-}
-
-.menu-header {
-  padding: 1rem;
-
-  background: {
-    color: $bgc-container-white-90;
-  }
-
-  button {
-    @include sizes(3rem, 3rem);
-    margin: auto 1rem;
-
-    background: {
-      image: url(../../img/burger-menu/close-menu.svg);
-      repeat: no-repeat;
-      size: contain;
-    }
-
-    &:focus {
-      @include removeFocus;
-    }
-  }
-}
-
-#menu-burger__container {
-  align-items: center;
-  background-color: $bgc-container-black-90;
-  border-radius: 4rem;
-  display: flex;
-  flex-direction: column;
-  margin: 3rem;
-  padding: 5rem;
-
-  img {
-    @include sizes(15rem, 15rem);
-  }
-
-  ul {
-    @include sizes(100%, 90%);
-    color: $global-secondary-color;
+  /* Navbar container */
+  &__container {
+    @include colorFontStyle($global-primary-color, $nav-font-style);
     display: flex;
-    flex-direction: column;
-    font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 0;
+    justify-content: center;
+    width: 100%;
+  }
 
+  /* Navbar left section */
+  &__left {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    width: 30%;
+    
     li {
-      text-align: center;
-
+      align-items: center;
+      display: flex;
+      height: 95%;
+      padding: 0 2rem;
+  
       a {
-        color: inherit;
+        color: $global-primary-color;
         text-decoration: none;
-
+  
         &:hover {
-          color: $global-accent-color;
+        color: $global-accent-color;
         }
       }
     }
   }
-}
-/* BOOTSTRAP RESPONSIVE MENU END */
 
-.main-header-nav {
-  background-color: $global-secondary-color;
-  border: 0.1rem solid #e6e6e6;
-  box-shadow: 0 1.4rem 1.4rem -1.4rem rgba(0, 0, 0, 0.75);
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}
-
-.header-nav__container {
-  @include colorFontStyle($global-primary-color, $nav-font-style);
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-/* Navbar left section */
-.header-nav__left {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
-  margin: 0;
-  width: 30%;
-  
-  li {
+  /* Navbar logo section */
+  &__center {
     align-items: center;
     display: flex;
-    height: 95%;
-    padding: 0 2rem;
-
+    justify-content: center;
+    width: 15%;
+  
     a {
-      color: $global-primary-color;
+      @include colorFontStyle($text-logo-color, $nav-logo-style);
       text-decoration: none;
-
+    
       &:hover {
-      color: $global-accent-color;
+        color: $global-accent-color;
+        transform: scale(1.2);
       }
     }
   }
-}
 
-/* Navbar logo section */
-.header-nav__center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 15%;
-
-  a {
-    @include colorFontStyle($text-logo-color, $nav-logo-style);
-    text-decoration: none;
-  
-    &:hover {
-      color: $global-accent-color;
-      transform: scale(1.2);
-    }
+  /* Navbar right section */
+  &__right {
+    @extend .header-nav__left;
+    justify-content: start;
   }
-}
-
-/* Navbar right section */
-.header-nav__right {
-  @extend .header-nav__left;
-  justify-content: start;
 }
 
 /*------------------------------------------------ NAVBAR RESPONSIVE */
@@ -165,20 +71,11 @@
   .header-nav__left {
     display: none;
   }
-
-  .responsive-menu {
-    display: block;
-    animation: fade 2s ease;
-  }
 }
 
 @media (min-width: 900px) {
   .header-nav__left {
     animation: fadeIn 2s normal;
     display: flex;
-  }
-
-  .responsive-menu {
-    display: none;
   }
 }

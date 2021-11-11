@@ -1,0 +1,39 @@
+$default-body-background: url(../../img/chef/flowers.png);
+$default-carousel-container-shadow: 0 0.2rem 2.5rem -0.5rem rgba(255, 255, 255, 0.75);
+$default-container-85-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
+$default-font-group: Arial, Helvetica, sans-serif;
+$default-form-contact-reservation-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 1);
+$default-header-nav-shadow: 0 1.4rem 1.4rem -1.4rem rgba(0, 0, 0, 0.75);
+$default-title-page-style: italic lighter 3rem "Playfair Display", $default-font-group;
+
+$global-primary-color: #2d2d2d;
+$global-secondary-color: #fff;
+$global-accent-color: #fb6e14;
+$global-accent-secondary-color: #fc8c45;
+
+$global-separator-size: 25rem;
+
+$global-flex-colum: column;
+$global-flex-colum-r: column-reverse;
+$global-flex-row: row;
+$global-flex-row-r: row-reverse;
+
+$text-logo-color: #130d08;
+
+$bgc-container-black-90: rgba(0, 0, 0, 0.9);
+$bgc-container-black-50: rgba(0, 0, 0, 0.5);
+$bgc-container-white-90: rgba(255, 255, 255, 0.9);
+
+$nav-font-style: normal 1.6rem "Playfair Display SC", $default-font-group;
+$nav-logo-style: italic 700 4rem "Playfair Display", $default-font-group;
+$nav-border-style: 0.1rem solid #e6e6e6;
+
+$burger-font-style: normal 2rem "Playfair Display SC", $default-font-group;
+
+$about-us-paragraph: normal 300 1.4rem "Merriweather", $default-font-group;
+
+$footer-font-style: normal 1.4rem Merriweather, $default-font-group;
+$footer-icon-size-s: 1.5rem;
+$footer-icon-size-m: 2rem;
+
+$menu-section-style: normal bold 1.3rem "Merriweather", $default-font-group;

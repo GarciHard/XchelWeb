@@ -1,0 +1,32 @@
+@mixin carouselBoxShadow($border-radius) {
+    border-radius: $border-radius;
+    box-shadow: $default-carousel-container-shadow;
+}
+
+@mixin colorFontStyle ($fontColor, $fontStyle){
+    color: $fontColor;
+    font: $fontStyle;
+}
+
+@mixin flexDirection($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+}
+
+@mixin footerIconStyle($size) {
+    font-size: $size;
+}
+
+@mixin removeFocus() {
+    box-shadow: none;
+    outline: none;
+}
+
+@mixin sizes($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin separatorImg() {
+    width: $global-separator-size;
+}
