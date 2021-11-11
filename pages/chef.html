@@ -9,9 +9,9 @@
     <meta name="description" content="Meet or distinguished and recognized globally awarded chef Martha Ortiz and enjoy this new experience bringed by her hand to your plate">
     <meta name="keywords" content="Mexican Cuisine Martha Ortiz Gastronomic Expression Artful Kitchen Crafter Latin America Awarded Best Restaurant Chef">
 
-    <link rel="stylesheet" href="../styles/css/bootstrap.css">
-    <link rel="stylesheet" href="../styles/css/aos.css">
-    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
 
     <title>Martha Ort&iacute;z &#64; Xchel's</title>
     <link rel="icon" href="../img/icon/blackUntitledLogoIcon.png" type="image/png">
@@ -19,22 +19,21 @@
 
 <body>
     <!-- Redesign of the header, i remove the language & date -->
-    <header class="main-header-nav">
+    <header class="header-nav">
 
         <!-- Collapsable menu under construction, testing... -->
         <div class="responsive-menu">
-            <!-- Button to change image -->
-            <button id="burger-btn" class="btn" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></button>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#responsive-menu__container"
+                aria-controls="responsive-menu__container"></button>
+
             <!-- Flowered menu container -->
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasWithBackdrop"
-                aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="responsive-menu__container">
                 <!-- We probably remove this header -->
-                <div class="offcanvas-header">
-                    <button id="close-menu" type="button" class="btn" data-bs-dismiss="offcanvas"></button>
+                <div class="menu-header">
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <!-- Body of the menu -->
-                <div id="burger-menu-container" class="offcanvas-body">
+                <div id="menu-burger__container" class="offcanvas-body">
                     <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
@@ -50,7 +49,7 @@
         </div>
 
         <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
-        <nav class="header-nav-container">
+        <nav class="header-nav__container">
             <ul class="header-nav__left">
                 <li><a href="../pages/about-us.html">About</a></li>
                 <li><a href="../index.html#specials-section">Specials</a></li>
@@ -161,32 +160,32 @@
     <footer>
         <!--Section of the footer which contains the copyright xD -->
         <div class="footer-section">
-            <div class="footer-section-flex">
-                <div class="footer-section_brand-logo">
+            <div class="footer-section__flex">
+                <div class="brand-logo">
                     <div>
                         <img src="../img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     </div>
-                    <div class="footer-section_brand-logo_text">
-                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico is
-                            the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories and
-                            spirit of her beloved country.</p>
+                    <div class="brand-logo__text">
+                        <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico
+                            is the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories
+                            and spirit of her beloved country.</p>
                     </div>
                 </div>
-                <div class="footer-section_social-container">
-                    <div class="footer-section_social-title">
+                <div class="footer-section__social">
+                    <div class="footer-section__social--title">
                         <span>¡Follow us!</span>
                     </div>
-                    <div class="footer-section_social-images">
+                    <div class="footer-section__social--images">
                         <img src="../img/footer/facebook.png" alt="Facebook logo image">
                         <img src="../img/footer/instagram.png" alt="Instagrame logo image">
                         <img src="../img/footer/twitter.png" alt="Twitter logo image">
                     </div>
-                    <div class="footer-section_social-direction">
+                    <div class="footer-section__social--direction">
                         <span>@XchelMexicanCuisine</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-section_credits">
+            <div class="footer-section__credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
                 <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + 
                 <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
@@ -196,8 +195,8 @@
     </footer>
 </body>
 
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/aos.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/aos/dist/aos.js"></script>
 <script>AOS.init();</script>
 
 </html>

@@ -9,8 +9,8 @@
     <meta name="description" content="Let us be part of a wonderful story by your side in one of our amazing restaurants">
     <meta name="keywords" content="Restaurant Coapa Arenal Perísur Coyoacán México Xchel Gourmet Traditional Cuisine Martha Ortiz">
 
-    <link rel="stylesheet" href="../styles/css/bootstrap.css">
-    <link rel="stylesheet" href="../styles/css/aos.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/css/main.css">
 
     <title>Book a table @ Xchel's</title>
@@ -19,7 +19,7 @@
 
 <body>
     <!-- Redesign of the header, i remove the language & date -->
-    <header class="main-header-nav">
+    <header class="header-nav">
 
         <!-- Collapsable menu under construction, testing... -->
         <div class="responsive-menu">
@@ -107,7 +107,7 @@
                         <label for="inputHour" class="form-label">Hour:</label>
                         <input type="time" class="form-control" id="inputHour" min="09:00" max="22:00" value="18:30"
                             required>
-                        <small>Service from 9am to 10pm</small>
+                        <small>Open from 9am to 10pm</small>
                     </div>
                     <hr>
                     <div class="col-12">
@@ -179,8 +179,8 @@
     </footer>
 </body>
 
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/aos.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/aos/dist/aos.js"></script>
 <script>AOS.init();</script>
 
 </html>
