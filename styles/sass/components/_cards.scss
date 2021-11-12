@@ -1,0 +1,52 @@
+@mixin genericCardImg($image-url, $height, $width) {
+    background : {
+        image: $image-url;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+    @include sizes ($height, $width);
+}
+
+@mixin genericCardInfo($image-url, $height, $width) {
+    @include flexDirection($global-flex-colum);
+    @include genericCardImg($image-url, 100%, 100%);
+
+    align: {
+        items: center;
+    }
+
+    border: {
+        radius: 2rem;
+    }
+
+    padding: 2rem 0;
+
+    h2 {
+        @include colorFontStyle($global-secondary-color, $default-title-page-style);
+    }
+
+    img {
+        @include separatorImg;
+    }
+
+    p {
+        @include colorFontStyle($global-alternative-color, $default-paragraph-style);
+        @include sizes($height, $width);
+
+        line: {
+            height: 2.5rem;
+        }
+
+        margin: 2rem 0;
+        padding: 0 2rem;
+
+        text: {
+            align: center;
+        }
+    }
+
+    a {
+        @include genericIndexButton;
+    }
+}

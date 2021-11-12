@@ -1,0 +1,37 @@
+@mixin genericIndexButton() {
+    @include colorFontStyle($global-secondary-color, $default-index-text-button-style);
+    @include sizes(4rem, 15rem);
+    align: {
+        items: center;
+    }
+
+    background: {
+        color: transparent;
+    }
+
+    border: {
+        color: $global-accent-color;
+        radius: 1rem;
+        style: solid;
+        width: 0.2rem;
+    }
+
+    display: flex;
+
+    justify: {
+        content: center;
+    }
+
+    margin: 2rem 0;
+
+    text: {
+        decoration: none;
+    }
+
+    &:hover {
+        background: {
+            color: $global-accent-color;
+        }
+        color: $global-secondary-color;
+    }
+}
