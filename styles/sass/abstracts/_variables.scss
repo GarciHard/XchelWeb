@@ -5,7 +5,7 @@ $default-font-group: Arial, Helvetica, sans-serif;
 $default-form-contact-reservation-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 1);
 $default-header-nav-shadow: 0 1.4rem 1.4rem -1.4rem rgba(0, 0, 0, 0.75);
 $default-title-page-style: italic lighter 3rem "Playfair Display", $default-font-group;
-$default-paragraph-style: normal 300 1.6rem "Merriweather", $default-font-group;
+$default-paragraph-style: normal 300 1.6rem Merriweather, $default-font-group;
 $default-index-text-button-style: normal lighter 1.2rem "Playfair Display", $default-font-group;
 $default-index-section-img-bg: url(../../img/about-section/about_section_bg.png);
 
@@ -36,10 +36,12 @@ $burger-font-style: normal 2rem "Playfair Display SC", $default-font-group;
 
 $about-us-section-img: url(../../img/about-section/about-section2.jpg);
 
+$parallax-quotes-font-style: normal 300 4rem "Playfair Display SC", $default-font-group;
+
 $chef-section-img: url(../../img/chef/our-chef1.jpeg);
 
 $footer-font-style: normal 1.4rem Merriweather, $default-font-group;
 $footer-icon-size-s: 1.5rem;
 $footer-icon-size-m: 2rem;
 
-$menu-section-style: normal bold 1.3rem "Merriweather", $default-font-group;
+$menu-section-style: normal bold 1.3rem Merriweather, $default-font-group;
