@@ -1,3 +1,15 @@
+@mixin circleContainer() {
+    border: {
+        color: $global-secondary-color;
+        radius: 8rem;
+        style: solid;
+        width: 0.3rem;
+    }
+    
+    margin: 0 3rem 1rem;
+    padding: 2rem;
+}
+
 @mixin colorFontStyle ($fontColor, $fontStyle){
     color: $fontColor;
     font: $fontStyle;
@@ -15,6 +27,12 @@
 @mixin genericBoxShadow($border-radius, $shadow-color) {
     border-radius: $border-radius;
     box-shadow: $shadow-color;
+}
+
+@mixin genericImgBg() {
+    background: {
+        image: $default-index-section-img-bg;
+    }
 }
 
 @mixin removeFocus() {

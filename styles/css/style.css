@@ -405,51 +405,49 @@ body {
 
 /*------------------------------------------------ INGREDIENTS SECTION */
 .intro-menu-section-container {
-  align-items: center;
-  background-image: url(../../img/about-section/about_section_bg.png);
-  color: #fff;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: auto;
-  justify-content: center;
-  width: 100%; }
+  background-image: url(../../img/about-section/about_section_bg.png);
+  align-items: center;
+  color: #fff;
+  justify-content: center; }
 
 .ingredients-container {
-  color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  color: #fff;
+  justify-content: center;
   margin: 15rem 5rem;
   width: 90%; }
-
-.ingredients-container_generic {
-  align-items: center;
-  display: flex;
-  flex-direction: column; }
-
-/*Circle div*/
-.ingredients-container_generic > div {
-  border: 0.3rem solid white;
-  border-radius: 8rem;
-  margin: 0 3rem 1rem;
-  padding: 2rem; }
-
-.ingredients-container_generic > p {
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  height: auto;
-  margin-bottom: 3rem;
-  line-height: 1.5;
-  text-align: center;
-  width: 85%;
-  word-wrap: break-word; }
+  .ingredients-container__generic {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .ingredients-container__generic div {
+      border-color: #fff;
+      border-radius: 8rem;
+      border-style: solid;
+      border-width: 0.3rem;
+      margin: 0 3rem 1rem;
+      padding: 2rem; }
+    .ingredients-container__generic p {
+      color: inherit;
+      font: normal 300 1.6rem "Merriweather", Arial, Helvetica, sans-serif;
+      height: auto;
+      width: 85%;
+      margin-bottom: 3rem;
+      line-height: 1.5;
+      text-align: center;
+      word-wrap: break-word; }
 
 /*------------------------------------------------ INGREDIENTS RESPONSIVE */
 @media (min-width: 1000px) {
   .ingredients-container {
     flex-direction: row; }
-  .ingredients-container_generic {
-    width: 80%; } }
+    .ingredients-container__generic {
+      width: 80%; } }
 
 /*------------------------------------------------ BURGER MENU */
 .responsive-menu {
