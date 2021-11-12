@@ -1,55 +1,46 @@
 /*------------------------------------------------ INGREDIENTS SECTION */
 .intro-menu-section-container {
+  @include sizes(auto, 100%);
+  @include flexDirection($global-flex-colum);
+  @include genericImgBg;
+  align-items: center;
+  color: $global-secondary-color;
+  justify-content: center;
+}
+
+.ingredients-container {
+  @include flexDirection($global-flex-colum);
+  color: $global-secondary-color;
+  justify-content: center;
+  margin: 15rem 5rem;
+  width: 90%;
+
+  &__generic {
+    @include flexDirection($global-flex-colum);
     align-items: center;
-    background-image: url(../../img/about-section/about_section_bg.png);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .ingredients-container {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 15rem 5rem;
-    width: 90%;
-  }
-  
-  .ingredients-container_generic {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /*Circle div*/
-  .ingredients-container_generic > div {
-    border: 0.3rem solid white;
-    border-radius: 8rem;
-    margin: 0 3rem 1rem;
-    padding: 2rem;
-  }
-  
-  .ingredients-container_generic > p {
-    font-family: Merriweather, Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    height: auto;
-    margin-bottom: 3rem;
-    line-height: 1.5;
-    text-align: center;
-    width: 85%;
-    word-wrap: break-word;
-  }
-  
-  /*------------------------------------------------ INGREDIENTS RESPONSIVE */
-  @media (min-width: 1000px) {
-    .ingredients-container {
-      flex-direction: row;
+
+    div {
+      @include circleContainer;
     }
-    .ingredients-container_generic {
+    
+    p {
+      @include colorFontStyle(inherit, $default-paragraph-style);
+      @include sizes(auto, 85%);
+      margin-bottom: 3rem;
+      line-height: 1.5;
+      text-align: center;
+      word-wrap: break-word;
+    }
+  }
+}
+
+/*------------------------------------------------ INGREDIENTS RESPONSIVE */
+@media (min-width: 1000px) {
+  .ingredients-container {
+    flex-direction: row;
+
+    &__generic {
       width: 80%;
     }
   }
+}
