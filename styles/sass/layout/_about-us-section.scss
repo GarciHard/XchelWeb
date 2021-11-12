@@ -1,121 +1,66 @@
 /*------------------------------------------------ ABOUT SECTION */
 .about-section-main {
-    background-color: #fff;
-    padding: 5rem 1rem;
-  }
-  
-  .about-section-container {
-    border-radius: 2rem;
-    box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
-    display: grid;
-    grid-template:
-      "about-info" 1 / 1fr;
-    height: auto;
-    width: 100%;
-  }
-  
-  #about-img  {
-    grid-area: about-img;
-  }
-  
-  #about-info {
-    grid-area: about-info;
-  }
-  
-  .about-section-container_image {
-    background-image: url(../../img/about-section/about-section2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 2rem 2rem 0 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .about-section-container_info {
-    align-items: center;
-    background-image: url(../../img/about-section/about_section_bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 2rem 0;
-    width: 100%;
-  }
-  
-  .about-section-container_info > h2 {
-    color: #fff;
-    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: lighter;
-  }
-  
-  .about-section-container_info > img {
-    width: 25rem;
-  }
-  
-  .about-section-container_info > p {
-    color: #a99c92;
-    font-family: "Merriweather", Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 300;
-    height: auto;
-    line-height: 2.5rem;
-    margin: 2rem 0;
-    padding: 0 2rem;
-    text-align: center;
-    width: 90%;
-  }
-  
-  .about-section-container_info > a {
-    align-items: center;
-    background-color: transparent;
-    border: 0.2rem solid #fb6e14;
-    border-radius: 1rem;
-    color: white;
-    display: flex;
-    font-family: "Playfair Display";
-    font-size: 1.2rem;
-    height: 4rem;
-    justify-content: center;
-    margin: 2rem 0;
-    text-decoration: none;
-    width: 15rem;
-  }
-  
-  .about-section-container_info > a:hover {
-    background-color: #fb6e14;
-  }
-  
-  /*------------------------------------------------ ABOUT SECTION RESPONSIVE */
-  @media (min-width: 600px) {
-    .about-section-container {
-      grid-template:
-        "about-img" 0.6fr
-        "about-info" 1fr / 1fr;
+  background-color: $global-secondary-color;
+  padding: 5rem 1rem;
+}
+
+.about-section-container {
+  @include genericBoxShadow(2rem, $default-container-85-shadow);
+  @include sizes(auto, 100%);
+
+  display: grid;
+  grid-template:
+    "about-info" 1 / 1fr;
+
+    &__image {
+    @include genericCardImg($about-us-section-img, 100%, 100%);
+    border: {
+      radius: 2rem 2rem 0 0;
     }
-    .about-section-container_info {
+  }
+
+  &__info {
+    @include genericCardInfo($default-index-section-img-bg, auto, 90%);
+  }
+}
+
+#about-img  {
+  grid-area: about-img;
+}
+
+#about-info {
+  grid-area: about-info;
+}
+
+/*------------------------------------------------ ABOUT SECTION RESPONSIVE */
+@media (min-width: 600px) {
+  .about-section-container {
+    grid-template:
+      "about-img" 0.6fr
+      "about-info" 1fr / 1fr;
+
+    &__info {
       border-radius: 0 0 2rem 2rem;
     }
   }
-  
-  @media (min-width: 900px) {
-    .about-section-container {
-      grid-template:
-        "about-img about-info" 2fr
-        / 1fr 1fr;
-    }
-    .about-section-container_image {
+}
+
+@media (min-width: 900px) {
+  .about-section-main {
+    padding: 5rem;
+  }
+
+  .about-section-container {
+    grid-template:
+      "about-img about-info" 2fr
+      / 1fr 1fr;
+
+    &__image {
       border-radius: 2rem 0 0 2rem;
     }
-    .about-section-container_info {
+
+    &__info {
       border-radius: 0 2rem 2rem 0;
     }
-    .about-section-main {
-      padding: 5rem;
-    }
   }
+}

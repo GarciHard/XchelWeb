@@ -1,106 +1,43 @@
 /*------------------------------------------------ CHEF SECTION */
 .chef-section-container {
-    background-color: #fff;
-    height: auto;
-    width: 100%;
-    padding: 5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: $global-secondary-color;
+  height: auto;
+  width: 100%;
+  padding: 5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chef-section {
+  @include flexDirection($global-flex-colum);
+  @include genericBoxShadow(2rem, $default-container-85-shadow);
+  @include sizes(auto, 100%);
+  &__image {
+    @include genericCardImg($chef-section-img, auto, 100%);
+    border: {
+      radius: 0 2rem 2rem 0;
+    }
   }
+  &__info {
+    @include genericCardInfo($default-index-section-img-bg, auto, 90%);
+  }
+}
   
+/*------------------------------------------------ CHEF SECTION RESPONSIVE */
+@media (min-width: 600px) {
+  .chef-section-container {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 900px) {
   .chef-section {
-    border-radius: 2rem;
-    box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .chef-section_image {
-    background-image: url(../../img/chef/our-chef1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0 2rem 2rem 0;
-    height: auto;
-    width: 100%;
-  }
-  
-  .chef-section_info {
-    align-items: center;
-    background-image: url(../../img/about-section/about_section_bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 2rem 0;
-    width: 100%;
-  }
-  
-  .chef-section_info > h2 {
-    color: #fff;
-    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: lighter;
-  }
-  
-  .chef-section_info > img {
-    width: 25rem;
-  }
-  
-  .chef-section_info > p {
-    color: #a99c92;
-    font-family: "Merriweather", Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 300;
-    height: auto;
-    line-height: 2.5rem;
-    margin: 2rem 0;
-    padding: 0 2rem;
-    text-align: center;
-    width: 90%;
-  }
-  
-  .chef-section_info > a {
-    align-items: center;
-    background-color: transparent;
-    border: 0.2rem solid #fb6e14;
-    border-radius: 1rem;
-    color: white;
-    display: flex;
-    font-family: "Playfair Display";
-    font-size: 1.2rem;
-    height: 4rem;
-    justify-content: center;
-    margin: 2rem 0;
-    text-decoration: none;
-    width: 15rem;
-  }
-  
-  .chef-section_info > a:hover {
-    background-color: #fb6e14;
-  }
-  
-  /*------------------------------------------------ CHEF SECTION RESPONSIVE */
-  @media (min-width: 600px) {
-    .chef-section-container {
-      padding: 5rem;
+    flex-direction: row-reverse;
+    &__info {
+      border: {
+        radius: 2rem 0 0 2rem;
+      }
     }
   }
-  
-  @media (min-width: 900px) {
-    .chef-section {
-      flex-direction: row-reverse;
-    }
-    .chef-section_info {
-      border-radius: 2rem 0 0 2rem;
-    }
-  }
-  
-  
+}
