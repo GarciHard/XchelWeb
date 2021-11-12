@@ -23,12 +23,12 @@
 }
 
 .about-paragraph > p {
-  @include colorFontStyle($global-secondary-color, $about-us-paragraph);
+  @include colorFontStyle($global-secondary-color, $default-paragraph-style);
   text-align: center;
 }
 
 .anti-carousel {
-  @include carouselBoxShadow(2rem);
+  @include genericBoxShadow(2rem, $default-carousel-container-shadow);
   margin-top: 5rem;
 
   img {
