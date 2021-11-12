@@ -1,15 +1,14 @@
 /*------------------------------------------------ PARALLAX BOOK TABLE */
 .parallax-book-table-container {
-    background-attachment: fixed;
-    background-image: url(../../img/reservations/parallax-reservations4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50rem;
-    z-index: 1;
-  }
-  
-  .parallax-book-table-container_opacity {
+  background-attachment: fixed;
+  background-image: url(../../img/reservations/parallax-reservations4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  z-index: 1;
+
+  &__opacity {
     background-color: #000;
     height: inherit;
     width: 85%;
@@ -17,74 +16,56 @@
     position: absolute;
     z-index: 2;
   }
-  
-  .parallax-book-table-container_text {
+
+  &__text {
+    @include flexDirection($global-flex-colum);
+    @include sizes(inherit, inherit);
     align-items: center;
-    display: flex;
-    flex-flow: column;
-    height: inherit;
     justify-content: center;
     padding: 5rem 0;
     position: absolute;
     text-align: center;
     z-index: 3;
-    width: inherit;
-  }
-  
-  .parallax-book-table-container_text > h2 {
-    color: #fff;
-    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 3rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
-  }
-  
-  .parallax-book-table-container_text > img {
-    width: 25rem;
-    margin-bottom: 2rem;
-  }
-  
-  .parallax-book-table-container_text > p {
-    color: #fff;
-    font-family: Merriweather, Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
-    margin-bottom: 6rem;
-    width: 90%;
-  }
-  
-  .parallax-book-table-container_text > a {
-    align-items: center;
-    background-color: transparent;
-    border: 0.2rem solid #fb6e14;
-    border-radius: 1rem;
-    color: white;
-    display: flex;
-    font-family: "Playfair Display";
-    font-size: 1.2rem;
-    height: 4rem;
-    justify-content: center;
-    text-decoration: none;
-    width: 15rem;
-  }
-  
-  .parallax-book-table-container_text > a:hover {
-    background-color: #fb6e14;
-  }
-  
-  /*------------------------------------------------ PARALLAX BOOK TABLE RESPONSIVE */
-  @media (min-width: 600px) {
-    .parallax-book-table-container_text > p {
-      width: 65%;
+
+    h2 {
+      @include colorFontStyle(
+        $global-secondary-color,
+        $default-title-page-style
+      );
+      letter-spacing: 0.2rem;
+    }
+
+    img {
+      @include separatorImg;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      @include colorFontStyle(
+        $global-secondary-color,
+        $default-paragraph-style
+      );
+      letter-spacing: 0.2rem;
+      margin-bottom: 6rem;
+      width: 90%;
+    }
+
+    a {
+      @include genericIndexButton;
+      margin: 0;
     }
   }
-  
-  @media (min-width: 900px) {
-    .parallax-book-table-container_text > p {
-      width: 45%;
-    }
+}
+
+/*------------------------------------------------ PARALLAX BOOK TABLE RESPONSIVE */
+@media (min-width: 600px) {
+  .parallax-book-table-container__text > p {
+    width: 65%;
   }
-  
-  
+}
+
+@media (min-width: 900px) {
+  .parallax-book-table-container__text > p {
+    width: 45%;
+  }
+}

@@ -132,7 +132,7 @@ body {
       width: 25rem; }
     .about-section-container__info p {
       color: #a99c92;
-      font: normal 300 1.6rem "Merriweather", Arial, Helvetica, sans-serif;
+      font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
       height: auto;
       width: 90%;
       line-height: 2.5rem;
@@ -225,7 +225,7 @@ body {
       width: 25rem; }
     .chef-section__info p {
       color: #a99c92;
-      font: normal 300 1.6rem "Merriweather", Arial, Helvetica, sans-serif;
+      font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
       height: auto;
       width: 90%;
       line-height: 2.5rem;
@@ -434,7 +434,7 @@ body {
       padding: 2rem; }
     .ingredients-container__generic p {
       color: inherit;
-      font: normal 300 1.6rem "Merriweather", Arial, Helvetica, sans-serif;
+      font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
       height: auto;
       width: 85%;
       margin-bottom: 3rem;
@@ -534,72 +534,64 @@ body {
   background-size: cover;
   height: 50rem;
   z-index: 1; }
-
-.parallax-book-table-container_opacity {
-  background-color: #000;
-  height: inherit;
-  width: 85%;
-  opacity: 0.5;
-  position: absolute;
-  z-index: 2; }
-
-.parallax-book-table-container_text {
-  align-items: center;
-  display: flex;
-  flex-flow: column;
-  height: inherit;
-  justify-content: center;
-  padding: 5rem 0;
-  position: absolute;
-  text-align: center;
-  z-index: 3;
-  width: inherit; }
-
-.parallax-book-table-container_text > h2, .parallax-book-table-container_text > .h2 {
-  color: #fff;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: 3rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem; }
-
-.parallax-book-table-container_text > img {
-  width: 25rem;
-  margin-bottom: 2rem; }
-
-.parallax-book-table-container_text > p {
-  color: #fff;
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
-  margin-bottom: 6rem;
-  width: 90%; }
-
-.parallax-book-table-container_text > a {
-  align-items: center;
-  background-color: transparent;
-  border: 0.2rem solid #fb6e14;
-  border-radius: 1rem;
-  color: white;
-  display: flex;
-  font-family: "Playfair Display";
-  font-size: 1.2rem;
-  height: 4rem;
-  justify-content: center;
-  text-decoration: none;
-  width: 15rem; }
-
-.parallax-book-table-container_text > a:hover {
-  background-color: #fb6e14; }
+  .parallax-book-table-container__opacity {
+    background-color: #000;
+    height: inherit;
+    width: 85%;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 2; }
+  .parallax-book-table-container__text {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    position: absolute;
+    text-align: center;
+    z-index: 3; }
+    .parallax-book-table-container__text h2, .parallax-book-table-container__text .h2 {
+      color: #fff;
+      font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif;
+      letter-spacing: 0.2rem; }
+    .parallax-book-table-container__text img {
+      width: 25rem;
+      margin-bottom: 2rem; }
+    .parallax-book-table-container__text p {
+      color: #fff;
+      font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
+      letter-spacing: 0.2rem;
+      margin-bottom: 6rem;
+      width: 90%; }
+    .parallax-book-table-container__text a {
+      color: #fff;
+      font: normal lighter 1.2rem "Playfair Display", Arial, Helvetica, sans-serif;
+      height: 4rem;
+      width: 15rem;
+      align-items: center;
+      background-color: transparent;
+      border-color: #fb6e14;
+      border-radius: 1rem;
+      border-style: solid;
+      border-width: 0.2rem;
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+      text-decoration: none;
+      margin: 0; }
+      .parallax-book-table-container__text a:hover {
+        background-color: #fb6e14;
+        color: #fff; }
 
 /*------------------------------------------------ PARALLAX BOOK TABLE RESPONSIVE */
 @media (min-width: 600px) {
-  .parallax-book-table-container_text > p {
+  .parallax-book-table-container__text > p {
     width: 65%; } }
 
 @media (min-width: 900px) {
-  .parallax-book-table-container_text > p {
+  .parallax-book-table-container__text > p {
     width: 45%; } }
 
 /*------------------------------------------------ MAIN PARALLAX */
@@ -677,40 +669,32 @@ body {
   background-size: cover;
   height: 50vh;
   z-index: 1; }
-
-.parallax-quote-container_opacity {
-  background-color: #000;
-  height: inherit;
-  width: inherit;
-  opacity: 0.5;
-  position: absolute;
-  z-index: 3; }
-
-.parallax-quote-container_text {
-  align-items: center;
-  /* animation: fadeIn 4s infinite; */
-  display: flex;
-  flex-flow: column wrap;
-  height: inherit;
-  justify-content: center;
-  position: absolute;
-  text-align: center;
-  z-index: 3;
-  width: inherit; }
-
-.parallax-quote-container_text > h3, .parallax-quote-container_text > .h3 {
-  color: #fff;
-  font-family: "Playfair Display SC", Arial, Helvetica, sans-serif;
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem; }
-
-.parallax-quote-container_text > h3::after, .parallax-quote-container_text > .h3::after {
-  content: "\"Passion for the mexican flavor\"";
-  animation: changeQuotes calc(20000ms) linear infinite; }
-
-.parallax-quote-container_text > img {
-  width: 25rem; }
+  .parallax-quote-container__opacity {
+    height: inherit;
+    width: inherit;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 3; }
+  .parallax-quote-container__text {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    z-index: 3; }
+    .parallax-quote-container__text h3, .parallax-quote-container__text .h3 {
+      color: #fff;
+      font: normal 300 4rem "Playfair Display SC", Arial, Helvetica, sans-serif;
+      letter-spacing: 0.2rem; }
+      .parallax-quote-container__text h3::before, .parallax-quote-container__text .h3::before {
+        content: '"Passion for the mexican flavor"';
+        animation: changeQuotes calc(20000ms) linear infinite; }
+    .parallax-quote-container__text img {
+      width: 25rem; }
 
 /*------------------------------------------------ SPECIALS SECTION */
 .specials-section-container {
@@ -949,7 +933,7 @@ body {
 
 .about-paragraph > p {
   color: #fff;
-  font: normal 300 1.6rem "Merriweather", Arial, Helvetica, sans-serif;
+  font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
   text-align: center; }
 
 .anti-carousel {
@@ -1163,7 +1147,7 @@ body {
 
 .menu-section {
   color: #fc8c45;
-  font: normal bold 1.3rem "Merriweather", Arial, Helvetica, sans-serif;
+  font: normal bold 1.3rem Merriweather, Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
