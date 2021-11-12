@@ -1,8 +1,3 @@
-@mixin carouselBoxShadow($border-radius) {
-    border-radius: $border-radius;
-    box-shadow: $default-carousel-container-shadow;
-}
-
 @mixin colorFontStyle ($fontColor, $fontStyle){
     color: $fontColor;
     font: $fontStyle;
@@ -15,6 +10,11 @@
 
 @mixin footerIconStyle($size) {
     font-size: $size;
+}
+
+@mixin genericBoxShadow($border-radius, $shadow-color) {
+    border-radius: $border-radius;
+    box-shadow: $shadow-color;
 }
 
 @mixin removeFocus() {
