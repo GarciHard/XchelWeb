@@ -4,6 +4,8 @@
 @import "../sass/base/_reset";
 @import "../sass/base/_typo";
 
+@import "../sass/components/_cards";
+@import "../sass/components/_index-button";
 @import "../sass/components/_keyframes";
 
 @import "../sass/layout/_about-us-section";
@@ -22,3 +24,6 @@
 @import "../sass/pages/_contact-us";
 @import "../sass/pages/_menu";
 @import "../sass/pages/_reservations";
+
+@import "../sass/vendors/_aos";
+@import "../sass/vendors/_bootstrap";
