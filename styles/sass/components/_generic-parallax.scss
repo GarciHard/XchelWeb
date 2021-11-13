@@ -1,0 +1,105 @@
+@mixin genericParallax($parallax-arg) {
+  .parallax-generic-container {
+    background: {
+      attachment: fixed;
+      position: center;
+      repeat: no-repeat;
+      size: cover;
+    }
+
+    height: 50rem;
+    z-index: 1;
+
+    &__opacity {
+      @include genericOpacityForParallax(inherit, inherit);
+    }
+
+    &__text {
+      @include flexDirection($global-flex-colum);
+      @include sizes(inherit, inherit);
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      text-align: center;
+      z-index: 3;
+
+      @if $parallax-arg == $default-parallax-book-table {
+        padding: 5rem 0;
+      }
+    }
+
+    img {
+      @include separatorImg;
+    }
+
+    // We assume that if its not a reservation its a quote..
+    @if $parallax-arg == $default-parallax-book-table {
+      h2 {
+        @include colorFontStyle(
+          $global-secondary-color,
+          $default-title-page-style
+        );
+        letter-spacing: 0.2rem;
+      }
+
+      img {
+        margin-bottom: 2rem;
+      }
+
+      p {
+        @include colorFontStyle(
+          $global-secondary-color,
+          $default-paragraph-style
+        );
+        letter-spacing: 0.2rem;
+        margin-bottom: 6rem;
+        width: 90%;
+      }
+
+      a {
+        @include genericIndexButton;
+        margin: 0;
+      }
+    } @else {
+      h3 {
+        @include colorFontStyle(
+          $global-secondary-color,
+          $parallax-quotes-font-style
+        );
+        letter-spacing: 0.2rem;
+
+        &::before {
+          content: '"Passion for the mexican flavor"';
+          animation: changeQuotes calc(20000ms) linear infinite;
+        }
+      }
+    }
+  }
+  /*------------------------------------------------ PARALLAX GENERIC RESPONSIVE */
+  @if $parallax-arg == $default-parallax-book-table {
+    @media (min-width: 600px) {
+      .parallax-generic-container {
+        &__text > p {
+          width: 65%;
+        }
+      }
+    }
+
+    @media (min-width: 900px) {
+      .parallax-generic-container {
+        &__text > p {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+// Function to set opacity for parallax-generic
+@mixin genericOpacityForParallax($height, $width) {
+  @include sizes($height, $width);
+  background-color: $global-parallax-bg-color;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+}
