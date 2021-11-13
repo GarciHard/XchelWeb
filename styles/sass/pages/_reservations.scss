@@ -1,0 +1,22 @@
+/* Including our generic form component */
+@include genericReservationContactForm;
+
+/* Adding some specific properties */
+#reservation-form-aux {
+  hr {
+    margin: 2rem 0;
+  }
+
+  div {
+    &:nth-child(8),
+    &:nth-child(7),
+    &:nth-child(6),
+    &:nth-child(5) {
+      display: inline-block;
+      width: 49%;
+      small {
+        font-size: 1rem;
+      }
+    }
+  }
+}

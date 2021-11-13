@@ -1,0 +1,45 @@
+.intro-menu-section-container {
+  @include sizes(auto, 100%);
+  @include flexDirection($global-flex-colum);
+  @include genericImgBg;
+  align-items: center;
+  color: $global-secondary-color;
+  justify-content: center;
+}
+
+.ingredients-container {
+  @include flexDirection($global-flex-colum);
+  color: $global-secondary-color;
+  justify-content: center;
+  margin: 15rem 5rem;
+  width: 90%;
+
+  &__generic {
+    @include flexDirection($global-flex-colum);
+    align-items: center;
+
+    div {
+      @include circleContainer;
+    }
+    
+    p {
+      @include colorFontStyle(inherit, $default-paragraph-style);
+      @include sizes(auto, 85%);
+      margin-bottom: 3rem;
+      line-height: 1.5;
+      text-align: center;
+      word-wrap: break-word;
+    }
+  }
+}
+
+/*------------------------------------------------ INGREDIENTS RESPONSIVE */
+@media (min-width: 1000px) {
+  .ingredients-container {
+    flex-direction: row;
+
+    &__generic {
+      width: 80%;
+    }
+  }
+}

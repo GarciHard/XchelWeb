@@ -1,0 +1,316 @@
+.specials-section {
+  @include flexDirection($global-flex-colum);
+  @include sizes(auto, 100%);
+  align-items: center;
+  background-color: $global-secondary-color;
+  justify-content: center;
+
+  h2 {
+    @include colorFontStyle($global-primary-color, $default-title-page-style);
+    margin-top: 10rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  > img {
+    @include separatorImg;
+    margin-bottom: 4rem;
+  }
+
+  &__grid-container {
+    @include sizes(auto, 100%);
+    box-shadow: $default-container-85-shadow;
+    display: grid;
+    grid-template:
+      "dish_1" 1fr
+      "dish_2" 1fr
+      "dish_3" 1fr
+      "dish_4" 1fr
+      "dish_5" 1fr
+      "dish_6" 1fr / 1fr;
+  }
+
+  &__dish-container {
+    @include flexDirection($global-flex-colum);
+
+    &:hover {
+      animation: fade 1s normal;
+      box-shadow: $default-container-75-shadow;
+      transform: scale(1.05);
+    }
+
+    &--lg-image {
+      @include sizes(40vw, 100%);
+      background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+      }
+    }
+
+    &--lg-info {
+      @include flexDirection($global-flex-colum);
+      @include sizes(60vw, 100%);
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+
+      h3 {
+        @include colorFontStyle(
+          $global-primary-color,
+          $month-special-font-title-style
+        );
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      img {
+        width: 25rem;
+      }
+
+      span {
+        @include colorFontStyle(
+          $month-special-price-color,
+          $month-special-font-price-style
+        );
+      }
+
+      p {
+        @include colorFontStyle(
+          $month-special-price-color,
+          $reservations-page-font-style
+        );
+        line-height: 1.6;
+        margin: 2rem 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#dish_1 {
+  background-color: $month-special-primary-color;
+  grid-area: dish_1;
+}
+#dish_img1 {
+  background-image: url(../../img/popular-dishes/pupular_dish1.jpeg);
+}
+#dish_2 {
+  background-color: $month-special-secondary-color;
+  grid-area: dish_2;
+}
+#dish_img2 {
+  background-image: url(../../img/popular-dishes/popular_dish2.jpg);
+}
+#dish_3 {
+  background-color: $month-special-secondary-color;
+  grid-area: dish_3;
+}
+#dish_img3 {
+  background-image: url(../../img/popular-dishes/popular_dish3.jpeg);
+}
+#dish_4 {
+  background-color: $month-special-secondary-color;
+  grid-area: dish_4;
+}
+#dish_img4 {
+  background-image: url(../../img/popular-dishes/popular_dish4.jpeg);
+}
+#dish_5 {
+  background-color: $month-special-secondary-color;
+  grid-area: dish_5;
+}
+#dish_img5 {
+  background-image: url(../../img/popular-dishes/popular_dish5.jpg);
+}
+#dish_6 {
+  background-color: $month-special-primary-color;
+  grid-area: dish_6;
+}
+#dish_img6 {
+  background-image: url(../../img/popular-dishes/popular_dish6.jpg);
+}
+
+/*------------------------------------------------ SPECIAL SECTION RESPONSIVE */
+@media (min-width: 600px) {
+  .specials-section {
+    &__grid-container {
+      border-radius: 2rem;
+      grid-template:
+        "dish_1" 1fr
+        "dish_2" 1fr
+        "dish_3" 1fr
+        "dish_4" 1fr
+        "dish_5" 1fr
+        "dish_6" 1fr / 1fr;
+      width: 85%;
+      margin-bottom: 5rem;
+    }
+
+    &__dish-container {
+      flex-direction: row;
+
+      &--lg-image {
+        @include sizes(100%, 50%);
+      }
+
+      &--lg-info {
+        @include sizes(100%, 50%);
+
+        img {
+          width: $global-separator-size - 5rem;
+        }
+      }
+
+      &:hover {
+        animation: fade 1s normal;
+        border-radius: 2rem;
+        box-shadow: $default-container-75-shadow;
+        transform: scale(1.05);
+
+        .specials-section__dish-container--lg-image {
+          border-radius: 0 2rem 2rem 0;
+        }
+      }
+    }
+  }
+
+  #dish_2,
+  #dish_4,
+  #dish_6 {
+    flex-direction: row-reverse;
+  }
+
+  #dish_1 {
+    border-radius: 2rem 2rem 0;
+
+    &:hover {
+      border-radius: 2rem;
+
+      /* Used for dish 2 & 4 */
+      .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem;
+      }
+    }
+  }
+
+  #dish_img1 {
+    border-radius: 2rem 0 0;
+  }
+  #dish_6 {
+    border-radius: 0 0 2rem 2rem;
+
+    &:hover {
+      border-radius: 2rem;
+
+      .specials-section__dish-container--lg-image {
+        border-radius: 0 2rem 2rem 0;
+      }
+    }
+  }
+  #dish_img6 {
+    border-radius: 0 0 2rem;
+  }
+
+  #dish_3 {
+    &:hover {
+      .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem;
+      }
+    }
+  }
+
+  #dish_5 {
+    &:hover {
+      .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .specials-section {
+    &__grid-container {
+      grid-template:
+        "dish_1 dish_2" 1fr
+        "dish_1 dish_3" 1fr
+        "dish_4 dish_6" 1fr
+        "dish_5 dish_6" 1fr / 1fr 1fr;
+      width: 90%;
+    }
+
+    &__dish-container {
+      &--lg-info {
+        img {
+          width: $global-separator-size - 7rem;
+        }
+      }
+
+      &:hover {
+        .specials-section__dish-container--lg-image {
+          border-radius: 0 2rem 2rem 0;
+        }
+      }
+    }
+  }
+
+  #dish_2,
+  #dish_6 {
+    flex-direction: row;
+  }
+
+  #dish_3 {
+    flex-direction: row-reverse;
+
+    &:hover {
+      .specials-section__dish-container--lg-image {
+        border-radius: 0 2rem 2rem 0;
+      }
+    }
+  }
+
+  #dish_1 {
+    border-radius: 2rem 0 0;
+  }
+
+  #dish_2 {
+    border-radius: 0 2rem 0;
+
+    &:hover {
+      border-radius: 2rem;
+
+      .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem;
+      }
+    }
+  }
+
+  #dish_5 {
+    border-radius: 0 0 0 2rem;
+
+    &:hover {
+      border-radius: 2rem;
+
+      .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem;
+      }
+    }
+  }
+  #dish_img5 {
+    border-radius: 0 0 0 2rem;
+  }
+  #dish_img6 {
+    border-radius: 0;
+  }
+
+  #dish_6 {
+    &:hover {
+      border-radius: 2rem;
+
+      .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem;
+      }
+    }
+  }
+}

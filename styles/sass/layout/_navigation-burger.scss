@@ -1,0 +1,102 @@
+.responsive-menu {
+  @include sizes(2.5rem, 2.5rem);
+  display: none;
+  margin: 2rem 0 0 2rem;
+  position: absolute;
+  
+  button {
+    @include sizes(inherit, inherit);
+
+    background: {
+      image: url(../../img/burger-menu/burger-menu.svg);
+      repeat: no-repeat;
+      size: contain;
+    }
+
+    &:focus {
+      @include removeFocus;
+    }
+  }
+}
+
+#responsive-menu__container {
+  background: {
+    image: url(../../img/chef/flowers.png);
+    repeat: none;
+    size: contain;
+  }
+
+  height: 100%;
+}
+
+.menu-header {
+  padding: 1rem;
+
+  background: {
+    color: $bgc-container-white-90;
+  }
+
+  button {
+    @include sizes(3rem, 3rem);
+    margin: auto 1rem;
+
+    background: {
+      image: url(../../img/burger-menu/close-menu.svg);
+      repeat: no-repeat;
+      size: contain;
+    }
+
+    &:focus {
+      @include removeFocus;
+    }
+  }
+}
+
+#menu-burger__container {
+  @include flexDirection($global-flex-colum);
+  align-items: center;
+  background-color: $bgc-container-black-90;
+  border-radius: 4rem;
+  margin: 3rem;
+  padding: 5rem;
+
+  img {
+    @include sizes(15rem, 15rem);
+  }
+
+  ul {
+    @include colorFontStyle($global-secondary-color, $burger-font-style);
+    @include flexDirection($global-flex-colum);
+    @include sizes(100%, 90%);
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+
+    li {
+      text-align: center;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          color: $global-accent-color;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------------------------ BURGER MENU RESPONSIVE */
+@media (min-width: 200px) {
+  .responsive-menu {
+    display: block;
+    animation: fade 2s ease;
+  }
+}
+
+@media (min-width: 900px) {
+  .responsive-menu {
+    display: none;
+  }
+}

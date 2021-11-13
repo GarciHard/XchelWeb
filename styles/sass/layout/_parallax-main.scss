@@ -1,0 +1,65 @@
+.parallax-container {
+  @include sizes(100vh, auto);
+  animation: changeParallax 15s ease-in-out infinite both;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+  &__opacity {
+    @include genericOpacityForParallax(100%, 100%);
+  }
+
+  &__titles {
+    @include flexDirection($global-flex-colum);
+    @include sizes(100%, 100%);
+    align-items: center;
+    animation: fadeIn 4s;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    
+    h1 {
+      @include colorFontStyle($global-secondary-color, $parallax-main-title-font-style);
+    }
+
+    h2 {
+      @include colorFontStyle($global-secondary-color, $parallax-main-subtitle-font-style);
+
+      span {
+        color: $global-accent-color;
+      }
+    }
+  }
+}  
+
+/*------------------------------------------------ PARALLAX RESPONSIVE */
+@media (min-width: 600px) {
+  .parallax-container {
+    &__titles {
+      h1 {
+      font-size: 20rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .parallax-container {
+    &__titles {
+      h1 {
+      font-size: 30rem;
+      }
+      
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}

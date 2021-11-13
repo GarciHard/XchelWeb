@@ -1,0 +1,7 @@
+/* Including our generic parallax component with null arg */
+@include genericParallax($default-null-arg);
+
+/* Adding some specific properties */
+#quotes-bg-img {
+  background-image: url(../../img/quote_2.gif);
+}

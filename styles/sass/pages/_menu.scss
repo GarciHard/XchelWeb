@@ -1,0 +1,90 @@
+.menu-section-container {
+  @include flexDirection($global-flex-colum);
+  @include sizes(auto, 85vw);
+  align-items: center;
+  background-color: $bgc-container-black-90;
+  justify-content: center;
+
+  h2 {  
+    @include colorFontStyle($global-secondary-color, $default-title-page-style);
+    margin-top: 10rem;
+  }
+
+  img {
+    @include separatorImg;
+  }
+
+  ul {
+    @include sizes(5rem, inherit);
+    align-items: center;
+    color: $global-secondary-color;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 2rem 0;
+
+    li {
+      align-items: center;
+      border-radius: 1rem;
+      display: flex;
+      height: inherit;
+      margin: 0 0.2rem;
+
+      button {
+        @include colorFontStyle($global-secondary-color, $parallax-main-subtitle-font-style);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#pills-tabContent {
+  @include flexDirection($global-flex-colum);
+  align-items: center;
+  justify-items: center;
+}
+
+.menu-content {
+  @include sizes(100%, 100%);
+  justify-content: space-evenly;
+  margin-bottom: 15rem;
+  padding: 2rem;
+}
+
+.menu-section {
+  @include colorFontStyle($global-accent-secondary-color, $menu-section-style);
+  @include flexDirection($global-flex-colum);
+  flex-wrap: wrap;
+  width: 35rem;
+
+  & table tbody tr > td:first-child {
+    line-height: 1.5;
+    padding: 2rem 0 0;
+    text-transform: uppercase;
+  }
+
+  & table tbody tr:nth-child(even) > td {
+    color: $global-secondary-color;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 0;
+    text-transform: lowercase;
+    width: 100%;
+  }
+
+  & table tbody tr > td:nth-child(even) {
+    padding: 2rem 0 0;
+  }
+}
+
+/*------------------------------------------------ MENU PAGE RESPONSIVE */
+@media (min-width: 600px) {
+  .menu-section {
+    width: 45rem;
+  }
+}
+@media (min-width: 900px) {
+  .menu-section {
+    width: 65rem;
+  }
+}

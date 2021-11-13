@@ -9,9 +9,7 @@
     <meta name="description" content="Xchel Mexican Cuisine born as a new gourmet concept, bringing the best traditional mexican flavors with a modern touch by the hand of our recognized chef">
     <meta name="keywords" content="Mexican Traditional Cuisine México Month Specials Martha Ortiz Xchel">
 
-    <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/css/aos.css">
-    <link rel="stylesheet" href="./styles/css/styles.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
 
     <title>Xchel Mexican Cuisine</title>
     <link rel="icon" href="./img/icon/blackUntitledLogoIcon.png" type="image/png">
@@ -20,7 +18,7 @@
 <body>
 
     <!-- Adding parallax section -->
-    <main id="main" class="main-parallax-container">
+    <main id="main" class="parallax-container">
         <div class="parallax-container__opacity"></div>
         <div class="parallax-container__titles">
             <h1>xchel</h1>
@@ -28,22 +26,21 @@
         </div>
     </main>
     <!-- Redesign of the header, i remove the language & date -->
-    <header class="main-header-nav">
+    <header class="header-nav">
 
         <!-- Collapsable menu under construction, testing... -->
         <div class="responsive-menu">
-            <!-- Button to change image -->
-            <button id="burger-btn" class="btn" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></button>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#responsive-menu__container"
+                aria-controls="responsive-menu__container"></button>
+
             <!-- Flowered menu container -->
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasWithBackdrop"
-                aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="responsive-menu__container">
                 <!-- We probably remove this header -->
-                <div class="offcanvas-header">
-                    <button id="close-menu" type="button" class="btn" data-bs-dismiss="offcanvas"></button>
+                <div class="menu-header">
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <!-- Body of the menu -->
-                <div id="burger-menu-container" class="offcanvas-body">
+                <div id="menu-burger__container" class="offcanvas-body">
                     <img src="./img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
@@ -59,14 +56,14 @@
         </div>
 
         <!-- Remove div container for the navigation bar and replace the image logo for text logo reordering the elements of navigation bar -->
-        <nav class="header-nav-container">
+        <nav class="header-nav__container">
             <ul class="header-nav__left">
                 <li><a href="./pages/about-us.html">About</a></li>
-                <li><a href="#specials-section">Specials</a></li>
+                <li><a href="./index.html#specials-section">Specials</a></li>
                 <li><a href="./pages/menus.html">Menu</a></li>
             </ul>
             <div class="header-nav__center">
-                <a href="#main">xchel</a>
+                <a href="./index.html">xchel</a>
             </div>
             <ul class="header-nav__right">
                 <li><a href="./pages/chef.html">Chef</a></li>
@@ -77,10 +74,10 @@
     </header>
     <!-- About section -->
     <section class="container_85">
-        <div id="about-section" class="about-section-main">
+        <div class="about-section-main">
             <div class="about-section-container">
-                <div id="about-img" class="about-section-container_image"></div>
-                <div id="about-info" class="about-section-container_info">
+                <div id="about-img" class="about-section-container__image"></div>
+                <div id="about-info" class="about-section-container__info">
                     <h2>About Us</h2>
                     <img src="./img/divider_tomato.svg" alt="Red divider for about title">
                     <p>
@@ -101,22 +98,22 @@
         </div>
     </section>
     <!-- Quote's section -->
-    <div class="container_85 parallax-quote-container">
-        <div class="parallax-quote-container_opacity"></div>
-        <div class="parallax-quote-container_text">
+    <div id="quotes-bg-img" class="container_85 parallax-generic-container">
+        <div class="parallax-generic-container__opacity"></div>
+        <div class="parallax-generic-container__text">
             <h3></h3>
             <img src="./img/divider_tomato.svg" alt="Red divider for quotes">
         </div>
     </div>
     <!-- Special dishes of the month section -->
     <section class="container_85">
-        <div id="specials-section" class="specials-section-container">
+        <div id="specials-section" class="specials-section">
             <h2>This month specials</h2>
             <img src="./img/divider_tomato.svg" alt="Red divider for specials title">
-            <div class="specials-section_grid-container">
-                <div id="dish_1" class="specials-section_dish-container">
-                    <div id="dish_img1" class="specials-section_dish-container_lg-image"></div>
-                    <div id="dish_info1" class="specials-section_dish-container_lg-info">
+            <div class="specials-section__grid-container">
+                <div id="dish_1" class="specials-section__dish-container">
+                    <div id="dish_img1" class="specials-section__dish-container--lg-image"></div>
+                    <div id="dish_info1" class="specials-section__dish-container--lg-info">
                         <h3>Chili in nogada</h3>
                         <img src="./img/divider_tomato.svg" alt="Red divider for dishes">
                         <span>$15.50</span>
@@ -124,9 +121,9 @@
                             pomegranate and a walnut cream and sherry.</p>
                     </div>
                 </div>
-                <div id="dish_2" class="specials-section_dish-container">
-                    <div id="dish_img2" class="specials-section_dish-container_lg-image"></div>
-                    <div id="dish_info2" class="specials-section_dish-container_lg-info">
+                <div id="dish_2" class="specials-section__dish-container">
+                    <div id="dish_img2" class="specials-section__dish-container--lg-image"></div>
+                    <div id="dish_info2" class="specials-section__dish-container--lg-info">
                         <h3>Charcoal wild salmon</h3>
                         <img src="./img/divider_tomato.svg" alt="Red divider for dishes">
                         <span>$18.45</span>
@@ -134,18 +131,18 @@
                             with pine nut (free of hormones and antibiotics).</p>
                     </div>
                 </div>
-                <div id="dish_3" class="specials-section_dish-container">
-                    <div id="dish_img3" class="specials-section_dish-container_lg-image"></div>
-                    <div id="dish_info3" class="specials-section_dish-container_lg-info">
+                <div id="dish_3" class="specials-section__dish-container">
+                    <div id="dish_img3" class="specials-section__dish-container--lg-image"></div>
+                    <div id="dish_info3" class="specials-section__dish-container--lg-info">
                         <h3>Oaxaque&ntilde;o green mole of pepita with pork</h3>
                         <img src="./img/divider_tomato.svg" alt="Red divider for dishes">
                         <span>$11</span>
                         <p>Prepared with tomatillo and holy leaf. It is served with blue corn tortillas.</p>
                     </div>
                 </div>
-                <div id="dish_4" class="specials-section_dish-container">
-                    <div id="dish_img4" class="specials-section_dish-container_lg-image"></div>
-                    <div id="dish_info4" class="specials-section_dish-container_lg-info">
+                <div id="dish_4" class="specials-section__dish-container">
+                    <div id="dish_img4" class="specials-section__dish-container--lg-image"></div>
+                    <div id="dish_info4" class="specials-section__dish-container--lg-info">
                         <h3>Ceviche with tequila</h3>
                         <img src="./img/divider_tomato.svg" alt="Red divider for dishes">
                         <span>$13.40</span>
@@ -153,18 +150,18 @@
                             sauteed.</p>
                     </div>
                 </div>
-                <div id="dish_5" class="specials-section_dish-container">
-                    <div id="dish_img5" class="specials-section_dish-container_lg-image"></div>
-                    <div id="dish_info5" class="specials-section_dish-container_lg-info">
+                <div id="dish_5" class="specials-section__dish-container">
+                    <div id="dish_img5" class="specials-section__dish-container--lg-image"></div>
+                    <div id="dish_info5" class="specials-section__dish-container--lg-info">
                         <h3>Poblano chalupas</h3>
                         <img src="./img/divider_tomato.svg" alt="Red divider for dishes">
                         <span>$13</span>
                         <p>Three green and three red, in a fried tortilla with shredded beef and onion.</p>
                     </div>
                 </div>
-                <div id="dish_6" class="specials-section_dish-container">
-                    <div id="dish_img6" class="specials-section_dish-container_lg-image"></div>
-                    <div id="dish_info6" class="specials-section_dish-container_lg-info">
+                <div id="dish_6" class="specials-section__dish-container">
+                    <div id="dish_img6" class="specials-section__dish-container--lg-image"></div>
+                    <div id="dish_info6" class="specials-section__dish-container--lg-info">
                         <h3>Creole Corn Esquites</h3>
                         <img src="./img/divider_tomato.svg" alt="Red divider for dishes">
                         <span>$9.75</span>
@@ -178,16 +175,14 @@
     <section class="container_85">
         <div class="intro-menu-section-container">
             <div class="ingredients-container">
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" id="fruit-container"
-                    class="ingredients-container_generic">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" class="ingredients-container__generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-1.png" alt="Fruit ingredient icon"></img>
                     </div>
                     <p>All our ingredients are fresh and brought first-hand, that is why the availability varies
                         according to theseason. In case of having that ingredient, it will be substituted.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-mirror="true"
-                    id="seafood-container" class="ingredients-container_generic">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-mirror="true" class="ingredients-container__generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-2.png" alt="Seafood ingredient icon"></img>
                     </div>
@@ -195,16 +190,14 @@
                         origin, free of chemicals, hormones and pesticides, contributing to a relationship in balance
                         with nature.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000" data-aos-mirror="true"
-                    id="vegetables-container" class="ingredients-container_generic">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000" data-aos-mirror="true" class="ingredients-container__generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-3.png" alt="Vegetables ingredient icon"></img>
                     </div>
                     <p>In our restaurant, we have responsible consumption, which is based on consuming less and that
                         what we consume is as sustainable and supportive as possible.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" data-aos-mirror="true"
-                    id="meat-container" class="ingredients-container_generic">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" data-aos-mirror="true" class="ingredients-container__generic">
                     <div>
                         <img src="./img/intro-menu-section/ingredient-4.png" alt="Meat ingredient icon"></img>
                     </div>
@@ -215,10 +208,10 @@
     </section>
     <!-- Chef section -->
     <section class="container_85">
-        <div id="chef-section" class="chef-section-container">
+        <div class="chef-section-container">
             <div class="chef-section">
-                <div class="chef-section_image"></div>
-                <div class="chef-section_info">
+                <div class="chef-section__image"></div>
+                <div class="chef-section__info">
                     <h2>Our chef</h2>
                     <img src="./img/divider_tomato.svg" alt="Red divider for chef title">
                     <p>Martha Elena Ortiz Chapa was destined to be conceived on Mexican soil, to carry the brilliance
@@ -230,9 +223,9 @@
         </div>
     </section>
     <!-- Book a table section -->
-    <div id="reservations-section" class="container_85 parallax-book-table-container">
-        <div class="parallax-book-table-container_opacity"></div>
-        <div class="parallax-book-table-container_text">
+    <div id="book-table-bg-img" class="container_85 parallax-generic-container">
+        <div class="parallax-generic-container__opacity"></div>
+        <div class="parallax-generic-container__text">
             <h2>Book a table now</h2>
             <img src="./img/divider_tomato.svg" alt="Red divider for booking title">
             <p>Xchel proudly possesses the heritage of Mexican urban customs. Its gastronomic character is festive and
@@ -244,32 +237,32 @@
     <footer>
         <!--Section of the footer which contains the copyright xD -->
         <div class="footer-section">
-            <div class="footer-section-flex">
-                <div class="footer-section_brand-logo">
+            <div class="footer-section__flex">
+                <div class="brand-logo">
                     <div>
                         <img src="./img/logos/xchel/whiteTitledLogo.png" alt="Xchel white titled logo">
                     </div>
-                    <div class="footer-section_brand-logo_text">
+                    <div class="brand-logo__text">
                         <p>Xchel are the modernist expressions of traditional cuisine. The natural generosity of Mexico
                             is the inspiration of chef Martha Ortiz. Her art is a response to the colors, textures, stories
                             and spirit of her beloved country.</p>
                     </div>
                 </div>
-                <div class="footer-section_social-container">
-                    <div class="footer-section_social-title">
+                <div class="footer-section__social">
+                    <div class="footer-section__social--title">
                         <span>¡Follow us!</span>
                     </div>
-                    <div class="footer-section_social-images">
+                    <div class="footer-section__social--images">
                         <img src="./img/footer/facebook.png" alt="Facebook logo image">
                         <img src="./img/footer/instagram.png" alt="Instagrame logo image">
                         <img src="./img/footer/twitter.png" alt="Twitter logo image">
                     </div>
-                    <div class="footer-section_social-direction">
+                    <div class="footer-section__social--direction">
                         <span>@XchelMexicanCuisine</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-section_credits">
+            <div class="footer-section__credits">
                 <span>&copy; Copyright 2021 Xchel | All rights reserved</span>
                 <span>Made with <span id="heart-icon">&#10084;&#65039;</span> + 
                 <span id="hot-bevereage">&#9749;</span> by GarciHard</span>
@@ -277,10 +270,10 @@
             </div>
         </div>
     </footer>
-
 </body>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 
 </html>

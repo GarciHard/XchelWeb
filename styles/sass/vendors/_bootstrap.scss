@@ -1,0 +1,24 @@
+// Pill of the menu
+$nav-pills-link-active-bg: $global-accent-color;
+$nav-link-transition: 0;
+
+/* Including bootstrap */
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Modifying properties of list and paragraph
+ol,
+ul {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+// Hover of the nav link pill of the menu
+.nav-link {
+  &:hover {
+    border: 0.2rem solid $global-accent-color;
+    color: $global-secondary-color;
+  }
+}

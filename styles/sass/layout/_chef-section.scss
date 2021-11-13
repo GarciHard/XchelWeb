@@ -1,0 +1,42 @@
+.chef-section-container {
+  background-color: $global-secondary-color;
+  height: auto;
+  width: 100%;
+  padding: 5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chef-section {
+  @include flexDirection($global-flex-colum);
+  @include genericBoxShadow(2rem, $default-container-85-shadow);
+  @include sizes(auto, 100%);
+  &__image {
+    @include genericCardImg($chef-section-img, auto, 100%);
+    border: {
+      radius: 0 2rem 2rem 0;
+    }
+  }
+  &__info {
+    @include genericCardInfo($default-index-section-img-bg, auto, 90%);
+  }
+}
+  
+/*------------------------------------------------ CHEF SECTION RESPONSIVE */
+@media (min-width: 600px) {
+  .chef-section-container {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .chef-section {
+    flex-direction: row-reverse;
+    &__info {
+      border: {
+        radius: 2rem 0 0 2rem;
+      }
+    }
+  }
+}

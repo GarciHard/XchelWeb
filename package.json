@@ -4,16 +4,26 @@
   "description": "Website for a \"fictitious\" restaurant as part of the project to be carried out in the Web Development course @ Coderhouse",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --source-map true ./styles/sass/main.scss ./styles/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GarciHard/XchelWeb.git"
   },
-  "author": "",
+  "author": "Alexis Garcia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GarciHard/XchelWeb/issues"
   },
-  "homepage": "https://github.com/GarciHard/XchelWeb#readme"
+  "homepage": "https://github.com/GarciHard/XchelWeb#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.3"
+  }
 }

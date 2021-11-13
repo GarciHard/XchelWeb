@@ -1,0 +1,72 @@
+/*------------------------------------------------ KEYFRAMES */
+/* Simple fade animation */
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade used in the navbar growth from bottom to top. */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(0, 100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  /* Before implementing bootstrap i made those carrousel be like 
+   * to change images and quotes on my parallax.
+  */
+  @keyframes changeParallax {
+    0% {
+      background-image: url(../../img/parallax/parallax_1.jpg);
+    }
+    50% {
+      background-image: url(../../img/parallax/parallax_2.jpg);
+    }
+    100% {
+      background-image: url(../../img/parallax/parallax_3.jpg);
+    }
+  }
+  
+  @keyframes changeQuotes {
+    0% {
+      opacity: 0;
+      content: '"Passion for the Mexican Flavor"';
+    }
+    24% {
+      opacity: 1;
+      content: '"Passion for the Mexican Flavor"';
+    }
+    25% {
+      opacity: 0;
+      content: '"Love beign mexican"';
+    }
+    49% {
+      opacity: 1;
+      content: '"Love beign mexican"';
+    }
+    50% {
+      opacity: 0;
+      content: '"The most important ingredient is passion"';
+    }
+    74% {
+      opacity: 1;
+      content: '"The most important ingredient is passion"';
+    }
+    75% {
+      opacity: 0;
+      content: '"Life serves to give beauty"';
+    }
+    100% {
+      opacity: 1;
+      content: '"Life serves to give beauty"';
+    }
+  }

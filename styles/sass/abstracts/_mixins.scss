@@ -1,0 +1,50 @@
+@mixin circleContainer() {
+    border: {
+        color: $global-secondary-color;
+        radius: 8rem;
+        style: solid;
+        width: 0.3rem;
+    }
+    
+    margin: 0 3rem 1rem;
+    padding: 2rem;
+}
+
+@mixin colorFontStyle ($fontColor, $fontStyle){
+    color: $fontColor;
+    font: $fontStyle;
+}
+
+@mixin flexDirection($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+}
+
+@mixin footerIconStyle($size) {
+    font-size: $size;
+}
+
+@mixin genericBoxShadow($border-radius, $shadow-color) {
+    border-radius: $border-radius;
+    box-shadow: $shadow-color;
+}
+
+@mixin genericImgBg() {
+    background: {
+        image: $default-index-section-img-bg;
+    }
+}
+
+@mixin removeFocus() {
+    box-shadow: none;
+    outline: none;
+}
+
+@mixin sizes($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin separatorImg() {
+    width: $global-separator-size;
+}
