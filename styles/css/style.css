@@ -893,8 +893,8 @@ body {
   #dish_6:hover .specials-section_dish-container_lg-image {
     border-radius: 2rem 0 0 2rem; } }
 
-/*------------------------------------------------ ABOUT PAGE */
-.about-main-container {
+/* Including our generic component with null arg */
+.generic-main-container {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -903,104 +903,100 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 5rem 2rem; }
 
-.about-header {
+.generic-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Probably in the future, we include more pages with this structure
+     * at this moment, we only evaluate if page equals to "chef" if not
+     * we assume is "about"
+     */
   margin-bottom: 2rem; }
-  .about-header h2, .about-header .h2 {
+  .generic-header h2, .generic-header .h2 {
     color: #fff;
     font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif;
     text-align: center; }
-  .about-header img {
+  .generic-header img {
     width: 25rem; }
 
-.about-paragraph > p {
+.generic-paragraph > p {
   color: #fff;
   font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
+  line-height: 2.5rem;
   text-align: center; }
 
-.anti-carousel {
+.generic-carousel {
   border-radius: 2rem;
   box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(255, 255, 255, 0.75);
   margin-top: 5rem; }
-  .anti-carousel img {
+  .generic-carousel img {
     border-radius: 2rem; }
 
-/*------------------------------------------------ ABOUT PAGE RESPONSIVE */
+/*------------------------------------------------ GENERIC PAGE RESPONSIVE */
 @media (min-width: 600px) {
-  .about-paragraph {
+  .generic-paragraph {
     width: 80%; }
-  .anti-carousel {
+  .generic-carousel {
     width: 45rem; } }
 
 @media (min-width: 900px) {
-  .about-paragraph {
+  .generic-paragraph {
     width: 60%; } }
 
-/*------------------------------------------------ CHEF PAGE */
-.chef-main-container {
+.generic-main-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
+  padding: 5rem 2rem; }
+
+.generic-header {
   display: flex;
   flex-direction: column;
-  height: auto;
-  padding: 5rem 2rem;
-  width: 100%; }
-
-.chef-header {
   align-items: center;
-  display: flex;
-  flex-direction: column;
+  /* Probably in the future, we include more pages with this structure
+     * at this moment, we only evaluate if page equals to "chef" if not
+     * we assume is "about"
+     */
   margin: 2rem 0; }
+  .generic-header h2, .generic-header .h2 {
+    color: #fff;
+    font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif;
+    text-align: center; }
+  .generic-header img {
+    width: 25rem; }
 
-.chef-header > h2, .chef-header > .h2 {
+.generic-paragraph > p {
   color: #fff;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: lighter; }
-
-.chef-header > img {
-  width: 25rem; }
-
-.chef-paragraph > p {
-  color: #fff;
-  font-family: "Merriweather", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  height: auto;
+  font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
   line-height: 2.5rem;
-  margin: 2rem 0;
   text-align: center; }
 
-.anti-chef-carousel {
+.generic-carousel {
   border-radius: 2rem;
   box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(255, 255, 255, 0.75);
   margin-top: 2rem; }
+  .generic-carousel p {
+    background-color: rgba(0, 0, 0, 0.55);
+    font: normal 300 1.2rem Merriweather, Arial, Helvetica, sans-serif;
+    padding: 1rem; }
+  .generic-carousel img {
+    border-radius: 2rem; }
 
-.anti-chef-carousel img {
-  border-radius: 2rem; }
-
-.anti-chef-carousel .carousel-caption {
+.generic-carousel .carousel-caption {
   left: 0; }
 
-.anti-chef-carousel p {
-  background-color: rgba(0, 0, 0, 0.55);
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 300;
-  padding: 1rem; }
-
-/*------------------------------------------------ CHEF PAGE RESPONSIVE */
+/*------------------------------------------------ GENERIC PAGE RESPONSIVE */
 @media (min-width: 600px) {
-  .chef-paragraph {
+  .generic-paragraph {
     width: 80%; }
-  .anti-chef-carousel {
+  .generic-carousel {
     width: 45rem; } }
 
 @media (min-width: 900px) {
-  .chef-paragraph {
+  .generic-paragraph {
     width: 60%; } }
 
 /*------------------------------------------------ CONTACT US PAGE */
@@ -9705,6 +9701,9 @@ textarea.form-control-lg {
 
 ol,
 ul {
-  padding-left: 0; }
+  padding: 0; }
+
+p {
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
