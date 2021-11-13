@@ -685,35 +685,66 @@ body {
   background-image: url(../../img/quote_3.jpg); }
 
 /*------------------------------------------------ SPECIALS SECTION */
-.specials-section-container {
-  align-items: center;
-  background-color: #fff;
+.specials-section {
   display: flex;
   flex-direction: column;
   height: auto;
-  justify-content: center;
-  width: 100%; }
-
-.specials-section-container > h2, .specials-section-container > .h2 {
-  color: #2d2d2d;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: lighter;
-  margin-top: 10rem;
-  text-align: center;
-  width: 100%; }
-
-.specials-section-container > img {
-  margin-bottom: 4rem;
-  width: 25rem; }
-
-.specials-section_grid-container {
-  box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
-  display: grid;
-  grid-template: "dish_1" 1fr "dish_2" 1fr "dish_3" 1fr "dish_4" 1fr "dish_5" 1fr "dish_6" 1fr / 1fr;
-  height: auto;
-  width: 100%; }
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center; }
+  .specials-section h2, .specials-section .h2 {
+    color: #2d2d2d;
+    font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif;
+    margin-top: 10rem;
+    text-align: center;
+    width: 100%; }
+  .specials-section > img {
+    width: 25rem;
+    margin-bottom: 4rem; }
+  .specials-section__grid-container {
+    height: auto;
+    width: 100%;
+    box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template: "dish_1" 1fr "dish_2" 1fr "dish_3" 1fr "dish_4" 1fr "dish_5" 1fr "dish_6" 1fr / 1fr; }
+  .specials-section__dish-container {
+    display: flex;
+    flex-direction: column; }
+    .specials-section__dish-container:hover {
+      animation: fade 1s normal;
+      box-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
+      transform: scale(1.05); }
+    .specials-section__dish-container--lg-image {
+      height: 40vw;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .specials-section__dish-container--lg-info {
+      display: flex;
+      flex-direction: column;
+      height: 60vw;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem; }
+      .specials-section__dish-container--lg-info h3, .specials-section__dish-container--lg-info .h3 {
+        color: #2d2d2d;
+        font: normal lighter 1.8rem "Playfair Display", Arial, Helvetica, sans-serif;
+        margin-top: 2rem;
+        text-align: center; }
+      .specials-section__dish-container--lg-info img {
+        width: 25rem; }
+      .specials-section__dish-container--lg-info span {
+        color: #5e493a;
+        font: normal 300 3rem Merriweather, Arial, Helvetica, sans-serif; }
+      .specials-section__dish-container--lg-info p {
+        color: #5e493a;
+        font: normal 300 1.4rem Merriweather, Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        margin: 2rem 0;
+        text-align: center; }
 
 #dish_1 {
   background-color: #faebcd;
@@ -757,145 +788,93 @@ body {
 #dish_img6 {
   background-image: url(../../img/popular-dishes/popular_dish6.jpg); }
 
-.specials-section_dish-container {
-  display: flex;
-  flex-direction: column; }
-
-.specials-section_dish-container:hover {
-  animation: fade 1s normal;
-  box-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
-  transform: scale(1.05); }
-
-.specials-section_dish-container_lg-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40vw;
-  width: 100%; }
-
-.specials-section_dish-container_lg-info {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 60vw;
-  justify-content: center;
-  padding: 1.5rem;
-  width: 100%; }
-
-.specials-section_dish-container_lg-info > h3, .specials-section_dish-container_lg-info > .h3 {
-  color: #2d2d2d;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-  font-weight: lighter;
-  text-align: center;
-  margin-top: 2rem; }
-
-.specials-section_dish-container_lg-info > img {
-  width: 25rem; }
-
-.specials-section_dish-container_lg-info > span {
-  color: #5e493a;
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-weight: 300; }
-
-.specials-section_dish-container_lg-info > p {
-  color: #222;
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 1.6;
-  margin: 2rem 0;
-  text-align: center; }
-
 /*------------------------------------------------ SPECIAL SECTION RESPONSIVE */
 @media (min-width: 600px) {
-  .specials-section_grid-container {
+  .specials-section__grid-container {
     border-radius: 2rem;
     grid-template: "dish_1" 1fr "dish_2" 1fr "dish_3" 1fr "dish_4" 1fr "dish_5" 1fr "dish_6" 1fr / 1fr;
     width: 85%;
     margin-bottom: 5rem; }
-  .specials-section_dish-container {
+  .specials-section__dish-container {
     flex-direction: row; }
+    .specials-section__dish-container--lg-image {
+      height: 100%;
+      width: 50%; }
+    .specials-section__dish-container--lg-info {
+      height: 100%;
+      width: 50%; }
+      .specials-section__dish-container--lg-info img {
+        width: 20rem; }
+    .specials-section__dish-container:hover {
+      animation: fade 1s normal;
+      border-radius: 2rem;
+      box-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
+      transform: scale(1.05); }
+      .specials-section__dish-container:hover .specials-section__dish-container--lg-image {
+        border-radius: 0 2rem 2rem 0; }
   #dish_2,
   #dish_4,
   #dish_6 {
     flex-direction: row-reverse; }
   #dish_1 {
     border-radius: 2rem 2rem 0; }
+    #dish_1:hover {
+      border-radius: 2rem;
+      /* Used for dish 2 & 4 */ }
+      #dish_1:hover .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem; }
   #dish_img1 {
     border-radius: 2rem 0 0; }
   #dish_6 {
     border-radius: 0 0 2rem 2rem; }
+    #dish_6:hover {
+      border-radius: 2rem; }
+      #dish_6:hover .specials-section__dish-container--lg-image {
+        border-radius: 0 2rem 2rem 0; }
   #dish_img6 {
     border-radius: 0 0 2rem; }
-  .specials-section_dish-container_lg-image {
-    height: 100%;
-    width: 50%; }
-  .specials-section_dish-container_lg-info {
-    height: 100%;
-    width: 50%; }
-  .specials-section_dish-container_lg-info > img {
-    width: 20rem; }
-  .specials-section_dish-container:hover {
-    animation: fade 1s normal;
-    border-radius: 2rem;
-    box-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
-    transform: scale(1.05); }
-  #dish_1:hover {
-    border-radius: 2rem; }
-  #dish_1:hover .specials-section_dish-container_lg-image {
+  #dish_3:hover .specials-section__dish-container--lg-image {
     border-radius: 2rem 0 0 2rem; }
-  /* Used for dish 2 & 4 */
-  .specials-section_dish-container:hover .specials-section_dish-container_lg-image {
-    border-radius: 0 2rem 2rem 0; }
-  #dish_3:hover .specials-section_dish-container_lg-image {
-    border-radius: 2rem 0 0 2rem; }
-  #dish_5:hover .specials-section_dish-container_lg-image {
-    border-radius: 2rem 0 0 2rem; }
-  #dish_6:hover {
-    border-radius: 2rem; }
-  #dish_6:hover .specials-section_dish-container_lg-image {
-    border-radius: 0 2rem 2rem 0; } }
+  #dish_5:hover .specials-section__dish-container--lg-image {
+    border-radius: 2rem 0 0 2rem; } }
 
 @media (min-width: 1000px) {
-  .specials-section_grid-container {
+  .specials-section__grid-container {
     grid-template: "dish_1 dish_2" 1fr "dish_1 dish_3" 1fr "dish_4 dish_6" 1fr "dish_5 dish_6" 1fr / 1fr 1fr;
     width: 90%; }
+  .specials-section__dish-container--lg-info img {
+    width: 18rem; }
+  .specials-section__dish-container:hover .specials-section__dish-container--lg-image {
+    border-radius: 0 2rem 2rem 0; }
   #dish_2,
   #dish_6 {
     flex-direction: row; }
   #dish_3 {
     flex-direction: row-reverse; }
+    #dish_3:hover .specials-section__dish-container--lg-image {
+      border-radius: 0 2rem 2rem 0; }
   #dish_1 {
     border-radius: 2rem 0 0; }
   #dish_2 {
     border-radius: 0 2rem 0; }
+    #dish_2:hover {
+      border-radius: 2rem; }
+      #dish_2:hover .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem; }
   #dish_5 {
     border-radius: 0 0 0 2rem; }
+    #dish_5:hover {
+      border-radius: 2rem; }
+      #dish_5:hover .specials-section__dish-container--lg-image {
+        border-radius: 2rem 0 0 2rem; }
   #dish_img5 {
     border-radius: 0 0 0 2rem; }
   #dish_img6 {
     border-radius: 0; }
-  .specials-section_dish-container_lg-info > img {
-    width: 18rem; }
-  #dish_2:hover {
-    border-radius: 2rem; }
-  #dish_2:hover .specials-section_dish-container_lg-image {
-    border-radius: 2rem 0 0 2rem; }
-  /* Used for dish 2 & 4 */
-  .specials-section_dish-container:hover .specials-section_dish-container_lg-image {
-    border-radius: 0 2rem 2rem 0; }
-  #dish_3:hover .specials-section_dish-container_lg-image {
-    border-radius: 0 2rem 2rem 0; }
-  #dish_5:hover {
-    border-radius: 2rem; }
-  #dish_5:hover .specials-section_dish-container_lg-image {
-    border-radius: 2rem 0 0 2rem; }
   #dish_6:hover {
     border-radius: 2rem; }
-  #dish_6:hover .specials-section_dish-container_lg-image {
-    border-radius: 2rem 0 0 2rem; } }
+    #dish_6:hover .specials-section__dish-container--lg-image {
+      border-radius: 2rem 0 0 2rem; } }
 
 /* Including our generic component with null arg */
 .generic-main-container {
@@ -1003,71 +982,61 @@ body {
   .generic-paragraph {
     width: 60%; } }
 
-/*------------------------------------------------ CONTACT US PAGE */
-.contact-title-banner {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+.generic-title {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
   height: 10rem;
   justify-content: center;
   margin: 3.5rem 0; }
+  .generic-title h2, .generic-title .h2 {
+    color: #fff;
+    font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif; }
+  .generic-title img {
+    width: 25rem; }
 
-.contact-title-banner > h2, .contact-title-banner > .h2 {
+.generic-form {
   color: #fff;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: lighter; }
-
-.contact-title-banner > img {
-  width: 25rem; }
-
-.contact-form-main {
+  font: normal 300 1.4rem Merriweather, Arial, Helvetica, sans-serif;
+  border-radius: 2rem;
   box-shadow: 0 0.2rem 2.5rem -0.5rem black; }
+  .generic-form__main {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0.2rem 2.5rem -0.5rem black;
+    border-radius: 2rem;
+    margin: 0 0 3.5rem;
+    max-width: 100%;
+    padding: 5rem; }
+    .generic-form__main textarea {
+      resize: none; }
+  .generic-form__buttons {
+    display: flex;
+    justify-content: space-evenly; }
+    .generic-form__buttons button {
+      height: 3rem;
+      width: 10rem;
+      margin: 1rem 0 0; }
 
-.contact-form-container-85 {
-  border-radius: 2rem;
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300; }
-
-.contact-form-main {
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 2rem;
-  color: #fff;
-  margin: 0 0 3.5rem;
-  max-width: 100%;
-  padding: 5rem; }
-
-.contact-form-buttons {
-  display: flex;
-  justify-content: space-evenly; }
-
-.contact-form-buttons > button {
-  height: 3rem;
-  margin: 1rem 0 0;
-  width: 10rem; }
-
-/*------------------------------------------------ CONTACT US PAGE RESPONSIVE */
+/*------------------------------------------------ GENERIC FORM RESPONSIVE */
 @media (min-width: 576px) {
-  #contact-form {
+  #generic-form {
     width: 65%; } }
 
 @media (min-width: 768px) {
-  #contact-form {
+  #generic-form {
     width: 55%; } }
 
 @media (min-width: 992px) {
-  #contact-form {
+  #generic-form {
     width: 45%; } }
 
 @media (min-width: 1200px) {
-  #contact-form {
+  #generic-form {
     width: 35%; } }
 
 @media (min-width: 1400px) {
-  #contact-form {
+  #generic-form {
     width: 25%; } }
 
 /*------------------------------------------------ MENU PAGE */
@@ -1148,8 +1117,7 @@ body {
   .menu-section {
     width: 65rem; } }
 
-/*------------------------------------------------ RESERVATIONS PAGE */
-.reservation-title {
+.generic-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1157,60 +1125,63 @@ body {
   height: 10rem;
   justify-content: center;
   margin: 3.5rem 0; }
-  .reservation-title h2, .reservation-title .h2 {
+  .generic-title h2, .generic-title .h2 {
     color: #fff;
     font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif; }
-  .reservation-title img {
+  .generic-title img {
     width: 25rem; }
 
-.reservation-form {
+.generic-form {
   color: #fff;
   font: normal 300 1.4rem Merriweather, Arial, Helvetica, sans-serif;
-  border-radius: 2rem; }
-  .reservation-form__main {
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 2.5rem -0.5rem black; }
+  .generic-form__main {
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0.2rem 2.5rem -0.5rem black;
     border-radius: 2rem;
     margin: 0 0 3.5rem;
     max-width: 100%;
     padding: 5rem; }
-    .reservation-form__main hr {
-      margin: 2rem 0; }
-    .reservation-form__main div:nth-child(8), .reservation-form__main div:nth-child(7), .reservation-form__main div:nth-child(6), .reservation-form__main div:nth-child(5) {
-      display: inline-block;
-      width: 49%; }
-      .reservation-form__main div:nth-child(8) small, .reservation-form__main div:nth-child(8) .small, .reservation-form__main div:nth-child(7) small, .reservation-form__main div:nth-child(7) .small, .reservation-form__main div:nth-child(6) small, .reservation-form__main div:nth-child(6) .small, .reservation-form__main div:nth-child(5) small, .reservation-form__main div:nth-child(5) .small {
-        font-size: 1rem; }
-    .reservation-form__main div textarea {
+    .generic-form__main textarea {
       resize: none; }
-  .reservation-form__buttons {
+  .generic-form__buttons {
     display: flex;
     justify-content: space-evenly; }
-    .reservation-form__buttons button {
+    .generic-form__buttons button {
       height: 3rem;
       width: 10rem;
       margin: 1rem 0 0; }
 
-/*------------------------------------------------ RESERVATIONS PAGE RESPONSIVE */
+/*------------------------------------------------ GENERIC FORM RESPONSIVE */
 @media (min-width: 576px) {
-  #reservation-form {
+  #generic-form {
     width: 65%; } }
 
 @media (min-width: 768px) {
-  #reservation-form {
+  #generic-form {
     width: 55%; } }
 
 @media (min-width: 992px) {
-  #reservation-form {
+  #generic-form {
     width: 45%; } }
 
 @media (min-width: 1200px) {
-  #reservation-form {
+  #generic-form {
     width: 35%; } }
 
 @media (min-width: 1400px) {
-  #reservation-form {
+  #generic-form {
     width: 25%; } }
+
+#reservation-form-aux hr {
+  margin: 2rem 0; }
+
+#reservation-form-aux div:nth-child(8), #reservation-form-aux div:nth-child(7), #reservation-form-aux div:nth-child(6), #reservation-form-aux div:nth-child(5) {
+  display: inline-block;
+  width: 49%; }
+  #reservation-form-aux div:nth-child(8) small, #reservation-form-aux div:nth-child(8) .small, #reservation-form-aux div:nth-child(7) small, #reservation-form-aux div:nth-child(7) .small, #reservation-form-aux div:nth-child(6) small, #reservation-form-aux div:nth-child(6) .small, #reservation-form-aux div:nth-child(5) small, #reservation-form-aux div:nth-child(5) .small {
+    font-size: 1rem; }
 
 body[data-aos-duration='50'] [data-aos], [data-aos][data-aos][data-aos-duration='50'] {
   transition-duration: 50ms; }

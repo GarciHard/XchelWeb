@@ -1,0 +1,85 @@
+@mixin genericReservationContactForm() {
+  
+  .generic-title {
+    @include flexDirection($global-flex-colum);
+    align-items: center;
+    background-color: $bgc-container-black-90;
+    height: 10rem;
+    justify-content: center;
+    margin: 3.5rem 0;
+
+    h2 {
+      @include colorFontStyle(
+        $global-secondary-color,
+        $default-title-page-style
+      );
+    }
+
+    img {
+      @include separatorImg;
+    }
+  }
+
+  .generic-form {
+    @include colorFontStyle(
+      $global-secondary-color,
+      $reservations-page-font-style
+    );
+    border-radius: 2rem;
+    box-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 1);
+
+    &__main {
+      background-color: $bgc-container-black-90;
+      box-shadow: $default-form-contact-reservation-shadow;
+      border-radius: 2rem;
+      margin: 0 0 3.5rem;
+      max-width: 100%;
+      padding: 5rem;
+
+      textarea {
+        resize: none;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        @include sizes(3rem, 10rem);
+        margin: 1rem 0 0;
+      }
+    }
+  }
+
+  /*------------------------------------------------ GENERIC FORM RESPONSIVE */
+  @media (min-width: 576px) {
+    #generic-form {
+      width: 65%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #generic-form {
+      width: 55%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    #generic-form {
+      width: 45%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #generic-form {
+      width: 35%;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    #generic-form {
+      width: 25%;
+    }
+  }
+}

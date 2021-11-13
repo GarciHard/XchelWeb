@@ -1,6 +1,7 @@
 $default-body-background: url(../../img/chef/flowers.png);
 $default-carousel-container-shadow: 0 0.2rem 2.5rem -0.5rem rgba(255, 255, 255, 0.75);
 $default-container-85-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.75);
+$default-container-75-shadow: 0 0.2rem 5rem -0.5rem rgba(0, 0, 0, 0.75);
 $default-font-group: Arial, Helvetica, sans-serif;
 $default-form-contact-reservation-shadow: 0 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 1);
 $default-header-nav-shadow: 0 1.4rem 1.4rem -1.4rem rgba(0, 0, 0, 0.75);
@@ -34,6 +35,16 @@ $bgc-container-black-90: rgba(0, 0, 0, 0.9);
 $bgc-container-black-50: rgba(0, 0, 0, 0.5);
 $bgc-container-black-55: rgba(0, 0, 0, 0.55);
 $bgc-container-white-90: rgba(255, 255, 255, 0.9);
+
+$month-special-primary-color: #faebcd;
+$month-special-secondary-color: #f5f5f5;
+$month-special-price-color: #5e493a;
+$month-special-paragraph-color: #222;
+
+$month-special-font-title-style: normal lighter 1.8rem "Playfair Display", $default-font-group;
+$month-special-font-price-style: normal 300 3rem Merriweather, $default-font-group;
+
+
 
 $parallax-main-title-font-style: italic 700 10rem "Playfair Display", $default-font-group;
 $parallax-main-subtitle-font-style: normal 300 1.5rem Merriweather, $default-font-group;
