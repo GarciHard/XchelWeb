@@ -1163,35 +1163,33 @@ body {
   .reservation-title img {
     width: 25rem; }
 
-.reservation-form__container-85 {
-  border-radius: 2rem;
-  font-family: Merriweather, Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300; }
-
-.reservation-form__main {
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0.2rem 2.5rem -0.5rem black;
-  border-radius: 2rem;
+.reservation-form {
   color: #fff;
-  margin: 0 0 3.5rem;
-  max-width: 100%;
-  padding: 5rem; }
-  .reservation-form__main hr {
-    margin: 2rem 0; }
-  .reservation-form__main div:nth-child(8), .reservation-form__main div:nth-child(7), .reservation-form__main div:nth-child(6), .reservation-form__main div:nth-child(5) {
-    display: inline-block;
-    width: 49%; }
-    .reservation-form__main div:nth-child(8) small, .reservation-form__main div:nth-child(8) .small, .reservation-form__main div:nth-child(7) small, .reservation-form__main div:nth-child(7) .small, .reservation-form__main div:nth-child(6) small, .reservation-form__main div:nth-child(6) .small, .reservation-form__main div:nth-child(5) small, .reservation-form__main div:nth-child(5) .small {
-      font-size: 1rem; }
-
-.reservation-form__buttons {
-  display: flex;
-  justify-content: space-evenly; }
-  .reservation-form__buttons button {
-    height: 3rem;
-    margin: 1rem 0 0;
-    width: 10rem; }
+  font: normal 300 1.4rem Merriweather, Arial, Helvetica, sans-serif;
+  border-radius: 2rem; }
+  .reservation-form__main {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0.2rem 2.5rem -0.5rem black;
+    border-radius: 2rem;
+    margin: 0 0 3.5rem;
+    max-width: 100%;
+    padding: 5rem; }
+    .reservation-form__main hr {
+      margin: 2rem 0; }
+    .reservation-form__main div:nth-child(8), .reservation-form__main div:nth-child(7), .reservation-form__main div:nth-child(6), .reservation-form__main div:nth-child(5) {
+      display: inline-block;
+      width: 49%; }
+      .reservation-form__main div:nth-child(8) small, .reservation-form__main div:nth-child(8) .small, .reservation-form__main div:nth-child(7) small, .reservation-form__main div:nth-child(7) .small, .reservation-form__main div:nth-child(6) small, .reservation-form__main div:nth-child(6) .small, .reservation-form__main div:nth-child(5) small, .reservation-form__main div:nth-child(5) .small {
+        font-size: 1rem; }
+    .reservation-form__main div textarea {
+      resize: none; }
+  .reservation-form__buttons {
+    display: flex;
+    justify-content: space-evenly; }
+    .reservation-form__buttons button {
+      height: 3rem;
+      width: 10rem;
+      margin: 1rem 0 0; }
 
 /*------------------------------------------------ RESERVATIONS PAGE RESPONSIVE */
 @media (min-width: 576px) {
