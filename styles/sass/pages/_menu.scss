@@ -16,14 +16,13 @@
   }
 
   ul {
+    @include sizes(5rem, inherit);
     align-items: center;
-    color: #fff;
+    color: $global-secondary-color;
     display: flex;
-    height: 5rem;
     justify-content: center;
     list-style: none;
     margin: 2rem 0;
-    width: inherit;
 
     li {
       align-items: center;
@@ -33,25 +32,11 @@
       margin: 0 0.2rem;
 
       button {
-        color: #fff;
-        font-family: Merriweather, Arial, Helvetica, sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
+        @include colorFontStyle($global-secondary-color, $parallax-main-subtitle-font-style);
         text-decoration: none;
       }
     }
   }
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: $global-accent-color;
-  color: $global-secondary-color;
-}
-
-.nav-pills .nav-link:hover {
-  border: 0.2rem solid $global-accent-color;
-  color: $global-secondary-color;
 }
 
 #pills-tabContent {

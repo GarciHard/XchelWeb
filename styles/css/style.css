@@ -1086,14 +1086,14 @@ body {
   .menu-section-container img {
     width: 25rem; }
   .menu-section-container ul {
+    height: 5rem;
+    width: inherit;
     align-items: center;
     color: #fff;
     display: flex;
-    height: 5rem;
     justify-content: center;
     list-style: none;
-    margin: 2rem 0;
-    width: inherit; }
+    margin: 2rem 0; }
     .menu-section-container ul li {
       align-items: center;
       border-radius: 1rem;
@@ -1102,19 +1102,8 @@ body {
       margin: 0 0.2rem; }
       .menu-section-container ul li button {
         color: #fff;
-        font-family: Merriweather, Arial, Helvetica, sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
+        font: normal 300 1.5rem Merriweather, Arial, Helvetica, sans-serif;
         text-decoration: none; }
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: #fb6e14;
-  color: #fff; }
-
-.nav-pills .nav-link:hover {
-  border: 0.2rem solid #fb6e14;
-  color: #fff; }
 
 #pills-tabContent {
   display: flex;
@@ -4819,7 +4808,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   color: #0d6efd;
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+  transition: 0; }
   @media (prefers-reduced-motion: reduce) {
     .nav-link {
       transition: none; } }
@@ -4863,7 +4852,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd; }
+  background-color: #fb6e14; }
 
 .nav-fill > .nav-link,
 .nav-fill .nav-item {
@@ -9709,5 +9698,9 @@ ul {
 
 p {
   margin: 0; }
+
+.nav-link:hover {
+  border: 0.2rem solid #fb6e14;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
