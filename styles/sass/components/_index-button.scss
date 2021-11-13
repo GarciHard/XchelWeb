@@ -1,4 +1,5 @@
 @mixin genericIndexButton() {
+    
     @include colorFontStyle($global-secondary-color, $default-index-text-button-style);
     @include sizes(4rem, 15rem);
     align: {
