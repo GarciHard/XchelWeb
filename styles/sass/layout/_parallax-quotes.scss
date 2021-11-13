@@ -1,45 +1,5 @@
-/*------------------------------------------------ PARALLAX QUOTES */
-.parallax-quote-container {
-  background-attachment: fixed;
+@include genericParallax($default-null-arg);
+
+#quotes-bg-img {
   background-image: url(../../img/quote_3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  z-index: 1;
-
-  &__opacity {
-    @include sizes(inherit, inherit);
-    background-color: #000;
-    opacity: 0.5;
-    position: absolute;
-    z-index: 3;
-  }
-
-  &__text {
-    @include flexDirection($global-flex-colum);
-    @include sizes(inherit, inherit);
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-    z-index: 3;
-
-    h3 {
-      @include colorFontStyle(
-        $global-secondary-color,
-        $parallax-quotes-font-style
-      );
-      letter-spacing: 0.2rem;
-
-      &::before {
-        content: '"Passion for the mexican flavor"';
-        animation: changeQuotes calc(20000ms) linear infinite;
-      }
-    }
-
-    img {
-      @include separatorImg;
-    }
-  }
 }

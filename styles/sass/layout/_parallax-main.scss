@@ -9,11 +9,7 @@
   z-index: 1;
 
   &__opacity {
-    @include sizes(100%, 100%);
-    background-color: #000;
-    opacity: 0.5;
-    position: absolute;
-    z-index: 2;
+    @include genericOpacityForParallax(100%, 100%);
   }
 
   &__titles {

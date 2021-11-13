@@ -525,74 +525,76 @@ body {
   .responsive-menu {
     display: none; } }
 
-/*------------------------------------------------ PARALLAX BOOK TABLE */
-.parallax-book-table-container {
+.parallax-generic-container {
   background-attachment: fixed;
-  background-image: url(../../img/reservations/parallax-reservations4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50rem;
   z-index: 1; }
-  .parallax-book-table-container__opacity {
-    background-color: #000;
+  .parallax-generic-container__opacity {
     height: inherit;
-    width: 85%;
+    width: inherit;
+    background-color: #000;
     opacity: 0.5;
     position: absolute;
     z-index: 2; }
-  .parallax-book-table-container__text {
+  .parallax-generic-container__text {
     display: flex;
     flex-direction: column;
     height: inherit;
     width: inherit;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
     position: absolute;
     text-align: center;
-    z-index: 3; }
-    .parallax-book-table-container__text h2, .parallax-book-table-container__text .h2 {
-      color: #fff;
-      font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif;
-      letter-spacing: 0.2rem; }
-    .parallax-book-table-container__text img {
-      width: 25rem;
-      margin-bottom: 2rem; }
-    .parallax-book-table-container__text p {
-      color: #fff;
-      font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
-      letter-spacing: 0.2rem;
-      margin-bottom: 6rem;
-      width: 90%; }
-    .parallax-book-table-container__text a {
-      color: #fff;
-      font: normal lighter 1.2rem "Playfair Display", Arial, Helvetica, sans-serif;
-      height: 4rem;
-      width: 15rem;
-      align-items: center;
-      background-color: transparent;
-      border-color: #fb6e14;
-      border-radius: 1rem;
-      border-style: solid;
-      border-width: 0.2rem;
-      display: flex;
-      justify-content: center;
-      margin: 2rem 0;
-      text-decoration: none;
-      margin: 0; }
-      .parallax-book-table-container__text a:hover {
-        background-color: #fb6e14;
-        color: #fff; }
+    z-index: 3;
+    padding: 5rem 0; }
+  .parallax-generic-container img {
+    width: 25rem; }
+  .parallax-generic-container h2, .parallax-generic-container .h2 {
+    color: #fff;
+    font: italic lighter 3rem "Playfair Display", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem; }
+  .parallax-generic-container img {
+    margin-bottom: 2rem; }
+  .parallax-generic-container p {
+    color: #fff;
+    font: normal 300 1.6rem Merriweather, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+    margin-bottom: 6rem;
+    width: 90%; }
+  .parallax-generic-container a {
+    color: #fff;
+    font: normal lighter 1.2rem "Playfair Display", Arial, Helvetica, sans-serif;
+    height: 4rem;
+    width: 15rem;
+    align-items: center;
+    background-color: transparent;
+    border-color: #fb6e14;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    text-decoration: none;
+    margin: 0; }
+    .parallax-generic-container a:hover {
+      background-color: #fb6e14;
+      color: #fff; }
 
-/*------------------------------------------------ PARALLAX BOOK TABLE RESPONSIVE */
+/*------------------------------------------------ PARALLAX GENERIC RESPONSIVE */
 @media (min-width: 600px) {
-  .parallax-book-table-container__text > p {
+  .parallax-generic-container__text > p {
     width: 65%; } }
 
 @media (min-width: 900px) {
-  .parallax-book-table-container__text > p {
+  .parallax-generic-container__text > p {
     width: 45%; } }
+
+#book-table-bg-img {
+  background-image: url(../../img/reservations/parallax-reservations4.jpg); }
 
 /*------------------------------------------------ MAIN PARALLAX */
 .parallax-container {
@@ -644,23 +646,21 @@ body {
   .parallax-container__titles h2, .parallax-container__titles .h2 {
     font-size: 4rem; } }
 
-/*------------------------------------------------ PARALLAX QUOTES */
-.parallax-quote-container {
+.parallax-generic-container {
   background-attachment: fixed;
-  background-image: url(../../img/quote_3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 50rem;
   z-index: 1; }
-  .parallax-quote-container__opacity {
+  .parallax-generic-container__opacity {
     height: inherit;
     width: inherit;
     background-color: #000;
     opacity: 0.5;
     position: absolute;
-    z-index: 3; }
-  .parallax-quote-container__text {
+    z-index: 2; }
+  .parallax-generic-container__text {
     display: flex;
     flex-direction: column;
     height: inherit;
@@ -670,15 +670,19 @@ body {
     position: absolute;
     text-align: center;
     z-index: 3; }
-    .parallax-quote-container__text h3, .parallax-quote-container__text .h3 {
-      color: #fff;
-      font: normal 300 4rem "Playfair Display SC", Arial, Helvetica, sans-serif;
-      letter-spacing: 0.2rem; }
-      .parallax-quote-container__text h3::before, .parallax-quote-container__text .h3::before {
-        content: '"Passion for the mexican flavor"';
-        animation: changeQuotes calc(20000ms) linear infinite; }
-    .parallax-quote-container__text img {
-      width: 25rem; }
+  .parallax-generic-container img {
+    width: 25rem; }
+  .parallax-generic-container h3, .parallax-generic-container .h3 {
+    color: #fff;
+    font: normal 300 4rem "Playfair Display SC", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem; }
+    .parallax-generic-container h3::before, .parallax-generic-container .h3::before {
+      content: '"Passion for the mexican flavor"';
+      animation: changeQuotes calc(20000ms) linear infinite; }
+
+/*------------------------------------------------ PARALLAX GENERIC RESPONSIVE */
+#quotes-bg-img {
+  background-image: url(../../img/quote_3.jpg); }
 
 /*------------------------------------------------ SPECIALS SECTION */
 .specials-section-container {
