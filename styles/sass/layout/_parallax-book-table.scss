@@ -1,5 +1,7 @@
+/* Including our generic parallax component with book table arg */
 @include genericParallax($default-parallax-book-table);
 
+/* Adding some specific properties */
 #book-table-bg-img {
   background-image: url(../../img/reservations/parallax-reservations4.jpg);
 } 

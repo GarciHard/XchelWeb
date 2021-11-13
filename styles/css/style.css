@@ -93,7 +93,6 @@ body {
     opacity: 1;
     content: '"Life serves to give beauty"'; } }
 
-/*------------------------------------------------ ABOUT SECTION */
 .about-section-main {
   background-color: #fff;
   padding: 5rem 1rem; }
@@ -181,7 +180,6 @@ body {
     .about-section-container__info {
       border-radius: 0 2rem 2rem 0; } }
 
-/*------------------------------------------------ CHEF SECTION */
 .chef-section-container {
   background-color: #fff;
   height: auto;
@@ -262,7 +260,6 @@ body {
     .chef-section__info {
       border-radius: 2rem 0 0 2rem; } }
 
-/*------------------------------------------------ FOOTER SECTION */
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -321,8 +318,6 @@ body {
   align-items: center; }
   .brand-logo div img {
     height: 15rem;
-    width: 15rem;
-    height: 15rem;
     width: 15rem; }
   .brand-logo__text {
     display: none;
@@ -343,7 +338,6 @@ body {
   .footer-section__flex {
     width: 60%; } }
 
-/*------------------------------------------------ NAVBAR */
 .header-nav {
   background-color: #fff;
   border: 0.1rem solid #e6e6e6;
@@ -403,7 +397,6 @@ body {
     animation: fadeIn 2s normal;
     display: flex; } }
 
-/*------------------------------------------------ INGREDIENTS SECTION */
 .intro-menu-section-container {
   height: auto;
   width: 100%;
@@ -449,7 +442,6 @@ body {
     .ingredients-container__generic {
       width: 80%; } }
 
-/*------------------------------------------------ BURGER MENU */
 .responsive-menu {
   height: 2.5rem;
   width: 2.5rem;
@@ -515,7 +507,7 @@ body {
         #menu-burger__container ul li a:hover {
           color: #fb6e14; }
 
-/*------------------------------------------------ BURGER RESPONSIVE MENU */
+/*------------------------------------------------ BURGER MENU RESPONSIVE */
 @media (min-width: 200px) {
   .responsive-menu {
     display: block;
@@ -525,6 +517,7 @@ body {
   .responsive-menu {
     display: none; } }
 
+/* Including our generic parallax component with book table arg */
 .parallax-generic-container {
   background-attachment: fixed;
   background-position: center;
@@ -593,10 +586,10 @@ body {
   .parallax-generic-container__text > p {
     width: 45%; } }
 
+/* Adding some specific properties */
 #book-table-bg-img {
   background-image: url(../../img/reservations/parallax-reservations4.jpg); }
 
-/*------------------------------------------------ MAIN PARALLAX */
 .parallax-container {
   height: 100vh;
   width: auto;
@@ -646,6 +639,7 @@ body {
   .parallax-container__titles h2, .parallax-container__titles .h2 {
     font-size: 4rem; } }
 
+/* Including our generic parallax component with null arg */
 .parallax-generic-container {
   background-attachment: fixed;
   background-position: center;
@@ -681,10 +675,10 @@ body {
       animation: changeQuotes calc(20000ms) linear infinite; }
 
 /*------------------------------------------------ PARALLAX GENERIC RESPONSIVE */
+/* Adding some specific properties */
 #quotes-bg-img {
   background-image: url(../../img/quote_3.jpg); }
 
-/*------------------------------------------------ SPECIALS SECTION */
 .specials-section {
   display: flex;
   flex-direction: column;
@@ -876,7 +870,7 @@ body {
     #dish_6:hover .specials-section__dish-container--lg-image {
       border-radius: 2rem 0 0 2rem; } }
 
-/* Including our generic component with null arg */
+/* Including our generic page component with null arg */
 .generic-main-container {
   display: flex;
   flex-direction: column;
@@ -926,6 +920,7 @@ body {
   .generic-paragraph {
     width: 60%; } }
 
+/* Including our generic page component with chef arg */
 .generic-main-container {
   display: flex;
   flex-direction: column;
@@ -982,6 +977,7 @@ body {
   .generic-paragraph {
     width: 60%; } }
 
+/* Including our generic form component */
 .generic-title {
   display: flex;
   flex-direction: column;
@@ -1039,7 +1035,6 @@ body {
   #generic-form {
     width: 25%; } }
 
-/*------------------------------------------------ MENU PAGE */
 .menu-section-container {
   display: flex;
   flex-direction: column;
@@ -1117,6 +1112,7 @@ body {
   .menu-section {
     width: 65rem; } }
 
+/* Including our generic form component */
 .generic-title {
   display: flex;
   flex-direction: column;
@@ -1174,6 +1170,7 @@ body {
   #generic-form {
     width: 25%; } }
 
+/* Adding some specific properties */
 #reservation-form-aux hr {
   margin: 2rem 0; }
 
@@ -1183,6 +1180,7 @@ body {
   #reservation-form-aux div:nth-child(8) small, #reservation-form-aux div:nth-child(8) .small, #reservation-form-aux div:nth-child(7) small, #reservation-form-aux div:nth-child(7) .small, #reservation-form-aux div:nth-child(6) small, #reservation-form-aux div:nth-child(6) .small, #reservation-form-aux div:nth-child(5) small, #reservation-form-aux div:nth-child(5) .small {
     font-size: 1rem; }
 
+/* Including AOS */
 body[data-aos-duration='50'] [data-aos], [data-aos][data-aos][data-aos-duration='50'] {
   transition-duration: 50ms; }
 
@@ -1850,6 +1848,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   [data-aos='flip-down'].aos-animate {
     transform: perspective(2500px) rotateX(0); }
 
+/* Including bootstrap */
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

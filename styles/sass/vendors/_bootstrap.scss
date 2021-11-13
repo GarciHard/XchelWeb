@@ -2,8 +2,10 @@
 $nav-pills-link-active-bg: $global-accent-color;
 $nav-link-transition: 0;
 
+/* Including bootstrap */
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Modifying properties of list and paragraph
 ol,
 ul {
   padding: 0;

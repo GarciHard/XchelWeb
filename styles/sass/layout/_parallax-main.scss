@@ -1,4 +1,3 @@
-/*------------------------------------------------ MAIN PARALLAX */
 .parallax-container {
   @include sizes(100vh, auto);
   animation: changeParallax 15s ease-in-out infinite both;

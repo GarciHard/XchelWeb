@@ -1,5 +1,7 @@
+/* Including our generic form component */
 @include genericReservationContactForm;
 
+/* Adding some specific properties */
 #reservation-form-aux {
   hr {
     margin: 2rem 0;

@@ -1,4 +1,3 @@
-/*------------------------------------------------ BURGER MENU */
 .responsive-menu {
   @include sizes(2.5rem, 2.5rem);
   display: none;
@@ -88,7 +87,7 @@
   }
 }
 
-/*------------------------------------------------ BURGER RESPONSIVE MENU */
+/*------------------------------------------------ BURGER MENU RESPONSIVE */
 @media (min-width: 200px) {
   .responsive-menu {
     display: block;
