@@ -1,0 +1,82 @@
+@mixin aboutOrChefPage($page-arg) {
+  
+  .generic-main-container {
+    @include flexDirection($global-flex-colum);
+    @include sizes(auto, 100%);
+    align-items: center;
+    background-color: $bgc-container-black-90;
+    padding: 5rem 2rem;
+  }
+
+  .generic-header {
+    @include flexDirection($global-flex-colum);
+    align-items: center;
+    /* Probably in the future, we include more pages with this structure
+     * at this moment, we only evaluate if page equals to "chef" if not
+     * we assume is "about"
+     */
+    @if $page-arg == $default-chef-arg {
+        margin: 2rem 0;
+    } @else {
+        margin-bottom: 2rem;
+    }
+    
+    h2 {
+      @include colorFontStyle(
+        $global-secondary-color,
+        $default-title-page-style
+      );
+      text-align: center;
+    }
+
+    img {
+      @include separatorImg;
+    }
+  }
+
+  .generic-paragraph > p {
+    @include colorFontStyle($global-secondary-color, $default-paragraph-style);
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .generic-carousel {
+    @include genericBoxShadow(2rem, $default-carousel-container-shadow);
+    @if $page-arg == $default-chef-arg {
+        margin-top: 2rem;
+
+        p {
+            background-color: $bgc-container-black-55;
+            font: $chef-page-carousel-caption-style;
+            padding: 1rem;
+        }
+    } @else {
+        margin-top: 5rem;
+    }
+    
+    img {
+      border-radius: 2rem;
+    }
+  }
+
+  @if $page-arg == $default-chef-arg {
+      .generic-carousel .carousel-caption {
+          left: 0;
+      }
+  }
+
+  /*------------------------------------------------ GENERIC PAGE RESPONSIVE */
+  @media (min-width: 600px) {
+    .generic-paragraph {
+      width: 80%;
+    }
+    .generic-carousel {
+      width: 45rem;
+    }
+  }
+  @media (min-width: 900px) {
+    .generic-paragraph {
+      width: 60%;
+    }
+  }
+}
