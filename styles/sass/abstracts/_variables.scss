@@ -8,6 +8,8 @@ $default-title-page-style: italic lighter 3rem "Playfair Display", $default-font
 $default-paragraph-style: normal 300 1.6rem Merriweather, $default-font-group;
 $default-index-text-button-style: normal lighter 1.2rem "Playfair Display", $default-font-group;
 $default-index-section-img-bg: url(../../img/about-section/about_section_bg.png);
+$default-null-arg: null;
+$default-chef-arg: chef;
 
 $global-primary-color: #2d2d2d;
 $global-secondary-color: #fff;
@@ -27,6 +29,7 @@ $text-logo-color: #130d08;
 
 $bgc-container-black-90: rgba(0, 0, 0, 0.9);
 $bgc-container-black-50: rgba(0, 0, 0, 0.5);
+$bgc-container-black-55: rgba(0, 0, 0, 0.55);
 $bgc-container-white-90: rgba(255, 255, 255, 0.9);
 
 $parallax-main-title-font-style: italic 700 10rem "Playfair Display", $default-font-group;
@@ -43,6 +46,7 @@ $about-us-section-img: url(../../img/about-section/about-section2.jpg);
 $parallax-quotes-font-style: normal 300 4rem "Playfair Display SC", $default-font-group;
 
 $chef-section-img: url(../../img/chef/our-chef1.jpeg);
+$chef-page-carousel-caption-style: normal 300 1.2rem Merriweather, $default-font-group;
 
 $footer-font-style: normal 1.4rem Merriweather, $default-font-group;
 $footer-icon-size-s: 1.5rem;
