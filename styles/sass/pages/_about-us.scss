@@ -1,2 +1,2 @@
 /* Including our generic component with null arg */
-@include aboutOrChefPage(null);
+@include aboutOrChefPage($default-null-arg);
