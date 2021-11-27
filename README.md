@@ -71,6 +71,7 @@ $ npm run watch-css
 **The project contains some deprecated branches:**
 
 <ul>
+<li>🎃 final-details</li>
 <li>☠️ flexbox-grids</li>
 <li>👻 latest-details</li>
 <li>⚰️ sass-tmp</li>
